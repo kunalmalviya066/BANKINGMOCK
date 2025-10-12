@@ -82,7 +82,7 @@ function renderHome() {
 
   const html = `
     <section class="home-section">
-      <h2>Welcome to BankingPrep360°</h2>
+      <h2>Welcome to BankingPrep</h2>
       <p>Prepare smartly for your banking exams — take daily quizzes, subject practice, or full mocks.</p>
       <div class="home-buttons">
         <button class="home-btn" id="startDaily">Daily Quiz</button>
@@ -508,3 +508,4 @@ document.addEventListener("visibilitychange", () => {
 // INITIALIZE
 // =======================================
 renderHome();
+
