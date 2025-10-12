@@ -1,5 +1,5 @@
 // =======================================
-// BankingPrep360° - Smart Exam Platform (Enhanced + Timer + Pause/Resume)
+// BankingPrep360° - Smart Exam Platform (Enhanced + Timer + Pause/Resume + Proper Shuffling)
 // =======================================
 
 // DOM ELEMENTS
@@ -26,31 +26,42 @@ let currentQuiz = {
 // =======================================
 // UTILITY FUNCTIONS
 // =======================================
+
+// Fisher-Yates Shuffle
 function shuffleArray(array) {
-  return [...array].sort(() => Math.random() - 0.5);
+  const arr = [...array];
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
 }
 
+// Save quiz attempt
 function saveAttempt(attempt) {
   const history = JSON.parse(localStorage.getItem("attempts")) || [];
   history.push(attempt);
   localStorage.setItem("attempts", JSON.stringify(history));
 }
 
+// Load quiz history
 function loadHistory() {
   return JSON.parse(localStorage.getItem("attempts")) || [];
 }
 
+// Clear main content
 function clearMain() {
   mainContent.innerHTML = "";
 }
 
+// Set active nav button
 function setActiveNav(buttonId) {
   navButtons.forEach(btn => btn.classList.remove("active"));
   document.getElementById(buttonId)?.classList.add("active");
 }
 
 // =======================================
-// CONFIRMATION IF QUIZ IS ACTIVE
+// SAFE NAVIGATION IF QUIZ IS ACTIVE
 // =======================================
 function safeNavigate(actionFn) {
   if (currentQuiz.active) {
@@ -97,7 +108,7 @@ function renderDailyQuiz() {
   setActiveNav("dailyQuizBtn");
 
   const subjects = Object.keys(questionDB);
-  if (subjects.length === 0) {
+  if (!subjects.length) {
     mainContent.innerHTML = `<p>No subjects found in database.</p>`;
     return;
   }
@@ -133,7 +144,7 @@ function renderDailyQuiz() {
     let allQuestions = [];
     selectedTopics.forEach(t => allQuestions.push(...questionDB[selectedSubject].topics[t]));
 
-    let quizOptionsHTML = `
+    const quizOptionsHTML = `
       <div class="quiz-options" style="margin-top:1rem;">
         <p>
           <label>Questions: 
@@ -147,12 +158,13 @@ function renderDailyQuiz() {
       </div>
     `;
     document.getElementById("topicContainer").insertAdjacentHTML("beforeend", quizOptionsHTML);
-
     document.getElementById("startDailyBtn").disabled = true;
 
     document.getElementById("confirmDailyStart").addEventListener("click", () => {
       const numQ = parseInt(document.getElementById("dailyNumQ").value);
       const timer = parseInt(document.getElementById("dailyTimer").value);
+
+      // Use shuffle to avoid repetition
       const quizQuestions = shuffleArray(allQuestions).slice(0, numQ);
 
       if (confirm(`Start quiz with ${numQ} questions and ${timer} minute(s)?`)) {
@@ -196,11 +208,7 @@ function renderSubjectSelection() {
         <div class="topic-box">
           <h3>${subject} Topics</h3>
           <div class="topic-list">
-            ${topics.map(t => `
-              <label class="topic-label">
-                <input type="checkbox" class="topicChk" value="${t}"> ${t}
-              </label>
-            `).join('')}
+            ${topics.map(t => `<label class="topic-label"><input type="checkbox" class="topicChk" value="${t}"> ${t}</label>`).join('')}
           </div>
           <div class="quiz-options">
             <p>
@@ -231,6 +239,7 @@ function renderSubjectSelection() {
         selectedTopics.forEach(t => allQuestions.push(...questionDB[subject].topics[t]));
         const numQ = parseInt(document.getElementById("numQ").value);
         const timer = parseInt(document.getElementById("timerMin").value);
+
         const quizQuestions = shuffleArray(allQuestions).slice(0, numQ);
         if (confirm(`Start quiz with ${numQ} questions and ${timer} minute(s)?`)) {
           startQuiz(subject, selectedTopics.join(", "), quizQuestions, timer);
@@ -351,13 +360,14 @@ function renderQuizPage() {
 
   // Option selection
   document.querySelectorAll(".options li").forEach(li => {
-    li.addEventListener("click", () => {
-      if (!currentQuiz.paused) {
-        currentQuiz.userAnswers[currentQuiz.currentIndex] = parseInt(li.dataset.i);
-        renderQuizPage();
-      }
-    });
+  li.addEventListener("click", () => {
+    if (!currentQuiz.paused) {
+      currentQuiz.userAnswers[currentQuiz.currentIndex] = parseInt(li.dataset.i);
+      renderQuizPage(); // <-- THIS RE-RENDERS THE ENTIRE QUIZ PAGE
+    }
   });
+});
+
 
   document.getElementById("nextBtn").addEventListener("click", () => {
     if (currentQuiz.currentIndex < currentQuiz.totalQuestions - 1) {
@@ -447,7 +457,7 @@ function renderHistory() {
   clearMain();
   setActiveNav("historyBtn");
   const data = loadHistory().reverse();
-  if (data.length === 0) {
+  if (!data.length) {
     mainContent.innerHTML = "<p>No past results found.</p>";
     return;
   }
