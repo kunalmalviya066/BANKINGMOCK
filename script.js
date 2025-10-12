@@ -328,81 +328,92 @@ function renderQuizPage() {
   const q = currentQuiz.questions[currentQuiz.currentIndex];
   if (!q) return;
 
-  const html = `
-    <section id="quiz-container">
+  // If quiz container does not exist yet, create it
+  let container = document.getElementById("quiz-container");
+  if (!container) {
+    container = document.createElement("section");
+    container.id = "quiz-container";
+    container.innerHTML = `
       <div class="quiz-header">
-        <h3>${currentQuiz.subject} - ${currentQuiz.topics}</h3>
+        <h3 id="quiz-subject"></h3>
         <div id="quiz-timer">--:--</div>
       </div>
-      <div class="question"><strong>Q${currentQuiz.currentIndex + 1}:</strong> ${q.question}</div>
-      <ul class="options">
-        ${q.options.map((opt, i) =>
-          `<li data-i="${i}" class="${currentQuiz.userAnswers[currentQuiz.currentIndex] === i ? 'selected':''}">${opt}</li>`
-        ).join("")}
-      </ul>
+      <div class="question"></div>
+      <ul class="options"></ul>
       <div class="quiz-controls">
         <button class="home-btn" id="prevBtn">Prev</button>
         <button class="home-btn" id="clearBtn">Clear</button>
-        <button class="home-btn" id="nextBtn">${currentQuiz.currentIndex === currentQuiz.totalQuestions - 1 ? 'Finish' : 'Next'}</button>
-        <button class="home-btn" id="pauseResumeBtn">${currentQuiz.paused ? 'Resume' : 'Pause'}</button>
+        <button class="home-btn" id="nextBtn">Next</button>
+        <button class="home-btn" id="pauseResumeBtn">Pause</button>
       </div>
       <div class="quiz-submit">
         <button class="home-btn" id="submitBtn">Submit Quiz</button>
       </div>
-      <div id="palette">
-        ${currentQuiz.questions.map((_, i) =>
-          `<div class="q-num ${i === currentQuiz.currentIndex ? 'current':''} ${currentQuiz.userAnswers[i] !== null ? 'answered':''}">${i + 1}</div>`
-        ).join("")}
-      </div>
-    </section>
-  `;
-  mainContent.innerHTML = html;
+      <div id="palette"></div>
+    `;
+    mainContent.innerHTML = "";
+    mainContent.appendChild(container);
 
-  // Option selection
+    // Bind static buttons once
+    document.getElementById("nextBtn").onclick = () => {
+      if (currentQuiz.currentIndex < currentQuiz.totalQuestions - 1) {
+        currentQuiz.currentIndex++;
+        renderQuizPage();
+      } else confirmSubmission();
+    };
+    document.getElementById("prevBtn").onclick = () => {
+      if (currentQuiz.currentIndex > 0) {
+        currentQuiz.currentIndex--;
+        renderQuizPage();
+      }
+    };
+    document.getElementById("clearBtn").onclick = () => {
+      currentQuiz.userAnswers[currentQuiz.currentIndex] = null;
+      renderQuizPage();
+    };
+    document.getElementById("pauseResumeBtn").onclick = () => {
+      currentQuiz.paused = !currentQuiz.paused;
+      document.getElementById("pauseResumeBtn").textContent = currentQuiz.paused ? "Resume" : "Pause";
+    };
+    document.getElementById("submitBtn").onclick = confirmSubmission;
+  }
+
+  // Update subject header
+  document.getElementById("quiz-subject").textContent = `${currentQuiz.subject} - ${currentQuiz.topics}`;
+
+  // Update question
+  document.querySelector(".question").innerHTML = `<strong>Q${currentQuiz.currentIndex + 1}:</strong> ${q.question}`;
+
+  // Update options
+  const optionsEl = document.querySelector(".options");
+  optionsEl.innerHTML = q.options.map((opt, i) =>
+    `<li data-i="${i}" class="${currentQuiz.userAnswers[currentQuiz.currentIndex] === i ? 'selected':''}">${opt}</li>`
+  ).join("");
+
+  // Bind option clicks
   document.querySelectorAll(".options li").forEach(li => {
-  li.addEventListener("click", () => {
-    if (!currentQuiz.paused) {
+    li.onclick = () => {
       currentQuiz.userAnswers[currentQuiz.currentIndex] = parseInt(li.dataset.i);
-      renderQuizPage(); // <-- THIS RE-RENDERS THE ENTIRE QUIZ PAGE
-    }
-  });
-});
-
-
-  document.getElementById("nextBtn").addEventListener("click", () => {
-    if (currentQuiz.currentIndex < currentQuiz.totalQuestions - 1) {
-      currentQuiz.currentIndex++;
       renderQuizPage();
-    } else confirmSubmission();
+    };
   });
 
-  document.getElementById("prevBtn").addEventListener("click", () => {
-    if (currentQuiz.currentIndex > 0) {
-      currentQuiz.currentIndex--;
-      renderQuizPage();
-    }
-  });
-
-  document.getElementById("clearBtn").addEventListener("click", () => {
-    currentQuiz.userAnswers[currentQuiz.currentIndex] = null;
-    renderQuizPage();
-  });
-
-  const pauseResumeBtn = document.getElementById("pauseResumeBtn");
-  pauseResumeBtn.addEventListener("click", () => {
-    currentQuiz.paused = !currentQuiz.paused;
-    pauseResumeBtn.textContent = currentQuiz.paused ? "Resume" : "Pause";
-  });
-
-  document.querySelectorAll(".q-num").forEach((qNum, i) => {
-    qNum.addEventListener("click", () => {
+  // Update palette
+  const paletteEl = document.getElementById("palette");
+  paletteEl.innerHTML = currentQuiz.questions.map((_, i) =>
+    `<div class="q-num ${i === currentQuiz.currentIndex ? 'current':''} ${currentQuiz.userAnswers[i] !== null ? 'answered':''}">${i + 1}</div>`
+  ).join("");
+  document.querySelectorAll("#palette .q-num").forEach((qNum, i) => {
+    qNum.onclick = () => {
       currentQuiz.currentIndex = i;
       renderQuizPage();
-    });
+    };
   });
 
-  document.getElementById("submitBtn").addEventListener("click", confirmSubmission);
+  // Update next button text
+  document.getElementById("nextBtn").textContent = currentQuiz.currentIndex === currentQuiz.totalQuestions - 1 ? "Finish" : "Next";
 }
+
 
 // =======================================
 // SUBMISSION + RESULTS
