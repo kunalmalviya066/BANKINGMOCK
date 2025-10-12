@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Modern Banking Exam Preparation Portal - Mock Tests and Daily Quizzes" />
+  <title>Banking Exam Prep | Smart Mock Platform</title>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- App Icons -->
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Prevent text copy in quiz area -->
+  <script>
+    document.addEventListener("contextmenu", e => {
+      if (e.target.closest("#quiz-container")) e.preventDefault();
+    });
+  </script>
+</head>
+<body>
+  <!-- Header -->
+  <header class="app-header">
+    <div class="logo">
+      <h1>BankingPrep<span>360°</span></h1>
+    </div>
+    <nav class="nav-links">
+      <button id="homeBtn" class="nav-btn active">Home</button>
+      <button id="dailyQuizBtn" class="nav-btn">Daily Quiz</button>
+      <button id="subjectBtn" class="nav-btn">Subjects</button>
+      <button id="mockBtn" class="nav-btn">Mock Exam</button>
+      <button id="historyBtn" class="nav-btn">My Results</button>
+    </nav>
+  </header>
+
+  <!-- Main Container -->
+  <main id="main-content" class="main-container">
+    <!-- Dynamic content will be injected here via script.js -->
+  </main>
+
+  <!-- Footer -->
+  <footer class="app-footer">
+    <p>© 2025 BankingPrep360° | Designed for Smart Learning | All progress stored locally</p>
+  </footer>
+
+  <!-- Script Files -->
+  <script src="db.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

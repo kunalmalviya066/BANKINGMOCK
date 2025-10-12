@@ -1,0 +1,679 @@
+/* =======================================
+   BankingPrep360° - Modern UI Stylesheet
+   Author: GPT-5
+   ======================================= */
+
+/* -------- Global Reset -------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", "Segoe UI", Roboto, sans-serif;
+}
+
+html, body {
+  height: 100%;
+  background: #f5f7fa;
+  color: #222;
+  scroll-behavior: smooth;
+}
+
+/* -------- Header -------- */
+.app-header {
+  background: #003366;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo h1 {
+  font-size: 1.5rem;
+  letter-spacing: 0.5px;
+  font-weight: 700;
+}
+
+.logo span {
+  color: #ffc107;
+}
+
+/* -------- Navigation -------- */
+.nav-links {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.nav-btn {
+  background: transparent;
+  color: #fff;
+  border: 2px solid transparent;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.nav-btn:hover {
+  background: #ffc107;
+  color: #003366;
+}
+
+.nav-btn.active {
+  background: #ffc107;
+  color: #003366;
+  font-weight: 600;
+}
+
+/* -------- Main Container -------- */
+.main-container {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+  min-height: 70vh;
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* -------- Home Section -------- */
+.home-section {
+  text-align: center;
+  background: #fff;
+  padding: 2rem 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+.home-section h2 {
+  font-size: 1.8rem;
+  color: #003366;
+  margin-bottom: 1rem;
+}
+
+.home-section p {
+  margin-bottom: 1.5rem;
+  color: #444;
+}
+
+.home-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.home-btn {
+  background: #003366;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.home-btn:hover {
+  background: #00509e;
+  transform: translateY(-2px);
+}
+
+.home-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* -------- Subject Selection -------- */
+.subject-section {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.05);
+}
+
+.subject-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.subj-btn.active {
+  background: #ffc107;
+  color: #003366;
+}
+
+.topic-box {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: #f9fafc;
+  border-radius: 1rem;
+  border: 1px solid #ddd;
+}
+
+.topic-list {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.5rem;
+}
+
+.topic-label {
+  background: #fff;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+  transition: 0.2s;
+}
+
+.topic-label:hover {
+  background: #eef4ff;
+}
+
+.input-box {
+  width: 60px;
+  padding: 0.3rem;
+  border: 1px solid #aaa;
+  border-radius: 0.3rem;
+  margin-left: 0.25rem;
+}
+
+/* -------- Quiz Page -------- */
+#quiz-container {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.05);
+}
+
+.quiz-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 0.5rem;
+}
+
+#quiz-timer {
+  background: #003366;
+  color: #fff;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+}
+
+.question {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+.options {
+  list-style: none;
+  margin-bottom: 1rem;
+}
+
+.options li {
+  background: #f6f9fc;
+  margin: 0.4rem 0;
+  padding: 0.6rem 0.8rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.options li:hover {
+  background: #e7f1ff;
+}
+
+.options li.selected {
+  background: #003366;
+  color: #fff;
+  border-color: #003366;
+}
+
+.quiz-controls {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.quiz-submit {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+/* -------- Question Palette -------- */
+#palette {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+  justify-content: center;
+}
+
+.q-num {
+  width: 32px;
+  height: 32px;
+  background: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.q-num:hover {
+  background: #d0e7ff;
+}
+
+.q-num.answered {
+  background: #ffc107;
+  color: #003366;
+}
+
+.q-num.current {
+  border: 2px solid #003366;
+  background: #fff;
+}
+
+/* -------- Results -------- */
+.results {
+  background: #fff;
+  text-align: center;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.05);
+}
+
+.results h2 {
+  color: #003366;
+  margin-bottom: 1rem;
+}
+
+/* -------- History -------- */
+section h2 {
+  color: #003366;
+  margin-bottom: 1rem;
+}
+
+section p {
+  margin: 0.5rem 0;
+  color: #333;
+}
+
+/* -------- Footer -------- */
+.app-footer {
+  background: #003366;
+  color: #fff;
+  text-align: center;
+  padding: 0.8rem 0;
+  font-size: 0.9rem;
+}
+
+/* -------- Responsive Design -------- */
+@media (max-width: 768px) {
+  .main-container {
+    padding: 1rem;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 0.3rem;
+  }
+
+  .home-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .quiz-controls {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  #palette {
+    justify-content: flex-start;
+  }
+}
+/* ===== Override: Remove header lock (no sticky effect) ===== */
+.app-header {
+  position: relative;
+  top: auto;
+  z-index: auto;
+}
+
+/* =====================================================
+   DAILY QUIZ & MOCK EXAM UI ENHANCEMENTS
+   (Add at the END of style.css)
+===================================================== */
+
+/* --- Subject Buttons --- */
+.daily-sub,
+.subj-btn {
+  background: #002d6f;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  margin: 0.5rem;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 1rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.25s ease;
+}
+
+.daily-sub:hover,
+.subj-btn:hover,
+.daily-sub.active,
+.subj-btn.active {
+  background: #0056b3;
+  transform: translateY(-2px);
+}
+
+/* --- Topic Container --- */
+#topicContainer {
+  margin-top: 1.5rem;
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  padding: 1.5rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+#topicContainer h3 {
+  color: #003366;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+/* --- Topic Checkboxes --- */
+.topicChk {
+  margin-right: 8px;
+  transform: scale(1.1);
+}
+
+#topicContainer label {
+  display: block;
+  margin: 0.4rem 0;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+#topicContainer label:hover {
+  color: #0056b3;
+}
+
+/* --- Start Quiz Button --- */
+#startDailyBtn,
+#startSubjBtn,
+#startMockBtn {
+  background: #0056b3;
+  color: #fff;
+  padding: 0.8rem 1.6rem;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  margin-top: 1rem;
+  transition: all 0.25s ease;
+}
+
+#startDailyBtn:hover:not(:disabled),
+#startSubjBtn:hover:not(:disabled),
+#startMockBtn:hover:not(:disabled) {
+  background: #003d80;
+  transform: translateY(-2px);
+}
+
+#startDailyBtn:disabled,
+#startSubjBtn:disabled {
+  background: #a9c4e2;
+  cursor: not-allowed;
+}
+
+/* --- Mock Exam Section --- */
+section h2 {
+  color: #003366;
+  margin-bottom: 1rem;
+}
+
+section p {
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+input[type="number"] {
+  padding: 0.4rem 0.5rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-left: 5px;
+  font-size: 0.95rem;
+  width: 80px;
+}
+
+input[type="number"]:focus {
+  border-color: #0056b3;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 86, 179, 0.3);
+}
+
+
+
+
+
+
+
+/* ================================
+   ADDITIONAL STYLES (for Timer, Inputs, Quiz UI)
+   ================================ */
+
+/* Input boxes for timer/question count */
+.input-box {
+  width: 70px;
+  padding: 5px 8px;
+  margin-left: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+/* Confirmation and option box before starting quiz */
+.quiz-options {
+  background: #f8f9fa;
+  border: 1px solid #dce3ec;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-top: 1rem;
+  text-align: left;
+  display: inline-block;
+}
+
+/* Quiz Container Layout */
+#quiz-container {
+  max-width: 800px;
+  margin: 1rem auto;
+  padding: 1.5rem;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.quiz-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #004080;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+#quiz-timer {
+  font-weight: bold;
+  color: #d9534f;
+  font-size: 1.1rem;
+  background: #fff0f0;
+  padding: 4px 10px;
+  border-radius: 6px;
+  border: 1px solid #f1b0b7;
+}
+
+.question {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.options {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+}
+
+.options li {
+  background: #f2f7ff;
+  border: 1px solid #ccd9f5;
+  border-radius: 8px;
+  margin: 6px 0;
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.options li:hover {
+  background: #e6f0ff;
+}
+
+.options li.selected {
+  background: #004080;
+  color: white;
+  font-weight: bold;
+}
+
+/* Quiz Controls */
+.quiz-controls {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 1rem;
+}
+
+.quiz-submit {
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Question Palette (small numbered boxes) */
+#palette {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 1.5rem;
+  justify-content: center;
+}
+
+.q-num {
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+  text-align: center;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background: #f4f4f4;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.q-num.answered {
+  background: #b3e6b3;
+  border-color: #66cc66;
+  font-weight: bold;
+}
+
+.q-num.current {
+  background: #004080;
+  color: white;
+  font-weight: bold;
+}
+
+/* Results Page */
+.results {
+  text-align: center;
+  margin-top: 2rem;
+  background: #fdfdfd;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.results h2 {
+  color: #004080;
+  margin-bottom: 1rem;
+}
+
+/* Buttons inside new quiz screens */
+.home-btn {
+  background: #004080;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 14px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.home-btn:hover {
+  background: #0066cc;
+}
+/* ======================================= */
+/* Quiz Timer & Pause/Resume Button Styling */
+/* ======================================= */
+
+.quiz-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+#quiz-timer {
+  font-size: 1.2rem;
+  font-weight: bold;
+  background: #f0f0f0;
+  padding: 5px 10px;
+  border-radius: 5px;
+  min-width: 60px;
+  text-align: center;
+}
+
+#pauseResumeBtn {
+  margin-left: 10px;
+  padding: 5px 12px;
+  background-color: #ff9800;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+#pauseResumeBtn:hover {
+  background-color: #e68900;
+}
