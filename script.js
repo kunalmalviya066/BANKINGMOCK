@@ -429,37 +429,92 @@ function submitQuiz() {
   currentQuiz.active = false;
 
   let correct = 0, attempted = 0;
+  const detailedResults = [];
+
   currentQuiz.questions.forEach((q, i) => {
     const ans = currentQuiz.userAnswers[i];
-    if (ans !== null) attempted++;
-    if (ans !== null && ans === q.answer) correct++;
+    const isAttempted = ans !== null;
+    const isCorrect = isAttempted && ans === q.answer;
+    if (isAttempted) attempted++;
+    if (isCorrect) correct++;
+
+    detailedResults.push({
+      question: q.question,
+      options: q.options,
+      correctAnswer: q.answer,
+      userAnswer: ans,
+      explanation: q.explanation || "No explanation provided.",
+      isCorrect
+    });
   });
 
-  saveAttempt({
+  const accuracy = attempted > 0 ? ((correct / attempted) * 100).toFixed(2) : 0;
+
+  const attemptData = {
     id: Date.now(),
     subject: currentQuiz.subject,
     topics: currentQuiz.topics,
     total: currentQuiz.totalQuestions,
-    attempted, correct,
-    date: new Date().toISOString()
-  });
+    attempted,
+    correct,
+    accuracy,
+    date: new Date().toISOString(),
+    details: detailedResults
+  };
 
-  renderResults(correct, attempted, currentQuiz.totalQuestions);
+  saveAttempt(attemptData);
+  renderResults(attemptData);
 }
 
-function renderResults(correct, attempted, total) {
+
+
+function renderResults(result) {
   clearMain();
-  const html = `
+
+  const unattempted = result.total - result.attempted;
+  const overallPercent = ((result.correct / result.total) * 100).toFixed(2);
+
+  let html = `
     <section class="results">
       <h2>Results Summary</h2>
-      <p>Total: ${total} | Attempted: ${attempted} | Correct: ${correct}</p>
-      <p>Score: ${((correct/total)*100).toFixed(2)}%</p>
+      <p><strong>Subject:</strong> ${result.subject}</p>
+      <p><strong>Topics:</strong> ${result.topics}</p>
+      <p><strong>Score:</strong> ${result.correct} / ${result.total} (${overallPercent}%)</p>
+      <p><strong>Attempted:</strong> ${result.attempted} | <strong>Unattempted:</strong> ${unattempted}</p>
+      <p><strong>Accuracy (Attempted):</strong> ${result.accuracy}%</p>
+      <hr>
+      <h3>Solutions & Explanations:</h3>
+      <div class="solution-list">
+  `;
+
+  result.details.forEach((d, i) => {
+    const userAnsText = d.userAnswer !== null ? d.options[d.userAnswer] : "— Not Attempted —";
+    const correctText = d.options[d.correctAnswer];
+    html += `
+      <div class="solution-item ${d.isCorrect ? 'correct' : 'wrong'}">
+        <p><strong>Q${i + 1}:</strong> ${d.question}</p>
+        <p><strong>Your Answer:</strong> ${userAnsText}</p>
+        <p><strong>Correct Answer:</strong> ${correctText}</p>
+        <p><strong>Explanation:</strong> ${d.explanation}</p>
+        <hr>
+      </div>
+    `;
+  });
+
+  html += `
+      </div>
       <button class="home-btn" id="backHome">Back to Home</button>
+      <button class="home-btn" id="viewHistory">View History</button>
     </section>
   `;
+
   mainContent.innerHTML = html;
+
   document.getElementById("backHome").addEventListener("click", renderHome);
+  document.getElementById("viewHistory").addEventListener("click", renderHistory);
 }
+
+
 
 // =======================================
 // HISTORY
@@ -467,20 +522,54 @@ function renderResults(correct, attempted, total) {
 function renderHistory() {
   clearMain();
   setActiveNav("historyBtn");
+
   const data = loadHistory().reverse();
   if (!data.length) {
     mainContent.innerHTML = "<p>No past results found.</p>";
     return;
   }
 
-  let html = `<section><h2>My Results</h2>`;
+  let html = `<section><h2>My Results History</h2>`;
   data.forEach(a => {
-    html += `<p>${a.subject} (${a.topics}) → ${a.correct}/${a.total} correct on ${new Date(a.date).toLocaleString()}</p>`;
+    const dateStr = new Date(a.date).toLocaleString();
+    html += `
+      <div class="history-card" data-id="${a.id}">
+        <p><strong>${a.subject}</strong> (${a.topics})</p>
+        <p>Score: ${a.correct}/${a.total} | Attempted: ${a.attempted} | Accuracy: ${a.accuracy}%</p>
+        <p><em>${dateStr}</em></p>
+        <button class="home-btn small-btn view-detail" data-id="${a.id}">View Details</button>
+        <button class="home-btn small-btn delete-attempt" data-id="${a.id}">Delete</button>
+        <hr>
+      </div>
+    `;
   });
   html += `<button class="home-btn" id="backHome">Back</button></section>`;
   mainContent.innerHTML = html;
+
+  // Buttons
   document.getElementById("backHome").addEventListener("click", renderHome);
+
+  document.querySelectorAll(".view-detail").forEach(btn => {
+    btn.addEventListener("click", e => {
+      const id = parseInt(e.target.dataset.id);
+      const record = loadHistory().find(r => r.id === id);
+      if (record) renderResults(record);
+    });
+  });
+
+  document.querySelectorAll(".delete-attempt").forEach(btn => {
+    btn.addEventListener("click", e => {
+      const id = parseInt(e.target.dataset.id);
+      if (confirm("Delete this attempt permanently?")) {
+        const updated = loadHistory().filter(r => r.id !== id);
+        localStorage.setItem("attempts", JSON.stringify(updated));
+        renderHistory(); // refresh
+      }
+    });
+  });
 }
+
+
 
 // =======================================
 // NAV BUTTONS
@@ -508,4 +597,3 @@ document.addEventListener("visibilitychange", () => {
 // INITIALIZE
 // =======================================
 renderHome();
-
