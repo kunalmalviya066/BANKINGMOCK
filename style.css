@@ -27,9 +27,7 @@ html, body {
   align-items: center;
   padding: 0.8rem 2rem;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  position: sticky;
-  top: 0;
-  z-index: 10;
+  position: relative; /* not sticky */
 }
 
 .logo h1 {
@@ -37,10 +35,7 @@ html, body {
   letter-spacing: 0.5px;
   font-weight: 700;
 }
-
-.logo span {
-  color: #ffc107;
-}
+.logo span { color: #ffc107; }
 
 /* -------- Navigation -------- */
 .nav-links {
@@ -59,15 +54,10 @@ html, body {
   transition: 0.3s ease;
 }
 
-.nav-btn:hover {
-  background: #ffc107;
-  color: #003366;
-}
-
+.nav-btn:hover,
 .nav-btn.active {
   background: #ffc107;
   color: #003366;
-  font-weight: 600;
 }
 
 /* -------- Main Container -------- */
@@ -148,228 +138,11 @@ html, body {
   margin-top: 1rem;
 }
 
-.subj-btn.active {
-  background: #ffc107;
-  color: #003366;
-}
-
-.topic-box {
-  margin-top: 2rem;
-  padding: 1.5rem;
-  background: #f9fafc;
-  border-radius: 1rem;
-  border: 1px solid #ddd;
-}
-
-.topic-list {
-  margin-top: 1rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 0.5rem;
-}
-
-.topic-label {
-  background: #fff;
-  padding: 0.5rem 0.75rem;
-  border-radius: 0.5rem;
-  border: 1px solid #ccc;
-  transition: 0.2s;
-}
-
-.topic-label:hover {
-  background: #eef4ff;
-}
-
-.input-box {
-  width: 60px;
-  padding: 0.3rem;
-  border: 1px solid #aaa;
-  border-radius: 0.3rem;
-  margin-left: 0.25rem;
-}
-
-/* -------- Quiz Page -------- */
-#quiz-container {
-  background: #fff;
-  padding: 1.5rem;
-  border-radius: 1rem;
-  box-shadow: 0 3px 12px rgba(0,0,0,0.05);
-}
-
-.quiz-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1rem;
-  border-bottom: 2px solid #eee;
-  padding-bottom: 0.5rem;
-}
-
-#quiz-timer {
-  background: #003366;
-  color: #fff;
-  padding: 0.4rem 0.8rem;
-  border-radius: 0.5rem;
-  font-weight: 600;
-}
-
-.question {
-  font-size: 1.1rem;
-  margin-bottom: 1rem;
-  color: #222;
-}
-
-.options {
-  list-style: none;
-  margin-bottom: 1rem;
-}
-
-.options li {
-  background: #f6f9fc;
-  margin: 0.4rem 0;
-  padding: 0.6rem 0.8rem;
-  border-radius: 0.5rem;
-  border: 1px solid #ddd;
-  cursor: pointer;
-  transition: all 0.25s ease;
-}
-
-.options li:hover {
-  background: #e7f1ff;
-}
-
-.options li.selected {
-  background: #003366;
-  color: #fff;
-  border-color: #003366;
-}
-
-.quiz-controls {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 1rem;
-}
-
-.quiz-submit {
-  text-align: center;
-  margin-top: 1.5rem;
-}
-
-/* -------- Question Palette -------- */
-#palette {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-top: 1.5rem;
-  justify-content: center;
-}
-
-.q-num {
-  width: 32px;
-  height: 32px;
-  background: #eee;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 0.4rem;
-  cursor: pointer;
-  font-weight: 600;
-  transition: 0.2s;
-}
-
-.q-num:hover {
-  background: #d0e7ff;
-}
-
-.q-num.answered {
-  background: #ffc107;
-  color: #003366;
-}
-
-.q-num.current {
-  border: 2px solid #003366;
-  background: #fff;
-}
-
-/* -------- Results -------- */
-.results {
-  background: #fff;
-  text-align: center;
-  padding: 2rem;
-  border-radius: 1rem;
-  box-shadow: 0 3px 12px rgba(0,0,0,0.05);
-}
-
-.results h2 {
-  color: #003366;
-  margin-bottom: 1rem;
-}
-
-/* -------- History -------- */
-section h2 {
-  color: #003366;
-  margin-bottom: 1rem;
-}
-
-section p {
-  margin: 0.5rem 0;
-  color: #333;
-}
-
-/* -------- Footer -------- */
-.app-footer {
-  background: #003366;
-  color: #fff;
-  text-align: center;
-  padding: 0.8rem 0;
-  font-size: 0.9rem;
-}
-
-/* -------- Responsive Design -------- */
-@media (max-width: 768px) {
-  .main-container {
-    padding: 1rem;
-  }
-
-  .nav-links {
-    flex-wrap: wrap;
-    gap: 0.3rem;
-  }
-
-  .home-buttons {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  .quiz-controls {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-
-  #palette {
-    justify-content: flex-start;
-  }
-}
-/* ===== Override: Remove header lock (no sticky effect) ===== */
-.app-header {
-  position: relative;
-  top: auto;
-  z-index: auto;
-}
-
-/* =====================================================
-   DAILY QUIZ & MOCK EXAM UI ENHANCEMENTS
-   (Add at the END of style.css)
-===================================================== */
-
-/* --- Subject Buttons --- */
-.daily-sub,
 .subj-btn {
   background: #002d6f;
   color: #fff;
   border: none;
   padding: 0.8rem 1.5rem;
-  margin: 0.5rem;
   border-radius: 12px;
   font-weight: 600;
   font-size: 1rem;
@@ -377,15 +150,13 @@ section p {
   transition: all 0.25s ease;
 }
 
-.daily-sub:hover,
 .subj-btn:hover,
-.daily-sub.active,
 .subj-btn.active {
   background: #0056b3;
   transform: translateY(-2px);
 }
 
-/* --- Topic Container --- */
+/* -------- Topic Selection -------- */
 #topicContainer {
   margin-top: 1.5rem;
   background: #ffffff;
@@ -404,7 +175,6 @@ section p {
   font-weight: 600;
 }
 
-/* --- Topic Checkboxes --- */
 .topicChk {
   margin-right: 8px;
   transform: scale(1.1);
@@ -422,7 +192,7 @@ section p {
   color: #0056b3;
 }
 
-/* --- Start Quiz Button --- */
+/* -------- Start Quiz Buttons -------- */
 #startDailyBtn,
 #startSubjBtn,
 #startMockBtn {
@@ -449,69 +219,12 @@ section p {
   cursor: not-allowed;
 }
 
-/* --- Mock Exam Section --- */
-section h2 {
-  color: #003366;
-  margin-bottom: 1rem;
-}
-
-section p {
-  font-size: 0.95rem;
-  margin-bottom: 1rem;
-}
-
-input[type="number"] {
-  padding: 0.4rem 0.5rem;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-  margin-left: 5px;
-  font-size: 0.95rem;
-  width: 80px;
-}
-
-input[type="number"]:focus {
-  border-color: #0056b3;
-  outline: none;
-  box-shadow: 0 0 5px rgba(0, 86, 179, 0.3);
-}
-
-
-
-
-
-
-
-/* ================================
-   ADDITIONAL STYLES (for Timer, Inputs, Quiz UI)
-   ================================ */
-
-/* Input boxes for timer/question count */
-.input-box {
-  width: 70px;
-  padding: 5px 8px;
-  margin-left: 5px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 14px;
-}
-
-/* Confirmation and option box before starting quiz */
-.quiz-options {
-  background: #f8f9fa;
-  border: 1px solid #dce3ec;
-  border-radius: 10px;
-  padding: 1rem;
-  margin-top: 1rem;
-  text-align: left;
-  display: inline-block;
-}
-
-/* Quiz Container Layout */
+/* -------- Quiz Container -------- */
 #quiz-container {
+  background: #fff;
   max-width: 800px;
   margin: 1rem auto;
   padding: 1.5rem;
-  background: #ffffff;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
@@ -535,6 +248,21 @@ input[type="number"]:focus {
   border: 1px solid #f1b0b7;
 }
 
+/* Pause/Resume */
+#pauseResumeBtn {
+  margin-left: 10px;
+  padding: 5px 12px;
+  background-color: #ff9800;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+#pauseResumeBtn:hover { background-color: #e68900; }
+
+/* -------- Questions & Options -------- */
 .question {
   font-size: 1rem;
   margin-bottom: 1rem;
@@ -555,18 +283,14 @@ input[type="number"]:focus {
   cursor: pointer;
   transition: 0.2s;
 }
-
-.options li:hover {
-  background: #e6f0ff;
-}
-
+.options li:hover { background: #e6f0ff; }
 .options li.selected {
   background: #004080;
-  color: white;
+  color: #fff;
   font-weight: bold;
 }
 
-/* Quiz Controls */
+/* -------- Quiz Controls -------- */
 .quiz-controls {
   display: flex;
   justify-content: space-between;
@@ -574,12 +298,7 @@ input[type="number"]:focus {
   margin-bottom: 1rem;
 }
 
-.quiz-submit {
-  text-align: center;
-  margin-top: 10px;
-}
-
-/* Question Palette (small numbered boxes) */
+/* -------- Question Palette -------- */
 #palette {
   display: flex;
   flex-wrap: wrap;
@@ -587,7 +306,6 @@ input[type="number"]:focus {
   margin-top: 1.5rem;
   justify-content: center;
 }
-
 .q-num {
   width: 28px;
   height: 28px;
@@ -599,96 +317,27 @@ input[type="number"]:focus {
   font-size: 13px;
   cursor: pointer;
 }
-
 .q-num.answered {
-  background: #b3e6b3;
-  border-color: #66cc66;
+  background: #ffc107;
+  color: #003366;
   font-weight: bold;
 }
-
 .q-num.current {
   background: #004080;
   color: white;
   font-weight: bold;
 }
 
-/* Results Page */
-.results {
-  text-align: center;
-  margin-top: 2rem;
-  background: #fdfdfd;
-  border-radius: 10px;
-  padding: 2rem;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-}
-
-.results h2 {
-  color: #004080;
-  margin-bottom: 1rem;
-}
-
-/* Buttons inside new quiz screens */
-.home-btn {
-  background: #004080;
-  color: #fff;
-  border: none;
-  border-radius: 8px;
-  padding: 8px 14px;
-  cursor: pointer;
-  transition: 0.2s;
-}
-
-.home-btn:hover {
-  background: #0066cc;
-}
-/* ======================================= */
-/* Quiz Timer & Pause/Resume Button Styling */
-/* ======================================= */
-
-.quiz-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1rem;
-}
-
-#quiz-timer {
-  font-size: 1.2rem;
-  font-weight: bold;
-  background: #f0f0f0;
-  padding: 5px 10px;
-  border-radius: 5px;
-  min-width: 60px;
-  text-align: center;
-}
-
-#pauseResumeBtn {
-  margin-left: 10px;
-  padding: 5px 12px;
-  background-color: #ff9800;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-weight: bold;
-  transition: background 0.3s;
-}
-
-#pauseResumeBtn:hover {
-  background-color: #e68900;
-}
-
 /* =======================================
-   RESULT & HISTORY ENHANCEMENTS STYLES
+   RESULTS & HISTORY ENHANCEMENTS
    ======================================= */
 
-/* --- General Layout --- */
 .results, .history-card, .solution-item {
   font-family: "Poppins", sans-serif;
   color: #222;
 }
 
-/* --- Result Summary Section --- */
+/* Results Summary */
 .results {
   background: #fff;
   padding: 1.5rem;
@@ -698,25 +347,18 @@ input[type="number"]:focus {
   max-width: 800px;
   line-height: 1.6;
 }
-
 .results h2 {
   text-align: center;
   font-size: 1.8rem;
   margin-bottom: 1rem;
   color: #0072ff;
 }
-
-.results p {
-  margin: 0.4rem 0;
-  font-size: 1rem;
-}
-
+.results p { margin: 0.4rem 0; font-size: 1rem; }
 .results hr {
   border: none;
   border-top: 1px solid #ddd;
   margin: 1rem 0;
 }
-
 .results h3 {
   margin-top: 1rem;
   font-size: 1.4rem;
@@ -726,11 +368,8 @@ input[type="number"]:focus {
   padding-bottom: 0.2rem;
 }
 
-/* --- Solutions List --- */
-.solution-list {
-  margin-top: 1rem;
-}
-
+/* Solutions List */
+.solution-list { margin-top: 1rem; }
 .solution-item {
   padding: 1rem;
   border-radius: 0.8rem;
@@ -742,7 +381,6 @@ input[type="number"]:focus {
   transform: translateY(-3px);
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
-
 .solution-item.correct {
   background: #e9ffe9;
   border-left: 5px solid #2ecc71;
@@ -751,24 +389,16 @@ input[type="number"]:focus {
   background: #ffe9e9;
   border-left: 5px solid #e74c3c;
 }
-
-.solution-item p {
-  margin: 0.3rem 0;
-}
-.solution-item strong {
-  color: #333;
-}
-.solution-item p strong:first-child {
-  color: #0072ff;
-}
-
+.solution-item p { margin: 0.3rem 0; }
+.solution-item strong { color: #333; }
+.solution-item p strong:first-child { color: #0072ff; }
 .solution-item hr {
   border: none;
   border-top: 1px dashed #ccc;
   margin-top: 0.8rem;
 }
 
-/* --- History Section --- */
+/* History Cards */
 .history-card {
   background: #fdfdfd;
   border-radius: 0.8rem;
@@ -782,41 +412,11 @@ input[type="number"]:focus {
   transform: translateY(-2px);
   box-shadow: 0 3px 10px rgba(0,0,0,0.15);
 }
+.history-card p { margin: 0.3rem 0; font-size: 1rem; }
+.history-card strong { color: #333; }
+.history-card em { color: #777; font-size: 0.9rem; }
 
-.history-card p {
-  margin: 0.3rem 0;
-  font-size: 1rem;
-}
-.history-card strong {
-  color: #333;
-}
-
-.history-card em {
-  color: #777;
-  font-size: 0.9rem;
-}
-
-/* --- Buttons --- */
-.home-btn {
-  background: linear-gradient(135deg, #0072ff, #00c6ff);
-  color: white;
-  border: none;
-  border-radius: 8px;
-  padding: 0.6rem 1.2rem;
-  cursor: pointer;
-  font-weight: 600;
-  font-size: 1rem;
-  transition: transform 0.2s ease, background 0.3s ease;
-}
-.home-btn:hover {
-  transform: translateY(-2px);
-  background: linear-gradient(135deg, #005ce6, #00aaff);
-}
-.home-btn:active {
-  transform: translateY(0);
-}
-
-/* Smaller buttons inside history cards */
+/* Buttons */
 .home-btn.small-btn {
   padding: 0.4rem 0.8rem;
   font-size: 0.85rem;
@@ -826,26 +426,341 @@ input[type="number"]:focus {
   margin-right: 0.4rem;
   transition: background 0.2s ease;
 }
-.home-btn.small-btn:hover {
-  background: #ddd;
+.home-btn.small-btn:hover { background: #ddd; }
+
+/* -------- Footer -------- */
+.app-footer {
+  background: #003366;
+  color: #fff;
+  text-align: center;
+  padding: 0.8rem 0;
+  font-size: 0.9rem;
 }
 
-/* --- Responsive Adjustments --- */
-@media (max-width: 600px) {
-  .results, .history-card {
-    padding: 1rem;
-  }
+/* -------- Responsive -------- */
+@media (max-width: 768px) {
+  .main-container { padding: 1rem; }
+  .home-buttons { flex-direction: column; }
+  .quiz-controls { flex-direction: column; gap: 0.5rem; }
+  #palette { justify-content: flex-start; }
+  .results, .history-card { padding: 1rem; }
+  .results h2 { font-size: 1.4rem; }
+}
+/* ==============================
+   DYNAMIC UI ELEMENTS STYLING
+   ============================== */
 
-  .results h2 {
-    font-size: 1.4rem;
-  }
+/* Quiz Setup Inputs */
+.input-box {
+  width: 80px;
+  padding: 6px 8px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  text-align: center;
+  outline: none;
+  transition: border 0.2s;
+}
+.input-box:focus {
+  border-color: #0072ff;
+  box-shadow: 0 0 3px rgba(0, 114, 255, 0.5);
+}
 
-  .solution-item {
-    font-size: 0.9rem;
-  }
+/* Quiz Options (before quiz starts) */
+.quiz-options {
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  margin-top: 1rem;
+}
+.quiz-options p {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  color: #333;
+}
 
-  .home-btn {
-    font-size: 0.9rem;
-    padding: 0.5rem 1rem;
-  }
+/* Daily Quiz subject buttons */
+.daily-sub {
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  margin: 0.5rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.daily-sub:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Subject Topic Section */
+.topic-box {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  padding: 1.2rem;
+  margin-top: 1rem;
+}
+.topic-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.topic-label {
+  background: #f0f4f8;
+  border-radius: 8px;
+  padding: 0.4rem 0.8rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+.topic-label:hover {
+  background: #e0ecff;
+}
+
+/* Quiz Header */
+.quiz-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #003366;
+  color: #fff;
+  padding: 0.6rem 1rem;
+  border-radius: 12px 12px 0 0;
+}
+#quiz-timer {
+  font-weight: bold;
+  font-size: 1rem;
+  background: #fff;
+  color: #003366;
+  padding: 0.2rem 0.6rem;
+  border-radius: 6px;
+}
+
+/* Quiz Container */
+#quiz-container {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  margin-top: 1rem;
+}
+
+/* Options list */
+.options {
+  list-style: none;
+  padding: 0;
+}
+.options li {
+  background: #f8f9fc;
+  border: 1px solid #dfe3eb;
+  border-radius: 8px;
+  padding: 0.7rem;
+  margin: 0.5rem 0;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.options li:hover {
+  background: #e7f0ff;
+}
+.options li.selected {
+  background: #0072ff;
+  color: #fff;
+  border-color: #005ad6;
+}
+
+/* Quiz Controls */
+.quiz-controls {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.quiz-controls .home-btn {
+  flex: 1;
+  margin: 0.3rem;
+}
+
+/* Question Palette */
+#palette {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 1rem;
+}
+.q-num {
+  width: 34px;
+  height: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-weight: 500;
+  background: #f1f1f1;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.q-num.current {
+  background: #0072ff;
+  color: #fff;
+}
+.q-num.answered {
+  background: #28a745;
+  color: #fff;
+}
+.q-num:hover {
+  transform: scale(1.05);
+}
+
+/* Small Buttons in History */
+.small-btn {
+  padding: 0.3rem 0.8rem;
+  font-size: 0.8rem;
+  margin-right: 0.4rem;
+  border-radius: 6px;
+}
+.small-btn.delete-attempt {
+  background: #dc3545;
+  color: #fff;
+}
+.small-btn.view-detail {
+  background: #17a2b8;
+  color: #fff;
+}
+
+/* Result Highlights */
+.solution-item.correct {
+  border-left: 4px solid #28a745;
+  background: #e8fbe8;
+}
+.solution-item.wrong {
+  border-left: 4px solid #dc3545;
+  background: #fdecec;
+}
+/* ===========================
+   MOCK EXAM SECTION STYLING
+   =========================== */
+.mock-section {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 1.5rem;
+  text-align: center;
+  max-width: 500px;
+  margin: 2rem auto;
+}
+
+.mock-section h2 {
+  color: #003366;
+  margin-bottom: 0.8rem;
+}
+
+.mock-section p {
+  color: #444;
+  margin-bottom: 0.6rem;
+}
+
+.mock-options {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1rem 0 1.5rem 0;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.mock-options label {
+  font-weight: 500;
+  color: #333;
+}
+
+.mock-section .input-box {
+  margin-left: 0.5rem;
+  width: 90px;
+}
+
+#startMockBtn {
+  background: linear-gradient(135deg, #0072ff, #00c6ff);
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#startMockBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* =============================
+   Single Upper Summary Box
+============================= */
+.result-summary-box {
+  background: #fefefe;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  margin-bottom: 1.8rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.result-summary-box h2 {
+  font-size: 1.9rem;
+  margin-bottom: 1.2rem;
+  color: #1a1a1a;
+  font-weight: 700;
+}
+
+.result-summary-box p {
+  font-size: 1rem;
+  margin: 0.4rem 0;
+  color: #333;
+}
+
+.result-summary-box p strong {
+  font-weight: 600;
+}
+
+/* Highlighted stats */
+.result-summary-box .highlight {
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.result-summary-box .subject-color {
+  background-color: #e0f7fa;
+  color: #00796b;
+}
+
+.result-summary-box .topic-color {
+  background-color: #fff3e0;
+  color: #f57c00;
+}
+
+.result-summary-box .score-color {
+  background-color: #e8f5e9;
+  color: #388e3c;
+}
+
+.result-summary-box .attempted-color {
+  background-color: #e3f2fd;
+  color: #1976d2;
+}
+
+.result-summary-box .unattempted-color {
+  background-color: #ffebee;
+  color: #c62828;
+}
+
+.result-summary-box .accuracy-color {
+  background-color: #f3e5f5;
+  color: #6a1b9a;
 }

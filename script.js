@@ -256,14 +256,21 @@ function renderMockOptions() {
   clearMain();
   setActiveNav("mockBtn");
 
-  const html = `
-    <section>
-      <h2>Full Mock Exam</h2>
-      <p>Customize total questions and timer:</p>
-      <p>Questions: <input type="number" id="mockNumQ" value="100" min="10" max="500" style="width:60px;">
-      Timer (min): <input type="number" id="mockTimer" value="120" min="10" style="width:60px;"></p>
-      <button class="home-btn" id="startMockBtn">Start Mock Exam</button>
-    </section>`;
+ const html = `
+  <section class="mock-section">
+    <h2>Full Mock Exam</h2>
+    <p>Customize total questions and timer:</p>
+    <div class="mock-options">
+      <label>Questions:
+        <input type="number" id="mockNumQ" class="input-box" value="100" min="10" max="500">
+      </label>
+      <label>Timer (min):
+        <input type="number" id="mockTimer" class="input-box" value="120" min="10">
+      </label>
+    </div>
+    <button class="home-btn" id="startMockBtn">Start Mock Exam</button>
+  </section>`;
+
   mainContent.innerHTML = html;
 
   document.getElementById("startMockBtn").addEventListener("click", () => {
@@ -472,20 +479,24 @@ function renderResults(result) {
   clearMain();
 
   const unattempted = result.total - result.attempted;
-  const overallPercent = ((result.correct / result.total) * 100).toFixed(2);
+  const overallPercent = result.total > 0 ? ((result.correct / result.total) * 100).toFixed(2) : 0;
 
-  let html = `
-    <section class="results">
+let html = `
+  <section class="results">
+    <div class="result-summary-box">
       <h2>Results Summary</h2>
-      <p><strong>Subject:</strong> ${result.subject}</p>
-      <p><strong>Topics:</strong> ${result.topics}</p>
-      <p><strong>Score:</strong> ${result.correct} / ${result.total} (${overallPercent}%)</p>
-      <p><strong>Attempted:</strong> ${result.attempted} | <strong>Unattempted:</strong> ${unattempted}</p>
-      <p><strong>Accuracy (Attempted):</strong> ${result.accuracy}%</p>
-      <hr>
-      <h3>Solutions & Explanations:</h3>
-      <div class="solution-list">
-  `;
+      <p><strong>Subject:</strong> <span class="highlight subject-color">${result.subject}</span></p>
+      <p><strong>Topics:</strong> <span class="highlight topic-color">${result.topics || 'All Topics'}</span></p>
+      <p><strong>Score:</strong> <span class="highlight score-color">${result.correct} / ${result.total} (${overallPercent}%)</span></p>
+      <p><strong>Attempted:</strong> <span class="highlight attempted-color">${result.attempted}</span> | <strong>Unattempted:</strong> <span class="highlight unattempted-color">${unattempted}</span></p>
+      <p><strong>Accuracy:</strong> <span class="highlight accuracy-color">${result.accuracy || 0}%</span></p>
+    </div>
+    <hr>
+    <h3>Solutions & Explanations:</h3>
+    <div class="solution-list">
+`;
+
+
 
   result.details.forEach((d, i) => {
     const userAnsText = d.userAnswer !== null ? d.options[d.userAnswer] : "— Not Attempted —";
@@ -513,6 +524,7 @@ function renderResults(result) {
   document.getElementById("backHome").addEventListener("click", renderHome);
   document.getElementById("viewHistory").addEventListener("click", renderHistory);
 }
+
 
 
 
