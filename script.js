@@ -151,7 +151,7 @@ function renderDailyQuiz() {
             <input type="number" id="dailyNumQ" value="10" min="1" max="${allQuestions.length}" class="input-box">
           </label>
           <label>Timer (min): 
-            <input type="number" id="dailyTimer" value="15" min="1" class="input-box">
+            <input type="number" id="dailyTimer" value="10" min="1" class="input-box">
           </label>
         </p>
         <button class="home-btn" id="confirmDailyStart">Confirm & Start Quiz</button>
@@ -216,7 +216,7 @@ function renderSubjectSelection() {
                 <input type="number" id="numQ" value="10" min="1" max="100" class="input-box">
               </label>
               <label>Timer (min): 
-                <input type="number" id="timerMin" value="15" min="1" class="input-box">
+                <input type="number" id="timerMin" value="10" min="1" class="input-box">
               </label>
             </p>
             <button class="home-btn" id="startSubjBtn" disabled>Start Quiz</button>
@@ -256,7 +256,7 @@ function renderMockOptions() {
   clearMain();
   setActiveNav("mockBtn");
 
- const html = `
+  const html = `
   <section class="mock-section">
     <h2>Full Mock Exam</h2>
     <p>Customize total questions and timer:</p>
@@ -265,7 +265,7 @@ function renderMockOptions() {
         <input type="number" id="mockNumQ" class="input-box" value="100" min="10" max="500">
       </label>
       <label>Timer (min):
-        <input type="number" id="mockTimer" class="input-box" value="120" min="10">
+        <input type="number" id="mockTimer" class="input-box" value="100" min="10">
       </label>
     </div>
     <button class="home-btn" id="startMockBtn">Start Mock Exam</button>
@@ -389,12 +389,16 @@ function renderQuizPage() {
   document.getElementById("quiz-subject").textContent = `${currentQuiz.subject} - ${currentQuiz.topics}`;
 
   // Update question
-  document.querySelector(".question").innerHTML = `<strong>Q${currentQuiz.currentIndex + 1}:</strong> ${q.question}`;
+  let formattedQuestion = q.question.replace(/\n/g, '<br>');
+  if (q.image) {
+    formattedQuestion += `<br><img src="${q.image}" alt="Question Image" style="max-width:100%; height:auto;">`;
+  }
+  document.querySelector(".question").innerHTML = `<strong>Q${currentQuiz.currentIndex + 1}:</strong> ${formattedQuestion}`;
 
   // Update options
   const optionsEl = document.querySelector(".options");
   optionsEl.innerHTML = q.options.map((opt, i) =>
-    `<li data-i="${i}" class="${currentQuiz.userAnswers[currentQuiz.currentIndex] === i ? 'selected':''}">${opt}</li>`
+    `<li data-i="${i}" class="${currentQuiz.userAnswers[currentQuiz.currentIndex] === i ? 'selected' : ''}">${opt}</li>`
   ).join("");
 
   // Bind option clicks
@@ -408,7 +412,7 @@ function renderQuizPage() {
   // Update palette
   const paletteEl = document.getElementById("palette");
   paletteEl.innerHTML = currentQuiz.questions.map((_, i) =>
-    `<div class="q-num ${i === currentQuiz.currentIndex ? 'current':''} ${currentQuiz.userAnswers[i] !== null ? 'answered':''}">${i + 1}</div>`
+    `<div class="q-num ${i === currentQuiz.currentIndex ? 'current' : ''} ${currentQuiz.userAnswers[i] !== null ? 'answered' : ''}">${i + 1}</div>`
   ).join("");
   document.querySelectorAll("#palette .q-num").forEach((qNum, i) => {
     qNum.onclick = () => {
@@ -420,7 +424,6 @@ function renderQuizPage() {
   // Update next button text
   document.getElementById("nextBtn").textContent = currentQuiz.currentIndex === currentQuiz.totalQuestions - 1 ? "Finish" : "Next";
 }
-
 
 // =======================================
 // SUBMISSION + RESULTS
@@ -474,48 +477,48 @@ function submitQuiz() {
 }
 
 
-
 function renderResults(result) {
   clearMain();
 
   const unattempted = result.total - result.attempted;
   const overallPercent = result.total > 0 ? ((result.correct / result.total) * 100).toFixed(2) : 0;
 
-let html = `
-  <section class="results">
-    <div class="result-summary-box">
-      <h2>Results Summary</h2>
-      <p><strong>Subject:</strong> <span class="highlight subject-color">${result.subject}</span></p>
-      <p><strong>Topics:</strong> <span class="highlight topic-color">${result.topics || 'All Topics'}</span></p>
-      <p><strong>Score:</strong> <span class="highlight score-color">${result.correct} / ${result.total} (${overallPercent}%)</span></p>
-      <p><strong>Attempted:</strong> <span class="highlight attempted-color">${result.attempted}</span> | <strong>Unattempted:</strong> <span class="highlight unattempted-color">${unattempted}</span></p>
-      <p><strong>Accuracy:</strong> <span class="highlight accuracy-color">${result.accuracy || 0}%</span></p>
-    </div>
-    <hr>
-    <h3>Solutions & Explanations:</h3>
-    <div class="solution-list">
+  let html = `
+    <section class="results">
+      <div class="result-summary-box">
+        <h2>Results Summary</h2>
+        <p><strong>Subject:</strong> <span class="highlight subject-color">${result.subject}</span></p>
+        <p><strong>Topics:</strong> <span class="highlight topic-color">${result.topics || 'All Topics'}</span></p>
+        <p><strong>Score:</strong> <span class="highlight score-color"><span>${result.correct}</span> / <span>${result.total}</span> (<span>${overallPercent}%</span>)</span></p>
+        <p><strong>Attempted:</strong> <span class="highlight attempted-color"><span>${result.attempted}</span></span> | <strong>Unattempted:</strong> <span class="highlight unattempted-color"><span>${unattempted}</span></span></p>
+        <p><strong>Accuracy:</strong> <span class="highlight accuracy-color"><span>${result.accuracy || 0}%</span></span></p>
+      </div>
+...
 `;
-
-
 
   result.details.forEach((d, i) => {
     const userAnsText = d.userAnswer !== null ? d.options[d.userAnswer] : "— Not Attempted —";
     const correctText = d.options[d.correctAnswer];
+    
+    // Convert newlines in the question and explanation strings to <br> tags
+    const formattedQuestion = d.question.replace(/\n/g, '<br>');
+    const formattedExplanation = d.explanation.replace(/\n/g, '<br>');
+
     html += `
       <div class="solution-item ${d.isCorrect ? 'correct' : 'wrong'}">
-        <p><strong>Q${i + 1}:</strong> ${d.question}</p>
+        <p><strong>Q${i + 1}:</strong> ${formattedQuestion}</p>
         <p><strong>Your Answer:</strong> ${userAnsText}</p>
         <p><strong>Correct Answer:</strong> ${correctText}</p>
-        <p><strong>Explanation:</strong> ${d.explanation}</p>
+        <p><strong>Explanation:</strong> ${formattedExplanation}</p>
         <hr>
       </div>
     `;
   });
 
   html += `
-      </div>
-      <button class="home-btn" id="backHome">Back to Home</button>
-      <button class="home-btn" id="viewHistory">View History</button>
+    </div>
+    <button class="home-btn" id="backHome">Back to Home</button>
+    <button class="home-btn" id="viewHistory">View History</button>
     </section>
   `;
 
@@ -524,9 +527,6 @@ let html = `
   document.getElementById("backHome").addEventListener("click", renderHome);
   document.getElementById("viewHistory").addEventListener("click", renderHistory);
 }
-
-
-
 
 // =======================================
 // HISTORY
@@ -580,8 +580,6 @@ function renderHistory() {
     });
   });
 }
-
-
 
 // =======================================
 // NAV BUTTONS
