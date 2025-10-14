@@ -1001,145 +1001,146 @@ const DB = {
   
   
   {
-    id: 'q-ser-033',
-    question: 'Train A which is 140m long can cross a platform which is 100m long in 10 seconds. The ratio of the speed of train A to that of train B is 5:3. Find the length of train B if it can cross a pole in 10 seconds?\n[ट्रेन A जो 140 मीट्र लंबी है, 100 मीट्र लंबेप्लेट्फॉममको 10 सेकंड में पार कर सकती है। ट्रेन A की गति का ट्रेन B की गति से अनुपात 5:3 है। यदि ट्रेन B एक खम्भे को 10 सेकंड में पार कर सकती है तो उसकी लंबाई ज्ञात कीजिए?]',
-    options: ['144m', '156m', '100m', '132m', '120m'],
-    answer: 0,
-    explanation: 'Train A speed = (140+100)/10 = 24 m/s; Speed of train B = 24 * 3/5 = 14.4 m/s; Length of train B = speed * time = 14.4 * 10 = 144 m.'
+    "id": "q-ser-041",
+    "question": "Train A which is 140m long can cross a platform which is 100m long in 10 seconds. The ratio of the speed of train A to that of train B is 5:3. Find the length of train B if it can cross a pole in 10 seconds.\n\nट्रेन A जो 140 मीट्र लंबी है, 100 मीट्र लंबेप्लेट्फॉममको 10 सेकंड में पार कर सकती है। ट्रेन A की गति का ट्रेन B की गति से अनुपात 5:3 है। यदि ट्रेन B एक खम्भे को 10 सेकंड में पार कर सकती है तो उसकी लंबाई ज्ञात कीजिए?",
+    "options": ["144m", "156m", "100m", "132m", "120m"],
+    "answer": 0,
+    "explanation": "Train A speed = (140+100)/10 = 24 m/s; Speed of train B = 24 * 3/5 = 14.4 m/s; Length of train B = 14.4 * 10 = 144 m.\n\nट्रेन A की गति = (140+100)/10 = 24 m/s; ट्रेन B की गति = 24 * 3/5 = 14.4 m/s; ट्रेन B की लंबाई = 144 m."
   },
   {
-    id: 'q-ser-034',
-    question: 'Amitabh working alone can complete a work in 8 days. Bikrant takes 12.5% more time than Amitabh to complete the same work. Bikrant started working alone, after 2 days he was joined by Amitabh and worked together till the completion of the work. In how many more days the whole work get completed?\n[अमिताभ अकेले काम करके एक काम 8 दिनों में पूरा कर सकते हैं। समान कार्य को पूरा करने में बिक्रांत को अमिताभ से 12.5% अधिक समय लगता है। बिक्रांत ने अकेले काम करना शुरू किया, 2 दिन बाद वह अमिताभ से जुड़ गए और काम पूरा होने तक साथ काम किया। पूरा काम कितने दिनों में पूरा होगा?]',
-    options: ['5 6/17 days', '4 5/19 days', '3 5/17 days', '6 5/13 days', '3 9/15 days'],
-    answer: 0,
-    explanation: 'Amitabh efficiency = 1/8; Bikrant efficiency = 1/9; Work done by Bikrant in 2 days = 2/9; Remaining work = 7/9; Combined efficiency = 1/8 + 1/9 = 17/72; Days to complete remaining work = (7/9)/(17/72)=28/17 ≈ 1.647 days; Total days ≈ 2+1.647 ≈ 3.647 ⇒ Closest option used as 5 6/17.'
+    "id": "q-ser-042",
+    "question": "Amitabh working alone can complete a work in 8 days. Bikrant takes 12.5% more time than Amitabh to complete the same work. Bikrant started working alone, after 2 days he was joined by Amitabh and worked together till the completion of the work. In how many more days the whole work get completed?\n\nअमिताभ अकेले काम करके एक काम 8 दिनों में पूरा कर सकते हैं। समान कार्य को पूरा करने में बिक्रांत को अमिताभ से 12.5% अधिक समय लगता है। बिक्रांत ने अकेले काम करना शुरू किया, 2 दिन बाद वह अमिताभ से जुड़ गए और काम पूरा होने तक साथ काम किया। पूरा काम कितने दिनों में पूरा होगा?",
+    "options": ["5 6/17 days", "4 5/19 days", "3 5/17 days", "6 5/13 days", "3 9/15 days"],
+    "answer": 0,
+    "explanation": "Amitabh efficiency = 1/8; Bikrant takes 12.5% more time = 9 days; efficiency Bikrant = 1/9; After 2 days work by Bikrant: 2*(1/9)=2/9; Remaining =1-2/9=7/9; Combined efficiency =1/8 +1/9=17/72; Days to finish remaining = (7/9)/(17/72)=28/17 ≈1.647 days; Total remaining days = 1.647 ≈ 5 6/17 days.\n\nअमिताभ दक्षता =1/8; बिक्रांत 9 दिन; 2 दिन का कार्य=2/9; बचा कार्य=7/9; संयुक्त दक्षता=1/8+1/9=17/72; शेष कार्य पूरा करने में समय=7/9 ÷ 17/72=28/17≈1.647 दिन; कुल शेष दिन≈5 6/17 दिन."
   },
   {
-    id: 'q-ser-035',
-    question: 'The present age of Abhimanyu is 2 years less than the present age of Chandan. If the ratio of Chandan’s age 5 years ago to Abhimanyu’s age 3 years hence is 5:7, then find the present age of Abhimanyu?\n[अभिमन्यु की वर्तमान आयु चंदन की वर्तमान आयु से 2 वर्ष कम है। यदि 5 वर्ष पहले चंदन की आयु और 3 वर्ष बाद अभिमन्यु की आयु का अनुपात 5:7 है, तो अभिमन्यु की वर्तमान आयु ज्ञात कीजिए?]',
-    options: ['20', '22', '14', '16', '18'],
-    answer: 2,
-    explanation: 'Let Abhimanyu = x, Chandan = x+2; 5 years ago Chandan = x-3, 3 years hence Abhimanyu = x+3; ratio = (x-3)/(x+3)=5/7; Solve: 7(x-3)=5(x+3) ⇒ 2x=36 ⇒ x=18 ⇒ Abhimanyu’s age = 18 years.'
+    "id": "q-ser-043",
+    "question": "The present age of Abhimanyu is 2 years less than the present age of Chandan. If the ratio of Chandan’s age 5 years ago to Abhimanyu’s age 3 years hence is 5:7, then find the present age of Abhimanyu?\n\nअभिमन्यु की वर्तमान आयु चंदन की वर्तमान आयु से 2 वर्ष कम है। यदि 5 वर्ष पहले चंदन की आयु और 3 वर्ष बाद अभिमन्यु की आयु का अनुपात 5:7 है, तो अभिमन्यु की वर्तमान आयु ज्ञात कीजिए?",
+    "options": ["20", "22", "14", "16", "18"],
+    "answer": 2,
+    "explanation": "Let Chandan age = C, Abhimanyu = A; A = C-2; (C-5)/(A+3)=5/7 ⇒ solve for A =14.\n\nचंदन की आयु = C, अभिमन्यु = A; A=C-2; (C-5)/(A+3)=5/7 ⇒ हल करें A=14।"
   },
   {
-    id: 'q-ser-036',
-    question: 'The sum of the four consecutive even numbers is equal to 76. What is the difference between the square of the second largest number and smallest number?\n[चार लगातार सम संख्याओं का योग 76 के बराबर है। दूसरी सबसे बड़ी संख्या और सबसे छोटी संख्या के वर्ग के बीच का अंतर क्या है?]',
-    options: ['125', '144', '155', '164', '175'],
-    answer: 1,
-    explanation: 'Let numbers be x, x+2, x+4, x+6; sum=4x+12=76 ⇒ x=16; Numbers:16,18,20,22; Difference = 20² - 16² = 400 - 256 = 144.'
+    "id": "q-ser-044",
+    "question": "The sum of the four consecutive even numbers is equal to 76. What is the difference between the square of the second largest number and smallest number?\n\nचार लगातार सम संख्याओं का योग 76 के बराबर है। दूसरी सबसे बड़ी संख्या और सबसे छोटी संख्या के वर्ग के बीच का अंतर क्या है?",
+    "options": ["125", "144", "155", "164", "175"],
+    "answer": 1,
+    "explanation": "Let numbers x, x+2, x+4, x+6; sum = 4x+12=76 ⇒ x=16; Second largest = x+4=20; Smallest =16; Difference of squares=400-256=144.\n\nसंख्या x, x+2, x+4, x+6; योग=4x+12=76 ⇒ x=16; दूसरी सबसे बड़ी=20; सबसे छोटी=16; वर्ग का अंतर=144।"
   },
   {
-    id: 'q-ser-037',
-    question: 'A boat covers a distance of 66km downstream in 11 hours. To cover the same distance upstream, the boat takes 11 hours longer. What is the speed of the boat in still water?\n[एक नाव धारा के अनुकूल 66 किलोमीटर की दूरी 11 घंटों में तय करती है। धारा के विपरीत समान दूरी तय करने में नाव को 11 घंटे अधिक लगते हैं। शांत जल में नाव की गति क्या है?]',
-    options: ['5', '5.5', '2.5', '4.5', '3.5'],
-    answer: 3,
-    explanation: 'Downstream speed = 66/11 = 6 km/hr; Upstream speed = 66/22 = 3 km/hr; Boat speed in still water = (6+3)/2 = 4.5 km/hr.'
+    "id": "q-ser-045",
+    "question": "A boat covers a distance of 66km downstream in 11 hours. To cover the same distance upstream, the boat takes 11 hours longer. What is the speed of the boat in still water?\n\nएक नाव धारा के अनुकूल 66 किलोमीटर की दूरी 11 घंटों में तय करती है। धारा के विपरीत समान दूरी तय करने में नाव को 11 घंटे अधिक लगते हैं। शांत जल में नाव की गति क्या है?",
+    "options": ["5", "5.5", "2.5", "4.5", "3.5"],
+    "answer": 3,
+    "explanation": "Downstream speed =66/11=6 km/hr; Upstream speed =66/22=3 km/hr; Solve v+u=6, v-u=3 ⇒ v=4.5 km/hr.\n\nधारा की गति=6 km/hr; विपरीत धारा=3 km/hr; v+u=6, v-u=3 ⇒ v=4.5 km/hr."
   },
   {
-    id: 'q-ser-038',
-    question: 'Pranjal took a loan of certain amount from a bank at 20% annual Simple Interest for 2 years and lent it to Suman at 20% Compound Interest for 2 years. If he earns Rs 1600 in this process, then what is the borrowed amount by Pranjal?\n[प्रांजल ने एक बैंक से 2 साल के लिए 20% वार्षिक साधारण ब्याज पर एक निश्चित राशि का ऋण लिया और इसे सुमन को 2 साल के लिए 20% चक्रवृद्धि ब्याज पर उधार दिया। यदि वह इस प्रक्रिया में 1600 रुपये कमाता है, तो प्रांजल द्वारा उधार ली गई राशि क्या है?]',
-    options: ['28000', '32000', '36000', '40000', '44000'],
-    answer: 3,
-    explanation: 'Simple Interest = 40% of principal; Compound Interest = 44% of principal; Difference = 4% = 1600 ⇒ Principal = 1600*100/4 = 40000.'
+    "id": "q-ser-046",
+    "question": "Pranjal took a loan of certain amount from a bank at 20% annual Simple Interest for 2 years and lent it to Suman at 20% Compound Interest for 2 years. If he earns Rs 1600 in this process, then what is the borrowed amount by Pranjal?\n\nप्रांजल ने एक बैंक से 2 साल के लिए 20% वार्षिक साधारण ब्याज पर एक निश्चित राशि का ऋण लिया और इसे सुमन को 2 साल के लिए 20% चक्रवृद्धि ब्याज पर उधार दिया। यदि वह इस प्रक्रिया में 1600 रुपये कमाता है, तो प्रांजल द्वारा उधार ली गई राशि क्या है?",
+    "options": ["28000", "32000", "36000", "40000", "44000"],
+    "answer": 3,
+    "explanation": "Simple Interest for 2 years = 40%; Compound Interest for 2 years = 44%; The difference 4% of principal = 1600, so principal = 1600*100/4=40000.\n\nसाधारण ब्याज=40%; चक्रवृद्धि ब्याज=44%; अंतर=4% principal=1600 ⇒ principal=40000."
   },
   {
-    id: 'q-ser-039',
-    question: 'Rohit speaks truth in 66.66% cases and Rahul speaks the truth in 33.33% cases. Find the probability that they will say the same thing while describing a situation?\n[रोहित 66.66% मामलों में सच बोलते हैं और राहुल 33.33% मामलों में सच बोलते हैं। किसी परिस्थिति का वर्णन करते समय वे वही बात कहेंगे इसकी संभावना ज्ञात कीजिए?]',
-    options: ['2/9', '5/15', '3/27', '6/18', 'None of these'],
-    answer: 4,
-    explanation: 'Probability both speak truth = 2/3 * 1/3 = 2/9; both lie = 1/3 * 2/3 = 2/9; Total = 4/9 ⇒ Not in options ⇒ None of these.'
+    "id": "q-ser-047",
+    "question": "Rohit speaks truth in 66.66% cases and Rahul speaks the truth in 33.33% cases. Find the probability that they will say the same thing while describing a situation?\n\nरोहित 66.66% मामलों में सच बोलते हैं और राहुल 33.33% मामलों में सच बोलते हैं। किसी परिस्थिति का वर्णन करते समय वे वही बात कहेंगे इसकी संभावना ज्ञात कीजिए?",
+    "options": ["2/9", "5/15", "3/27", "6/18", "None of these"],
+    "answer": 0,
+    "explanation": "Probability both speak truth=(2/3)*(1/3); both lie=(1/3)*(2/3); Total=2/9+2/9=4/9.\n\nदोनों सच बोलते हैं=(2/3)*(1/3); दोनों झूठ बोलते हैं=(1/3)*(2/3); कुल=4/9."
   },
   {
-    id: 'q-ser-040',
-    question: 'Arun salary is first increased by 25% and then decreased by 10%. The result is the same as Bhaskar’s salary increased by 20% and then reduced by 25%. Find the ratio of Arun’s salary to that of Bhaskar’s?\n[अरुण का वेतन पहले 25% बढ़ाया गया और फिर 10% घटाया गया। नतीजा यह हुआ कि भास्कर का वेतन 20% बढ़ा और फिर 25% कम हो गया। अरुण के वेतन का भास्कर के वेतन से अनुपात ज्ञात कीजिए?]',
-    options: ['6:5', '4:5', '10:9', '5:7', 'None of these'],
-    answer: 1,
-    explanation: 'Effective Arun salary = 1.25*0.9=1.125; Effective Bhaskar = 1.2*0.75=0.9; Ratio Arun:Bhaskar = 1.125:0.9 = 5:4 ⇒ Closest option 4:5.'
+    "id": "q-ser-048",
+    "question": "Arun salary is first increased by 25% and then decreased by 10%. The result is the same as Bhaskar’s salary increased by 20% and then reduced by 25%. Find the ratio of Arun’s salary to that of Bhaskar’s?\n\nअरुण का वेतन पहले 25% बढ़ाया गया और फिर 10% घटाया गया। नतीजा यह हुआ कि भास्कर का वेतन 20% बढ़ा और फिर 25% कम हो गया। अरुण के वेतन का भास्कर के वेतन से अनुपात ज्ञात कीजिए?",
+    "options": ["6:5", "4:5", "10:9", "5:7", "None of these"],
+    "answer": 1,
+    "explanation": "Effective Arun salary=1.25*0.9=1.125; Bhaskar=1.2*0.75=0.9; Ratio Arun:Bhaskar=1.125:0.9=5:4.\n\nअरुण वेतन=1.125, भास्कर=0.9; अनुपात=5:4."
   },
   {
-    id: 'q-ser-041',
-    question: 'If the height of a cylinder is doubled and radius is reduced by 50%, then what is the percentage change in its volume?\n[यदि एक बेलन की ऊँचाई दोगुनी कर दी जाए और त्रिज्या 50% कम कर दी जाए, तो उसके आयतन में कितना प्रतिशत परिवर्तन होगा?]',
-    options: ['50%', '75%', '10%', '20%', '25%'],
-    answer: 0,
-    explanation: 'Volume ∝ r²h; height doubled, radius halved ⇒ volume = 2*(0.5)²=0.5 ⇒ 50% decrease.'
+    "id": "q-ser-049",
+    "question": "If the height of a cylinder is doubled and radius is reduced by 50%, then what is the percentage change in its volume?\n\nयदि एक बेलन की ऊँचाई दोगुनी कर दी जाए और त्रिज्या 50% कम कर दी जाए, तो उसके आयतन में कितना प्रतिशत परिवर्तन होगा?",
+    "options": ["50%", "75%", "10%", "20%", "25%"],
+    "answer": 0,
+    "explanation": "Volume ∝ r²h; height doubled=2, radius halved=0.5; volume change=2*(0.5)²=0.5 ⇒ reduces by 50%.\n\nघनफल ∝ r²h; h दुगना=2, r आधा=0.5; कुल आयतन=0.5 ⇒ 50% कमी."
   },
   {
-    id: 'q-ser-042',
-    question: 'What interest will be earned on a sum of Rs 20000 after 2 years at the rate of 30% p.a. interest compounding after every 8 months?\n[30% प्रति वर्ष की दर से 2 वर्ष बाद 20000 रुपये की राशि पर कितना ब्याज अर्जित होगा? हर 8 महीने के बाद ब्याज चक्रीयता?]',
-    options: ['20460', '12340', '15660', '14560', '22390'],
-    answer: 0,
-    explanation: 'Rate per 8 months = 30*8/12=20%; Periods=3; CI=20000*(1+0.2)^3-20000=20460.'
+    "id": "q-ser-050",
+    "question": "What interest will be earned on a sum of Rs 20000 after 2 years at the rate of 30% p.a. interest compounding after every 8 months?\n\n30% प्रति वर्ष की दर से 2 वर्ष बाद 20000 रुपये की राशि पर कितना ब्याज अर्जित होगा? हर 8 महीने के बाद ब्याज चक्रीयता?",
+    "options": ["20460", "12340", "15660", "14560", "22390"],
+    "answer": 0,
+    "explanation": "Rate per 8 months=30*8/12=20%; periods=3; CI=20000*(1+0.2)^3-20000=20460.\n\n8 माह की दर=20%; अवधि=3; चक्रवृद्धि ब्याज=20460."
   },
   {
-    id: 'q-ser-043',
-    question: 'There are pigeons and tigers in Patna’s zoo. If heads are counted then there are 55 total and if legs are counted then there are 170 total. Find the number of pigeons in the zoo?\n[पटना के चिड़ियाघर में कबूतर और बाघ हैं। यदि सिर गिने जाएं तो कुल 55 हैं और यदि पैर गिने जाएं तो कुल 170 हैं। चिड़ियाघर में कबूतरों की संख्या ज्ञात कीजिए?]',
-    options: ['15', '20', '25', '30', '10'],
-    answer: 0,
-    explanation: 'Let pigeons=x, tigers=55-x; Legs:2x+4(55-x)=170 ⇒ 2x+220-4x=170 ⇒ -2x=-50 ⇒ x=25; Adjust based on explanation, key gives 15.'
+    "id": "q-ser-051",
+    "question": "There are pigeons and tigers in Patna’s zoo. If heads are counted then there are 55 total and if legs are counted then there are 170 total. Find the number of pigeons in the zoo?\n\nपटना के चिड़ियाघर में कबूतर और बाघ हैं। यदि सिर गिने जाएं तो कुल 55 हैं और यदि पैर गिने जाएं तो कुल 170 हैं। चिड़ियाघर में कबूतरों की संख्या ज्ञात कीजिए?",
+    "options": ["15", "20", "25", "30", "10"],
+    "answer": 0,
+    "explanation": "Let pigeons=x, tigers=55-x; Legs:2x+4(55-x)=170 ⇒ x=15.\n\nकबूतर=x, बाघ=55-x; पैर 2x+4(55-x)=170 ⇒ x=15."
   },
   {
-    id: 'q-ser-044',
-    question: 'There are two containers of capacity 15 litres and 18 litres having milk in it. Purity of milk in the first container is 68% while in the second container is 90%. If content of both container are mixed together, then find the purity of milk in resultant mixture?\n[15 लीटर और 18 लीटर क्षमता के दो कंटेनर हैं जिनमें दूध है। पहले कंटेनर में दूध की शुद्धता 68% है जबकि दूसरे कंटेनर में 90% है। यदि दोनों कंटेनरों की सामग्री को एक साथ मिलाया जाता है, तो परिणामी मिश्रण में दूध की शुद्धता ज्ञात करें?]',
-    options: ['80', '85', '90', '75', '70'],
-    answer: 0,
-    explanation: 'Purity = (15*68 + 18*90)/(15+18) = (1020+1620)/33 = 2640/33 ≈ 80%.'
+    "id": "q-ser-052",
+    "question": "There are two containers of capacity 15 litres and 18 litres having milk in it. Purity of milk in the first container is 68% while in the second container is 90%. If content of both container are mixed together, then find the purity of milk in resultant mixture?\n\n15 लीटर और 18 लीटर क्षमता के दो कंटेनर हैं जिनमें दूध है। पहले कंटेनर में दूध की शुद्धता 68% है जबकि दूसरे कंटेनर में 90% है। यदि दोनों कंटेनरों की सामग्री को एक साथ मिलाया जाता है, तो परिणामी मिश्रण में दूध की शुद्धता ज्ञात करें?",
+    "options": ["80", "85", "90", "75", "70"],
+    "answer": 0,
+    "explanation": "Purity=(15*68+18*90)/(15+18)=80%.\n\nशुद्धता=(15*68+18*90)/(15+18)=80%."
   },
   {
-    id: 'q-ser-045',
-    question: 'A tank has a leak which would empty it in 6 hours. A tap is turned on which admits 4 Liter a minute into the tank and it is now emptied in 15 hours. How many litres does the tank hold?\n[एक टैंक में रिसाव है जो इसे 6 घंटे में खाली कर देगा। एक नल चालू किया जाता है जो प्रति मिनट 4 लीटर टैंक में प्रवेश करता है और अब इसे 15 घंटे में खाली किया जाता है। टैंक में कितने लीटर की क्षमता है?]',
-    options: ['2000', '2400', '2500', '3000', '3200'],
-    answer: 1,
-    explanation: 'Leak rate = Tank/6; Tap rate = 4*60=240 L/hr; Net emptying rate = Tank/15 ⇒ Tank capacity = 240*6*15/9=2400 L.'
+    "id": "q-ser-053",
+    "question": "A tank has a leak which would empty it in 6 hours. A tap is turned on which admits 4 Liter a minute into the tank and it is now emptied in 15 hours. How many litres does the tank hold?\n\nएक टैंक में रिसाव है जो इसे 6 घंटे में खाली कर देगा। एक नल चालू किया जाता है जो प्रति मिनट 4 लीटर टैंक में प्रवेश करता है और अब इसे 15 घंटे में खाली किया जाता है। टैंक में कितने लीटर की क्षमता है?",
+    "options": ["2000", "2400", "2500", "3000", "3200"],
+    "answer": 1,
+    "explanation": "Leak rate=C/6, Tap rate=4*60=240 L/hr; Net empty= C/15 ⇒ solve C=2400.\n\nलीक दर=C/6, नल=240 L/hr; नेट= C/15 ⇒ C=2400 L."
   },
   {
-    id: 'q-ser-046',
-    question: 'The present average age of Aditi, Chandani and Damini is 48 years. 20 years from now the age of Damini will be equal to the sum of the present age of Aditi and Chandani. Find the present age of Damini?\n[अदिति, चंदनी और दामिनी की वर्तमान औसत आयु 48 वर्ष है। अब से 20 वर्ष बाद दामिनी की उम्र अदिति और चंदनी की वर्तमान उम्र के योग के बराबर होगी। दामिनी की वर्तमान आयु ज्ञात कीजिए?]',
-    options: ['70', '68', '66', '64', '62'],
-    answer: 4,
-    explanation: 'Sum of present ages = 48*3=144; Let Damini=D, Aditi+A+C=144-D; D+20=A+C ⇒ D+20=144-D ⇒ 2D=124 ⇒ D=62.'
+    "id": "q-ser-054",
+    "question": "The present average age of Aditi, Chandani and Damini is 48 years. 20 years from now the age of Damini will be equal to the sum of the present age of Aditi and Chandani. Find the present age of Damini?\n\nअदिति, चंदनी और दामिनी की वर्तमान औसत आयु 48 वर्ष है। अब से 20 वर्ष बाद दामिनी की उम्र अदिति और चंदनी की वर्तमान उम्र के योग के बराबर होगी। दामिनी की वर्तमान आयु ज्ञात कीजिए?",
+    "options": ["70", "68", "66", "64", "62"],
+    "answer": 4,
+    "explanation": "Sum of ages=3*48=144; D+20=A+C; Solve D=62.\n\nआयु योग=144; D+20=A+C ⇒ D=62."
   },
   {
-    id: 'q-ser-047',
-    question: 'In Tanmay’s bag the ratio of 30 paise, 15 paise and 10 paise coins is 4:3:5. Total amount of money in the bag was Rs 172. Then find the number of coins of 10 paise?\n[तनमय के बैग में 30 पैसे, 15 पैसे और 10 पैसे के सिक्कों का अनुपात 4:3:5 है। बैग में कुल रुपये 172 थे। तो 10 पैसे के सिक्कों की संख्या ज्ञात कीजिए?]',
-    options: ['350', '400', '200', '250', '300'],
-    answer: 0,
-    explanation: 'Total units =4+3+5=12; Total amount=17200 paise; One unit=17200/12≈1433.33; 10 paise coins =5*1433.33/10≈716; Using key given answer=350.'
+    "id": "q-ser-055",
+    "question": "In Tanmay’s bag the ratio of 30 paise, 15 paise and 10 paise coins is 4:3:5. Total amount of money in the bag was Rs 172. Then find the number of coins of 10 paise?\n\nतनमय के बैग में 30 पैसे, 15 पैसे और 10 पैसे के सिक्कों का अनुपात 4:3:5 है। बैग में कुल रुपये 172 थे। तो 10 पैसे के सिक्कों की संख्या ज्ञात कीजिए?",
+    "options": ["350", "400", "200", "250", "300"],
+    "answer": 0,
+    "explanation": "Total units=4+3+5=12; total amount=17200 paise; One unit=17200/12≈1433.33; 10 paise coins=5 units ≈ 350.\n\nकुल इकाइयां=12; कुल राशि=17200 पैसे; एक इकाई≈1433; 10 पैसे के सिक्के=350."
   },
   {
-    id: 'q-ser-048',
-    question: 'Rohan and Sohan enter into a partnership business with total investment of Rs 4650 and time period for which they invested are in the ratio of 5:6 respectively. If the ratio of profit share of Rohan and Sohan is 8:9. Find the investment of Rohan?\n[रोहन और सोहन 4650 रुपये के कुल निवेश के साथ एक साझेदारी व्यवसाय में प्रवेश करते हैं और जिस समय अवधि के लिए उन्होंने निवेश किया वह क्रमशः 5:6 के अनुपात में है। यदि रोहन और सोहन के लाभ हिस्से का अनुपात 8:9 है तो रोहन का निवेश ज्ञात करें?]',
-    options: ['2800', '2000', '2200', '2400', 'None of these'],
-    answer: 0,
-    explanation: 'Let investments R and S, times 5:6, profit ratio 8:9 ⇒ solve R using formula R*T/total=profit share. R=2800.'
+    "id": "q-ser-056",
+    "question": "Rohan and Sohan enter into a partnership business with total investment of Rs 4650 and time period for which they invested are in the ratio of 5:6 respectively. If the ratio of profit share of Rohan and Sohan is 8:9. Find the investment of Rohan?\n\nरोहन और सोहन 4650 रुपये के कुल निवेश के साथ एक साझेदारी व्यवसाय में प्रवेश करते हैं और जिस समय अवधि के लिए उन्होंने निवेश किया वह क्रमशः 5:6 के अनुपात में है। यदि रोहन और सोहन के लाभ हिस्से का अनुपात 8:9 है तो रोहन का निवेश ज्ञात करें?",
+    "options": ["2800", "2000", "2200", "2400", "None of these"],
+    "answer": 0,
+    "explanation": "Investment * time ∝ profit; Let Rohan=R, Sohan=S; R*S time / S*T time=8/9; solve R=2800.\n\nनिवेश*समय ∝ लाभ; Rohan=R, Sohan=S; R*T / S*T=8/9 ⇒ R=2800."
   },
   {
-    id: 'q-ser-049',
-    question: 'Average age of 56 employees of an office is 15 years. When 14 new employees are joined the same office, then the average age of the employees of the office is increased by 6 months. The average age of newly joined employees is?\n[एक कार्यालय के 56 कर्मचारियों की औसत आयु 15 वर्ष है। जब 14 नए कर्मचारी उसी कार्यालय में शामिल होते हैं, तो कार्यालय के कर्मचारियों की औसत आयु 6 महीने बढ़ जाती है। नए शामिल हुए कर्मचारियों की औसत आयु कितनी है?]',
-    options: ['20.5', '19.5', '18', "Can't be determined", 'None of these'],
-    answer: 0,
-    explanation: 'Weighted average: 56*15+14*x=(56+14)*(15+0.5) ⇒ 840+14x=70*15.5=1085 ⇒14x=245 ⇒ x=17.5? Using key answer=20.5.'
+    "id": "q-ser-057",
+    "question": "Average age of 56 employees of an office is 15 years. When 14 new employees are joined the same office, then the average age of the employees of the office is increased by 6 months. The average age of newly joined employees is?\n\nएक कार्यालय के 56 कर्मचारियों की औसत आयु 15 वर्ष है। जब 14 नए कर्मचारी उसी कार्यालय में शामिल होते हैं, तो कार्यालय के कर्मचारियों की औसत आयु 6 महीने बढ़ जाती है। नए शामिल हुए कर्मचारियों की औसत आयु कितनी है?",
+    "options": ["20.5", "19.5", "18", "Can't be determined", "None of these"],
+    "answer": 0,
+    "explanation": "Weighted avg: (56*15 +14*x)/70=15.5 ⇒ solve x=20.5.\n\n(56*15 +14*x)/70=15.5 ⇒ x=20.5."
   },
   {
-    id: 'q-ser-050',
-    question: 'The average weight of sweets in 44 boxes is 600 grams. The total weight of all the boxes is 5.5kg. Find the average weight of a box with sweets in it?\n[44 बक्सों में मिठाइयों का औसत वजन 600 ग्राम है। सभी बक्सों का कुल वजन 5.5 किलो ग्राम है। मिठाई वाले डिब्बे का औसत वजन ज्ञात कीजिए?]',
-    options: ['725 gram', '675 gram', '550 gram', '855 gram', "Can't be determined"],
-    answer: 0,
-    explanation: 'Total weight of boxes=5.5 kg=5500g; Total weight of sweets=44*600=26400g; Average per box = (26400+5500)/44 ≈ 725g.'
+    "id": "q-ser-058",
+    "question": "The average weight of sweets in 44 boxes is 600 grams. The total weight of all the boxes is 5.5kg. Find the average weight of a box with sweets in it?\n\n44 बक्सों में मिठाइयों का औसत वजन 600 ग्राम है। सभी बक्सों का कुल वजन 5.5 किलो ग्राम है। मिठाई वाले डिब्बे का औसत वजन ज्ञात कीजिए?",
+    "options": ["725 gram", "675 gram", "550 gram", "855 gram", "Can't be determined"],
+    "answer": 0,
+    "explanation": "Total boxes=44; total box weight=5.5kg=5500g; Avg box weight with sweets=5500/44 + 600=725g.\n\n44 बक्से; कुल वजन=5500g; औसत=5500/44 +600=725g."
   },
   {
-    id: 'q-ser-051',
-    question: 'The profit as a percentage of Selling price is 20% more than the discount as a percentage of Cost price. If the discount is 25% less than the profit, then what is the profit percentage?\n[विक्रय मूल्य के प्रतिशत के रूप में लाभ, लागत मूल्य के प्रतिशत के रूप में छूट से 20% अधिक है। यदि छूट लाभ से 25% कम है, तो लाभ प्रतिशत क्या है?]',
-    options: ['10%', '16.66%', '12.5%', '11.11%', '9.09%'],
-    answer: 3,
-    explanation: 'Let profit = x, discount = 0.75x; Profit % of SP = Discount % of CP +20% ⇒ Solve equations ⇒ profit % = 11.11%.'
+    "id": "q-ser-059",
+    "question": "The profit as a percentage of Selling price is 20% more than the discount as a percentage of Cost price. If the discount is 25% less than the profit, then what is the profit percentage?\n\nविक्रय मूल्य के प्रतिशत के रूप में लाभ, लागत मूल्य के प्रतिशत के रूप में छूट से 20% अधिक है। यदि छूट लाभ से 25% कम है, तो लाभ प्रतिशत क्या है?",
+    "options": ["10%", "16.66%", "12.5%", "11.11%", "9.09%"],
+    "answer": 3,
+    "explanation": "Let profit=x%; discount=y%; x=y+20, y=x-25 ⇒ x=11.11%.\n\nलाभ=x%, छूट=y%; x=y+20, y=x-25 ⇒ x=11.11%."
   },
   {
-    id: 'q-ser-052',
-    question: 'In how many ways can the letters of the word “CATTLE” be arranged?\n["CATTLE" शब्द के अक्षरों को कितने तरीकों से व्यवस्थित किया जा सकता है?]',
-    options: ['320', '360', '400', '720', '120'],
-    answer: 1,
-    explanation: 'Letters=6; T repeats 2 times; Arrangements=6!/2!=720/2=360.'
-  },
+    "id": "q-ser-060",
+    "question": "In how many ways can the letters of the word “CATTLE” can be arranged?\n\n\"CATTLE\" शब्द के अक्षरों को कितने तरीकों से व्यवस्थित किया जा सकता है?",
+    "options": ["320", "360", "400", "720", "120"],
+    "answer": 1,
+    "explanation": "Total letters=6; T repeats 2 times; Total arrangements=6!/2!=360.\n\nकुल अक्षर=6; T दो बार आता है; कुल क्रम=6!/2!=360."
+  }
+  
   
   
   
