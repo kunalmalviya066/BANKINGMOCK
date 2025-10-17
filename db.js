@@ -1243,23 +1243,641 @@ const DB = {
 
   'Reasoning': {
     topics: {
-      'Synonyms (30 Questions)': [
-        {
-          "id": "ver-syn-001",
-          "question": "Choose the synonym of 'Eloquent'.",
-          "options": ["Fluent", "Silent", "Weak", "Harsh"],
-          "answer": 0,
-          "explanation": "'Eloquent' means fluent or persuasive in speaking or writing."
-        }
+      'Coding Decoding': [
+        
+          {
+      "id": "ver-code-001",
+      "question": "In a certain code language: 'Market trends grow fast' → 'ty mk pw dr'; 'Economy fast moving growth' → 'cz dr yu nj'; 'Market shows stable economy' → 'ty gf cz qp'; 'Stable moving trade shows' → 'qp yu ae gf'.\n\nQ1. What does the code 'cz' represent in the given code language?",
+      "options": ["Economy", "Stable", "Shows", "Market", "Either (a) or (b)"],
+      "answer": 0,
+      "explanation": "'cz' is common in sentences (2) and (3); the common word is 'Economy'. Hence, cz → Economy."
+    },
+    {
+      "id": "ver-code-002",
+      "question": "In a certain code language: 'Market trends grow fast' → 'ty mk pw dr'; 'Economy fast moving growth' → 'cz dr yu nj'; 'Market shows stable economy' → 'ty gf cz qp'; 'Stable moving trade shows' → 'qp yu ae gf'.\n\nQ2. Which of the following may be the code for 'growth'?",
+      "options": ["nj", "dr", "yu", "mk", "None of these"],
+      "answer": 1,
+      "explanation": "'dr' appears in sentences (1) and (2), where the common word is 'fast'. But since 'growth' is unique in (2), 'dr' is logically tied through elimination, representing 'growth'."
+    },
+    {
+      "id": "ver-code-003",
+      "question": "In a certain code language: 'Market trends grow fast' → 'ty mk pw dr'; 'Economy fast moving growth' → 'cz dr yu nj'; 'Market shows stable economy' → 'ty gf cz qp'; 'Stable moving trade shows' → 'qp yu ae gf'.\n\nQ3. What is the code for the phrase 'Market moving'?",
+      "options": ["ty yu", "ty dr", "cz mk", "ty cz", "Cannot be determined"],
+      "answer": 0,
+      "explanation": "'ty' represents Market (appears in 1 & 3), and 'yu' represents moving (appears in 2 & 4). Hence, 'Market moving' → 'ty yu'."
+    },
+    {
+      "id": "ver-code-004",
+      "question": "In a certain code language: 'Market trends grow fast' → 'ty mk pw dr'; 'Economy fast moving growth' → 'cz dr yu nj'; 'Market shows stable economy' → 'ty gf cz qp'; 'Stable moving trade shows' → 'qp yu ae gf'.\n\nQ4. If 'growth trends stable' is coded as 'pw nj qp', then what can be the code for 'fast trade growth'?",
+      "options": ["ae pw dr", "nj ae dr", "pw yu cz", "pw ae nj", "Either (b) or (d)"],
+      "answer": 4,
+      "explanation": "'trade' → ae, 'growth' → nj, 'fast' → dr. So both (b) and (d) can be valid depending on arrangement, hence 'Either (b) or (d)'."
+    },
+    {
+      "id": "ver-code-005",
+      "question": "In a certain code language: 'Market trends grow fast' → 'ty mk pw dr'; 'Economy fast moving growth' → 'cz dr yu nj'; 'Market shows stable economy' → 'ty gf cz qp'; 'Stable moving trade shows' → 'qp yu ae gf'.\n\nQ5. Which of the following statements is definitely true based on the above code pattern?",
+      "options": ["dr represents either fast or growth", "cz represents either market or shows", "qp represents either trade or stable", "gf represents shows", "Both (c) and (d)"],
+      "answer": 4,
+      "explanation": "'qp' is shared between 'stable' and 'trade', so either/or. 'gf' appears only with 'shows'. Hence, both (c) and (d) are true."
+    },
+    
+    // set 2
+    
+    
+   
+    {
+      "id": "ver-code-006",
+      "question": "In a certain code language:\n“He wants to go home” means “ab cq xy pz db”\n“Have to send mail” means “bx xy mt lz”\n“I wants mail now” means “fd ie lz cq”\n“He will go now” means “zl pz fd ab”.\n\nQ1. Find the code of “send”?",
+      "options": ["cq", "fd", "bx", "mt", "either (c) or (d)"],
+      "answer": 4,
+      "explanation": "'send' appears only in the second statement, with possible codes bx and mt both unique to it; hence, it can be either (c) or (d)."
+    },
+    {
+      "id": "ver-code-007",
+      "question": "In a certain code language:\n“He wants to go home” means “ab cq xy pz db”\n“Have to send mail” means “bx xy mt lz”\n“I wants mail now” means “fd ie lz cq”\n“He will go now” means “zl pz fd ab”.\n\nQ2. Find the code of “to”?",
+      "options": ["pz", "ab", "xy", "lz", "None of the above"],
+      "answer": 2,
+      "explanation": "‘to’ appears in the first and second sentences; the common code is ‘xy’. Hence, to → xy."
+    },
+    {
+      "id": "ver-code-008",
+      "question": "In a certain code language:\n“He wants to go home” means “ab cq xy pz db”\n“Have to send mail” means “bx xy mt lz”\n“I wants mail now” means “fd ie lz cq”\n“He will go now” means “zl pz fd ab”.\n\nQ3. Find the code of “go”?",
+      "options": ["ab", "pz", "db", "fd", "None of the above"],
+      "answer": 1,
+      "explanation": "‘go’ is common between first and fourth sentences; the common code is ‘pz’. Hence, go → pz."
+    },
+    {
+      "id": "ver-code-009",
+      "question": "In a certain code language:\n“He wants to go home” means “ab cq xy pz db”\n“Have to send mail” means “bx xy mt lz”\n“I wants mail now” means “fd ie lz cq”\n“He will go now” means “zl pz fd ab”.\nIf “He comes home” is coded as “db ab sp”, then find the code for “go”?",
+      "options": ["sp", "pz", "ie", "lz", "None of the above"],
+      "answer": 1,
+      "explanation": "The new word ‘comes’ adds code ‘sp’, and ‘go’ remains from earlier logic as ‘pz’. Hence, go → pz."
+    },
+    {
+      "id": "ver-code-010",
+      "question": "In a certain code language:\n“He wants to go home” means “ab cq xy pz db”\n“Have to send mail” means “bx xy mt lz”\n“I wants mail now” means “fd ie lz cq”\n“He will go now” means “zl pz fd ab”.\n\nQ5. Find the code of “mail”?",
+      "options": ["ab", "fd", "lz", "zl", "None of the above"],
+      "answer": 2,
+      "explanation": "‘mail’ is common between the second and third sentences; the common code is ‘lz’. Hence, mail → lz."
+    }
+        
+        
+        
       ],
-      'Antonyms (25 Questions)': [
-        {
-          "id": "ver-ant-001",
-          "question": "Choose the antonym of 'Abundant'.",
-          "options": ["Plenty", "Rare", "Sufficient", "Numerous"],
-          "answer": 1,
-          "explanation": "'Abundant' means plentiful, opposite is 'Rare'."
-        }
+      
+      'Inequality': [
+        
+        
+        
+  {
+    "id": "logic-001",
+    "question": "Statement: Z = X > Y ≥ U < T ≤ S ≤ P\nConclusions:\nI. Z < T\nII. Y ≥ S",
+    "options": [
+      "Neither conclusion I nor II follows",
+      "Both conclusions I and II follow",
+      "Only conclusion I follows",
+      "Only conclusion II follows"
+    ],
+    "answer": 0,
+    "explanation": "The statement does not provide enough information to conclude either Z < T or Y ≥ S. Therefore, neither conclusion follows."
+  },
+  {
+    "id": "logic-002",
+    "question": "Statement: V > L > V > N = M < T < S\nConclusions:\nI. V > N\nII. N < S",
+    "options": [
+      "Neither conclusion I nor II follows",
+      "Both conclusions I and II follow",
+      "Only conclusion I follows",
+      "Only conclusion II follows"
+    ],
+    "answer": 1,
+    "explanation": "From the statement, V > N and N < S can both be logically deduced. Therefore, both conclusions follow."
+  },
+  {
+    "id": "logic-003",
+    "question": "Statement: M < T ≤ K = Y = A < L < S\nConclusions:\nI. M > A\nII. M < A",
+    "options": [
+      "Neither conclusion I nor II follows",
+      "Both conclusions I and II follow",
+      "Only conclusion I follows",
+      "Only conclusion II follows"
+    ],
+    "answer": 3,
+    "explanation": "From M < T ≤ K = Y = A < L < S, it can be concluded that M < A. Only conclusion II follows."
+  },
+  {
+    "id": "logic-004",
+    "question": "Statement: K = V > A < G; A > F = Y ≥ S\nConclusions:\nI. G > Y\nII. S < K",
+    "options": [
+      "Neither conclusion I nor II follows",
+      "Both conclusions I and II follow",
+      "Only conclusion I follows",
+      "Only conclusion II follows"
+    ],
+    "answer": 0,
+    "explanation": "The inequalities do not provide enough info to conclude G > Y or S < K. Neither follows."
+  },
+  {
+    "id": "logic-005",
+    "question": "Statement: 8 > 6 < 9; 2 = 5 ≥ 7 > 6\nConclusions:\nI. 8 > 9\nII. 9 > 2",
+    "options": [
+      "Neither conclusion I nor II follows",
+      "Both conclusions I and II follow",
+      "Only conclusion I follows",
+      "Only conclusion II follows"
+    ],
+    "answer": 0,
+    "explanation": "8 > 6 < 9 does not imply 8 > 9, and 9 > 2 cannot be concluded. Neither follows."
+  },
+  {
+    "id": "logic-006",
+    "question": "Statement: P ≥ F > X, Z < G ≤ H, X = I > Z\nConclusions:\nI. X ≤ H\nII. G ≥ F",
+    "options": [
+      "Neither conclusion I nor II follows",
+      "Both conclusions I and II follow",
+      "Only conclusion I follows",
+      "Only conclusion II follows"
+    ],
+    "answer": 0,
+    "explanation": "No direct relationship between X and H or G and F can be concluded. Neither follows."
+  },
+  {
+    "id": "logic-007",
+    "question": "Statement: Z ≥ M < G, F ≥ H > W, S = G ≥ E, E = W\nConclusions:\nI. H < G\nII. F ≥ E",
+    "options": [
+      "Neither conclusion I nor II follows",
+      "Both conclusions I and II follow",
+      "Only conclusion I follows",
+      "Only conclusion II follows"
+    ],
+    "answer": 2,
+    "explanation": "From H > W = E and G ≥ E, we can conclude H < G. Only conclusion I follows."
+  },
+  {
+    "id": "logic-008",
+    "question": "Statement: F ≥ G < P, Y ≥ O > D, H = P ≥ E, E = D\nConclusions:\nI. H > G\nII. F ≤ E",
+    "options": [
+      "Neither conclusion I nor II follows",
+      "Both conclusions I and II follow",
+      "Only conclusion I follows",
+      "Only conclusion II follows"
+    ],
+    "answer": 0,
+    "explanation": "No direct comparison between H and G or F and E is possible. Neither follows."
+  },
+  {
+    "id": "logic-009",
+    "question": "Statement: Y < S ≥ V ; V < G > Z; W > M ≤ G\nConclusions:\nI. S < G\nII. Z > Y",
+    "options": [
+      "Neither conclusion I nor II follows",
+      "Both conclusions I and II follow",
+      "Only conclusion I follows",
+      "Only conclusion II follows"
+    ],
+    "answer": 0,
+    "explanation": "The given inequalities do not allow S < G or Z > Y to be concluded. Neither follows."
+  },
+  {
+    "id": "logic-010",
+    "question": "Statement: V = U < T < S; T ≥ R\nConclusions:\nI. S > R\nII. V > R",
+    "options": [
+      "Neither conclusion I nor II follows",
+      "Both conclusions I and II follow",
+      "Only conclusion I follows",
+      "Only conclusion II follows"
+    ],
+    "answer": 2,
+    "explanation": "S is greater than T and T ≥ R, so S > R follows. Only conclusion I follows."
+  },
+  {
+    "id": "logic-011",
+    "question": "Statement: O ≤ N < Y; Y ≥ M > L; N ≤ U < J\nConclusions:\nI. N < L\nII. O < J\nIII. N < M",
+    "options": [
+      "Only conclusion I follows",
+      "Only conclusion II follows",
+      "Only conclusion III follows",
+      "None of the conclusions follows"
+    ],
+    "answer": 1,
+    "explanation": "From N ≤ U < J and O ≤ N, we can conclude O < J. Only conclusion II follows."
+  },
+  {
+    "id": "logic-012",
+    "question": "Statement: S < I < T > A; R = A > Q; O < N < J\nConclusions:\nI. J < I\nII. S > R\nIII. R ≥ S",
+    "options": [
+      "Neither conclusion follows",
+      "Only conclusion I follows",
+      "Only conclusion II follows",
+      "Only conclusion III follows"
+    ],
+    "answer": 0,
+    "explanation": "None of the conclusions can be definitively drawn from the statements."
+  },
+  {
+    "id": "logic-013",
+    "question": "Statement: R ≥ U = E; A = F ≤ H ≥ R; H < T ≥ O\nConclusions:\nI. R < A\nII. F ≥ U\nIII. T > E",
+    "options": [
+      "Only conclusion I follows",
+      "Only conclusion II follows",
+      "Only conclusion III follows",
+      "Both conclusions I and II follow"
+    ],
+    "answer": 2,
+    "explanation": "From H < T ≥ O and the rest, only T > E can be concluded. Only conclusion III follows."
+  },
+  {
+    "id": "logic-014",
+    "question": "Statement: R > B ≥ N, F = D ≤ B ≤ W; F ≥ A\nConclusions:\nI. A < R\nII. W > A",
+    "options": [
+      "Neither conclusion follows",
+      "Both conclusions I and II follow",
+      "Only conclusion I follows",
+      "Only conclusion II follows"
+    ],
+    "answer": 1,
+    "explanation": "A < F ≤ B < R and W ≥ B ≥ F ≥ A. Both conclusions follow."
+  },
+  {
+    "id": "logic-015",
+    "question": "Statement: A < N < I ≤ T; R > A = K; B > T ≤ H\nConclusions:\nI. K < B\nII. I = H is a possibility",
+    "options": [
+      "Neither conclusion follows",
+      "Both conclusions I and II follow",
+      "Only conclusion I follows",
+      "Only conclusion II follows"
+    ],
+    "answer": 1,
+    "explanation": "From A = K < B and I ≤ H, both conclusions are possible."
+  },
+  {
+    "id": "logic-016",
+    "question": "Statement: H > M = Q < B; Q ≥ G > T = S; T < R = Z > J\nConclusions:\nI. M ≥ Z\nII. R > Q\nIII. S < H",
+    "options": [
+      "Neither conclusion follows",
+      "Either conclusion I or II and III follow",
+      "Both conclusion I and II follow",
+      "Only conclusion III follows"
+    ],
+    "answer": 1,
+    "explanation": "From the given inequalities, either conclusion I or II along with III follows."
+  },
+  {
+    "id": "logic-017",
+    "question": "Statement: M < T = L ≤ Z; W ≤ L < G = S; U = F < B ≥ G\nConclusions:\nI. Z ≥ U\nII. M < S\nIII. W < B",
+    "options": [
+      "Neither conclusion follows",
+      "Both conclusions II and III follow",
+      "Only conclusion I follows",
+      "All conclusions follow"
+    ],
+    "answer": 1,
+    "explanation": "From the chains, M < S and W < B can be concluded. II and III follow."
+  },
+  {
+    "id": "logic-018",
+    "question": "Statement: V < D = U ≥ X > J, X = A > R > M, M < P ≥ E\nConclusions:\nI. V > P\nII. D ≥ R\nIII. E > X",
+    "options": [
+      "None of the conclusions follows",
+      "Only conclusion I follows",
+      "Only conclusion II follows",
+      "All conclusions follow"
+    ],
+    "answer": 0,
+    "explanation": "None of the conclusions can be definitively derived from the statements."
+  },
+  {
+    "id": "logic-019",
+    "question": "Statement: V ≥ W = F < B = C, L ≥ Y = O < T, E ≥ O < V = I\nConclusions:\nI. V > B\nII. L ≥ E\nIII. I ≥ F",
+    "options": [
+      "None of the conclusions follows",
+      "Only conclusion I follows",
+      "Only conclusion II follows",
+      "Only conclusion III follows"
+    ],
+    "answer": 3,
+    "explanation": "From the statements, only I ≥ F can be concluded. Only conclusion III follows."
+  },
+  {
+    "id": "logic-020",
+    "question": "Statement: 8 < 7 ≤ 5 > 9; 2 < 5 < 3 ≤ 9; 6 < 4 ≤ 1 > 5\nConclusions:\nI. 2 > 4\nII. 5 > 2",
+    "options": [
+      "Neither conclusion follows",
+      "Only conclusion I follows",
+      "Only conclusion II follows",
+      "Both conclusions follow"
+    ],
+    "answer": 2,
+    "explanation": "From the statements, 5 > 2 is correct. Only conclusion II follows."
+  },
+  {
+    "id": "logic-021",
+    "question": "Statement: U < V > W < X < A; W = Y; R < G < A < P; T < Y\nConclusions:\nI. P > T\nII. V < R\nIII. T > G",
+    "options": [
+      "Only conclusion I follows",
+      "Only conclusion II follows",
+      "Only conclusion III follows",
+      "None of the conclusions follows"
+    ],
+    "answer": 0,
+    "explanation": "From the chain, P > T can be concluded. Only conclusion I follows."
+  },
+  {
+    "id": "logic-022",
+    "question": "Statement: 132 < 143 ≤ 154 = 165; 176 ≤ 187 = 132; 158 > 165 ≥ 988\nConclusions:\nI. 176 < 154\nII. 158 > 187\nIII. 988 < 154",
+    "options": [
+      "Neither conclusion follows",
+      "Both conclusions I and II follow",
+      "Only conclusion I follows",
+      "Only conclusion III follows"
+    ],
+    "answer": 1,
+    "explanation": "From the statements, 176 < 154 and 158 > 187 can be deduced. Both I and II follow."
+  },
+  {
+    "id": "logic-023",
+    "question": "Statement: P > A ≤ H > Q = T; X > H = W ≤ S; Q > D ≤ E\nConclusions:\nI. X < E\nII. Q < S\nIII. D < X",
+    "options": [
+      "None of the conclusions follows",
+      "Only conclusion I follows",
+      "Only conclusion II follows",
+      "Only conclusion III follows"
+    ],
+    "answer": 0,
+    "explanation": "None of the conclusions can be logically deduced from the statements."
+  },
+  {
+    "id": "logic-024",
+    "question": "Statement: A ≥ Y > E < Z; H = Q = I < Y; C ≤ D > E > P\nConclusions:\nI. Q ≤ Z\nII. Z ≥ C\nIII. A > C\nIV. H < A",
+    "options": [
+      "Only conclusion I follows",
+      "Only conclusion II follows",
+      "Only conclusion III follows",
+      "Only conclusion IV follows"
+    ],
+    "answer": 3,
+    "explanation": "From the chain of inequalities, only H < A can be concluded. Only conclusion IV follows."
+  },
+  {
+    "id": "logic-025",
+    "question": "Statement: T ≥ X > V ≤ M; A ≥ Y > M > U; J > G ≤ C ≤ V\nConclusions:\nI. C < T\nII. J ≤ M\nIII. A ≥ G\nIV. Y < T",
+    "options": [
+      "None of the conclusions follows",
+      "Only conclusion I follows",
+      "Only conclusion II follows",
+      "Only conclusion III follows"
+    ],
+    "answer": 0,
+    "explanation": "From the statements, none of the conclusions can be definitively deduced."
+  },
+  
+  {
+    "id": "logic-026",
+    "question": "Statement: V = W < C = O ≤ F > Z, Y = D ≥ O, E > G = C\nConclusions:\nI. E > V\nII. W ≤ Y",
+    "options": [
+      "Only conclusion I follows",
+      "Only conclusion II follows",
+      "Both conclusions I & II follow",
+      "Neither conclusion I nor II follows"
+    ],
+    "answer": 0,
+    "explanation": "E > G = C and V = W < C imply E > V. W ≤ Y cannot be definitively concluded. Only conclusion I follows."
+  },
+  {
+    "id": "logic-027",
+    "question": "Statement: 12 ≥ 16 = 15 < 23, 94 > 26 = 23, 32 ≤ 12 = 18\nConclusions:\nI. 32 < 26\nII. 94 ≥ 16",
+    "options": [
+      "Only conclusion I follows",
+      "Only conclusion II follows",
+      "Both conclusions follow",
+      "Neither conclusion I nor II follows"
+    ],
+    "answer": 3,
+    "explanation": "The statements do not allow us to definitively compare 32 and 26. 94 ≥ 16 is also not conclusively derivable. Neither conclusion follows."
+  },
+  {
+    "id": "logic-028",
+    "question": "Statement: K > B = T ≤ E > X, N ≥ Z = E > G ≤ U = P < Q\nConclusions:\nI. Q > B\nII. X < N",
+    "options": [
+      "Only conclusion I follows",
+      "Only conclusion II follows",
+      "Both conclusions I & II follow",
+      "Neither conclusion I nor II follows"
+    ],
+    "answer": 1,
+    "explanation": "From the chains, X < N can be deduced, but Q > B cannot be definitively concluded. Only conclusion II follows."
+  },
+  {
+    "id": "logic-029",
+    "question": "Statement: H > F = X ≥ Q, M > F = T ≤ B < U, O = U > R\nConclusions:\nI. O > Q\nII. Q ≤ O",
+    "options": [
+      "Only conclusion I follows",
+      "Only conclusion II follows",
+      "Both conclusions I & II follow",
+      "Neither conclusion I nor II follows"
+    ],
+    "answer": 0,
+    "explanation": "O = U > R and the rest of the inequalities allow us to conclude O > Q. Only conclusion I follows."
+  },
+  {
+    "id": "logic-030",
+    "question": "Statement: N > L = X ≤ R, Q = Y < M ≥ R, T = D < V ≤ Q\nConclusions:\nI. M ≥ T\nII. Y ≥ L",
+    "options": [
+      "Only conclusion I follows",
+      "Only conclusion II follows",
+      "Both conclusions I & II follow",
+      "Neither conclusion I nor II follows"
+    ],
+    "answer": 3,
+    "explanation": "Neither M ≥ T nor Y ≥ L can be definitively concluded from the statements. Neither follows."
+  },
+  {
+    "id": "logic-031",
+    "question": "Statement: W ≥ T ≥ B = Q ≥ M > V ≥ O\nConclusions:\nI. W ≥ K\nII. B > O",
+    "options": [
+      "Neither conclusion I nor II follows",
+      "Both conclusions I and II follow",
+      "Only conclusion I follows",
+      "Only conclusion II follows"
+    ],
+    "answer": 1,
+    "explanation": "From the inequalities, W ≥ T ≥ ... and B = Q ≥ M > V ≥ O, both W ≥ K and B > O can be concluded. Both follow."
+  },
+  {
+    "id": "logic-032",
+    "question": "Statement: Y > B ≤ Q ≤ V = J > U ≥ T ≥ S\nConclusions:\nI. Y > J\nII. Q > S",
+    "options": [
+      "Neither conclusion follows",
+      "Only conclusion I follows",
+      "Only conclusion II follows",
+      "Both conclusions follow"
+    ],
+    "answer": 0,
+    "explanation": "From the statement, neither Y > J nor Q > S can be definitively concluded. Neither follows."
+  },
+  {
+    "id": "logic-033",
+    "question": "Statement: B = C ≤ D = E ≤ F < G = H\nConclusions:\nI. H > E\nII. G ≥ D",
+    "options": [
+      "Only conclusion I follows",
+      "Only conclusion II follows",
+      "Either conclusion I or II follows",
+      "Neither conclusion I nor II follows"
+    ],
+    "answer": 0,
+    "explanation": "H = G > F ≥ E, so H > E is true. Only conclusion I follows."
+  },
+  {
+    "id": "logic-034",
+    "question": "Statement: E > S > U = G < Z < X = Q\nConclusions:\nI. S = Z\nII. S > Z",
+    "options": [
+      "Only conclusion I follows",
+      "Only conclusion II follows",
+      "Either conclusion I or II follows",
+      "Neither conclusion I nor II follows"
+    ],
+    "answer": 3,
+    "explanation": "S < Z from inequalities, so neither S = Z nor S > Z is correct. Neither follows."
+  },
+  {
+    "id": "logic-035",
+    "question": "Statement: W ≤ E ≤ R = X < D ≤ H\nConclusions:\nI. X ≥ W\nII. H > R",
+    "options": [
+      "Neither conclusion follows",
+      "Only conclusion I follows",
+      "Only conclusion II follows",
+      "Both conclusions I and II follow"
+    ],
+    "answer": 3,
+    "explanation": "From the chain, X ≥ W and H > R are both true. Both conclusions follow."
+  },
+  {
+    "id": "logic-036",
+    "question": "Statement: C < M ≤ F ≤ Z = T > L ≥ I\nConclusions:\nI. Z > M\nII. M = T",
+    "options": [
+      "Only conclusion I follows",
+      "Only conclusion II follows",
+      "Either conclusion I or II follows",
+      "Neither conclusion I nor II follows"
+    ],
+    "answer": 2,
+    "explanation": "Z = T > L ≥ I and M ≤ F ≤ Z shows that Z > M, but M = T is also possible. Either conclusion I or II is true."
+  },
+  {
+    "id": "logic-037",
+    "question": "Statement: D > S > C ≥ G ≥ F = Z > Q\nConclusions:\nI. D > G\nII. C > Q",
+    "options": [
+      "Neither conclusion follows",
+      "Only conclusion I follows",
+      "Only conclusion II follows",
+      "Both conclusions I and II follow"
+    ],
+    "answer": 3,
+    "explanation": "From the statement, D > G and C > Q can both be concluded. Both follow."
+  },
+  {
+    "id": "logic-038",
+    "question": "Statement: T = V < L ≤ U = S < X ≤ M\nConclusions:\nI. S > T\nII. V ≤ U",
+    "options": [
+      "Only conclusion I follows",
+      "Only conclusion II follows",
+      "Both conclusions follow",
+      "Neither conclusion follows"
+    ],
+    "answer": 0,
+    "explanation": "From T = V < L ≤ U = S, we can conclude S > T. Only conclusion I follows."
+  },
+  {
+    "id": "logic-039",
+    "question": "Statement: J < D < V < I > G > B = F\nConclusions:\nI. D > F\nII. D ≤ F",
+    "options": [
+      "Only conclusion I follows",
+      "Only conclusion II follows",
+      "Either conclusion I or II follows",
+      "Neither conclusion I nor II follows"
+    ],
+    "answer": 2,
+    "explanation": "D is less than V and V < I > G > B = F. D could be greater or less than F. Either conclusion can hold."
+  },
+  {
+    "id": "logic-040",
+    "question": "Statement: F = W ≤ C < V = U ≥ G < X ≤ E = L\nConclusions:\nI. E > U\nII. G ≤ F",
+    "options": [
+      "Only conclusion I follows",
+      "Only conclusion II follows",
+      "Both conclusions follow",
+      "Neither conclusion I nor II follows"
+    ],
+    "answer": 3,
+    "explanation": "No definitive comparison for E > U or G ≤ F can be drawn. Neither follows."
+  },
+  {
+    "id": "logic-041",
+    "question": "Statement: R > Q < N = D ≤ H ≤ I\nConclusions:\nI. H > R\nII. H ≤ R",
+    "options": [
+      "Only conclusion I follows",
+      "Only conclusion II follows",
+      "Both conclusions follow",
+      "Neither conclusion I nor II follows"
+    ],
+    "answer": 3,
+    "explanation": "From the statement, H could be greater or less than R. Neither conclusion can be definitively concluded."
+  },
+  {
+    "id": "logic-042",
+    "question": "Statement: M > V ≥ P = F ≤ E, P > J ≥ X\nConclusions:\nI. X < E\nII. J < O",
+    "options": [
+      "Only conclusion I follows",
+      "Only conclusion II follows",
+      "Either conclusion I or II follows",
+      "Neither conclusion I nor II follows",
+      "Both conclusions I and II follow"
+    ],
+    "answer": 4,
+    "explanation": "X < E and J < O can both be logically deduced from the statements. Both conclusions follow."
+  },
+  {
+    "id": "logic-043",
+    "question": "Statement: T ≤ Q > L ≥ S = U > M = X\nConclusions:\nI. L = M\nII. Q > U",
+    "options": [
+      "Only conclusion I follows",
+      "Only conclusion II follows",
+      "Both conclusions follow",
+      "Neither conclusion I nor II follows"
+    ],
+    "answer": 1,
+    "explanation": "Q > L = ... = U, so Q > U is true. L = M cannot be concluded. Only conclusion II follows."
+  },
+  {
+    "id": "logic-044",
+    "question": "Statement: A > C = N ≤ G < S; N > R ≥ B\nConclusions:\nI. A > R\nII. C ≥ B",
+    "options": [
+      "Only conclusion I follows",
+      "Only conclusion II follows",
+      "Both conclusions follow",
+      "Neither conclusion follows"
+    ],
+    "answer": 0,
+    "explanation": "From the chain, A > C = N > R ≥ B, so A > R is true. C ≥ B cannot be definitively concluded. Only conclusion I follows."
+  },
+  {
+    "id": "logic-045",
+    "question": "Statement: M > P = Z < U ≥ K < E; U > Y ≥ O = F\nConclusions:\nI. K > P\nII. Z < O",
+    "options": [
+      "Only conclusion I follows",
+      "Only conclusion II follows",
+      "Both conclusions follow",
+      "Neither conclusion I nor II follows"
+    ],
+    "answer": 3,
+    "explanation": "From the statements, neither K > P nor Z < O can be definitively concluded. Neither follows."
+  },
+  
+  
+  
+  
+  
+  
+  
       ]
     }
   },
