@@ -1872,9 +1872,728 @@ const DB = {
     "explanation": "From the statements, neither K > P nor Z < O can be definitively concluded. Neither follows."
   },
   
+  // set 30
+  
+  {
+    "id": "logic-000",
+    "question": "Statements: M<N≥O>P; O<Q; R≤P\nConclusions:\nI. M<Q\nII. R<Q",
+    "options": [
+      "If only conclusion I is true.",
+      "If only conclusion II is true.",
+      "If either conclusion I or conclusion II is true.",
+      "If neither conclusion I nor conclusion II is true.",
+      "If both conclusions I and II are true."
+    ],
+    "answer": 1,
+    "explanation": "Only conclusion II (R < Q) follows as per relational chain, hence option b is correct."
+  },
+  {
+    "id": "logic-001",
+    "question": "Statements: A<B<C≥D; B≤E; F>C\nConclusions:\nI. A<F\nII. D<E",
+    "options": [
+      "If only conclusion I is true.",
+      "If only conclusion II is true.",
+      "If either conclusion I or conclusion II is true.",
+      "If neither conclusion I nor conclusion II is true.",
+      "If both conclusions I and II are true."
+    ],
+    "answer": 0,
+    "explanation": "Only conclusion I follows as A < F can be derived from given relations."
+  },
+  {
+    "id": "logic-002",
+    "question": "Statements: P≥Q=R≤S; T<Q≥U\nConclusions:\nI. P≥T\nII. S≥T",
+    "options": [
+      "If only conclusion I is true.",
+      "If only conclusion II is true.",
+      "If either conclusion I or conclusion II is true.",
+      "If neither conclusion I nor conclusion II is true.",
+      "If both conclusions I and II are true."
+    ],
+    "answer": 3,
+    "explanation": "Neither conclusion I nor II follows due to lack of clear relational link between P, T, and S."
+  },
+  {
+    "id": "logic-003",
+    "question": "Statements: A≤B<C≥D; B≤E; F>C\nConclusions:\nI. E≥A\nII. D<F",
+    "options": [
+      "If only conclusion I is true.",
+      "If only conclusion II is true.",
+      "If either conclusion I or conclusion II is true.",
+      "If neither conclusion I nor conclusion II is true.",
+      "If both conclusions I and II are true."
+    ],
+    "answer": 4,
+    "explanation": "Both conclusions follow — E ≥ A and D < F are clearly supported."
+  },
+  {
+    "id": "logic-004",
+    "question": "Statements: R≥S<T; U≤S>V\nConclusions:\nI. U≤R\nII. V<T",
+    "options": [
+      "If only conclusion I is true.",
+      "If only conclusion II is true.",
+      "If either conclusion I or conclusion II is true.",
+      "If neither conclusion I nor conclusion II is true.",
+      "If both conclusions I and II are true."
+    ],
+    "answer": 4,
+    "explanation": "Both conclusions hold true — U ≤ R and V < T are valid."
+  },
+  {
+    "id": "logic-005",
+    "question": "Statements: N ≥ O < P ≤ Q; P = M ≥ S\nConclusions:\nI. Q ≥ S\nII. S ≤ N",
+    "options": [
+      "Only I is true",
+      "Only II is true",
+      "Both I and II are true",
+      "Neither I nor II is true",
+      "Either I or II is true"
+    ],
+    "answer": 0,
+    "explanation": "Only conclusion I follows — Q ≥ S can be established."
+  },
+  {
+    "id": "logic-006",
+    "question": "Statements: C ≥ D; F > L; F ≤ A; A = B; D > B\nConclusions:\nI. C > A\nII. B > L",
+    "options": [
+      "Only I is true",
+      "Only II is true",
+      "Either I or II is true",
+      "Neither I nor II is true",
+      "Both I and II are true"
+    ],
+    "answer": 4,
+    "explanation": "Both conclusions are true — C > A and B > L can be derived."
+  },
+  {
+    "id": "logic-007",
+    "question": "Statements: L > K; J ≥ I; K < H; G = H ≤ I\nConclusions:\nI. J ≥ G\nII. L < I",
+    "options": [
+      "Only I is true",
+      "Only II is true",
+      "Either I or II is true",
+      "Neither I nor II is true",
+      "Both I and II are true"
+    ],
+    "answer": 0,
+    "explanation": "Only conclusion I follows — J ≥ G is supported by given relations."
+  },
+  {
+    "id": "logic-008",
+    "question": "Statements: F>T>U<W=L; O>W; H=T<Q\nConclusions:\nI. Q>U\nII. O>H",
+    "options": [
+      "Only conclusion I follows",
+      "Only conclusions II follows",
+      "Both the conclusions I and II follow",
+      "Neither the conclusion I nor II follows",
+      "Either the conclusion I or II follows"
+    ],
+    "answer": 0,
+    "explanation": "Only conclusion I follows — Q > U can be clearly derived."
+  },
+  {
+    "id": "logic-009",
+    "question": "Statements: Y ≥ C < O < K; A > M ≥ K > L\nConclusions:\nI. A > Y\nII. C < L",
+    "options": [
+      "Only conclusion I is true",
+      "Only conclusion II is true",
+      "Either conclusion I or II is true",
+      "Neither conclusion I nor II is true",
+      "Both conclusions I and II are true"
+    ],
+    "answer": 3,
+    "explanation": "Neither conclusion I nor II follows."
+  },
+  {
+    "id": "logic-010",
+    "question": "Statements: T > O < A = E > B ≤ Q, Q > H = C > N ≤ M < L\nConclusions:\nI. A < M\nII. E > H",
+    "options": [
+      "Only conclusion I is true",
+      "Only conclusion II is true",
+      "Both conclusion I and conclusion II are true",
+      "Neither conclusion I nor conclusion II is true",
+      "Either conclusion I or conclusion II is true"
+    ],
+    "answer": 3,
+    "explanation": "Neither conclusion follows; no valid comparison between A & M or E & H."
+  },
+  {
+    "id": "logic-011",
+    "question": "Statements: K > M < P ≤ S; V > Y ≥ S > Z\nConclusions:\nI. V > M\nII. P ≤ Y",
+    "options": [
+      "Only conclusion I is true",
+      "Only conclusion II is true",
+      "Either conclusion I or II is true",
+      "Neither conclusion I nor II is true",
+      "Both conclusions I and II are true"
+    ],
+    "answer": 4,
+    "explanation": "Both conclusions follow — V > M and P ≤ Y can be derived."
+  },
+  
+  //set 4 
+  
+  {
+    "id": "logic-012",
+    "question": "Which of the following expressions will be true if the expression H≤K≥A=Y>N is definitely true?",
+    "options": [
+      "K≥N",
+      "H≤N",
+      "K≥Y",
+      "A≥N",
+      "None of these"
+    ],
+    "answer": 2,
+    "explanation": "From H ≤ K ≥ A = Y > N, K ≥ Y is definitely true."
+  },
+  {
+    "id": "logic-013",
+    "question": "Which of the following symbol(s) should replace question mark in the given expression in order to make the expression R < V and N ≥ O definitely true?\nO = P ≤ R ? N < F < V",
+    "options": [
+      ">",
+      "≥",
+      "<",
+      "≤",
+      "Either = or ≤"
+    ],
+    "answer": 4,
+    "explanation": "Either '=' or '≤' satisfies both given conditions."
+  },
+  {
+    "id": "logic-014",
+    "question": "Which of the following symbols should be placed in place of the question mark in the following expression in order to make R < S and T ≥ U definitely true?\nR = U ? V ≤ T < S",
+    "options": [
+      "<",
+      "≥",
+      "=",
+      "≤",
+      "Either ≤ or ="
+    ],
+    "answer": 4,
+    "explanation": "Either ≤ or = makes both R < S and T ≥ U definitely true."
+  },
+  {
+    "id": "logic-015",
+    "question": "Which of the following expressions is definitely true if the expressions H ≤ I and L ≥ M are definitely true?",
+    "options": [
+      "H = M ≤ P = L > I",
+      "I = L < P ≤ H = M",
+      "H ≤ M = P ≤ L = I",
+      "I = L > P = M > H",
+      "H ≤ L < P = I ≤ M"
+    ],
+    "answer": 2,
+    "explanation": "Option c is definitely true given both conditions; relational consistency is maintained."
+  },
+  {
+    "id": "logic-016",
+    "question": "Statements: P ≥ R, S > U, V > P, R > Y, S ≥ Y\nConclusions:\nI. V > Y\nII. U > P",
+    "options": [
+      "Only I is true",
+      "Only II is true",
+      "Either I or II is true",
+      "Both I and II are true",
+      "Neither I nor II is true"
+    ],
+    "answer": 0,
+    "explanation": "Only conclusion I (V > Y) follows."
+  },
+  {
+    "id": "logic-017",
+    "question": "Statements: N > Q, T = U, K ≥ Z, T ≥ N, Z > Q\nConclusions:\nI. U > Q\nII. U > Z",
+    "options": [
+      "Only I is true",
+      "Only II is true",
+      "Either I or II is true",
+      "Both I and II are true",
+      "Neither I nor II is true"
+    ],
+    "answer": 0,
+    "explanation": "Only conclusion I follows — U > Q is valid."
+  },
+  {
+    "id": "logic-018",
+    "question": "Statements: J = W ≥ G > K, B = S < M ≤ C < K\nConclusions:\nI. W ≥ S\nII. J > B",
+    "options": [
+      "Only I is true",
+      "Only II is true",
+      "Either I or II is true",
+      "Both I and II are true",
+      "Neither I nor II is true"
+    ],
+    "answer": 1,
+    "explanation": "Only conclusion II follows — J > B is valid."
+  },
+  {
+    "id": "logic-019",
+    "question": "Statements: S ≥ T > U ≥ V, W > Y ≤ Z < U\nConclusions:\nI. S > Y\nII. W > T",
+    "options": [
+      "Only I is true",
+      "Only II is true",
+      "Either I or II is true",
+      "Both I and II are true",
+      "Neither I nor II is true"
+    ],
+    "answer": 0,
+    "explanation": "Only conclusion I follows — S > Y is correct."
+  },
+  {
+    "id": "logic-020",
+    "question": "In which of the following expressions will the expression J < M be definitely true?",
+    "options": [
+      "M < H > J ≥ G",
+      "M ≥ G = J < T",
+      "I < M < T = J",
+      "J = Y < H < M",
+      "None of these"
+    ],
+    "answer": 3,
+    "explanation": "In option (d), J = Y < H < M implies J < M, which satisfies the condition."
+  },
+  {
+    "id": "logic-021",
+    "question": "Which of the following expressions is not necessarily true given the expression H ≤ I = J > M ≥ N is definitely true?",
+    "options": [
+      "I ≥ H",
+      "M < J",
+      "H ≥ M",
+      "J > N",
+      "None of these"
+    ],
+    "answer": 2,
+    "explanation": "H ≥ M is not necessarily true; no direct relation between H and M can be established."
+  },
+  {
+    "id": "logic-022",
+    "question": "In which of the following expressions, the expression ‘V ≤ X’ would definitely hold true?",
+    "options": [
+      "X ≥ N = S > W ≥ V = Y",
+      "Y ≥ X > Z = M ≥ V < W",
+      "Y > X ≥ S = M ≥ V < W",
+      "M < V = S ≤ Y < X > N",
+      "S > Y = V < W ≤ N < X"
+    ],
+    "answer": 2,
+    "explanation": "Option (c) ensures V ≤ X as per transitive relation."
+  },
+  
+  //set5
+  
+  {
+    "id": "logic-000",
+    "question": "Which of the following expression will be definitely true if the expression ‘I ≥ O > G ≥ C’ is true?",
+    "options": [
+      "C ≤ I",
+      "I = G",
+      "C < I",
+      "O ≥ C",
+      "None of these"
+    ],
+    "answer": 2,
+    "explanation": "From I ≥ O > G ≥ C, we can deduce C < I is definitely true."
+  },
+  {
+    "id": "logic-001",
+    "question": "Which of the following symbols should be placed in the blank spaces respectively in order to complete the expression so that ‘T > O’ definitely holds true?\n0 _ L _ W _ R _ M _ T",
+    "options": [
+      "≥, =, <, ≤, <",
+      ">, >, =, ≤, <",
+      "≤, ≤, =, ≤, <",
+      "=, ≤, <, <, >",
+      "None of these"
+    ],
+    "answer": 2,
+    "explanation": "The sequence ≤, ≤, =, ≤, < ensures that T > O definitely holds true."
+  },
+  {
+    "id": "logic-002",
+    "question": "In which of the following expressions will make the expression I < L be definitely true?",
+    "options": [
+      "L < G > I ≥ F",
+      "L ≥ F = I < S",
+      "H < O < T = I",
+      "I = X < G < L",
+      "None of these"
+    ],
+    "answer": 3,
+    "explanation": "In 'I = X < G < L', I < L is definitely true."
+  },
+  {
+    "id": "logic-003",
+    "question": "Statements: P > Q; W < E, E < Q; W = M ≥ N; S > T < N\nConclusions: I. S > W II. T < P III. S < N",
+    "options": [
+      "Only conclusion I follows",
+      "Only conclusion III follows",
+      "Only conclusion II follows",
+      "Both conclusions I and II follow",
+      "All follow"
+    ],
+    "answer": 2,
+    "explanation": "Only conclusion II (T < P) can be logically derived."
+  },
+  {
+    "id": "logic-004",
+    "question": "Statements: Z > D > V = P < L < Q ≤ N\nConclusions: I. D > P II. N > P III. Z > P",
+    "options": [
+      "Only conclusion I follows",
+      "Only conclusion II follows",
+      "Only conclusion III follows",
+      "Both conclusions I and II follow",
+      "All conclusions follow"
+    ],
+    "answer": 4,
+    "explanation": "All conclusions follow as per the logical sequence."
+  },
+  {
+    "id": "logic-005",
+    "question": "Statements: M > B > Z; K = N < M; G > M\nConclusions: I. N < B II. K ≥ B",
+    "options": [
+      "Only conclusion I follows",
+      "Only conclusion II follows",
+      "Either conclusion I or conclusion II follows",
+      "Both conclusions follow",
+      "Neither conclusion I nor conclusion II follows"
+    ],
+    "answer": 2,
+    "explanation": "Either N < B or K ≥ B can be true depending on equality and inequality balance."
+  },
+  {
+    "id": "logic-006",
+    "question": "Statements: 105 > 120 < 100; 80 < 100 < 83; 90 = 105\nConclusions: I. 90 < 83 II. 80 < 105",
+    "options": [
+      "Only conclusion I follows",
+      "Only conclusion II follows",
+      "Either conclusion I or conclusion II follows",
+      "Both conclusions follow",
+      "Neither conclusion I nor conclusion II follows"
+    ],
+    "answer": 4,
+    "explanation": "Neither conclusion follows — inconsistencies prevent definite comparison."
+  },
+  {
+    "id": "logic-007",
+    "question": "Statements: R < P ≥ A ≥ D; I > Q < P = E ≤ S\nConclusions: I. R < S II. S ≥ D III. I > E",
+    "options": [
+      "Only conclusion I follows",
+      "Only conclusion III follows",
+      "Only conclusion II follows",
+      "Both conclusions I and II follow",
+      "All follow"
+    ],
+    "answer": 3,
+    "explanation": "Both I and II follow logically from the given chain."
+  },
+  {
+    "id": "logic-008",
+    "question": "Which of the following symbol(s) should be placed in the place of the question mark in the following expression to make W < H and N ≥ D definitely true?\nS ≥ W > M; W ? D ? H; N ≥ H",
+    "options": [
+      ">, ≤",
+      "≤, ≥",
+      "≥, ≤",
+      "<, ≤",
+      "None of the above"
+    ],
+    "answer": 3,
+    "explanation": "Using '<, ≤' makes W < H and N ≥ D definitely true."
+  },
+  {
+    "id": "logic-009",
+    "question": "Which of following expressions is definitely true if the expressions 4 ≤ 5 and 6 ≥ 7 are definitely true?",
+    "options": [
+      "4 = 7 ≤ 8 = 6 > 5",
+      "5 = 6 < 8 ≤ 4 = 7",
+      "4 ≤ 7 = 8 ≤ 6 = 5",
+      "5 = 6 > 8 = 7 > 4",
+      "4 ≤ 6 < 8 = 5 ≤ 7"
+    ],
+    "answer": 2,
+    "explanation": "Option (c) maintains both 4 ≤ 5 and 6 ≥ 7 logical structure."
+  },
   
   
+  //set 6
   
+  
+  {
+    "id": "logic-010",
+    "question": "Statements: B < F > I; I = J < N; K = N\nConclusions: I. K > F II. F > K",
+    "options": [
+      "Only conclusion I follows",
+      "Only conclusion II follows",
+      "Either conclusion I or conclusion II follows",
+      "Both conclusions follow",
+      "Neither conclusion I nor conclusion II follows"
+    ],
+    "answer": 4,
+    "explanation": "Neither conclusion follows; no valid link between F and K."
+  },
+  {
+    "id": "logic-011",
+    "question": "Statements: P < H ≥ T < B; Q ≥ T < F ≤ G; E = L < I < B\nConclusions: I. P < G II. H > I",
+    "options": [
+      "Only conclusion I follows",
+      "Only conclusion II follows",
+      "Either I or II follows",
+      "Both I and II follow",
+      "Neither I nor II follows"
+    ],
+    "answer": 4,
+    "explanation": "Neither conclusion I nor II follows definitively."
+  },
+  {
+    "id": "logic-012",
+    "question": "Statements: U < V ≤ X > T; A < N < I ≤ T; H < O ≤ Q > N\nConclusions: I. X > A II. A > O",
+    "options": [
+      "Only conclusion I follows",
+      "Only conclusion II follows",
+      "Either I or II follows",
+      "Both I and II follow",
+      "Neither I nor II follows"
+    ],
+    "answer": 0,
+    "explanation": "Only X > A can be confirmed."
+  },
+  {
+    "id": "logic-013",
+    "question": "Statements: S > T < N; M ≤ P < Q = A; W = M ≥ N\nConclusions: I. T < W II. A > N",
+    "options": [
+      "Only conclusion I follows",
+      "Only conclusion II follows",
+      "Either I or II follows",
+      "Both I and II follow",
+      "Neither I nor II follows"
+    ],
+    "answer": 3,
+    "explanation": "Both I and II follow logically."
+  },
+  {
+    "id": "logic-014",
+    "question": "If W ≥ T = B ≤ G and N < T ≥ A < P are true, which of the following is neither definitely true nor definitely false?",
+    "options": [
+      "W ≥ A",
+      "N < G",
+      "G ≥ A",
+      "G < P",
+      "None of these"
+    ],
+    "answer": 3,
+    "explanation": "G < P is uncertain — neither definitely true nor false."
+  },
+  {
+    "id": "logic-015",
+    "question": "Which of the following expression is true, if the given statement is true?\nStatements: V ≥ X ≥ L > T; J ≤ C < T; J > W",
+    "options": [
+      "V ≥ C",
+      "L < J",
+      "V > W",
+      "X < J",
+      "None of these"
+    ],
+    "answer": 2,
+    "explanation": "V > W holds true based on the hierarchy."
+  },
+  {
+    "id": "logic-016",
+    "question": "Statements: 11 < 21 < 10 > 29; 12 = 29 > 20; 15 < 16 < 20\nConclusions: I. 20 < 21 II. 11 > 12 III. 12 ≥ 11",
+    "options": [
+      "Either conclusion II or III and I follow",
+      "Only conclusion I follows",
+      "Only conclusion III follows",
+      "Either conclusion II or III follows",
+      "Only conclusion II follows"
+    ],
+    "answer": 0,
+    "explanation": "Either II or III with I follow depending on relative order."
+  },
+  {
+    "id": "logic-017",
+    "question": "Statements: K > J; D < V, V < J; D = N ≥ M; H > G < M\nConclusions: I. H > D II. G < K III. H < M",
+    "options": [
+      "Only conclusion I follows",
+      "Only conclusion III follows",
+      "Only conclusion II follows",
+      "Both conclusions I and II follow",
+      "All follow"
+    ],
+    "answer": 2,
+    "explanation": "Only conclusion II (G < K) follows."
+  },
+  {
+    "id": "logic-018",
+    "question": "Statements: X > B > T = N < J < O ≤ L\nConclusions: I. B > N II. L > N III. X > N",
+    "options": [
+      "Only conclusion I follows",
+      "Only conclusion II follows",
+      "Only conclusion III follows",
+      "Both conclusions I and II follow",
+      "All follow"
+    ],
+    "answer": 4,
+    "explanation": "All conclusions follow based on the chain of inequalities."
+  },
+  {
+    "id": "logic-019",
+    "question": "Which of these following set of letters, when placed from left to right in the blanks make the conclusion ‘Y > C’ definitely true?\n__ < O ≥ __; __ < __ = Y",
+    "options": [
+      "C, A, B, A",
+      "C, A, A, B",
+      "B, A, A, C",
+      "A, C, A, B",
+      "None of the above"
+    ],
+    "answer": 4,
+    "explanation": "None of the given combinations guarantee Y > C."
+  },
+  {
+    "id": "logic-020",
+    "question": "Which of the following symbols should replace the question mark (?) to make the expressions ‘G ≥ H’ and ‘F ≤ D’ definitely false?\nX ≥ H (?) W < G = F (?) V ≤ D",
+    "options": [
+      "≤ , >",
+      "> , >",
+      "≥ , >",
+      "= , <",
+      "None of the above"
+    ],
+    "answer": 3,
+    "explanation": "Replacing with '= , <' makes both G ≥ H and F ≤ D false."
+  },
+  {
+    "id": "logic-021",
+    "question": "Which of the following symbols should be placed in the place of the question mark to make K > M and R ≥ G definitely true?\nK (?) R; M ≤ R ≥ D; M ≥ U (?) G",
+    "options": [
+      "≥, >",
+      "<, ≥",
+      ">, ≤",
+      ">, ≥",
+      "None of the above"
+    ],
+    "answer": 3,
+    "explanation": "Using '>, ≥' satisfies both K > M and R ≥ G."
+  },
+  {
+    "id": "logic-022",
+    "question": "Which of the following symbol(s) should be placed in the place of (1) and (2) in the expression to make Z > C and L < K definitely true?\nG ≥ V (1) L; Z (2) K; G ≤ C ≤ K",
+    "options": [
+      "<, ≥",
+      ">, >",
+      "≥, <",
+      ">, ≤",
+      "None of these"
+    ],
+    "answer": 1,
+    "explanation": "Using '>, >' satisfies Z > C and L < K conditions."
+  },
+  {
+    "id": "logic-023",
+    "question": "Which of the following symbol(s) should be placed in the place of the question mark to make M ≤ V definitely true?\nV ≥ L < C; M ≤ R (?) L; M > K",
+    "options": [
+      ">",
+      "<",
+      "≤",
+      "≥",
+      "None of these"
+    ],
+    "answer": 2,
+    "explanation": "Using '≤' ensures M ≤ V is true through relational transitivity."
+  },
+  
+  // set last
+  {
+    "id": "logic-101",
+    "question": "Statements: A > B ≥ C = D < E ≤ F\nConclusions:\nI. A > E\nII. B > D",
+    "options": [
+      "Only conclusion I follows",
+      "Only conclusion II follows",
+      "Both conclusions follow",
+      "Neither conclusion I nor II follows"
+    ],
+    "answer": 1,
+    "explanation": "From A > B ≥ C = D < E, A > E does not hold true. But B > D is true as B ≥ C = D."
+  },
+  {
+    "id": "logic-102",
+    "question": "Statements: M ≤ N = O < P; P ≥ Q > R\nConclusions:\nI. N < Q\nII. M ≤ Q",
+    "options": [
+      "Only conclusion I follows",
+      "Only conclusion II follows",
+      "Either conclusion I or II follows",
+      "Neither conclusion I nor II follows"
+    ],
+    "answer": 1,
+    "explanation": "From M ≤ N = O < P ≥ Q, N < Q holds true but M ≤ Q cannot be confirmed."
+  },
+  {
+    "id": "logic-103",
+    "question": "Statements: S > T ≥ U; U = V < W ≤ X\nConclusions:\nI. X > U\nII. S > W",
+    "options": [
+      "Only conclusion I follows",
+      "Only conclusion II follows",
+      "Both conclusions follow",
+      "Neither conclusion I nor II follows"
+    ],
+    "answer": 0,
+    "explanation": "U = V < W ≤ X implies X > U, but S > W cannot be deduced."
+  },
+  {
+    "id": "logic-104",
+    "question": "Statements: K ≥ L > M = N < O; O ≤ P = Q\nConclusions:\nI. P > M\nII. L ≥ Q",
+    "options": [
+      "Only conclusion I follows",
+      "Only conclusion II follows",
+      "Both conclusions follow",
+      "Neither conclusion I nor II follows"
+    ],
+    "answer": 0,
+    "explanation": "From M = N < O ≤ P, P > M is true. L ≥ Q cannot be confirmed."
+  },
+  {
+    "id": "logic-105",
+    "question": "Statements: A ≤ B = C ≥ D > E; C ≥ F\nConclusions:\nI. F > E\nII. A ≤ D",
+    "options": [
+      "Only conclusion I follows",
+      "Only conclusion II follows",
+      "Both conclusions follow",
+      "Neither conclusion I nor II follows"
+    ],
+    "answer": 0,
+    "explanation": "From D > E and C ≥ F, we can say F > E but cannot compare A and D."
+  },
+  {
+    "id": "logic-106",
+    "question": "Statements: T < R = S ≥ P; Q ≤ P < U\nConclusions:\nI. R > Q\nII. S < U",
+    "options": [
+      "Only conclusion I follows",
+      "Only conclusion II follows",
+      "Both conclusions follow",
+      "Neither conclusion I nor II follows"
+    ],
+    "answer": 2,
+    "explanation": "R = S ≥ P and Q ≤ P < U → R > Q and S < U both are true."
+  },
+  {
+    "id": "logic-107",
+    "question": "Statements: W = X ≥ Y; Z < Y; Z ≤ U\nConclusions:\nI. W > Z\nII. U < X",
+    "options": [
+      "Only conclusion I follows",
+      "Only conclusion II follows",
+      "Both conclusions follow",
+      "Neither conclusion I nor II follows"
+    ],
+    "answer": 0,
+    "explanation": "Since W = X ≥ Y > Z, W > Z is true but relation between U and X is uncertain."
+  },
+  {
+    "id": "logic-108",
+    "question": "Statements: C ≥ D > E = F ≤ G < H\nConclusions:\nI. C > F\nII. E < H",
+    "options": [
+      "Only conclusion I follows",
+      "Only conclusion II follows",
+      "Both conclusions follow",
+      "Neither conclusion I nor II follows"
+    ],
+    "answer": 2,
+    "explanation": "From C ≥ D > E = F ≤ G < H, both C > F and E < H are true."
+  },
   
   
   
