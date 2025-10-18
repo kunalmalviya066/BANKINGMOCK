@@ -27,8 +27,14 @@ let currentQuiz = {
 // UTILITY FUNCTIONS
 // =======================================
 
-// Fisher-Yates Shuffle
-function shuffleArray(array) {
+// Fisher-Yates Shuffle with exception for certain topics
+function shuffleArray(array, subject = "", topics = []) {
+  // Topics that should NOT be shuffled
+  const noShuffleTopics = ["Coding Decoding", "Set", "Data Interpretation"];
+  if (topics.some(t => noShuffleTopics.includes(t))) {
+    return [...array]; // return as-is without shuffling
+  }
+
   const arr = [...array];
   for (let i = arr.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
@@ -164,8 +170,8 @@ function renderDailyQuiz() {
       const numQ = parseInt(document.getElementById("dailyNumQ").value);
       const timer = parseInt(document.getElementById("dailyTimer").value);
 
-      // Use shuffle to avoid repetition
-      const quizQuestions = shuffleArray(allQuestions).slice(0, numQ);
+      // Use updated shuffle function with topic exception
+      const quizQuestions = shuffleArray(allQuestions, selectedSubject, selectedTopics).slice(0, numQ);
 
       if (confirm(`Start quiz with ${numQ} questions and ${timer} minute(s)?`)) {
         startQuiz(selectedSubject, selectedTopics.join(", "), quizQuestions, timer);
@@ -240,7 +246,7 @@ function renderSubjectSelection() {
         const numQ = parseInt(document.getElementById("numQ").value);
         const timer = parseInt(document.getElementById("timerMin").value);
 
-        const quizQuestions = shuffleArray(allQuestions).slice(0, numQ);
+        const quizQuestions = shuffleArray(allQuestions, subject, selectedTopics).slice(0, numQ);
         if (confirm(`Start quiz with ${numQ} questions and ${timer} minute(s)?`)) {
           startQuiz(subject, selectedTopics.join(", "), quizQuestions, timer);
         }
@@ -307,6 +313,10 @@ function startQuiz(subject, topics, questionsArray, timerMinutes) {
   renderQuizPage();
   startTimer();
 }
+
+// ... rest of the script remains exactly the same, including renderQuizPage, timer, submission, results, history, navigation, auto-pause ...
+// Initialize
+
 
 // =======================================
 // TIMER
