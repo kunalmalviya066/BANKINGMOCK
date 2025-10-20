@@ -5185,440 +5185,441 @@ const DB = {
       
       
       
+ 
   {
-    "id": "lr-ser-021",
+    "id": "lr-ser-101",
     "question": "Series: G S ! Q 8 E W A N ^ P X 6 Y D M * T 4 F O R U H I 2 + V @ J\n\n1. How many consonants in the series have vowels as immediate neighbors?",
     "options": ["Four", "Three", "Two", "One", "None of these"],
     "answer": 0,
     "explanation": "Consonants with vowels on both sides are W, N, R, U, so total = 4."
   },
   {
-    "id": "lr-ser-022",
+    "id": "lr-ser-102",
     "question": "Series: G S ! Q 8 E W A N ^ P X 6 Y D M * T 4 F O R U H I 2 + V @ J\n\n2. If all numbers and symbols are replaced by months starting from right end (@ becomes Jan), which element replaces June?",
     "options": ["4", "*", "8", "L", "6"],
     "answer": 1,
     "explanation": "June corresponds to the 6th number/symbol from the right, which is *."
   },
   {
-    "id": "lr-ser-023",
+    "id": "lr-ser-103",
     "question": "Series: G S ! Q 8 E W A N ^ P X 6 Y D M * T 4 F O R U H I 2 + V @ J\n\n3. If all numbers and symbols are dropped, what is the position of N with respect to F?",
     "options": ["Seventh to the right", "Eighth to the right", "Seventh to the left", "Eighth to the left", "None of these"],
     "answer": 2,
     "explanation": "Dropping symbols/numbers, the sequence becomes G S Q E W A N P X Y D M T F O R U H I V J. N is 7th to the left of F."
   },
   {
-    "id": "lr-ser-024",
+    "id": "lr-ser-104",
     "question": "Series: G S ! Q 8 E W A N ^ P X 6 Y D M * T 4 F O R U H I 2 + V @ J\n\n4. Four of the following five form a group based on positions. Which does not belong?",
     "options": ["I H U", "8 Q !", "F 4 T", "O R U", "^ N A"],
     "answer": 3,
     "explanation": "O R U does not follow the same positional pattern as the others."
   },
   {
-    "id": "lr-ser-025",
+    "id": "lr-ser-105",
     "question": "Series: G S ! Q 8 E W A N ^ P X 6 Y D M * T 4 F O R U H I 2 + V @ J\n\n5. If 'G' to 'D' is reversed and 'M' to 'J' is reversed, what is the position of '!' from the right end?",
     "options": ["Eighteenth", "Fifteenth", "Thirteenth", "Tenth", "None of these"],
     "answer": 0,
     "explanation": "After reversing, '!' becomes 18th from the right."
   },
   {
-    "id": "lr-ser-001",
+    "id": "lr-ser-106",
     "question": "Series: E K @ 6 S & 8 I X 7 { P 5 ! F 4 J B 9 } 1 O N * G + & M 3 Q\nIf all the alphabets are dropped from the string, then which element is the eleventh from the right end of the string?",
     "options": ["!", "8", "{", "5", "}"],
     "answer": 2,
     "explanation": "Removing all letters gives: @ 6 & 8 7 { 5 ! 4 9 } 1 * + & 3. The 11th element from the right is '{'."
   },
   {
-    "id": "lr-ser-002",
+    "id": "lr-ser-107",
     "question": "Series: E K @ 6 S & 8 I X 7 { P 5 ! F 4 J B 9 } 1 O N * G + & M 3 Q\nHow many digits are there each of which is immediately succeeded by a symbol and immediately preceded by an alphabet?",
     "options": ["One", "Three", "More than Three", "None", "Two"],
     "answer": 1,
     "explanation": "Digits 6, 8, 7 follow alphabets and precede symbols; total 3."
   },
   {
-    "id": "lr-ser-003",
+    "id": "lr-ser-108",
     "question": "Series: E K @ 6 S & 8 I X 7 { P 5 ! F 4 J B 9 } 1 O N * G + & M 3 Q\nIf S is related to X, 5 is related to J in the same way N is related to _____?",
     "options": ["M", "+", "9", "&", "3"],
     "answer": 3,
     "explanation": "Following the pattern of positions, N is related to '&'."
   },
   {
-    "id": "lr-ser-004",
+    "id": "lr-ser-109",
     "question": "Series: E K @ 6 S & 8 I X 7 { P 5 ! F 4 J B 9 } 1 O N * G + & M 3 Q\nWhich of the following element is seventh to the right of the seventh element from the left end?",
     "options": ["P", "5", "F", "4", "!"],
     "answer": 4,
     "explanation": "The 7th element from left is '&'; 7th to its right is '!'."
   },
   {
-    "id": "lr-ser-005",
+    "id": "lr-ser-110",
     "question": "Series: A 1 C 5 8 G 9 R H J 6 M E T 3 8 Y U 0 P 2 D V\nWhich will be eleventh element to the right of the fourth element from the left end?",
     "options": ["M", "3", "Y", "0", "None of the above"],
     "answer": 2,
     "explanation": "4th element is 5; 11th to its right is Y."
   },
+  
   {
-    "id": "lr-ser-006",
-    "question": "Series: A 1 C 5 8 G 9 R H J 6 M E T 3 8 Y U 0 P 2 D V\nWhich alphabet is the sixth to the right of the eighteenth element from the right end?",
-    "options": ["M", "3", "T", "6", "None of the above"],
-    "answer": 2,
-    "explanation": "Counting from the right, 18th element is 5; 6th to the right is T."
-  },
-  {
-    "id": "lr-ser-007",
-    "question": "Series: A 1 C 5 8 G 9 R H J 6 M E T 3 8 Y U 0 P 2 D V\nIf all the numbers from the series are deleted, which will be the seventh element from the right end?",
-    "options": ["C", "Y", "M", "E", "None of the above"],
-    "answer": 3,
-    "explanation": "Removing numbers leaves letters: A C G R H J M E T Y U P D V. 7th from right is E."
-  },
-  {
-    "id": "lr-ser-008",
+    "id": "lr-ser-111",
     "question": "Series: A 1 C 5 8 G 9 R H J 6 M E T 3 8 Y U 0 P 2 D V\nIf first 10 elements from the left end are reversed, which will be the fifteenth element from the right end?",
     "options": ["T", "H", "1", "5", "None of the above"],
-    "answer": 2,
+    "answer": 1,
     "explanation": "After reversing first 10 elements, counting 15th from right gives H."
   },
   {
-    "id": "lr-ser-009",
+    "id": "lr-ser-112",
     "question": "Series: A 1 C 5 8 G 9 R H J 6 M E T 3 8 Y U 0 P 2 D V\nWhich will be the second number to the right of the eighth alphabet from the right end?",
     "options": ["9", "8", "2", "U", "None of the above"],
     "answer": 1,
     "explanation": "8th alphabet from right is H; second number to its right is 8."
   },
   {
-    "id": "lr-ser-010",
+    "id": "lr-ser-113",
     "question": "Series: G S ! Q 8 E W A N ^ P X 6 Y D M * T 4 F O R U H I 2 + V @ J\nHow many consonants are there each of which has vowels in its immediate neighbours?",
     "options": ["Four", "Three", "Two", "One", "None of these"],
     "answer": 1,
     "explanation": "Consonants D, M, F, R have vowels next to them; total 3."
   },
   {
-    "id": "lr-ser-011",
+    "id": "lr-ser-114",
     "question": "Series: G S ! Q 8 E W A N ^ P X 6 Y D M * T 4 F O R U H I 2 + V @ J\nIf all the numbers and symbols are replaced by months of the year, starting from the right end (@ becomes Jan), which element will replace the month of June?",
     "options": ["4", "*", "8", "L", "6"],
     "answer": 1,
     "explanation": "June corresponds to '*' in the mapping."
   },
   {
-    "id": "lr-ser-012",
+    "id": "lr-ser-115",
     "question": "Series: G S ! Q 8 E W A N ^ P X 6 Y D M * T 4 F O R U H I 2 + V @ J\nIf all the numbers and symbols are dropped out, what will be the position of N with respect to F?",
     "options": ["Seventh to the right", "Eighth to the right", "Seventh to the left", "Eighth to the left", "None of these"],
     "answer": 2,
     "explanation": "After removing numbers and symbols, N is 7th to the left of F."
   },
   {
-    "id": "lr-ser-013",
-    "question": "Series: G S ! Q 8 E W A N ^ P X 6 Y D M * T 4 F O R U H I 2 + V @ J\nFour of the following five are alike based on position in the series. Which one does not belong?\nOptions: I H U, 8 Q !, F 4 T, O R U, ^ N A",
+    "id": "lr-ser-116",
+    "question": "Series: G S ! Q 8 E W A N ^ P X 6 Y D M * T 4 F O R U H I 2 + V @ J\nFour of the following five are alike based on position in the series. Which one does not belong?",
     "options": ["I H U", "8 Q !", "F 4 T", "O R U", "^ N A"],
     "answer": 1,
     "explanation": "'8 Q !' includes a digit and symbol; others are only letters."
   },
   {
-    "id": "lr-ser-014",
+    "id": "lr-ser-117",
     "question": "Series: G S ! Q 8 E W A N ^ P X 6 Y D M * T 4 F O R U H I 2 + V @ J\nIf 'G' to 'D' is reversed and 'M' to 'J' is reversed, what will be the position of '!' from the right end?",
     "options": ["Eighteenth", "Fifteenth", "Thirteenth", "Tenth", "None of these"],
     "answer": 0,
     "explanation": "After reversing specified segments, '!' becomes 18th from the right."
   },
   {
-    "id": "lr-ser-015",
-    "question": "Series: K 8 6 9 4 F 5 Q L\nBased on the pattern, which of the following should come next in the series? Options: & T S, # H 1, S 1 *, L $ T, * 3 P",
+    "id": "lr-ser-118",
+    "question": "Series: K 8 6 9 4 F 5 Q L\nBased on the pattern, which of the following should come next in the series?",
     "options": ["& T S", "# H 1", "S 1 *", "L $ T", "* 3 P"],
     "answer": 2,
     "explanation": "Pattern indicates 'S 1 *' continues the sequence."
   },
   {
-    "id": "lr-ser-016",
+    "id": "lr-ser-119",
     "question": "Series: D I 5 * 3 ^ M X 8 K 5 8 V 6 H & N 9 J 4 A F % Y P 5 * Q # L $ & T S H 1 # * 5 $\nIf all digits are dropped, which of the following is fourth to the left of the nineteenth from the left end?",
     "options": ["J", "7", "&", "%", "F"],
     "answer": 3,
     "explanation": "Dropping digits gives letter-symbol sequence; counting gives '%'."
   },
+  
   {
-    "id": "lr-ser-017",
-    "question": "Series: D I 5 * 3 ^ M X 8 K 5 8 V 6 H & N 9 J 4 A F % Y P 5 * Q # L $ & T S H 1 # * 5 $\nWhich of the following is tenth to the left of the fifteenth from the right end if all symbols are dropped?",
-    "options": ["8", "5", "M", "S", "Y"],
-    "answer": 2,
-    "explanation": "After dropping symbols, counting gives M."
-  },
-  {
-    "id": "lr-ser-018",
+    "id": "lr-ser-120",
     "question": "Series: D I 5 * 3 ^ M X 8 K 5 8 V 6 H & N 9 J 4 A F % Y P 5 * Q # L $ & T S H 1 # * 5 $\nHow many symbols are there which are immediately preceded by a number and immediately followed by a letter?",
     "options": ["0", "1", "3", "2", "4"],
-    "answer": 3,
+    "answer": 2,
     "explanation": "Symbols following numbers and preceding letters are 2 in total."
   },
   {
-    "id": "lr-ser-019",
+    "id": "lr-ser-121",
     "question": "Series: D I 5 * 3 ^ M X 8 K 5 8 V 6 H & N 9 J 4 A F % Y P 5 * Q # L $ & T S H 1 # * 5 $\nHow many letters are there which are preceded by a symbol and followed by a number?",
     "options": ["1", "2", "3", "4", "5"],
     "answer": 0,
     "explanation": "Only letter M is preceded by a symbol and followed by a number."
   },
   {
-    "id": "lr-ser-020",
-    "question": "Series: D M 5 8 U $ * Q ( 2 C ! P A % & Y 6 E 3 4 G % 1 8 @ # H N 9 ^\n\n20. If the series is reversed, which element will be 8th to the right of the 12th element from the left end?",
+    "id": "lr-ser-122",
+    "question": "Series: D M 5 8 U $ * Q ( 2 C ! P A % & Y 6 E 3 4 G % 1 8 @ # H N 9 ^\nIf the series is reversed, which element will be 8th to the right of the 12th element from the left end?",
     "options": ["@", "8", "1", "C", "None of the above"],
     "answer": 1,
     "explanation": "After reversing, the 12th element is #, and the 8th to its right is 8."
   },
   {
-    "id": "lr-ser-021",
-    "question": "Series: R 7 Q 4 T 9 A * E 1 W 6 % J 8 D & M P # K 3 L 2 @ C B 5 N ! Y\n\n21. How many alphabets are there which are immediately preceded by a symbol and immediately followed by a number?",
+    "id": "lr-ser-123",
+    "question": "Series: R 7 Q 4 T 9 A * E 1 W 6 % J 8 D & M P # K 3 L 2 @ C B 5 N ! Y\nHow many alphabets are there which are immediately preceded by a symbol and immediately followed by a number?",
     "options": ["0", "1", "2", "3", "4"],
     "answer": 2,
     "explanation": "There are 2 such alphabets fulfilling the given condition."
   },
   {
-    "id": "lr-ser-022",
-    "question": "Series: R 7 Q 4 T 9 A * E 1 W 6 % J 8 D & M P # K 3 L 2 @ C B 5 N ! Y\n\n22. Which is the fourth number to the right of the fifth symbol from the right end?",
+    "id": "lr-ser-124",
+    "question": "Series: R 7 Q 4 T 9 A * E 1 W 6 % J 8 D & M P # K 3 L 2 @ C B 5 N ! Y\nWhich is the fourth number to the right of the fifth symbol from the right end?",
     "options": ["4", "3", "6", "2", "None of the above"],
     "answer": 1,
     "explanation": "The fifth symbol from the right is #, and the fourth number to its right is 3."
   },
   {
-    "id": "lr-ser-023",
-    "question": "Series: R 7 Q 4 T 9 A * E 1 W 6 % J 8 D & M P # K 3 L 2 @ C B 5 N ! Y\n\n23. If all the numbers are removed from the series, which will be the twelfth element from the right end?",
+    "id": "lr-ser-125",
+    "question": "Series: R 7 Q 4 T 9 A * E 1 W 6 % J 8 D & M P # K 3 L 2 @ C B 5 N ! Y\nIf all the numbers are removed from the series, which will be the twelfth element from the right end?",
     "options": ["P", "M", "E", "J", "None of the above"],
     "answer": 3,
     "explanation": "After removing numbers, the 12th element from right is J."
   },
   {
-    "id": "lr-ser-024",
-    "question": "Series: R 7 Q 4 T 9 A * E 1 W 6 % J 8 D & M P # K 3 L 2 @ C B 5 N ! Y\n\n24. Which will be the 10th element to the left of the 17th element from the right end?",
+    "id": "lr-ser-126",
+    "question": "Series: R 7 Q 4 T 9 A * E 1 W 6 % J 8 D & M P # K 3 L 2 @ C B 5 N ! Y\nWhich will be the 10th element to the left of the 17th element from the right end?",
     "options": ["J", "E", "A", "T", "None of the above"],
     "answer": 2,
     "explanation": "Counting positions gives A as the 10th to the left of the 17th from right."
   },
   {
-    "id": "lr-ser-025",
-    "question": "Series: L 1 R 4 K * E 7 T @ 2 A 9 W % P 3 S + B 6 Q # H 8 M ^ D 5 N\n\n25. Which will be the fourth symbol to the right of the eighth element from the left end?",
+    "id": "lr-ser-127",
+    "question": "Series: L 1 R 4 K * E 7 T @ 2 A 9 W % P 3 S + B 6 Q # H 8 M ^ D 5 N\nWhich will be the fourth symbol to the right of the eighth element from the left end?",
     "options": ["@", "%", "+", "#", "None of the above"],
     "answer": 0,
     "explanation": "The eighth element from the left is 7, and the fourth symbol to its right is '@'."
   },
   {
-    "id": "lr-ser-026",
-    "question": "Series: L 1 R 4 K * E 7 T @ 2 A 9 W % P 3 S + B 6 Q # H 8 M ^ D 5 N\n\n26. Which will be the third alphabet to the right of the 10th number from the right end?",
+    "id": "lr-ser-128",
+    "question": "Series: L 1 R 4 K * E 7 T @ 2 A 9 W % P 3 S + B 6 Q # H 8 M ^ D 5 N\nWhich will be the third alphabet to the right of the 10th number from the right end?",
     "options": ["W", "B", "Q", "H", "None of the above"],
     "answer": 2,
     "explanation": "The 10th number from right is 2, and the third alphabet to its right is Q."
   },
   {
-    "id": "lr-ser-027",
-    "question": "Series: L 1 R 4 K * E 7 T @ 2 A 9 W % P 3 S + B 6 Q # H 8 M ^ D 5 N\n\n27. How many such pairs are there in the series where an alphabet is immediately followed by a number?",
+    "id": "lr-ser-129",
+    "question": "Series: L 1 R 4 K * E 7 T @ 2 A 9 W % P 3 S + B 6 Q # H 8 M ^ D 5 N\nHow many such pairs are there in the series where an alphabet is immediately followed by a number?",
     "options": ["5", "7", "9", "10", "None of the above"],
     "answer": 1,
     "explanation": "There are 7 pairs where an alphabet is immediately followed by a number."
   },
   {
-    "id": "lr-ser-028",
-    "question": "Series: L 1 R 4 K * E 7 T @ 2 A 9 W % P 3 S + B 6 Q # H 8 M ^ D 5 N\n\n28. If all symbols are removed from the series, which will be the 15th element from the left end?",
+    "id": "lr-ser-130",
+    "question": "Series: L 1 R 4 K * E 7 T @ 2 A 9 W % P 3 S + B 6 Q # H 8 M ^ D 5 N\nIf all symbols are removed from the series, which will be the 15th element from the left end?",
     "options": ["W", "S", "P", "M", "None of the above"],
     "answer": 2,
     "explanation": "After removing symbols, the 15th element from left is P."
   },
   {
-    "id": "lr-ser-029",
-    "question": "Series: L 1 R 4 K * E 7 T @ 2 A 9 W % P 3 S + B 6 Q # H 8 M ^ D 5 N\n\n29. Which will be the 13th element from the right end if the series is reversed?",
+    "id": "lr-ser-131",
+    "question": "Series: L 1 R 4 K * E 7 T @ 2 A 9 W % P 3 S + B 6 Q # H 8 M ^ D 5 N\nWhich will be the 13th element from the right end if the series is reversed?",
     "options": ["H", "B", "P", "M", "None of the above"],
     "answer": 1,
     "explanation": "After reversing the series, the 13th from right becomes B."
   },
   {
-    "id": "lr-ser-030",
-    "question": "Series: F 8 R * 3 L 5 @ K 2 P # 9 S 7 % N A 6 W ! M ^ E 4 T D\n\n30. How many such symbols are there which are immediately followed by a letter and immediately preceded by a number?",
+    "id": "lr-ser-132",
+    "question": "Series: F 8 R * 3 L 5 @ K 2 P # 9 S 7 % N A 6 W ! M ^ E 4 T D\nHow many such symbols are there which are immediately followed by a letter and immediately preceded by a number?",
     "options": ["1", "2", "3", "4", "5"],
     "answer": 2,
     "explanation": "Three symbols fit the condition of being between a number and a letter."
   },
   {
-    "id": "lr-ser-031",
-    "question": "Series: F 8 R * 3 L 5 @ K 2 P # 9 S 7 % N A 6 W ! M ^ E 4 T D\n\n31. If all numbers are removed from the series, which will be the 7th element to the left of the 12th element from the right end?",
+    "id": "lr-ser-133",
+    "question": "Series: F 8 R * 3 L 5 @ K 2 P # 9 S 7 % N A 6 W ! M ^ E 4 T D\nIf all numbers are removed from the series, which will be the 7th element to the left of the 12th element from the right end?",
     "options": ["K", "M", "A", "T", "None of the above"],
     "answer": 0,
     "explanation": "After removing numbers, the 12th element from right is T, and the 7th to its left is K."
   },
   {
-    "id": "lr-ser-032",
-    "question": "Series: F 8 R * 3 L 5 @ K 2 P # 9 S 7 % N A 6 W ! M ^ E 4 T D\n\n32. How many alphabets are there which are immediately preceded by a number and immediately followed by a symbol?",
+    "id": "lr-ser-134",
+    "question": "Series: F 8 R * 3 L 5 @ K 2 P # 9 S 7 % N A 6 W ! M ^ E 4 T D\nHow many alphabets are there which are immediately preceded by a number and immediately followed by a symbol?",
     "options": ["1", "2", "3", "4", "None of the above"],
     "answer": 1,
     "explanation": "Two alphabets meet the described condition."
   },
   {
-    "id": "lr-ser-033",
-    "question": "Series: F 8 R * 3 L 5 @ K 2 P # 9 S 7 % N A 6 W ! M ^ E 4 T D\n\n33. Which is the 9th element to the right of the 7th alphabet from the left end?",
+    "id": "lr-ser-135",
+    "question": "Series: F 8 R * 3 L 5 @ K 2 P # 9 S 7 % N A 6 W ! M ^ E 4 T D\nWhich is the 9th element to the right of the 7th alphabet from the left end?",
     "options": ["M", "W", "A", "S", "None of the above"],
     "answer": 3,
     "explanation": "The 7th alphabet from left is P, and the 9th to its right is S."
   },
   {
-    "id": "lr-ser-034",
-    "question": "Series: F 8 R * 3 L 5 @ K 2 P # 9 S 7 % N A 6 W ! M ^ E 4 T D\n\n34. How many numbers are there which are immediately preceded and followed by symbols?",
+    "id": "lr-ser-136",
+    "question": "Series: F 8 R * 3 L 5 @ K 2 P # 9 S 7 % N A 6 W ! M ^ E 4 T D\nHow many numbers are there which are immediately preceded and followed by symbols?",
     "options": ["1", "2", "3", "4", "None of the above"],
     "answer": 0,
     "explanation": "Only one number is surrounded by symbols on both sides."
   },
   {
-    "id": "lr-ser-035",
-    "question": "Series: G 4 P 9 * L 7 @ M 6 A # T 5 W % E 8 R + K 3 Y 2 N ! Q ^ H\n\n35. If all the alphabets are removed, which will be the 6th element from the right end?",
+    "id": "lr-ser-137",
+    "question": "Series: G 4 P 9 * L 7 @ M 6 A # T 5 W % E 8 R + K 3 Y 2 N ! Q ^ H\nIf all the alphabets are removed, which will be the 6th element from the right end?",
     "options": ["3", "8", "5", "9", "None of the above"],
     "answer": 0,
     "explanation": "After removing alphabets, the 6th element from right is 3."
   },
   {
-    "id": "lr-ser-036",
-    "question": "Series: G 4 P 9 * L 7 @ M 6 A # T 5 W % E 8 R + K 3 Y 2 N ! Q ^ H\n\n36. Which of the following will be the 10th element from the left end if the series is reversed?",
+    "id": "lr-ser-138",
+    "question": "Series: G 4 P 9 * L 7 @ M 6 A # T 5 W % E 8 R + K 3 Y 2 N ! Q ^ H\nWhich of the following will be the 10th element from the left end if the series is reversed?",
     "options": ["E", "W", "T", "M", "None of the above"],
     "answer": 2,
     "explanation": "After reversing the series, the 10th from left becomes T."
   },
   {
-    "id": "lr-ser-037",
-    "question": "Series: G 4 P 9 * L 7 @ M 6 A # T 5 W % E 8 R + K 3 Y 2 N ! Q ^ H\n\n37. How many pairs are there where an alphabet is immediately followed by a symbol and then by a number?",
+    "id": "lr-ser-139",
+    "question": "Series: G 4 P 9 * L 7 @ M 6 A # T 5 W % E 8 R + K 3 Y 2 N ! Q ^ H\nHow many pairs are there where an alphabet is immediately followed by a symbol and then by a number?",
     "options": ["2", "3", "4", "5", "None of the above"],
     "answer": 2,
     "explanation": "There are 4 such letter-symbol-number patterns."
   },
+  
   {
-    "id": "lr-ser-038",
-    "question": "Series: G 4 P 9 * L 7 @ M 6 A # T 5 W % E 8 R + K 3 Y 2 N ! Q ^ H\n\n38. Which is the 12th element from the right end if all symbols and numbers are removed?",
+    "id": "lr-ser-140",
+    "question": "Series: G 4 P 9 * L 7 @ M 6 A # T 5 W % E 8 R + K 3 Y 2 N ! Q ^ H\nWhich is the 12th element from the right end if all symbols and numbers are removed?",
     "options": ["K", "Q", "W", "M", "None of the above"],
     "answer": 1,
     "explanation": "After removing symbols and numbers, the 12th element from right is Q."
   },
   {
-    "id": "lr-ser-001",
-    "question": "Series: 8 W * 3 ? H 9 A + T @ 5 & Q B $ 1 E # N K\n\n1. Which will be the eighth element to the right of the twentieth element from the right end?",
+    "id": "lr-ser-141",
+    "question": "Series: 8 W * 3 ? H 9 A + T @ 5 & Q B $ 1 E # N K\nWhich will be the eighth element to the right of the twentieth element from the right end?",
     "options": ["*", "T", "E", "5", "None of the above"],
     "answer": 1,
     "explanation": "Counting from the right, the 20th element is A. The eighth element to the right of A is T."
   },
   {
-    "id": "lr-ser-002",
-    "question": "Series: 8 W * 3 ? H 9 A + T @ 5 & Q B $ 1 E # N K\n\n2. Which will be the third number to the left of the sixth alphabet from the left end?",
+    "id": "lr-ser-142",
+    "question": "Series: 8 W * 3 ? H 9 A + T @ 5 & Q B $ 1 E # N K\nWhich will be the third number to the left of the sixth alphabet from the left end?",
     "options": ["5", "*", "3", "1", "None of the above"],
     "answer": 2,
     "explanation": "The sixth alphabet from the left is A. The third number to its left is 3."
   },
   {
-    "id": "lr-ser-003",
-    "question": "Series: 8 W * 3 ? H 9 A + T @ 5 & Q B $ 1 E # N K\n\n3. Which will be the third symbol to the right of the eighth element from the left end?",
+    "id": "lr-ser-143",
+    "question": "Series: 8 W * 3 ? H 9 A + T @ 5 & Q B $ 1 E # N K\nWhich will be the third symbol to the right of the eighth element from the left end?",
     "options": ["#", "@", "+", "&", "None of the above"],
     "answer": 3,
     "explanation": "The eighth element from the left is 9. The third symbol to its right is &."
   },
   {
-    "id": "lr-ser-004",
-    "question": "Series: 8 W * 3 ? H 9 A + T @ 5 & Q B $ 1 E # N K\n\n4. Which will be the sum of the fourth number from the left end and fifth element from the right end?",
+    "id": "lr-ser-144",
+    "question": "Series: 8 W * 3 ? H 9 A + T @ 5 & Q B $ 1 E # N K\nWhich will be the sum of the fourth number from the left end and fifth element from the right end?",
     "options": ["5", "4", "6", "3", "None of the above"],
     "answer": 2,
     "explanation": "The fourth number from the left is 3, and the fifth element from the right is 3. Their sum is 6."
   },
   {
-    "id": "lr-ser-005",
-    "question": "Series: 8 W * 3 ? H 9 A + T @ 5 & Q B $ 1 E # N K\n\n5. Which will be the second number to the left of the seventh element from the right end?",
+    "id": "lr-ser-145",
+    "question": "Series: 8 W * 3 ? H 9 A + T @ 5 & Q B $ 1 E # N K\nWhich will be the second number to the left of the seventh element from the right end?",
     "options": ["9", "5", "1", "8", "None of the above"],
     "answer": 0,
     "explanation": "The seventh element from the right is E. The second number to its left is 9."
   },
   {
-    "id": "lr-ser-006",
-    "question": "Series: 2 N * T A 3 S 5 % P # 6 Q 4 W K & C X + E B\n\n6. Which is the third symbol to the left of W?",
+    "id": "lr-ser-146",
+    "question": "Series: 2 N * T A 3 S 5 % P # 6 Q 4 W K & C X + E B\nWhich is the third symbol to the left of W?",
     "options": ["+", "6", "*", "%", "None of the above"],
     "answer": 2,
     "explanation": "To the left of W, the third symbol is *."
   },
   {
-    "id": "lr-ser-007",
-    "question": "Series: 2 N * T A 3 S 5 % P # 6 Q 4 W K & C X + E B\n\n7. Which is the sixth element to the left of the fourth alphabet from the left end?",
+    "id": "lr-ser-147",
+    "question": "Series: 2 N * T A 3 S 5 % P # 6 Q 4 W K & C X + E B\nWhich is the sixth element to the left of the fourth alphabet from the left end?",
     "options": ["P", "6", "#", "Q", "None of the above"],
     "answer": 1,
     "explanation": "The fourth alphabet from the left is A. Six elements to its left is 6."
   },
   {
-    "id": "lr-ser-008",
-    "question": "Series: 2 N * T A 3 S 5 % P # 6 Q 4 W K & C X + E B\n\n8. Which will be the eleventh element from the right end, if all the symbols are deleted from the series?",
+    "id": "lr-ser-148",
+    "question": "Series: 2 N * T A 3 S 5 % P # 6 Q 4 W K & C X + E B\nWhich will be the eleventh element from the right end, if all the symbols are deleted from the series?",
     "options": ["6", "P", "S", "5", "None of the above"],
     "answer": 3,
     "explanation": "After removing all symbols, the 11th element from the right is 5."
   },
   {
-    "id": "lr-ser-009",
-    "question": "Series: 2 N * T A 3 S 5 % P # 6 Q 4 W K & C X + E B\n\n9. If the first half of the series is reversed, then which will be the sixteenth element from the right end?",
+    "id": "lr-ser-149",
+    "question": "Series: 2 N * T A 3 S 5 % P # 6 Q 4 W K & C X + E B\nIf the first half of the series is reversed, then which will be the sixteenth element from the right end?",
     "options": ["5", "S", "A", "3", "None of the above"],
     "answer": 2,
     "explanation": "After reversing the first half, the 16th element from the right becomes A."
   },
+  
   {
-    "id": "lr-ser-010",
-    "question": "Series: 2 N * T A 3 S 5 % P # 6 Q 4 W K & C X + E B\n\n10. If all the vowels in the series are deleted, how many alphabets will be there?",
+    "id": "lr-ser-150",
+    "question": "Series: 2 N * T A 3 S 5 % P # 6 Q 4 W K & C X + E B\nIf all the vowels in the series are deleted, how many alphabets will be there?",
     "options": ["12", "11", "9", "10", "None of the above"],
     "answer": 3,
     "explanation": "Removing all vowels leaves 10 alphabets in the series."
   },
   {
-    "id": "lr-ser-011",
-    "question": "Series: T 3 * O # U > & S B 4 8 9 ( P Y X 0 W µ A ^ 6 H ? 5 M @ D £ J\n\n11. How many symbols are there in the series that are immediately followed by a number and immediately preceded by an alphabet?",
+    "id": "lr-ser-151",
+    "question": "Series: T 3 * O # U > & S B 4 8 9 ( P Y X 0 W µ A ^ 6 H ? 5 M @ D £ J\nHow many symbols are there in the series that are immediately followed by a number and immediately preceded by an alphabet?",
     "options": ["3", "2", "4", "5", "None of the above"],
     "answer": 1,
     "explanation": "There are 2 symbols that meet the given condition."
   },
   {
-    "id": "lr-ser-012",
-    "question": "Series: T 3 * O # U > & S B 4 8 9 ( P Y X 0 W µ A ^ 6 H ? 5 M @ D £ J\n\n12. Which of the following will be the third number to the left of the fifth symbol from the left end?",
+    "id": "lr-ser-152",
+    "question": "Series: T 3 * O # U > & S B 4 8 9 ( P Y X 0 W µ A ^ 6 H ? 5 M @ D £ J\nWhich of the following will be the third number to the left of the fifth symbol from the left end?",
     "options": ["9", "3", "4", "P", "None of the above"],
     "answer": 2,
     "explanation": "The fifth symbol is '#'. The third number to its left is 4."
   },
   {
-    "id": "lr-ser-013",
-    "question": "Series: T 3 * O # U > & S B 4 8 9 ( P Y X 0 W µ A ^ 6 H ? 5 M @ D £ J\n\n13. Which of the following will be the fourth symbol to the right of the thirteenth element from the left end?",
+    "id": "lr-ser-153",
+    "question": "Series: T 3 * O # U > & S B 4 8 9 ( P Y X 0 W µ A ^ 6 H ? 5 M @ D £ J\nWhich of the following will be the fourth symbol to the right of the thirteenth element from the left end?",
     "options": ["(", "0", "?", "X", "None of the above"],
     "answer": 2,
     "explanation": "Counting accordingly, the fourth symbol to the right is '?'."
   },
   {
-    "id": "lr-ser-014",
-    "question": "Series: T 3 * O # U > & S B 4 8 9 ( P Y X 0 W µ A ^ 6 H ? 5 M @ D £ J\n\n14. Which of the following will be the sum of the third number from the left end and sixth element from the right end?",
+    "id": "lr-ser-154",
+    "question": "Series: T 3 * O # U > & S B 4 8 9 ( P Y X 0 W µ A ^ 6 H ? 5 M @ D £ J\nWhich of the following will be the sum of the third number from the left end and sixth element from the right end?",
     "options": ["9", "13", "14", "10", "None of the above"],
     "answer": 1,
     "explanation": "The sum of 8 and 5 equals 13."
   },
   {
-    "id": "lr-ser-015",
-    "question": "Series: T 3 * O # U > & S B 4 8 9 ( P Y X 0 W µ A ^ 6 H ? 5 M @ D £ J\n\n15. If all the symbols from the series are deleted, which of the following will be the third number to the right of the tenth alphabet from the right end?",
+    "id": "lr-ser-155",
+    "question": "Series: T 3 * O # U > & S B 4 8 9 ( P Y X 0 W µ A ^ 6 H ? 5 M @ D £ J\nIf all the symbols from the series are deleted, which of the following will be the third number to the right of the tenth alphabet from the right end?",
     "options": ["P", "9", "5", "W", "None of the above"],
     "answer": 1,
     "explanation": "After removing symbols, the third number to the right of the tenth alphabet is 9."
   },
   {
-    "id": "lr-ser-016",
-    "question": "Series: D M 5 8 U $ * Q ( 2 C ! P A % & Y 6 E 3 4 G % 1 8 @ # H N 9 ^\n\n16. Four of the following five are alike in a certain way and hence form a group. Which is the one that doesn’t belong to that group?",
+    "id": "lr-ser-156",
+    "question": "Series: D M 5 8 U $ * Q ( 2 C ! P A % & Y 6 E 3 4 G % 1 8 @ # H N 9 ^\nFour of the following five are alike in a certain way and hence form a group. Which is the one that doesn’t belong to that group?",
     "options": ["*C8", "U(M", "416", "Y4A", "@9%"],
     "answer": 2,
     "explanation": "‘416’ does not follow the pattern of letter-symbol-number combinations."
   },
   {
-    "id": "lr-ser-017",
-    "question": "Series: D M 5 8 U $ * Q ( 2 C ! P A % & Y 6 E 3 4 G % 1 8 @ # H N 9 ^\n\n17. How many such numbers are there in the series each of which is immediately followed by a symbol and preceded by a letter?",
+    "id": "lr-ser-157",
+    "question": "Series: D M 5 8 U $ * Q ( 2 C ! P A % & Y 6 E 3 4 G % 1 8 @ # H N 9 ^\nHow many such numbers are there in the series each of which is immediately followed by a symbol and preceded by a letter?",
     "options": ["1", "2", "4", "3", "None of these"],
     "answer": 0,
     "explanation": "Only one number fulfills this condition."
   },
   {
-    "id": "lr-ser-018",
-    "question": "Series: D M 5 8 U $ * Q ( 2 C ! P A % & Y 6 E 3 4 G % 1 8 @ # H N 9 ^\n\n18. If all the symbols are dropped from the above series then which of the following will be the 3rd element to the left of the 11th element from the right end?",
+    "id": "lr-ser-158",
+    "question": "Series: D M 5 8 U $ * Q ( 2 C ! P A % & Y 6 E 3 4 G % 1 8 @ # H N 9 ^\nIf all the symbols are dropped from the above series then which of the following will be the 3rd element to the left of the 11th element from the right end?",
     "options": ["A", "E", "3", "X", "None of these"],
     "answer": 3,
     "explanation": "After removing symbols, the 3rd element to the left of the 11th from right is C."
   },
   {
-    "id": "lr-ser-019",
-    "question": "Series: D M 5 8 U $ * Q ( 2 C ! P A % & Y 6 E 3 4 G % 1 8 @ # H N 9 ^\n\n19. How many vowels are there which are immediately preceded by a number?",
+    "id": "lr-ser-159",
+    "question": "Series: D M 5 8 U $ * Q ( 2 C ! P A % & Y 6 E 3 4 G % 1 8 @ # H N 9 ^\nHow many vowels are there which are immediately preceded by a number?",
     "options": ["0", "4", "3", "1", "2"],
     "answer": 4,
     "explanation": "There are 2 vowels immediately preceded by a number."
   },
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+ 
+ 
       
       
       
