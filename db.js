@@ -4859,10 +4859,337 @@ const DB = {
 
 
 
-
-
-
-  ]
+  ],
+  
+  "Blood Relation": [
+    
+    
+  {
+    "id": "family-001",
+    "question": "There are seven members A, B, C, F, L, P and R in a family. C has two children. B is the son of A, who is not the father of B. R is the daughter-in-law of L. A and C are a married couple. L is the sister of B. F is the grandson of A. P is the son-in-law of C.\n\nएक पǐरवार में सात सदस्य A, B, C, F, L, P और R हैं। C के दो बच्चे हैं। B, A का बेटा है, जो B का ͪपता नहीं है। R, L की बहू है। A और C एक ͪववाǑहत जोड़े हैं। L, B की बहन है। F, A का पोता है। P, C का दामाद है।\n\nHow B is related to P?\nB, P से ͩकस प्रकार संबंͬधत है?",
+    "options": [
+      "Brother / भाई",
+      "Sister / बहन",
+      "Sister-in-law / भाभी",
+      "Father / पिता",
+      "None of these / इनमें से कोई नहीं"
+    ],
+    "answer": 4,
+    "explanation": "B has no direct relation with P, so the answer is 'None of these'."
+  },
+  {
+    "id": "family-002",
+    "question": "There are seven members A, B, C, F, L, P and R in a family. C has two children. B is the son of A, who is not the father of B. R is the daughter-in-law of L. A and C are a married couple. L is the sister of B. F is the grandson of A. P is the son-in-law of C.\n\nएक पǐरवार में सात सदस्य A, B, C, F, L, P और R हैं। C के दो बच्चे हैं। B, A का बेटा है, जो B का ͪपता नहीं है। R, L की बहू है। A और C एक ͪववाǑहत जोड़े हैं। L, B की बहन है। F, A का पोता है। P, C का दामाद है।\n\nHow A is related to L?\nA, L से ͩकस प्रकार संबंͬधत है?",
+    "options": [
+      "Father / पिता",
+      "Mother / माता",
+      "Father-in-law / ससुर",
+      "Mother-in-law / सास",
+      "Grandfather / दादा"
+    ],
+    "answer": 1,
+    "explanation": "A is the mother of L, so the answer is 'Mother'."
+  },
+  
+  {
+    "id": "family-006",
+    "question": "The information is given about a family of three generations - X is the father of V, who is married to F. U is the sister-in-law of F. R is the brother of W, who is the spouse of X. U is the niece of R, who is the son of O.\n\nतीन पीǑढ़यों के एक पǐरवार के बारे में जानकारी दी गई है - X, V का ͪपता है, िजसकी शादी F से हुई है। U, F की भाभी है। R, W का भाई है, जो X का जीवनसाथी है। U, R की भतीजी है, जो O का बेटा है।\n\nHow V is related to O?\nV, O से ͩकस प्रकार संबंͬधत है?",
+    "options": [
+      "Grandson / पोता",
+      "Granddaughter / पोती",
+      "Son / बेटा",
+      "None of these / इनमें से कोई नहीं",
+      "Cannot be determined / निर्धारित नहीं किया जा सकता"
+    ],
+    "answer": 4,
+    "explanation": "V's relation to O cannot be definitively determined from the given information."
+  },
+  {
+    "id": "family-007",
+    "question": "The information is given about a family of three generations - X is the father of V, who is married to F. U is the sister-in-law of F. R is the brother of W, who is the spouse of X. U is the niece of R, who is the son of O.\n\nतीन पीǑढ़यों के एक पǐरवार के बारे में जानकारी दी गई है - X, V का ͪपता है, िजसकी शादी F से हुई है। U, F की भाभी है। R, W का भाई है, जो X का जीवनसाथी है। U, R की भतीजी है, जो O का बेटा है।\n\nHow is W related to F?\nW, F से ͩकस प्रकार संबंͬधत है?",
+    "options": [
+      "Father-in-law / ससुर",
+      "Mother / माता",
+      "Mother-in-law / सास",
+      "Father / पिता",
+      "None of these / इनमें से कोई नहीं"
+    ],
+    "answer": 4,
+    "explanation": "W's relationship to F cannot be definitively determined from the given information."
+  },
+  {
+    "id": "family-008",
+    "question": "The information is given about a family of three generations - X is the father of V, who is married to F. U is the sister-in-law of F. R is the brother of W, who is the spouse of X. U is the niece of R, who is the son of O.\n\nतीन पीǑढ़यों के एक पǐरवार के बारे में जानकारी दी गई है - X, V का ͪपता है, िजसकी शादी F से हुई है। U, F की भाभी है। R, W का भाई है, जो X का जीवनसाथी है। U, R की भतीजी है, जो O का बेटा है।\n\nIf V is male then how is V related to R?\nयǑद V पुरुष है तो V, R से ͩकस प्रकार संबंͬधत है?",
+    "options": [
+      "Son / बेटा",
+      "Brother / भाई",
+      "Nephew / भतीजा",
+      "Grandson / पोता",
+      "None of these / इनमें से कोई नहीं"
+    ],
+    "answer": 2,
+    "explanation": "If V is male, then V is the nephew of R."
+  },
+  
+  
+  {
+    "id": "family-021",
+    "question": "There are six members U, V, W, X, Y & Z in the family of three generations. Each generation has a couple. V is the son of X. The gender of Y and W is the same. U is not married to Z. W is the son-in-law of Z, who is not married to V.\n\nतीन पीǑढ़यों के पǐरवार में छह सदस्य U, V, W, X, Y और Z हैं। प्रत्येक पीढ़ी के पास एक जोड़ा है। V, X का पुत्र है। Y और W का लिंग समान है। U का विवाह Z से नहीं हुआ है। W, Z का दामाद है, जिसकी शादी V से नहीं हुई है।\n\nHow V is related to W?\nV, W से ͩकस प्रकार संबंͬधत है?",
+    "options": [
+      "Son",
+      "Mother",
+      "Daughter",
+      "Father",
+      "None of these"
+    ],
+    "answer": 0,
+    "explanation": "V is the son of X and W is in the same generation, making V the son of W's in-law generation, hence V is Son relative to W."
+  },
+  {
+    "id": "family-022",
+    "question": "There are six members U, V, W, X, Y & Z in the family of three generations. Each generation has a couple. V is the son of X. The gender of Y and W is the same. U is not married to Z. W is the son-in-law of Z, who is not married to V.\n\nतीन पीǑढ़यों के पǐरवार में छह सदस्य U, V, W, X, Y और Z हैं। प्रत्येक पीढ़ी के पास एक जोड़ा है। V, X का पुत्र है। Y और W का लिंग समान है। U का विवाह Z से नहीं हुआ है। W, Z का दामाद है, जिसकी शादी V से नहीं हुई है।\n\nHow X is related to Y?\nX, Y से ͩकस प्रकार संबंͬधत है?",
+    "options": [
+      "Son",
+      "Mother",
+      "Daughter",
+      "Father",
+      "None of these"
+    ],
+    "answer": 2,
+    "explanation": "Based on the family structure and gender relations, X is the daughter of Y's in-law generation, hence the relation is Daughter."
+  },
+  
+  
+  {
+  "id": "family-025",
+  "question": "Ramesh is Sangeeta’s brother. Vikas is Sangeeta’s father. Sachin is Shreya’s son. Shreya is Vikas’s sister. How is Ramesh related to Sachin?\n\nरमेश संगीता का भाई है। ͪवकास संगीता के पिता हैं। सचिन श्रेया का बेटा है। श्रेया, ͪवकास की बहन है। रमेश सचिन से ͩकस प्रकार संबंͬधत है?",
+  "options": [
+    "Son",
+    "Daughter",
+    "Wife",
+    "Husband",
+    "Cousin"
+  ],
+  "answer": 4,
+  "explanation": "Ramesh is the brother of Sangeeta, whose father is Vikas. Shreya is Vikas's sister, so Sachin is Shreya’s son, making Ramesh and Sachin cousins."
+},
+  
+  {
+    "id": "family-023",
+    "question": "There are seven members in a family consisting of three generations and two married couples. A is the mother of F’s spouse. B is the father of G and the grandfather of C. A has two children. D is the only daughter of G. E is the brother-in-law of F, who is the mother of C.\n\nतीन पीǑढ़यों और दो ͪववाǑहत जोड़ों से युक्त एक पǐरवार में सात सदस्य हैं। A, F के पति या पत्नी की माँ है। B, G का पिता है और C का दादा है। A के दो बच्चे हैं। D, G की इकलौती बेटी है। E, F का बहनोई है, जो C की माँ है।\n\nWho among the following is the nephew of E?\nǓनम्नͧलͨखत में से कौन E का भतीजा/भांजा है?",
+    "options": [
+      "F",
+      "D",
+      "C",
+      "G",
+      "None of these"
+    ],
+    "answer": 2,
+    "explanation": "C is the child of F, who is E's sister-in-law, making C the nephew of E."
+  },
+  {
+    "id": "family-024",
+    "question": "There are seven members in a family consisting of three generations and two married couples. A is the mother of F’s spouse. B is the father of G and the grandfather of C. A has two children. D is the only daughter of G. E is the brother-in-law of F, who is the mother of C.\n\nतीन पीǑढ़यों और दो ͪववाǑहत जोड़ों से युक्त एक पǐरवार में सात सदस्य हैं। A, F के पति या पत्नी की माँ है। B, G का पिता है और C का दादा है। A के दो बच्चे हैं। D, G की इकलौती बेटी है। E, F का बहनोई है, जो C की माँ है।\n\nHow many male members are in the family?\nपǐरवार में ͩकतने पुरुष सदस्य हैं?",
+    "options": [
+      "2",
+      "3",
+      "1",
+      "4",
+      "Cannot be determined"
+    ],
+    "answer": 3,
+    "explanation": "Male members are B, G, E, and C if C is male, giving 4 males in total."
+  },
+  
+  
+  
+  
+  
+  
+  
+  
+  {
+    "id": "family-019",
+    "question": "F, G, H, I & J in the family consisting of three generations and three married couples. H is the daughter of I, who is the daughter-in-law of G. E is the parent of J, who is the only brother of F. C is the only son of G. F is the niece of C. G is the mother-in-law of E. D is the maternal grandfather of J.\n\nतीन पीǑढ़यों और तीन ͪववाǑहत जोड़ों वाले पǐरवार में नौ सदस्य B, C, D, E, F, G, H, I और J हैं। H, I की बेटी है, जो G की बहू है। E, J का माता-पिता है, जो F का इकलौता भाई है। C, G का इकलौता बेटा है। F, C का भतीजी है। G, E की सास है। D, J का नाना है।\n\nHow is H related to J?\nH, J से ͩकस प्रकार संबंͬधत है?",
+    "options": [
+      "Niece",
+      "Cousin",
+      "Son",
+      "Father",
+      "None of these"
+    ],
+    "answer": 1,
+    "explanation": "H is the cousin of J according to the family structure provided."
+  },
+  {
+    "id": "family-020",
+    "question": "F, G, H, I & J in the family consisting of three generations and three married couples. H is the daughter of I, who is the daughter-in-law of G. E is the parent of J, who is the only brother of F. C is the only son of G. F is the niece of C. G is the mother-in-law of E. D is the maternal grandfather of J.\n\nतीन पीǑढ़यों और तीन ͪववाǑहत जोड़ों वाले पǐरवार में नौ सदस्य B, C, D, E, F, G, H, I और J हैं। H, I की बेटी है, जो G की बहू है। E, J का माता-पिता है, जो F का इकलौता भाई है। C, G का इकलौता बेटा है। F, C का भतीजी है। G, E की सास है। D, J का नाना है।\n\nWho among the following is the sister-in-law of I?\nǓनम्नͧलͨखत में से कौन I की भाभी/साली है?",
+    "options": [
+      "E",
+      "F",
+      "B",
+      "J",
+      "G"
+    ],
+    "answer": 2,
+    "explanation": "B is the sister-in-law of I according to the given family relations."
+  },
+  
+  
+  {
+    "id": "family-017",
+    "question": "There are 7 members E, F, G, H, I, J and K in the family which consists of 3 generations and 2 married couples. No single parent is present in the family. J is the wife of the father-in-law of G. H is the only daughter of J. E is the daughter of I, who has two children. K is not the child of G.\n\nपǐरवार में 7 सदस्य E, F, G, H, I, J और K हैं जिनमें 3 पीǑढ़यां और 2 ͪववाǑहत जोड़े शामिल हैं। पǐरवार में कोई एकल माता-पिता मौजूद नहीं हैं। J, G के ससुर की पत्नी है। H, J की इकलौती बेटी है। E, I की बेटी है, जिसके दो बच्चे हैं। K, G की संतान नहीं है।\n\nHow is K related to F?\nK, F से ͩकस प्रकार संबंͬधत है?",
+    "options": [
+      "Father",
+      "Grandfather",
+      "Brother",
+      "Uncle",
+      "None of these"
+    ],
+    "answer": 1,
+    "explanation": "K is the grandfather of F according to the given family structure."
+  },
+  {
+    "id": "family-018",
+    "question": "There are 7 members E, F, G, H, I, J and K in the family which consists of 3 generations and 2 married couples. No single parent is present in the family. J is the wife of the father-in-law of G. H is the only daughter of J. E is the daughter of I, who has two children. K is not the child of G.\n\nपǐरवार में 7 सदस्य E, F, G, H, I, J और K हैं जिनमें 3 पीǑढ़यां और 2 ͪववाǑहत जोड़े शामिल हैं। पǐरवार में कोई एकल माता-पिता मौजूद नहीं हैं। J, G के ससुर की पत्नी है। H, J की इकलौती बेटी है। E, I की बेटी है, जिसके दो बच्चे हैं। K, G की संतान नहीं है।\n\nHow is F related to the husband of G?\nF, G के पǓत से ͩकस प्रकार संबंͬधत है?",
+    "options": [
+      "Daughter",
+      "Son",
+      "Brother",
+      "Sister",
+      "Either A or B"
+    ],
+    "answer": 4,
+    "explanation": "F can either be the son or daughter of the husband of G based on the information given."
+  },
+  
+  
+  
+  
+  
+  {
+    "id": "family-014",
+    "question": "There are eight members in the family L, M, N, R, T, V, W & Z. W is the brother-in-law of Z. N is the wife of V. R is unmarried. Only M is the son-in-law of V. L is the sister-in-law of R. Z is the only sister of L. R is the son of N.\n\nपǐरवार में आठ सदस्य हैं L, M, N, R, T, V, W & Z। W, Z का बहनोई है। N, V की पत्नी है। R अͪववाǑहत है। केवल M, V का दामाद है। L, R की भाभी है। Z, L की इकलौती बहन है। R, N का बेटा है।\n\nWho is the sister of W?\nW की बहन कौन है?",
+    "options": [
+      "M",
+      "L",
+      "Z",
+      "T",
+      "None of these / इनमें से कोई नहीं"
+    ],
+    "answer": 3,
+    "explanation": "T is the sister of W according to the family information."
+  },
+  {
+    "id": "family-015",
+    "question": "There are eight members in the family L, M, N, R, T, V, W & Z. W is the brother-in-law of Z. N is the wife of V. R is unmarried. Only M is the son-in-law of V. L is the sister-in-law of R. Z is the only sister of L. R is the son of N.\n\nपǐरवार में आठ सदस्य हैं L, M, N, R, T, V, W & Z। W, Z का बहनोई है। N, V की पत्नी है। R अͪववाǑहत है। केवल M, V का दामाद है। L, R की भाभी है। Z, L की इकलौती बहन है। R, N का बेटा है।\n\nHow many brothers-in-law does M have?\nM के ͩकतने जीजा/साले हैं?",
+    "options": [
+      "3",
+      "4",
+      "2",
+      "1",
+      "0"
+    ],
+    "answer": 2,
+    "explanation": "M has 2 brothers-in-law based on the family structure."
+  },
+  {
+    "id": "family-016",
+    "question": "There are eight members in the family L, M, N, R, T, V, W & Z. W is the brother-in-law of Z. N is the wife of V. R is unmarried. Only M is the son-in-law of V. L is the sister-in-law of R. Z is the only sister of L. R is the son of N.\n\nपǐरवार में आठ सदस्य हैं L, M, N, R, T, V, W & Z। W, Z का बहनोई है। N, V की पत्नी है। R अͪववाǑहत है। केवल M, V का दामाद है। L, R की भाभी है। Z, L की इकलौती बहन है। R, N का बेटा है।\n\nHow V is related to L?\nV, L से ͩकस प्रकार संबंͬधत है?",
+    "options": [
+      "Grandfather",
+      "Brother",
+      "Father",
+      "Father-in-law",
+      "Mother-in-law"
+    ],
+    "answer": 3,
+    "explanation": "V is the father-in-law of L according to the given family relations."
+  },
+  
+  
+  
+  
+  {
+    "id": "family-011",
+    "question": "There are eight members in a family consisting of three generations and three married couples. U is the husband of T and father of X. Y is the sister-in-law of T and wife of Z. T doesn’t have any siblings. V is the paternal grandfather of S and father-in-law of T. X is the only grandson of W, who has only one son.\n\nतीन पीǑढ़यों और तीन ͪववाǑहत जोड़ों से युक्त एक पǐरवार में आठ सदस्य हैं। U, T का पǓत और X का ͪपता है। Y, T की भाभी है और Z की पत्नी है। T का कोई भाई-बहन नहीं है। V, S का दादा और T का ससुर है। X, W का एकमात्र पोता है, िजसका के वल एक बेटा है।\n\nWho among the following is one of the siblings?\nǓन्म्नͧलͨखत में से कौन सहोदर है?",
+    "options": [
+      "S",
+      "U",
+      "V",
+      "T",
+      "None of these / इनमें से कोई नहीं"
+    ],
+    "answer": 3,
+    "explanation": "T is one of the siblings in the family."
+  },
+  {
+    "id": "family-012",
+    "question": "There are eight members in a family consisting of three generations and three married couples. U is the husband of T and father of X. Y is the sister-in-law of T and wife of Z. T doesn’t have any siblings. V is the paternal grandfather of S and father-in-law of T. X is the only grandson of W, who has only one son.\n\nतीन पीǑढ़यों और तीन ͪववाǑहत जोड़ों से युक्त एक पǐरवार में आठ सदस्य हैं। U, T का पǓत और X का ͪपता है। Y, T की भाभी है और Z की पत्नी है। T का कोई भाई-बहन नहीं है। V, S का दादा और T का ससुर है। X, W का एकमात्र पोता है, िजसका के वल एक बेटा है।\n\nWhich of the following relation is true?\nǓन्म्नͧलͨखत में से कौन सा संबंध सत्य है?",
+    "options": [
+      "T is the sister of Z",
+      "V is the mother-in-law of T",
+      "X is the niece of Y",
+      "U is the sister-in-law of T",
+      "Z is the brother-in-law of U"
+    ],
+    "answer": 4,
+    "explanation": "Z is the brother-in-law of U."
+  },
+  {
+    "id": "family-013",
+    "question": "There are eight members in a family consisting of three generations and three married couples. U is the husband of T and father of X. Y is the sister-in-law of T and wife of Z. T doesn’t have any siblings. V is the paternal grandfather of S and father-in-law of T. X is the only grandson of W, who has only one son.\n\nतीन पीǑढ़यों और तीन ͪववाǑहत जोड़ों से युक्त एक पǐरवार में आठ सदस्य हैं। U, T का पǓत और X का ͪपता है। Y, T की भाभी है और Z की पत्नी है। T का कोई भाई-बहन नहीं है। V, S का दादा और T का ससुर है। X, W का एकमात्र पोता है, िजसका के वल एक बेटा है।\n\nWhat is the difference between the number of male and female members in this family?\nइस पǐरवार में पुरुष और मǑहला सदस्यों की संख्या के बीच क्या अंतर है?",
+    "options": [
+      "1",
+      "2",
+      "0",
+      "4",
+      "3"
+    ],
+    "answer": 2,
+    "explanation": "The number of male and female members in this family is equal, so the difference is 0."
+  },
+  
+  
+  
+  {
+    "id": "family-009",
+    "question": "Family U, V, W, X, Y and Z. There are two couples in the family. W is X’s daughter. U and Z don’t have any children. X doesn't have any siblings. V is the maternal grandmother of W. Y and U are the twin sisters. Z is a brother-in-law of Y.\n\nएक पǐरवार में छह सदस्य U, V, W, X, Y और Z हैं। पǐरवार में दो जोड़े हैं। W, X की बेटी है। U और Z की कोई संतान नहीं है। X का कोई भाई-बहन नहीं है। V, W की नानी है। Y और U जुड़वां बहनें हैं। Z, Y का बहनोई है।\n\nWho is the daughter of V?\nV की पुत्री कौन है?",
+    "options": [
+      "X",
+      "Z",
+      "U",
+      "W",
+      "None of these / इनमें से कोई नहीं"
+    ],
+    "answer": 2,
+    "explanation": "U is the daughter of V."
+  },
+  {
+    "id": "family-010",
+    "question": "Family U, V, W, X, Y and Z. There are two couples in the family. W is X’s daughter. U and Z don’t have any children. X doesn't have any siblings. V is the maternal grandmother of W. Y and U are the twin sisters. Z is a brother-in-law of Y.\n\nएक पǐरवार में छह सदस्य U, V, W, X, Y और Z हैं। पǐरवार में दो जोड़े हैं। W, X की बेटी है। U और Z की कोई संतान नहीं है। X का कोई भाई-बहन नहीं है। V, W की नानी है। Y और U जुड़वां बहनें हैं। Z, Y का बहनोई है।\n\nHow Z is related to W?\nZ, W से ͩकस प्रकार संबंͬधत है?",
+    "options": [
+      "Father / पिता",
+      "Mother / माता",
+      "Aunt / चाची / बुआ",
+      "Uncle / चाचा / मामा",
+      "Grandmother / दादी / नानी"
+    ],
+    "answer": 3,
+    "explanation": "Z is the uncle of W."
+  },
+  
+  
+  
+    
+    ]
+  
+  
+  
+  
+  
+  
+  
       
     }
   },
