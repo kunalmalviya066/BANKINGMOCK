@@ -7583,12 +7583,255 @@ const DB = {
     "answer": 0,
     "explanation": "After rearrangements, product = 18."
   },
-          
-          
-          
-          
-          
-          ]
+  
+  {
+    "id": "lr-ser-052",
+    "question": "352 627 841 582\n\n1. Which is the second digit of the third lowest number?\nतीसरी सबसे छोटी संख्या का दूसरा अंक कौन सा है?",
+    "options": ["2", "4", "8", "None of the above"],
+    "answer": 2,
+    "explanation": "The third lowest number is 582; its second digit is 8."
+  },
+  {
+    "id": "lr-ser-053",
+    "question": "352 627 841 582\n\n2. If the positions of the first and third digit of each of the numbers are interchanged, which of the following will be the second digit of the highest number?\nयदि प्रत्येक संख्या के पहले और तीसरे अंक के स्थान को परस्पर बदल दिया जाए, तो निम्नलिखित में से सबसे बड़ी संख्या का दूसरा अंक कौन होगा?",
+    "options": ["9", "1", "8", "2", "None of the above"],
+    "answer": 1,
+    "explanation": "After interchange, 841 becomes 148, making 148 highest; second digit = 1."
+  },
+  {
+    "id": "lr-ser-054",
+    "question": "352 627 841 149 582\n\n3. Which will be the addition of the first and last digit of the fourth lowest number?\nचौथी सबसे छोटी संख्या के पहले और अंतिम अंक का योग क्या होगा?",
+    "options": ["13", "10", "7", "None of the above"],
+    "answer": 0,
+    "explanation": "Fourth lowest is 841; 8+5=13."
+  },
+  {
+    "id": "lr-ser-055",
+    "question": "352 627 841 149 582\n\n4. If the positions of the first and second digit of each number are interchanged, which of the following will be the square of the last digit of the highest number?\nयदि प्रत्येक संख्या के पहले और दूसरे अंक को परस्पर बदल दिया जाए, तो निम्नलिखित में से सबसे बड़ी संख्या के अंतिम अंक का वर्ग कौन होगा?",
+    "options": ["2", "1", "9", "4", "None of the above"],
+    "answer": 3,
+    "explanation": "Highest number’s last digit is 2; square is 4."
+  },
+  {
+    "id": "lr-ser-056",
+    "question": "352 627 841 149 582\n\n5. Which is the sum of the digits of the second lowest number?\nदूसरी सबसे छोटी संख्या के अंकों का योग क्या है?",
+    "options": ["14", "13", "10", "15", "None of the above"],
+    "answer": 2,
+    "explanation": "Second lowest number 352 → 3+5+2=10."
+  },
+  {
+    "id": "lr-ser-057",
+    "question": "950 724 251 374\n\n6. If the positions of the first and last digit of each number are interchanged, which will be the first digit of the lowest number?\nयदि प्रत्येक संख्या के पहले और अंतिम अंक के स्थान को परस्पर बदल दिया जाए, तो सबसे छोटी संख्या का पहला अंक कौन होगा?",
+    "options": ["9", "5", "7", "1", "None of the above"],
+    "answer": 1,
+    "explanation": "After interchange, lowest number’s first digit = 5."
+  },
+  {
+    "id": "lr-ser-058",
+    "question": "950 724 251 374\n\n7. Which is the cube of the last digit of the fourth highest number?\nचौथी सबसे बड़ी संख्या के अंतिम अंक का घन कौन होगा?",
+    "options": ["16", "1", "64", "0", "None of the above"],
+    "answer": 2,
+    "explanation": "Last digit 4; cube 64."
+  },
+  {
+    "id": "lr-ser-059",
+    "question": "950 348 724 251 374\n\n8. If all the numbers are multiplied by 2, which of the following will be fourth lowest number?\nयदि सभी संख्याओं को 2 से गुणा किया जाए, तो निम्नलिखित में से चौथी सबसे छोटी संख्या कौन होगी?",
+    "options": ["502", "748", "1900", "1448", "None of the above"],
+    "answer": 3,
+    "explanation": "After doubling, 724×2=1448 is fourth lowest."
+  },
+  {
+    "id": "lr-ser-060",
+    "question": "950 348 724 251 374\n\n9. If the positions of the second and third digit of each number are interchanged, which will be the second digit of the third lowest number?\nयदि प्रत्येक संख्या के दूसरे और तीसरे अंक के स्थान को परस्पर बदल दिया जाए, तो तीसरी सबसे छोटी संख्या का दूसरा अंक कौन होगा?",
+    "options": ["4", "7", "8", "3", "None of the above"],
+    "answer": 2,
+    "explanation": "After swap, third lowest’s second digit is 8."
+  },
+  {
+    "id": "lr-ser-061",
+    "question": "950 348 724 251 374\n\n10. Which is the square of the first digit of the fourth highest number?\nचौथी सबसे बड़ी संख्या के पहले अंक का वर्ग कौन होगा?",
+    "options": ["3", "9", "16", "64", "None of the above"],
+    "answer": 1,
+    "explanation": "First digit 3; 3²=9."
+  },
+  {
+    "id": "lr-ser-062",
+    "question": "24457150968724622728305937642341 16978\n\n11. How many 4s are there those are either immediately preceded or immediately followed by an even number?\nकितने 4 ऐसे हैं जो या तो तुरंत पहले या तुरंत बाद सम संख्या से जुड़े हैं?",
+    "options": ["4", "2", "3", "1", "None of the above"],
+    "answer": 1,
+    "explanation": "Only one such 4 found."
+  },
+  {
+    "id": "lr-ser-063",
+    "question": "24457150968724622728305937642341 16978\n\n12. How many prime numbers are there those are immediately preceded by an even number greater or equal to 4?\nकितनी अभाज्य संख्याएँ हैं जो तुरंत पहले 4 या उससे बड़ी सम संख्या से जुड़ी हैं?",
+    "options": ["8", "6", "4", "7", "5"],
+    "answer": 2,
+    "explanation": "There are 4 such prime numbers."
+  },
+  {
+    "id": "lr-ser-064",
+    "question": "24457150968724622728305937642341 16978\n\n13. Which of the following will be the difference between the third prime number from the left end and eighth even number from the right end?\nबाएँ छोर से तीसरी अभाज्य संख्या और दाएँ छोर से आठवीं सम संख्या के बीच का अंतर क्या होगा?",
+    "options": ["3", "1", "4", "5", "None of the above"],
+    "answer": 3,
+    "explanation": "Difference = 5."
+  },
+  {
+    "id": "lr-ser-065",
+    "question": "24457150968724622728305937642341 16978\n\n14. If all the even numbers present in the series are deleted, which of the following will be ninth number from the right end?\nयदि श्रृंखला से सभी सम संख्याएँ हटा दी जाएँ, तो दाएँ छोर से नौवीं संख्या कौन सी होगी?",
+    "options": ["9", "3", "7", "5", "None of the above"],
+    "answer": 3,
+    "explanation": "After deletion, ninth from right is 5."
+  },
+  {
+    "id": "lr-ser-066",
+    "question": "24457150968724622728305937642341 16978\n\n15. Which of the following will be the sixth number to the left of twenty second number from the left end?\nबाएँ छोर से बाईसवीं संख्या के बाएँ छठी संख्या कौन सी होगी?",
+    "options": ["2", "3", "6", "7", "None of the above"],
+    "answer": 0,
+    "explanation": "That position gives 2."
+  },
+  {
+    "id": "lr-ser-067",
+    "question": "2569157443122236477206458961239\n\n16. If all the squares are deleted from the above series, which of the following will be the fourteenth number from the left end?\nयदि ऊपर दी गई श्रृंखला से सभी वर्ग हटाए जाएँ, तो बाएँ से चौदहवीं संख्या कौन सी होगी?",
+    "options": ["7", "4", "2", "0", "None of the above"],
+    "answer": 2,
+    "explanation": "14th from left is 2."
+  },
+  {
+    "id": "lr-ser-068",
+    "question": "2569157443122236477206458961239\n\n17. If the last fifteen numbers are reversed, which of the following will be the twenty second number from the left end?\nयदि अंतिम पंद्रह संख्याएँ उलट दी जाएँ, तो बाएँ छोर से बाईसवीं संख्या कौन सी होगी?",
+    "options": ["0", "5", "2", "4", "None of the above"],
+    "answer": 1,
+    "explanation": "22nd number is 5."
+  },
+  {
+    "id": "lr-ser-069",
+    "question": "2569157443122236477206458961239\n\n18. How many even numbers are there which are immediately followed by a prime number but not immediately preceded by an odd number?\nकितनी सम संख्याएँ हैं जो तुरंत बाद अभाज्य संख्या से जुड़ी हैं परंतु तुरंत पहले विषम संख्या नहीं है?",
+    "options": ["7", "8", "5", "6", "None of the above"],
+    "answer": 3,
+    "explanation": "Total such even numbers = 6."
+  },
+  {
+    "id": "lr-ser-070",
+    "question": "2569157443122236477206458961239\n\n19. Which of the following will be the difference between the eighth prime number from the right end and the tenth even number from the left end?\nदाएँ छोर से आठवीं अभाज्य संख्या और बाएँ छोर से दसवीं सम संख्या के बीच का अंतर क्या होगा?",
+    "options": ["7", "1", "5", "4", "None of the above"],
+    "answer": 2,
+    "explanation": "Difference = 5."
+  },
+  {
+    "id": "lr-ser-071",
+    "question": "2569157443122236477206458961239\n\n20. How many 2s are there which are either immediately preceded or immediately followed by a prime number?\nकितने 2 ऐसे हैं जो या तो तुरंत पहले या तुरंत बाद अभाज्य संख्या से जुड़े हैं?",
+    "options": ["5", "7", "8", "9", "None of the above"],
+    "answer": 0,
+    "explanation": "There are 5 such 2s."
+  },
+  {
+    "id": "lr-ser-072",
+    "question": "429 637 148 391 926\n\n21. If the positions of the first and last digit of each are interchanged, which will be the fourth highest number?\nयदि प्रत्येक संख्या के पहले और अंतिम अंक को परस्पर बदल दिया जाए, तो चौथी सबसे बड़ी संख्या कौन सी होगी?",
+    "options": ["429", "637", "148", "391", "926"],
+    "answer": 4,
+    "explanation": "Fourth highest is 926."
+  },
+  {
+    "id": "lr-ser-073",
+    "question": "429 637 148 391 926\n\n22. If 5 is subtracted from each number, how many odd numbers will be there?\nयदि प्रत्येक संख्या में से 5 घटाया जाए, तो कितनी विषम संख्याएँ होंगी?",
+    "options": ["2", "1", "3", "None", "None of the above"],
+    "answer": 0,
+    "explanation": "Two numbers become odd."
+  },
+  {
+    "id": "lr-ser-074",
+    "question": "429 637 148 391 926\n\n23. If all the digits of each number are added, how many of them will have an odd result?\nयदि प्रत्येक संख्या के सभी अंकों को जोड़ा जाए, तो कितनों का योग विषम होगा?",
+    "options": ["2", "3", "1", "None", "None of the above"],
+    "answer": 4,
+    "explanation": "None yields an odd sum."
+  },
+  {
+    "id": "lr-ser-075",
+    "question": "429 637 148 391 926\n\n24. If 1 is added to all odd numbers and 1 is subtracted from all even numbers, which of the following will be last digit of the third highest number?\nयदि सभी विषम संख्याओं में 1 जोड़ा जाए और सभी सम संख्याओं में 1 घटाया जाए, तो तीसरी सबसे बड़ी संख्या का अंतिम अंक कौन होगा?",
+    "options": ["7", "1", "5", "2", "None of the above"],
+    "answer": 3,
+    "explanation": "Last digit becomes 2."
+  },
+  {
+    "id": "lr-ser-076",
+    "question": "429 637 148 391 926\n\n25. If the positions of the second and third digit of each number are interchanged, which will be the square of the second digit of the third highest number?\nयदि प्रत्येक संख्या के दूसरे और तीसरे अंक को परस्पर बदल दिया जाए, तो तीसरी सबसे बड़ी संख्या के दूसरे अंक का वर्ग कौन होगा?",
+    "options": ["9", "16", "4", "81", "None of the above"],
+    "answer": 3,
+    "explanation": "Square = 81."
+  },
+  {
+    "id": "lr-ser-077",
+    "question": "324567981035125955688825135779620247\n\n26. How many even numbers are immediately preceded by a prime number and immediately followed by an odd number?\nकितनी सम संख्याएँ ऐसी हैं जो तुरंत पहले अभाज्य संख्या और तुरंत बाद विषम संख्या से जुड़ी हैं?",
+    "options": ["2", "4", "3", "None", "None of the above"],
+    "answer": 2,
+    "explanation": "Three such even numbers found."
+  },
+  {
+    "id": "lr-ser-078",
+    "question": "324567981035125955688825135779620247\n\n27. If all the prime numbers are deleted, which will be the fourth number to the left of sixth even number from the right end?\nयदि सभी अभाज्य संख्याएँ हटा दी जाएँ, तो दाएँ छोर से छठी सम संख्या के बाएँ चौथी संख्या कौन सी होगी?",
+    "options": ["3", "5", "2", "0", "None of the above"],
+    "answer": 3,
+    "explanation": "Fourth to left is 0."
+  },
+  {
+    "id": "lr-ser-079",
+    "question": "324567981035125955688825135779620247\n\n28. Which of the following will be the multiplication of thirteenth number from the left end and eighth number from the right end?\nबाएँ छोर से तेरहवीं संख्या और दाएँ छोर से आठवीं संख्या का गुणनफल क्या होगा?",
+    "options": ["15", "18", "7", "14", "None of the above"],
+    "answer": 2,
+    "explanation": "Multiplication result = 7."
+  },
+  {
+    "id": "lr-ser-080",
+    "question": "324567981035125955688825135779620247\n\n29. How many numbers which are multiple of 4 are either immediately preceded or immediately followed by a prime number?\nकितनी संख्याएँ जो 4 के गुणज हैं, या तो तुरंत पहले या तुरंत बाद अभाज्य संख्या से जुड़ी हैं?",
+    "options": ["2", "3", "1", "None", "None of the above"],
+    "answer": 2,
+    "explanation": "Only one such number found."
+  },
+  {
+    "id": "lr-ser-081",
+    "question": "324567981035125955688825135779620247\n\n30. Which of the following will be the sixth even number to the left of seventh prime number from the right end?\nदाएँ छोर से सातवीं अभाज्य संख्या के बाएँ छठी सम संख्या कौन सी होगी?",
+    "options": ["2", "4", "6", "8", "None of these"],
+    "answer": 0,
+    "explanation": "Answer = 2."
+  },
+  {
+    "id": "lr-ser-082",
+    "question": "8791 1063 3150 7282 3675\n\n31. Which of the following is the third digit of the fourth lowest number?\nचौथी सबसे छोटी संख्या का तीसरा अंक कौन है?",
+    "options": ["9", "0", "1", "None of the above"],
+    "answer": 3,
+    "explanation": "Third digit is 8 (none of the above)."
+  },
+  {
+    "id": "lr-ser-083",
+    "question": "8791 1063 3150 7282 3675\n\n32. If the positions of the first and third digit of each of the numbers are interchanged, which of the following will be the second digit of the third highest number?\nयदि प्रत्येक संख्या के पहले और तीसरे अंक को परस्पर बदल दिया जाए, तो तीसरी सबसे बड़ी संख्या का दूसरा अंक कौन होगा?",
+    "options": ["7", "0", "1", "2", "None of the above"],
+    "answer": 0,
+    "explanation": "Second digit = 7."
+  },
+  {
+    "id": "lr-ser-084",
+    "question": "8791 1063 3150 7282 3675\n\n33. If 3 is added to all even numbers and 2 is subtracted from all odd numbers, which will be the second lowest number?\nयदि सभी सम संख्याओं में 3 जोड़ा जाए और सभी विषम संख्याओं में 2 घटाया जाए, तो दूसरी सबसे छोटी संख्या कौन होगी?",
+    "options": ["7282", "1063", "3675", "3150", "None of the above"],
+    "answer": 3,
+    "explanation": "Second lowest = 3150."
+  },
+  {
+    "id": "lr-ser-085",
+    "question": "8791 1063 3150 7282 3675\n\n34. If all the numbers are arranged in ascending order, which of the following will be the square of the last digit of the third lowest number?\nयदि सभी संख्याएँ आरोही क्रम में व्यवस्थित की जाएँ, तो तीसरी सबसे छोटी संख्या के अंतिम अंक का वर्ग कौन होगा?",
+    "options": ["4", "9", "16", "25", "None of the above"],
+    "answer": 1,
+    "explanation": "Last digit 3 → 3²=9."
+  },
+  {
+    "id": "lr-ser-086",
+    "question": "8791 1063 3150 7282 3675\n\n35. Which of the following will be the cube of the second digit of the second highest number?\nदूसरी सबसे बड़ी संख्या के दूसरे अंक का घन कौन होगा?",
+    "options": ["8", "27", "64", "125", "None of the above"],
+    "answer": 2,
+    "explanation": "Second digit 4 → 4³=64."
+  }
+
+      
+ ]
   
   
   
