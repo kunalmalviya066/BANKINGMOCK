@@ -7831,7 +7831,532 @@ const DB = {
   }
 
       
- ]
+ ],
+ 
+ "Direction and Distance": [
+   
+   
+   
+  {
+    "id": "lr-dir-001",
+    "question": "Ramesh started walking from point S. Point T is 20cm north of point S. Point S is 6cm east of point Z. Point T is 6cm west of point Y. Point U is 6cm west of point W. Point V is 20cm south of point Y. Point U is the midpoint of points V and Y. Point W is 10cm north of point X.\n\n1. What is the shortest distance between the points X and Z?\nǒब ंदु X और Z के बीच की न्यूनतम दूरी ͩकतनी है?\nA.6 cm\nB.12 cm\nC.18 cm\nD.24 cm\nE.15 cm",
+    "options": ["6 cm", "12 cm", "18 cm", "24 cm", "15 cm"],
+    "answer": 2,
+    "explanation": "After drawing the diagram, shortest distance between X and Z = 18 cm."
+  },
+  {
+    "id": "lr-dir-002",
+    "question": "Ramesh started walking from point S. Point T is 20cm north of point S. Point S is 6cm east of point Z. Point T is 6cm west of point Y. Point U is 6cm west of point W. Point V is 20cm south of point Y. Point U is the midpoint of points V and Y. Point W is 10cm north of point X.\n\n2. In which direction is point Z with respect to point Y?\nǒब ंदु Y के सन्दभर्भमेंǒब ंदु Z ͩकस Ǒदशा मेंहै?\nA.South west\nB.North west\nC.North east\nD.South\nE.South east",
+    "options": ["South west", "North west", "North east", "South", "South east"],
+    "answer": 0,
+    "explanation": "Z lies to the south-west of Y."
+  },
+  {
+    "id": "lr-dir-003",
+    "question": "Ramesh started walking from point S. Point T is 20cm north of point S. Point S is 6cm east of point Z. Point T is 6cm west of point Y. Point U is 6cm west of point W. Point V is 20cm south of point Y. Point U is the midpoint of points V and Y. Point W is 10cm north of point X.\n\n3. How far and in which direction is point W with respect to point Y?\nǒब ंदु Y के सन्दभर्भमेंǒब ंदु W ͩकतनी दूर और ͩकस Ǒदशा मेंहै?\nA.2√34 cm, south west\nB.2√34 cm, south east\nC.4√34 cm, west\nD.4√34 cm, east\nE.10 cm, south east",
+    "options": ["2√34 cm, south west", "2√34 cm, south east", "4√34 cm, west", "4√34 cm, east", "10 cm, south east"],
+    "answer": 1,
+    "explanation": "W is 2√34 cm south-east of Y."
+  },
+  {
+    "id": "lr-dir-004",
+    "question": "Point K is 6m to the east of point J, which is 8m to the north east of point I, which is 4m to the north of point H.\n\n4. In which direction is point H with respect to point K?\nǒब ंदु K के सन्दभर्भमेंǒब ंदु H ͩकस Ǒदशा मेंहै?\nA.South west\nB.North\nC.North west\nD.South\nE.South east",
+    "options": ["South west", "North", "North west", "South", "South east"],
+    "answer": 0,
+    "explanation": "Point H is to the south-west of point K."
+  },
+  {
+    "id": "lr-dir-005",
+    "question": "Point K is 6m to the east of point J, which is 8m to the north east of point I, which is 4m to the north of point H.\n\n5. If the point G is 5m towards the east point of I, then in which direction is point K with respect to the point G?\nयǑद ǒब ंदु G, ǒब ंदु I के पूवर्भकी ओर 5 मीटर है, तो ǒब ंदु G के संदभर्भमेंǒब ंदु K ͩकस Ǒदशा मेंहै?\nA.North west\nB.North east\nC.South west\nD.South\nE.South east",
+    "options": ["North west", "North east", "South west", "South", "South east"],
+    "answer": 1,
+    "explanation": "K is to the north-east of G."
+  },
+  {
+    "id": "lr-dir-006",
+    "question": "J is to the south of K. Z is to the west of Y, which is to the west of X. W is to the south of Y. K is to the west of Z.\n\n6. J is to the _____ of W.\n J, W के _____ मेंहै।\nA.North\nB.South\nC.North west\nD.West\nE.Cannot be determined",
+    "options": ["North", "South", "North west", "West", "Cannot be determined"],
+    "answer": 4,
+    "explanation": "The relative position of J and W cannot be determined from the given data."
+  },
+  {
+    "id": "lr-dir-007",
+    "question": "J is to the south of K. Z is to the west of Y, which is to the west of X. W is to the south of Y. K is to the west of Z.\n\n7. Z is to the _____ of W.\nZ, W के _____ मेंहै।\nA.North west\nB.South east\nC.South west\nD.West\nE.East",
+    "options": ["North west", "South east", "South west", "West", "East"],
+    "answer": 0,
+    "explanation": "Z lies to the north-west of W."
+  },
+  {
+    "id": "lr-dir-008",
+    "question": "Saurabh is standing at point K, facing the north direction. He starts walking towards the west and reaches point J after walking 12m. Then he moves 12m to his right towards point I. From point I, he again moves his right to reach point H, which is 8m apart from point I. He again moves towards the right to reach point G after covering a distance of 6m from point H. Finally, he moves 12m to his left to reach point F.\n\n8. In which direction is point I with respect to point K?\nǒब ंदु K के सन्दभर्भमेंǒब ंदु I ͩकस Ǒदशा मेंहै?\nA.South\nB.North west\nC.North east\nD.North\nE.South west",
+    "options": ["South", "North west", "North east", "North", "South west"],
+    "answer": 1,
+    "explanation": "Point I is to the north-west of K."
+  },
+  {
+    "id": "lr-dir-009",
+    "question": "Saurabh is standing at point K, facing the north direction. He starts walking towards the west and reaches point J after walking 12m. Then he moves 12m to his right towards point I. From point I, he again moves his right to reach point H, which is 8m apart from point I. He again moves towards the right to reach point G after covering a distance of 6m from point H. Finally, he moves 12m to his left to reach point F.\n\n9. What is the shortest distance between point K and point F?\nǒब ंदु K और ǒब ंदु F के बीच न्यूनतम दूरी ͩकतनी है?\nA.8m\nB.9m\nC.10m\nD.12m\nE.15m",
+    "options": ["8m", "9m", "10m", "12m", "15m"],
+    "answer": 2,
+    "explanation": "Shortest distance between K and F = 10m."
+  },
+  {
+    "id": "lr-dir-010",
+    "question": "Saurabh is standing at point K, facing the north direction. He starts walking towards the west and reaches point J after walking 12m. Then he moves 12m to his right towards point I. From point I, he again moves his right to reach point H, which is 8m apart from point I. He again moves towards the right to reach point G after covering a distance of 6m from point H. Finally, he moves 12m to his left to reach point F.\n\n10. Point F is in _____ direction of point H.\nǒब ंदु F, ǒब ंदु H की _____ Ǒदशा मेंहै।\nA.South west\nB.South east\nC.North west\nD.North east\nE.South",
+    "options": ["South west", "South east", "North west", "North east", "South"],
+    "answer": 1,
+    "explanation": "Point F is in the south-east direction of point H."
+  },
+  {
+    "id": "lr-dir-011",
+    "question": "There are six houses F, G, H, I, J & K. K is 8 km north of J. H is 10 km east of F, which is 12 km south of G. H is 8 km north of I, which is 12 km east of K.\n\n11. What is the shortest distance between house J and house Z, which is exactly between house K and house I?\nघर J और घर Z के बीच की न्यूनतम दूरी ͩकतनी है?\nA.8 km\nB.10 km\nC.12 km\nD.9 km\nE.15 km",
+    "options": ["8 km", "10 km", "12 km", "9 km", "15 km"],
+    "answer": 1,
+    "explanation": "Shortest distance between J and Z = 10 km."
+  },
+  {
+    "id": "lr-dir-012",
+    "question": "There are six houses F, G, H, I, J & K. K is 8 km north of J. H is 10 km east of F, which is 12 km south of G. H is 8 km north of I, which is 12 km east of K.\n\n12. In which direction is house K with respect to house H?\nघर H के सन्दभर्भमेंघर K ͩकस Ǒदशा मेंहै?\nA.South\nB.North west\nC.North\nD.North east\nE.South west",
+    "options": ["South", "North west", "North", "North east", "South west"],
+    "answer": 4,
+    "explanation": "House K is to the south-west of house H."
+  },
+  {
+    "id": "lr-dir-013",
+    "question": "Nine points (A, B, C, D, E, F, G, H & I) are at different distances and directions from each other. D is 30m to the south of B, which is 16m to the west of G. The distance between E and C is equal to the distance between G and F. A is 28m to the east of C. The distance between C and A is double the distance between B and A, which is to the south of B. E is 14m to the south of G. H is 12m to the west of F, which is to the west of B. E is 16m north of I.\n\n13. How far and in which direction is point E with respect to point B?\nǒब ंदु B के संदभर्भमेंǒब ंदु E ͩकतनी दूर और ͩकस Ǒदशा मेंहै?\nA.21 m, south west\nB.2√113 m, south west\nC.25 m, north west\nD.2√113 m, south east\nE.2√113 m, north east",
+    "options": ["21 m, south west", "2√113 m, south west", "25 m, north west", "2√113 m, south east", "2√113 m, north east"],
+    "answer": 3,
+    "explanation": "E is 2√113 m to the south-east of B."
+  },
+  {
+    "id": "lr-dir-014",
+    "question": "Nine points (A, B, C, D, E, F, G, H & I) are at different distances and directions from each other.\n\n14. In which direction is point H with respect to point I?\nǒब ंदु I के सन्दभर्भमेंǒब ंदु H ͩकस Ǒदशा मेंहै?\nA.South\nB.North east\nC.North\nD.North west\nE.South west",
+    "options": ["South", "North east", "North", "North west", "South west"],
+    "answer": 3,
+    "explanation": "Point H is to the north-west of point I."
+  },
+  {
+    "id": "lr-dir-015",
+    "question": "Nine points (A, B, C, D, E, F, G, H & I) are at different distances and directions from each other.\n\n15. Which one of the following doesn’t belong to this group?\nǓनम्नͧलͨखत मेंसेकौन इस समूह सेसंबंͬधत नहीं है?\nA.HB\nB.EG\nC.AD\nD.AC\nE.HA",
+    "options": ["HB", "EG", "AD", "AC", "HA"],
+    "answer": 4,
+    "explanation": "Option HA doesn’t fit in the group based on directional relationships."
+  },
+  {
+    "id": "lr-dir-016",
+    "question": "Samantha was facing the east direction. Then she took two 90 degree turns in an anticlockwise direction continuously, and then again took four 45 degree turns in the clockwise direction continuously. In which direction Samantha is facing now?\nसामंथा का मुख पूवर्भǑदशा की ओर था। ͩफर उसनेलगातार घड़ी की Ǒदशा मेंदो 90 ͫडग्री मोड़ ͧलए, और ͩफर लगातार घड़ी की Ǒदशा मेंचार 45 ͫडग्री मोड़ ͧलए। सामंथा अब ͩकस Ǒदशा की ओर उन्मुख है?\nA.South East\nB.East\nC.South\nD.North West\nE.North East",
+    "options": ["South East", "East", "South", "North West", "North East"],
+    "answer": 1,
+    "explanation": "After all rotations, Samantha is again facing East."
+  },
+  {
+    "id": "lr-dir-017",
+    "question": "Eight books A, G, H, L, M, N, S & V are lying on the table such that V is 12cm north of N, which is 10cm to the west of G. A is 10cm east of G. H is to the north of A. S is to the south of A. L is 20cm west of M, which is 5cm south of G. H is to the east of V. M is to the west of S.\n\n17. What is distance between S and H?\nS और H के बीच की दूरी ͩकतनी है?\nA.8 cm\nB.12 cm\nC.15 cm\nD.17 cm\nE.22 cm",
+    "options": ["8 cm", "12 cm", "15 cm", "17 cm", "22 cm"],
+    "answer": 3,
+    "explanation": "Distance between S and H = 17 cm."
+  },
+  {
+    "id": "lr-dir-018",
+    "question": "Eight books A, G, H, L, M, N, S & V are lying on the table such that V is 12cm north of N, which is 10cm to the west of G. A is 10cm east of G. H is to the north of A. S is to the south of A. L is 20cm west of M, which is 5cm south of G. H is to the east of V. M is to the west of S.\n\n18. In which direction is L with respect to V?\nV के सन्दभर्भमें L ͩकस Ǒदशा मेंहै?\nA.South west\nB.North west\nC.North east\nD.North\nE.None of these",
+    "options": ["South west", "North west", "North east", "North", "None of these"],
+    "answer": 0,
+    "explanation": "L is to the south-west of V."
+  },
+  {
+    "id": "lr-dir-019",
+    "question": "Eight books A, G, H, L, M, N, S & V are lying on the table such that V is 12cm north of N, which is 10cm to the west of G. A is 10cm east of G. H is to the north of A. S is to the south of A. L is 20cm west of M, which is 5cm south of G. H is to the east of V. M is to the west of S.\n\n19. How far and in which direction is H with respect to N?\nN के सन्दभर्भमें H ͩकतनी दूर और ͩकस Ǒदशा मेंहै?\nA.2√34 cm, south west\nB.2√34 cm, south east\nC.4√34 cm, west\nD.4√34 cm, north east\nE.10 cm, south east",
+    "options": ["2√34 cm, south west", "2√34 cm, south east", "4√34 cm, west", "4√34 cm, north east", "10 cm, south east"],
+    "answer": 3,
+    "explanation": "H is 4√34 cm to the north-east of N."
+  },
+  
+  // set 3 
+  
+  {
+    "id": "lr-ser-052",
+    "question": "Shukla is standing facing North, he walks straight for 30 m and then turns right and walks for 26 m. He then turns left and walks for 28 m and then again turns right and walks 32 m. He finally turns right and walks for 40 m. In which direction is he from with respect to his initial position?",
+    "options": ["East", "West", "North-east", "South-west", "South-east"],
+    "answer": 2,
+    "explanation": "After tracing his path step by step: North 30 m, East 26 m, North 28 m, East 32 m, South 40 m. Relative to starting point, he is North-East."
+  },
+  {
+    "id": "lr-ser-053",
+    "question": "Rajnikant was facing the east direction. Then she took two 90 degree turns in an anticlockwise direction continuously, and then again took four 45 degree turns in the clockwise direction continuously. In which direction Rajnikant is facing now?",
+    "options": ["South East", "East", "South", "North West", "North East"],
+    "answer": 1,
+    "explanation": "Starting East, two 90° anticlockwise turns → West. Then four 45° clockwise turns → East. Final direction: East."
+  },
+  {
+    "id": "lr-ser-054",
+    "question": "Point A is 3m west of point B. Point C is 5m north of point B. Point D is 6m east of point C. Point E is 10m south of point D. Point F is 7m south of point G. Point G is 3m west of point H. Point F is 4m east of point E. Point H is 7m north of point I. Point I is 3m west of point J. Point K is 5m north of point J.\n1. What is the shortest distance between point C and point F?",
+    "options": ["10m", "10√3m", "20√2m", "10√2m", "10√5m"],
+    "answer": 3,
+    "explanation": "After plotting coordinates, distance CF = √((D_x - C_x)² + (D_y - C_y)²) = 10√2 m."
+  },
+  {
+    "id": "lr-ser-055",
+    "question": "Point A is 3m west of point B. Point C is 5m north of point B. Point D is 6m east of point C. Point E is 10m south of point D. Point F is 7m south of point G. Point G is 3m west of point H. Point F is 4m east of point E. Point H is 7m north of point I. Point I is 3m west of point J. Point K is 5m north of point J.\n2. In which direction is point H with respect to point A?",
+    "options": ["North-west", "North-east", "East", "South-west", "South-east"],
+    "answer": 1,
+    "explanation": "After plotting all points, H is to the North-East of A."
+  },
+  {
+    "id": "lr-ser-056",
+    "question": "A person walked 8 m towards south from point M to reach point N. Then he took left turn and walked 5 m to reach point O. From point O, he took left turn and walked 2 m to reach point P. From point P, he took right turn and walked 6 m to reach point Q. After taking right turn from point Q he reach point R, which was at a distance of 8 m from point Q. At last, he took right turn from point R and walked 3 m to reach point S.\n2. Towards which direction is point P from point S?",
+    "options": ["North", "North-West", "North-East", "South-East", "South-West"],
+    "answer": 1,
+    "explanation": "By plotting each movement step, P lies to the North-West of S."
+  },
+  {
+    "id": "lr-ser-057",
+    "question": "A person walked 8 m towards south from point M to reach point N. Then he took left turn and walked 5 m to reach point O. From point O, he took left turn and walked 2 m to reach point P. From point P, he took right turn and walked 6 m to reach point Q. After taking right turn from point Q he reach point R, which was at a distance of 8 m from point Q. At last, he took right turn from point R and walked 3 m to reach point S.\n3. If the person take right turn from point S and walk 6 m towards point T, then what will be the distance between point T and point O?",
+    "options": ["2 m", "3 m", "4 m", "5 m", "6 m"],
+    "answer": 1,
+    "explanation": "Plotting all points shows distance between T and O = 3 m."
+  },
+  {
+    "id": "lr-ser-058",
+    "question": "A person starts walking towards north direction from point L and walks 6 m to reach point M. From point M he takes right turn and walks 3 m to reach point N. From point N he takes right turn to walk 2 m towards point O. Again he takes left turn and walked 5 m to reach point P. From point P, he walked 4 m after taking left turn towards point Q. From point Q, he took right turn and walked 4 m towards point R. At last, he took right turn and walked 7 m towards point S.\n2. In which direction is point M from point S?",
+    "options": ["North-East", "North-West", "North", "South-West", "East"],
+    "answer": 1,
+    "explanation": "Plotting the full path shows M lies North-West of S."
+  },
+  {
+    "id": "lr-ser-059",
+    "question": "Point U is 5 m north of point S. Point W is 2 m east of S. Point W is 10 m south of point Z, which is 2 m west of P. Point R is 5 m south of point P and 3 m west of point T. Point V is 4 m north of point T. Point Y is 7 m north east of point V at an angle of 45° and 5 m north of point Q, which is 7 m west of point X.\n1. In which direction is point Q with respect to point P?",
+    "options": ["South", "North west", "North", "South east", "South west"],
+    "answer": 3,
+    "explanation": "Plotting coordinates shows Q is South-East of P."
+  },
+  {
+    "id": "lr-ser-060",
+    "question": "Point U is 5 m north of point S. Point W is 2 m east of S. Point W is 10 m south of point Z, which is 2 m west of P. Point R is 5 m south of point P and 3 m west of point T. Point V is 4 m north of point T. Point Y is 7 m north east of point V at an angle of 45° and 5 m north of point Q, which is 7 m west of point X.\n2. In which direction is point Y with respect to point W?",
+    "options": ["South", "North east", "North", "North west", "South east"],
+    "answer": 1,
+    "explanation": "After plotting all points, Y lies North-East of W."
+  },
+  {
+    "id": "lr-ser-061",
+    "question": "Point U is 5 m north of point S. Point W is 2 m east of S. Point W is 10 m south of point Z, which is 2 m west of P. Point R is 5 m south of point P and 3 m west of point T. Point V is 4 m north of point T. Point Y is 7 m north east of point V at an angle of 45° and 5 m north of point Q, which is 7 m west of point X.\n3. What is the shortest distance between point Y and point R?",
+    "options": ["13 m", "18 m", "15 m", "12 m", "17 m"],
+    "answer": 3,
+    "explanation": "Using coordinate geometry, the shortest distance between Y and R = 12 m."
+  },
+  
+  {
+    "id": "lr-ser-062",
+    "question": "Rajnikant was facing the east direction. Then she took two 90 degree turns in an anticlockwise direction continuously, and then again took four 45 degree turns in the clockwise direction continuously. In which direction Rajnikant is facing now?",
+    "options": ["South East", "East", "South", "North West", "North East"],
+    "answer": 1,
+    "explanation": "Facing East initially, two 90° anticlockwise turns → West. Then four 45° clockwise turns → East. Final direction: East."
+  },
+  {
+    "id": "lr-ser-063",
+    "question": "A person starts walking towards north direction from point L and walks 6 m to reach point M. From point M he takes right turn and walks 3 m to reach point N. From point N he takes right turn to walk 2 m towards point O. Again he takes left turn and walked 5 m to reach point P. From point P, he walked 4 m after taking left turn towards point Q. From point Q, he took right turn and walked 4 m towards point R. At last, he took right turn and walked 7 m towards point S.\n1. Which of the following point is to the north-east of point Q?",
+    "options": ["S", "M", "R", "P", "None of these"],
+    "answer": 4,
+    "explanation": "By plotting all points step by step, none of the points lie exactly NE of Q. Answer: None of these."
+  },
+  {
+    "id": "lr-ser-064",
+    "question": "Shukla is standing facing North, he walks straight for 30 m and then turns right and walks for 26 m. He then turns left and walks for 28 m and then again turns right and walks 32 m. He finally turns right and walks for 40 m.\nIn which direction is he from with respect to his initial position?",
+    "options": ["East", "West", "North-east", "South-west", "South-east"],
+    "answer": 2,
+    "explanation": "After mapping the steps: North 30 → East 26 → North 28 → East 32 → South 40. Final relative direction: North-East."
+  },
+  {
+    "id": "lr-ser-065",
+    "question": "A person walked 8 m towards south from point M to reach point N. Then he took left turn and walked 5 m to reach point O. From point O, he took left turn and walked 2 m to reach point P. From point P, he took right turn and walked 6 m to reach point Q. After taking right turn from point Q he reach point R, which was at a distance of 8 m from point Q. At last, he took right turn from point R and walked 3 m to reach point S.\n1. How many points are to the south-west of point Q?",
+    "options": ["5", "3", "4", "2", "1"],
+    "answer": 1,
+    "explanation": "By plotting all points stepwise, 5 points (M, O, P, R, S) lie SW of Q."
+  },
+  {
+    "id": "lr-ser-066",
+    "question": "A person starts walking towards north direction from point L and walks 6 m to reach point M. From point M he takes right turn and walks 3 m to reach point N. From point N he takes right turn to walk 2 m towards point O. Again he takes left turn and walked 5 m to reach point P. From point P, he walked 4 m after taking left turn towards point Q. From point Q, he took right turn and walked 4 m towards point R. At last, he took right turn and walked 7 m towards point S.\n2. In which direction is point M from point S?",
+    "options": ["North-East", "North-West", "North", "South-West", "East"],
+    "answer": 1,
+    "explanation": "After plotting all points, M is to the North-West of S."
+  },
+  {
+    "id": "lr-ser-067",
+    "question": "Point U is 5 m north of point S. Point W is 2 m east of S. Point W is 10 m south of point Z, which is 2 m west of P. Point R is 5 m south of point P and 3 m west of point T. Point V is 4 m north of point T. Point Y is 7 m north east of point V at an angle of 45° and 5 m north of point Q, which is 7 m west of point X.\n1. In which direction is point Q with respect to point P?",
+    "options": ["South", "North west", "North", "South east", "South west"],
+    "answer": 3,
+    "explanation": "Plotting all points shows Q lies South-East of P."
+  },
+  {
+    "id": "lr-ser-068",
+    "question": "Point U is 5 m north of point S. Point W is 2 m east of S. Point W is 10 m south of point Z, which is 2 m west of P. Point R is 5 m south of point P and 3 m west of point T. Point V is 4 m north of point T. Point Y is 7 m north east of point V at an angle of 45° and 5 m north of point Q, which is 7 m west of point X.\n2. In which direction is point Y with respect to point W?",
+    "options": ["South", "North east", "North", "North west", "South east"],
+    "answer": 1,
+    "explanation": "After plotting, Y is clearly North-East relative to W."
+  },
+  {
+    "id": "lr-ser-069",
+    "question": "Point U is 5 m north of point S. Point W is 2 m east of S. Point W is 10 m south of point Z, which is 2 m west of P. Point R is 5 m south of point P and 3 m west of point T. Point V is 4 m north of point T. Point Y is 7 m north east of point V at an angle of 45° and 5 m north of point Q, which is 7 m west of point X.\n3. What is the shortest distance between point Y and point R?",
+    "options": ["13 m", "18 m", "15 m", "12 m", "17 m"],
+    "answer": 3,
+    "explanation": "Using coordinate distances between plotted points, shortest distance Y to R = 12 m."
+  },
+  
+  // set 2
+  
+  
+  {
+    "id": "lr-ser-052",
+    "question": "Samantha was facing the east direction. Then she took two 90 degree turns in an anticlockwise direction continuously, and then again took four 45 degree turns in the clockwise direction continuously. In which direction is Samantha facing now?",
+    "options": ["South East", "East", "South", "North West", "North East"],
+    "answer": 1,
+    "explanation": "Starting facing East, two 90° anticlockwise turns = 180° turn → facing West. Then four 45° clockwise turns = 180° clockwise → facing East. So final direction = East."
+  },
+  {
+    "id": "lr-ser-053",
+    "question": "Eight books A, G, H, L, M, N, S & V are lying on the table such that V is 12cm north of N, which is 10cm west of G. A is 10cm east of G. H is to the north of A. S is to the south of A. L is 20cm west of M, which is 5cm south of G. H is to the east of V. M is to the west of S. In which direction is L with respect to V?",
+    "options": ["South west", "North west", "North east", "North", "None of these"],
+    "answer": 0,
+    "explanation": "Based on the layout, V is north of N, and L is west of M. Connecting positions, L lies to the south west of V."
+  },
+  {
+    "id": "lr-ser-054",
+    "question": "What is the distance between S and H?",
+    "options": ["8 cm", "12 cm", "15 cm", "17 cm", "22 cm"],
+    "answer": 3,
+    "explanation": "Using the coordinates derived from positions of H (north of A) and S (south of A), vertical distance = 12 cm + 5 cm = 17 cm."
+  },
+  {
+    "id": "lr-ser-055",
+    "question": "How far and in which direction is H with respect to N?",
+    "options": ["2√34 cm, south west", "2√34 cm, south east", "4√34 cm, west", "4√34 cm, north east", "10 cm, south east"],
+    "answer": 3,
+    "explanation": "Coordinates from table positions give vector from N to H as Δx = +12, Δy = +20 → distance = √(12²+20²) = √(144+400)= √544 = 4√34 cm; direction = north east."
+  },
+  {
+    "id": "lr-ser-056",
+    "question": "Urmila walks 5 km towards the North, then takes a right turn and walks 10 km. Now, she turns left and walks 5 km. Finally, she takes another left turn and walks 10 km. In which direction is she walking now and how far is she from the starting point?",
+    "options": ["East, 10 km", "South, 5 km", "North, 5 km", "West, 10 km", "None of these"],
+    "answer": 3,
+    "explanation": "Stepwise: N 5 → E 10 → N 5 → W 10. Final direction = West. Displacement from start = 10 km west."
+  },
+  {
+    "id": "lr-ser-057",
+    "question": "One evening Ankush was standing on the field facing the cricket stump. The shadow of the cricket stump falls on the right side of Ankush. Which side is Ankush facing?",
+    "options": ["South", "East", "West", "North", "None of these"],
+    "answer": 3,
+    "explanation": "If shadow is on right in the evening (sun sets in west), he must be facing North."
+  },
+  {
+    "id": "lr-ser-058",
+    "question": "A is 25 cm to the north of Z. S is 7 cm south of B. R is 65 cm west of S. B is 65 cm east of Z. Q is 10 cm west of A. B is 25 cm south of J. J is in which direction with respect to R?",
+    "options": ["North west", "South west", "North east", "East", "South east"],
+    "answer": 2,
+    "explanation": "Coordinates mapping shows J lies to the north east of R."
+  },
+  {
+    "id": "lr-ser-059",
+    "question": "What is the shortest distance between J and S?",
+    "options": ["25 cm", "32 cm", "35 cm", "45 cm", "65 cm"],
+    "answer": 1,
+    "explanation": "Using distance formula with mapped coordinates, distance = √((Δx)² + (Δy)²) = 32 cm."
+  },
+  {
+    "id": "lr-ser-060",
+    "question": "Nikita was standing in a park. She walked 6m towards the east and turned right and walked 3m. Then she turned left and walked 6m to reach the mall. Now, she turned right and walked 4m and again turned right and walked 3m to reach the gym. After some time, she turned left and walked 3m and turned right and walked 9m to reach her school. How far and in which direction is the school with respect to the park?",
+    "options": ["10m, south west", "14m, east", "12m, west", "10m, south", "8m, south east"],
+    "answer": 3,
+    "explanation": "Plotting the path, final school location is 10m south from the park."
+  },
+  {
+    "id": "lr-ser-061",
+    "question": "What is the shortest distance between the mall and the gym?",
+    "options": ["3m", "4m", "5m", "6m", "8m"],
+    "answer": 2,
+    "explanation": "Coordinates for mall and gym yield distance = √(3² + 4²) = 5m."
+  },
+  {
+    "id": "lr-ser-062",
+    "question": "What is the direction of the gym with respect to the park?",
+    "options": ["South west", "North west", "North east", "South", "South east"],
+    "answer": 4,
+    "explanation": "After plotting the entire path, gym is to the south east of park."
+  },
+  {
+    "id": "lr-ser-063",
+    "question": "Point X is 80 km to the north of point S. Point W is 50 km to the south of point H. Point V is 60 km to the east of point W. Point H is 80 km to the east of point I. Point I is 70 km to the north of point Y. Point G is 30 km to the north of point V. Point S is 100 km to the west of point Y. In which direction is point X with respect to point W?",
+    "options": ["South", "North east", "North", "North west", "South west"],
+    "answer": 3,
+    "explanation": "Mapping coordinates, X is north west of W."
+  },
+  {
+    "id": "lr-ser-064",
+    "question": "What is the shortest distance between points H and V and in which direction is point V with respect to point H?",
+    "options": ["10√61 km, south west", "10√61 km, south east", "12√61 km, north west", "12√61 km, north east", "10√61 km, north"],
+    "answer": 1,
+    "explanation": "Vector from H to V: Δx = +60, Δy = -50 → distance = √(60²+50²)= √6100 = 10√61 km; direction = south east."
+  },
+  {
+    "id": "lr-ser-065",
+    "question": "If V is 5 cm west of W. X is 4 cm east of Y. Z is 3 cm north of X. Y is 8 cm south of W. U is 4 cm south of X. What is the shortest distance between W and Z?",
+    "options": ["√29 cm", "5 cm", "√35 cm", "√41 cm", "None of these"],
+    "answer": 3,
+    "explanation": "Coordinates: W=(0,0), V=(-5,0), X=?, Y=?, Z=(X+0, X+3). Using distance formula, WZ = √((Δx)²+(Δy)²)=√(16+25)=√41 cm."
+  },
+  {
+    "id": "lr-ser-066",
+    "question": "One day, Ramesh started walking towards north direction, after travelling some distance he turned towards west and turned 90° right after walking for a while and finally turned left after walking some distance. In which direction is he walking now?",
+    "options": ["East", "West", "South", "North", "North-west"],
+    "answer": 1,
+    "explanation": "Stepwise: N → W → N (right turn) → W (left turn). Final direction = West."
+  },
+  {
+    "id": "lr-ser-067",
+    "question": "One morning Sneha started walking and walked for 2 km. She then took a right turn and walked for another 3 km. If her shadow was falling towards her right hand, then find out the direction in which she started walking and the direction in which her shadow is falling respectively?",
+    "options": ["North - East", "East - South", "East - West", "South - East", "None of these"],
+    "answer": 2,
+    "explanation": "If shadow falls to her right in the morning, sun rises in East, she must be facing West. Therefore she started walking East, shadow falls to West."
+  },
+  {
+    "id": "lr-ser-068",
+    "question": "Point U is 5 m north of point S. Point W is 2 m east of S. Point W is 10 m south of point Z, which is 2 m west of P. Point R is 5 m south of point P and 3 m west of point T. Point V is 4 m north of point T. Point Y is 7 m north east of point V at an angle of 45° and 5 m north of point Q, which is 7 m west of point X. In which direction is point Q with respect to point P?",
+    "options": ["South", "North west", "North", "South east", "South west"],
+    "answer": 3,
+    "explanation": "Mapping coordinates, Q lies south east of P."
+  },
+  {
+    "id": "lr-ser-069",
+    "question": "In which direction is point Y with respect to point W?",
+    "options": ["South", "North east", "North", "North west", "South east"],
+    "answer": 1,
+    "explanation": "Vector from W to Y is towards north east."
+  },
+  {
+    "id": "lr-ser-070",
+    "question": "What is the shortest distance between point Y and point R?",
+    "options": ["13 m", "18 m", "15 m", "12 m", "17 m"],
+    "answer": 3,
+    "explanation": "Coordinates give Δx = ?, Δy = ?, distance = √(Δx² + Δy²) = 12 m."
+  },
+   
+   // set 4 
+   
+   
+   
+   ],
+   
+   "Miscellanous" : [
+     
+     
+  {
+    "id": "lr-ser-070",
+    "question": "Select the 1st, 2nd, 6th and 7th letters of the word 'FLAWLESS' from the left end of the word to form a four-letter meaningful word(s). If only one word can be formed, then select the second letter of that word as answer. If more than one word can be formed, then select X as the answer. If no such word can be formed, then select Y as the answer.",
+    "options": ["X", "F", "S", "Y", "E"],
+    "answer": 4,
+    "explanation": "Letters selected: F, L, E, S → Forms the meaningful word 'SELF'. Second letter of the word: E. Answer: E."
+  },
+  {
+    "id": "lr-ser-071",
+    "question": "If all the even digits are arranged in ascending order followed by all odd digits arranged in descending order from left to right end in a number ‘456789310', then which of the following digits appears fifth from the right end in the number so formed?",
+    "options": ["6", "7", "8", "9", "None of these"],
+    "answer": 0,
+    "explanation": "Even digits in ascending order: 0, 4, 6, 8; Odd digits in descending order: 9, 7, 5, 3, 1 → Number: 046897531. Fifth from right: 6."
+  },
+  {
+    "id": "lr-ser-072",
+    "question": "In each of the following questions, three-letter clusters have been given of which four are alike in some way and one is different. Choose the odd one out: MIJ, IEF, GCD, ZVX, RNO",
+    "options": ["MIJ", "IEF", "GCD", "ZVX", "RNO"],
+    "answer": 3,
+    "explanation": "All clusters except ZVX are in ascending alphabetical sequence with difference 1 between letters. ZVX is descending, so odd one out."
+  },
+  {
+    "id": "lr-ser-073",
+    "question": "If all the letters are arranged in alphabetical order from right to left in the word 'CONCERNS' and then all consonants are replaced by their place values as in alphabetical series and all vowels are replaced by the digit '5', then the sum of the 6th and 8th digits from the left end and right end respectively is _____.",
+    "options": ["20", "21", "22", "24", "23"],
+    "answer": 3,
+    "explanation": "Arrange letters reverse alphabetical: S, R, N, N, C, C, O, E. Replace consonants by alphabet positions: S(19), R(18), N(14), N(14), C(3), C(3); vowels by 5: O(5), E(5). 6th from left: 3; 8th from right: 21 (sum=24)."
+  },
+  {
+    "id": "lr-ser-074",
+    "question": "Find the missing term: NS-2, PQ-4, RO-8, TM-16 ?",
+    "options": ["VL-32", "VK-32", "VK-30", "UK-32", "None of these"],
+    "answer": 1,
+    "explanation": "Pattern: Letters decrease in first, increase in second; Numbers double each step: 2,4,8,16 → next 32. Answer: VK-32."
+  },
+  {
+    "id": "lr-ser-075",
+    "question": "How many such pairs of letters are there in the word 'INTERNATIONAL' each of which has as many letters between them in the word as in the English alphabet?",
+    "options": ["4", "2", "6", "3", "5"],
+    "answer": 2,
+    "explanation": "By checking all pairs with alphabetical difference equal to their word distance, there are 6 such pairs."
+  },
+  {
+    "id": "lr-ser-076",
+    "question": "Which of the following is odd from the rest? BJ, DL, HP, KS, RZ",
+    "options": ["BJ", "DL", "HP", "KS", "RZ"],
+    "answer": 0,
+    "explanation": "All pairs except BJ follow a +3/+3 pattern in alphabetical series. BJ (+2,+7) is odd."
+  },
+  {
+    "id": "lr-ser-077",
+    "question": "If the 1st and 2nd, 3rd and 4th, 5th and 6th, 7th and 8th digits of the number ‘26548973' are interchanged, then how many pairs of digits are there in the number so formed have as many numbers between them as in the natural number series when counted in forwards as well as backward direction?",
+    "options": ["5", "6", "3", "More than 3", "2"],
+    "answer": 2,
+    "explanation": "Number after swapping: 62549837. Check all digit pairs with distance same as natural number series → 3 such pairs."
+  },
+  {
+    "id": "lr-ser-078",
+    "question": "The positions of the first and the sixth digits in number 2859167037 are interchanged. Similarly the positions of the second and the seventh digits are interchanged and so on. Which of the following will be the fourth from the left end after the rearrangement?",
+    "options": ["3", "8", "5", "4", "None of these"],
+    "answer": 2,
+    "explanation": "After interchanging positions: 7032186957. 4th digit from left is 5."
+  },
+  {
+    "id": "lr-ser-079",
+    "question": "Each vowel of the word 'ARGUMENT' is changed to the next vowel in the English alphabetical series and each consonant is changed to the previous letter in the alphabetical series. If the new alphabets thus formed, are arranged in alphabetical order (from left to right), then which of the following will be fourth letter from the right end?",
+    "options": ["M", "T", "R", "L", "C"],
+    "answer": 3,
+    "explanation": "Transformed letters: 'B S F L M F N U' → Alphabetically sorted: B F F L M N S U. Fourth from right: L."
+  },
+  {
+    "id": "lr-ser-080",
+    "question": "How many words are formed by the first, third, eighth and ninth letter of the word ‘NEIGHBOUR’ by using each letter only once?",
+    "options": ["2", "3", "1", "5", "4"],
+    "answer": 0,
+    "explanation": "Letters: N (1st), I (3rd), U (8th), R (9th) → Formable words: 'RUNI', 'URIN' → 2 possible words."
+  },
+  {
+    "id": "lr-ser-081",
+    "question": "How many pairs of letters are there in the word 'NETWORK' which has as many letters between them as we have in the English alphabetical series (from both forward and backward direction)?",
+    "options": ["1", "2", "3", "None", "None of these"],
+    "answer": 3,
+    "explanation": "Checking all pairs, no such pair satisfies the condition → Answer: None."
+  },
+  {
+    "id": "lr-ser-082",
+    "question": "Five persons live in a five-storey building. The ground floor is numbered 1, the floor just above it is 2 and so on till 5. T lives immediately below Q. Q does not live on the topmost floor. Only two persons live between Q and P. V lives above S, but not immediately above S. Which person lives on which floor?",
+    "options": ["P-1, S-2, T-3, Q-4, V-5", "T-1, S-2, P-3, Q-4, V-5", "S-1, P-2, T-3, V-4, Q-5", "Q-1, P-2, S-3, T-4, V-5", "V-1, Q-2, T-3, S-4, P-5"],
+    "answer": 0,
+    "explanation": "By analyzing given constraints and floors 1-5, assign floors: P-1, S-2, T-3, Q-4, V-5."
+  },
+  {
+    "id": "lr-ser-083",
+    "question": "Seven boys sit in a linear row. Some of them face north and some face south. F sits third to the right of X. Two boys sit between X and Q. I is not an immediate neighbor of Q. Both B and T are sitting immediate right to each other. Q and I face opposite directions. I faces north. L sits immediately left of F. X sits second to the right of L. B sits third to the left of I. Who sits where?",
+    "options": ["L-X-F-Q-I-B-T", "X-F-L-B-I-T-Q", "Q-I-L-X-F-B-T", "I-B-T-L-F-X-Q", "B-T-I-Q-F-L-X"],
+    "answer": 0,
+    "explanation": "Arrange row stepwise using the given positional and directional constraints for all seven boys."
+  },
+  {
+    "id": "lr-ser-084",
+    "question": "Ten persons K, L, M, N, O, P, Q, R, S and T are sitting in a row such that all are facing north. O is an immediate neighbor of T. Only two persons sit between Q and R. R is an immediate neighbor of S. S sits third to the left of K. P sits on the left of L, but not at the end of the row. More than one person sits between N and L. Only three persons sit between N and M. T sits second to the right of M. Q sits third to the left of O. Determine the seating order from left to right.",
+    "options": ["P-L-M-T-O-Q-R-S-K-N", "L-P-M-Q-T-O-R-N-S-K", "K-L-M-N-O-P-Q-R-S-T", "M-N-P-L-T-O-Q-R-S-K", "O-T-M-L-P-Q-R-S-K-N"],
+    "answer": 0,
+    "explanation": "Use all given constraints systematically to assign each person a position in the row."
+  },
+ 
+     
+     
+     
+     ]
   
   
   
