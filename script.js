@@ -30,7 +30,7 @@ let currentQuiz = {
 // Fisher-Yates Shuffle with exception for certain topics
 function shuffleArray(array, subject = "", topics = []) {
   // Topics that should NOT be shuffled
-  const noShuffleTopics = ["Coding Decoding", "Set", "Data Interpretation"];
+  const noShuffleTopics = ["Coding Decoding", "Blood Relation", "Direction and Distance", "Coded Inequality"];
   if (topics.some(t => noShuffleTopics.includes(t))) {
     return [...array]; // return as-is without shuffling
   }
@@ -616,4 +616,5 @@ document.addEventListener("visibilitychange", () => {
 // =======================================
 // INITIALIZE
 // =======================================
+
 renderHome();
