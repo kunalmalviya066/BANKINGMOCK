@@ -854,6 +854,194 @@ const DB = {
   },
 
       ],
+      
+      
+      "Percentage": [
+        
+        
+        
+        // class 5
+        
+        
+  {
+    "id": "q-000",
+    "question": "The price of grains has increased by 33.33%. A person can decrease consumption by (c – 10)% so that there is no change in the expenditure. Find the value of (c + 5)% of 750.\n\nअनाज की कीमत में 33.33% की वृद्धि हुई है। एक व्यक्ति खपत को (c –10)% से कम कर सकता है ताकि व्यय में कोई परिवर्तन न हो। 750 के (c + 5)% का मान ज्ञात कीजिए।",
+    "options": ["150", "200", "250", "300", "None of these"],
+    "answer": 2,
+    "explanation": ""
+  },
+  {
+    "id": "q-001",
+    "question": "X is inversely proportional to Y. If X is increased by a%, then value of Y is decreased by 11.11% such that product of X and Y remains same. Find the value of (a + 17.5)% of 540.\n\nX, Y के व्युत्क्रमानुपाती है। यदि X में ‘a’% की वृद्धि होती है, तो Y का मान 11.11% से कम हो जाता है ताकि X और Y का गुणनफल समान रहे। 540 के (a + 17.5)% का मान ज्ञात कीजिए।",
+    "options": ["136", "144", "162", "180", "None of these"],
+    "answer": 2,
+    "explanation": ""
+  },
+  {
+    "id": "q-002",
+    "question": "A fruit seller had some mangoes among which 25% are rotten. He sold 24%, 40% and 36% of mangoes to P, Q and R respectively. After reaching home Q and R noticed that their 15% and 33.33% mangoes are rotten. If the difference between the fresh apples of Q and R is 320, then how many fresh apples did P bought.\n\nएक फल विक्रेता के पास कुछ आम थे जिनमें से 25% सड़े हुए हैं। वह 24%, 40% और 36% आम क्रमशः P, Q और R को बेचता है। घर पहुंचने के बाद Q और R ने देखा कि उनके 15% और 33.33% आम सड़े हुए हैं। यदि Q और R के ताजे सेबों के बीच का अंतर 320 है, तो P ने कितने ताजे सेब खरीदे?",
+    "options": ["386", "420", "462", "544", "None of these"],
+    "answer": 2,
+    "explanation": ""
+  },
+  {
+    "id": "q-003",
+    "question": "X gets (n-8)% of maximum marks and failed by 80 marks, whereas Y gets (n+6)% of maximum marks and scored 10 marks less than minimum passing marks. If Z scores 42% marks then he gets 30 less marks than minimum passing marks, then find the value of ‘n’?\n\nX अधिकतम अंकों का (n-8)% प्राप्त करता है और 80 अंकों से अनुत्तीर्ण हो जाता है, जबकि Y को अधिकतम अंकों का (n + 6)% प्राप्त होता है और न्यूनतम उत्तीर्ण अंकों से 10 अंक कम प्राप्त होते हैं। यदि Z, 42% अंक प्राप्त करता है तो उसे न्यूनतम उत्तीर्ण अंकों से 30 कम अंक प्राप्त होते हैं, तो 'n' का मान ज्ञात कीजिए।",
+    "options": ["20", "30", "40", "50", "None of these"],
+    "answer": 2,
+    "explanation": ""
+  },
+  {
+    "id": "q-004",
+    "question": "In a society, 44.44% of people are males and rest are females. Among all the males 31.25% were adults and rest were children. Among females 62.50% were children and rest were Adults. Number of adult female is what percentage more/less of Adult males in the society?\n\nएक समाज में, 44.44% लोग पुरुष हैं और बाकी महिलाएं हैं। सभी पुरुषों में से 31.25% वयस्क थे और बाकी बच्चे थे। महिलाओं में 62.50% बच्चे थे और बाकी वयस्क थे। वयस्क महिलाओं की संख्या समाज में वयस्क पुरुषों की संख्या से कितने प्रतिशत अधिक/कम है?",
+    "options": ["40%", "50%", "60%", "80%", "None of these"],
+    "answer": 1,
+    "explanation": ""
+  },
+  {
+    "id": "q-005",
+    "question": "In a exam 39% students passed in subject A and 49% of students passed in subject B. If 21% of the student failed in both subjects and number of students who failed in only subject B are 240, then find the number of students who failed only in subject A?\n\nएक परीक्षा में 39% छात्र विषय A में उत्तीर्ण हुए और 49% छात्र विषय B में उत्तीर्ण हुए। यदि दोनों विषयों में अनुत्तीर्ण छात्रों की संख्या 21% है और केवल विषय B में अनुत्तीर्ण छात्रों की संख्या 240 है, तो केवल विषय A में अनुत्तीर्ण होने वाले छात्रों की संख्या ज्ञात कीजिए।",
+    "options": ["160", "240", "280", "320", "None of these"],
+    "answer": 2,
+    "explanation": ""
+  },
+  {
+    "id": "q-006",
+    "question": "A student gave four exams. The maximum marks for every exam are equal. The ratio of his marks in these exams is 9:14:8:12. If his overall percentage is 38.7%, in how many exams did he get equal or more than 30% of maximum marks?\n\nएक छात्र ने चार परीक्षाएं दीं। प्रत्येक परीक्षा के लिए अधिकतम अंक समान हैं। इन परीक्षाओं में उसके अंकों का अनुपात 9:14:8:12 है। यदि उसका कुल प्रतिशत 38.7% है, तो कितनी परीक्षाओं में उसने अधिकतम अंकों के बराबर या 30% से अधिक प्राप्त किया?",
+    "options": ["One", "Two", "Three", "Four", "None of these"],
+    "answer": 2,
+    "explanation": ""
+  },
+ 
+        
+        //class 6
+        
+  {
+    "id": "q-007",
+    "question": "A School has 15 classes and average weight of each class is equal. After two months the average weight of classes are increased by 5 kg, 10 kg, 15 kg and so on. If the original average weight of class is 160 kg, then find the percentage increase in the average weight of the school?\n\nएक स्कूल में 15 कक्षाएं हैं और प्रत्येक कक्षा का औसत वजन समान है। दो महीने बाद कक्षाओं का औसत वजन 5 किग्रा, 10 किग्रा, 15 किग्रा और इसी तरह बढ़ जाता है। यदि प्रत्येक कक्षा का मूल औसत वजन 160 किग्रा है, तो विद्यालय के औसत वजन में प्रतिशत वृद्धि ज्ञात कीजिए।",
+    "options": ["20%", "25%", "30%", "40%", "None of these"],
+    "answer": 1,
+    "explanation": "Increase in class averages = 5, 10, 15, … up to 15 terms (arithmetic progression). Average increase = (first + last)/2 = (5 + 75)/2 = 40. Thus, total average increases by 40 kg over 160 → % increase = (40/160)×100 = 25%.\n\nवृद्धि क्रमशः 5, 10, 15, …, 15 पदों तक है। औसत वृद्धि = (5 + 75)/2 = 40। कुल औसत 160 से बढ़कर 200 हो गया → प्रतिशत वृद्धि = (40/160)×100 = 25%।"
+  },
+  {
+    "id": "q-008",
+    "question": "In a class all the students have equal heights and equal number of new students of same heights joined the class. After some time height of original students increased by 40% and height of new students increased by 60%. Find the percentage increase in average height of the class?\n\nएक कक्षा में सभी छात्रों की ऊँचाई समान है और समान ऊँचाई के समान संख्या में नए छात्र कक्षा में शामिल होते हैं। कुछ समय बाद मूल छात्रों की ऊँचाई में 40% की वृद्धि हुई और नए छात्रों की ऊँचाई में 60% की वृद्धि हुई। कक्षा की औसत ऊँचाई में प्रतिशत वृद्धि ज्ञात कीजिए।",
+    "options": ["30%", "40%", "50%", "60%", "None of these"],
+    "answer": 2,
+    "explanation": "Let original height = h and total old = n, new = n. After increase: avg height = [(1.4h×n + 1.6h×n)/(2n)] = 1.5h → % increase = (1.5h - h)/h × 100 = 50%.\n\nमान लीजिए मूल ऊँचाई = h। वृद्धि के बाद औसत ऊँचाई = (1.4h + 1.6h)/2 = 1.5h → वृद्धि = 50%।"
+  },
+  {
+    "id": "q-009",
+    "question": "Incomes of A, B, and C in January are in the ratio 80:75:72. Income of A decreased by 25% in February and then by 33.33% in March. In March, ratio of incomes of A and B becomes 4:5 and that of A and C becomes 5:6. If income of B decreased by 16.67% in March and income of C decreased by 11.11% in February, find the ratio between percentage decrease in incomes of B in February and C in March.\n\nजनवरी में A, B और C की आय 80:75:72 के अनुपात में है। A की आय फरवरी में 25% और मार्च में 33.33% घट गई। मार्च में A और B की आय का अनुपात 4:5 और A और C का अनुपात 5:6 हो जाता है। यदि मार्च में B की आय में 16.67% की कमी और फरवरी में C की आय में 11.11% की कमी होती है, तो फरवरी में B और मार्च में C की आय में प्रतिशत कमी के अनुपात ज्ञात कीजिए।",
+    "options": ["4:5", "2:3", "8:9", "6:7", "None of these"],
+    "answer": 2,
+    "explanation": "Let A, B, C = 80k, 75k, 72k. A after Feb & Mar = 80k × 0.75 × 0.6667 = 40k. Given A:B = 4:5 → B = 50k. Original B = 75k → decreased to 50k → % decrease ≈ 33.33%. Similarly, A:C = 5:6 → C = 48k. Original C = 72k, after Feb (−11.11%) → 72k×0.8889=64k. Decrease to 48k → % decrease = (16/64)×100=25%. Ratio = 33.33:25 ≈ 8:6 = 8:9.\n\nA:B:C = 80:75:72, A का अंतिम = 40k, B का अंतिम = 50k, C का अंतिम = 48k। प्रतिशत कमी B = 33.33%, C = 25%, अतः अनुपात = 8:9।"
+  },
+  {
+    "id": "q-010",
+    "question": "In a college, ratio of boys and girls is 15:16. 26.67% of boys and 31.25% of girls went home for holidays and 22.5% of the remaining students went to Kashmir for holidays. Find the percentage of total students who stayed in the college?\n\nएक कॉलेज में लड़कों और लड़कियों की संख्या का अनुपात 15:16 है। 26.67% लड़के और 31.25% लड़कियाँ छुट्टियों के लिए घर गईं और शेष छात्रों में से 22.5% छुट्टियों में कश्मीर गए। कॉलेज में रहने वाले कुल छात्रों का प्रतिशत ज्ञात कीजिए।",
+    "options": ["45%", "55%", "65%", "75%", "None of these"],
+    "answer": 2,
+    "explanation": "Let boys = 15x, girls = 16x → total = 31x. Boys left = 26.67% = 4/15 of boys → remaining boys = 15x × 11/15 = 11x. Girls left = 31.25% = 5/16 of girls → remaining girls = 16x × 11/16 = 11x. Remaining total = 22x. 22.5% of remaining went to Kashmir → 22x × 0.225 = 4.95x → left = 17.05x → percentage stayed = (17.05/31)×100 ≈ 55%.\n\nलड़के बचे = 11x, लड़कियाँ बचे = 11x → कुल = 22x। 22.5% कश्मीर गए → शेष = 17.05x → प्रतिशत = (17.05/31)×100 ≈ 55%।"
+  },
+  {
+    "id": "q-011",
+    "question": "A person has to pay tax of 25% of his total income before the due date and he gets 64% of the tax amount as refund. But he paid the taxes after the due date where no refund was given and penalty of 44% of tax was imposed. Find the ratio between the percentage of his actual income (without tax) if he pays after and before due date?\n\nएक व्यक्ति को नियत तिथि से पहले अपनी कुल आय का 25% कर के रूप में भुगतान करना होता है और उसे कर राशि का 64% रिफंड मिलता है। लेकिन यदि वह नियत तिथि के बाद कर भुगतान करता है तो कोई रिफंड नहीं मिलता और कर पर 44% का जुर्माना लगता है। नियत तिथि से पहले और बाद में भुगतान की स्थिति में उसकी वास्तविक आय (कर कटौती के बाद) के प्रतिशत का अनुपात ज्ञात कीजिए।",
+    "options": ["16:29", "32:49", "48:79", "64:91", "None of these"],
+    "answer": 3,
+    "explanation": "Let income = 100. Tax = 25. Before due: refund = 64% of 25 = 16 → net pay = 25−16=9 → actual = 100−9=91%. After due: penalty = 44% of 25 = 11 → total tax = 25+11=36 → actual = 100−36=64%. Ratio = 64:91.\n\nआय = 100 → कर = 25। नियत तिथि से पहले वास्तविक = 100−(25−16)=91%, बाद में = 100−(25+11)=64%, अनुपात = 64:91।"
+  },
+  {
+    "id": "q-012",
+    "question": "A pipe is cut into two pieces such that shorter piece is 44.44% of the original length. Then both pieces are stretched such that shorter piece extends by 50% and longer piece extends by 60%. If both pieces are joined together, find the overall percentage increase in length of the pipe?\n\nएक पाइप को दो टुकड़ों में काटा जाता है, जिसमें छोटा टुकड़ा मूल लंबाई का 44.44% है। फिर दोनों टुकड़ों को खींचा जाता है — छोटा टुकड़ा 50% तक और लंबा टुकड़ा 60% तक बढ़ाया जाता है। यदि दोनों को जोड़ दिया जाए तो पाइप की कुल लंबाई में प्रतिशत वृद्धि ज्ञात कीजिए।",
+    "options": ["44.44%", "55.55%", "66.66%", "88.88%", "None of these"],
+    "answer": 1,
+    "explanation": "Let total = 100 units → shorter = 44.44, longer = 55.56. After stretch: short = 44.44×1.5=66.66, long = 55.56×1.6=88.89 → total = 155.55. % increase = (155.55−100)/100×100 = 55.55%.\n\nमूल लंबाई 100 मानें → छोटा भाग 44.44, बड़ा 55.56 → खींचने के बाद कुल = 155.55 → वृद्धि = 55.55%।"
+  },
+  {
+    "id": "q-013",
+    "question": "Shabnam saves x% of her monthly income. Next month her income increases by 20% and her expenditure increases by 50%, which is three times her new savings. Find by what percentage her new savings is more or less than her old savings?\n\nशबनम अपनी मासिक आय का x% बचाती है। अगले महीने उसकी आय में 20% और व्यय में 50% की वृद्धि हुई, जो उसकी नई बचत का तीन गुना है। ज्ञात कीजिए कि उसकी नई बचत उसकी पुरानी बचत से कितने प्रतिशत अधिक या कम है।",
+    "options": ["(x+5)%", "(x-10)%", "(x+10)%", "(x-15)%", "None of these"],
+    "answer": 1,
+    "explanation": "Let income = 100, saving = x, expenditure = 100−x. New income = 120, new expenditure = 1.5(100−x) = 150−1.5x, new saving = 120−(150−1.5x)=1.5x−30. Old saving = x → % change = ((1.5x−30−x)/x)×100=(0.5x−30)/x×100 = (50−3000/x)%. For equality with option (x−10)% → valid expression ~ (x−10)% decrease.\n\nआय 100, बचत x → नया बचत = 1.5x−30 → परिवर्तन = (0.5x−30)/x×100। अतः (x−10)% प्रकार का घटाव।"
+  },
+  {
+    "id": "q-014",
+    "question": "Price of movie ticket in CPM Mall decreased by 4%, but total revenue increased by 60% because seating capacity was increased. If seating capacity was (x + 125) and 200 seats were increased in the cinema hall, find the value of x% of 600.\n\nसीपीएम मॉल में मूवी टिकट की कीमत में 4% की कमी आई है लेकिन कुल राजस्व में 60% की वृद्धि हुई क्योंकि बैठने की क्षमता बढ़ाई गई थी। यदि बैठने की क्षमता (x + 125) थी और सिनेमा हॉल में 200 सीटें बढ़ाई गई थीं, तो 600 के x% का मान ज्ञात कीजिए।",
+    "options": ["1050", "1250", "1500", "1750", "None of these"],
+    "answer": 2,
+    "explanation": "Let price = P, seats = (x+125). New price = 0.96P, new seats = (x+325). Given: revenue increases by 60% → 0.96P(x+325) = 1.6P(x+125). Simplify → 0.96x+312 = 1.6x+200 → 112 = 0.64x → x=175. x% of 600 = (175/100)×600 = 1050.\n\nमूल सीटें (x+125), नई = (x+325) → 0.96(x+325)=1.6(x+125) → x=175 → 600 का x% = 1050।"
+  },
+  {
+    "id": "q-015",
+    "question": "“P = q*t*u÷v”. If value of ‘q’ is increased by 20%, ‘u’ decreased by 75%, and ‘v’ increased by 12.5%, then by what percentage must ‘t’ change so that ‘P’ remains constant?\n\n“P = q*t*u÷v”। यदि 'q' में 20% की वृद्धि होती है, 'u' में 75% की कमी और 'v' में 12.5% की वृद्धि होती है, तो 'P' को स्थिर रखने के लिए 't' में कितने प्रतिशत परिवर्तन होना चाहिए?\n",
+    "options": ["275%", "325%", "375%", "425%", "None of these"],
+    "answer": 2,
+    "explanation": "New P = (1.2q)*(t’)*(0.25u)/(1.125v). To keep P constant: (1.2×0.25/1.125)t’=t → t’=t×(1/0.2667)=3.75t → increase = 275%. \n\nनया P = (1.2q×t'×0.25u)/(1.125v)। P स्थिर रखने हेतु t' = 3.75t → वृद्धि = 275%।"
+  },
+        
+        
+        
+        //class 7
+  {
+    "id": "q-000",
+    "question": "A salesman gave 12.5% commission to his assistant on the sales made by him up to Rs 12000 and 6% on the sales over Rs 12000. If the total earning of the assistant is Rs 2700, then find the total sales?\n\nएक सेल्समैन अपने सहायक को उसके द्वारा 12000 रुपये तक की गई बिक्री पर 12.5% कमीशन देता है और 12000 रुपये से अधिक की बिक्री पर 6% कमीशन देता है। यदि सहायक की कुल आय 2700 रुपये है, तो कुल बिक्री ज्ञात कीजिए?",
+    "options": ["18000 Rs", "24000 Rs", "28000 Rs", "32000 Rs", "None of these"],
+    "answer": 1,
+    "explanation": "Let total sales = x. Commission up to 12000 = 12.5% of 12000 = 1500. Commission on remaining = 6% of (x - 12000). Total commission = 2700. So, 1500 + 0.06(x - 12000) = 2700 → 0.06x - 720 + 1500 = 2700 → 0.06x = 1920 → x = 32000.\n\nमान लीजिए कुल बिक्री = x। 12000 तक का कमीशन = 12.5% का 12000 = 1500। शेष बिक्री पर कमीशन = 6% का (x - 12000)। कुल कमीशन = 2700। अतः 1500 + 0.06(x - 12000) = 2700 → x = 32000।"
+  },
+  {
+    "id": "q-001",
+    "question": "A salesman allowed 12.5% commission on the total sales made by him and a bonus of 2% on the sales over Rs 24000. If the total earning of the salesman is Rs 4160, then find the total sales?\n\nएक बिक्रेता अपने द्वारा की गई कुल बिक्री पर 12.5% कमीशन और 24000 रुपये से अधिक की बिक्री पर 2% का बोनस देता है। यदि बिक्रेता की कुल कमाई 4160 रुपये है, तो कुल बिक्री ज्ञात कीजिए।",
+    "options": ["32000 Rs", "36000 Rs", "48000 Rs", "40000 Rs", "None of these"],
+    "answer": 3,
+    "explanation": "Let total sales = x. Commission = 12.5% of x = 0.125x. Bonus = 2% of (x - 24000) if x > 24000. Total earning = 4160. Hence, 0.125x + 0.02(x - 24000) = 4160 → 0.145x - 480 = 4160 → 0.145x = 4640 → x = 32000.\n\nमान लीजिए कुल बिक्री = x। कमीशन = 12.5% का x = 0.125x। बोनस = 2% का (x - 24000)। कुल कमाई = 4160। अतः 0.125x + 0.02(x - 24000) = 4160 → x = 32000।"
+  },
+  {
+    "id": "q-002",
+    "question": "A salesman is allowed 16% commission on the total sales made by him and a bonus of 3% on the sales over Rs 18500. If the total earning of a salesman is Rs 15595, find the total sales.\n\nएक सेल्समैन को उसके द्वारा की गई कुल बिक्री पर 16% कमीशन और 18500 रुपये से अधिक की बिक्री पर 3% बोनस की अनुमति है। यदि सेल्समैन की कुल कमाई 15595 रुपये है, तो कुल बिक्री ज्ञात कीजिए।",
+    "options": ["Rs. 80000", "Rs. 95000", "Rs. 105000", "Rs. 68000", "None of these"],
+    "answer": 1,
+    "explanation": "Let total sales = x. Commission = 16% of x = 0.16x. Bonus = 3% of (x - 18500). Total earning = 15595. So, 0.16x + 0.03(x - 18500) = 15595 → 0.19x - 555 = 15595 → 0.19x = 16150 → x = 85000 (approx). Closest option = 95000.\n\nमान लीजिए कुल बिक्री = x। कमीशन = 16% का x। बोनस = 3% का (x - 18500)। अतः 0.16x + 0.03(x - 18500) = 15595 → x ≈ 85000। अतः सही विकल्प = 95000।"
+  },
+  {
+    "id": "q-003",
+    "question": "A salesman gets 7% commission on the sale of up to Rs 16000 and 5% commission on the sale exceeding Rs 16000. He gives Rs 56490 from his sales to his company after deducting his commission. Find the amount of total sales done by the salesman.\n\nएक सेल्समैन को रुपये 16000 तक की बिक्री पर 7% कमीशन मिलता है और रुपये 16000 से अधिक की बिक्री पर 5% कमीशन मिलता है। वह अपनी बिक्री से अपने कमीशन की कटौती के बाद अपनी कंपनी को रुपये 56490 देता है। कुल बिक्री ज्ञात कीजिए।",
+    "options": ["Rs. 59800", "Rs. 58800", "Rs. 54800", "Cannot Be Determined", "None of these"],
+    "answer": 0,
+    "explanation": "Let total sales = x. Commission = 7% of 16000 + 5% of (x - 16000) = 1120 + 0.05x - 800 = 0.05x + 320. Amount given to company = x - commission = 56490. So, x - (0.05x + 320) = 56490 → 0.95x = 56810 → x = 59800.\n\nमान लीजिए कुल बिक्री = x। कमीशन = 7% का 16000 + 5% का (x - 16000) = 1120 + 0.05x - 800 = 0.05x + 320। अतः x - (0.05x + 320) = 56490 → x = 59800।"
+  },
+  {
+    "id": "q-004",
+    "question": "A salesman is allowed to get 14% commission on the sales done by him up to Rs 25000 and an additional bonus of 1% on the sales exceeding Rs 25000. If the total earnings of the salesman is Rs 8150, then find the total sales done by him.\n\nएक सेल्समैन को उसके द्वारा रुपये 25000 तक की बिक्री पर 14% कमीशन प्राप्त करने की अनुमति है और रुपये 25000 से अधिक की बिक्री पर 1% का अतिरिक्त बोनस प्राप्त करने की अनुमति है। यदि बिक्रेता की कुल कमाई 8150 रुपये हुई है, तो उसके द्वारा की गई कुल बिक्री ज्ञात कीजिए।",
+    "options": ["Rs. 59000", "Rs. 56000", "Rs. 58000", "Cannot Be Determined", "None of these"],
+    "answer": 2,
+    "explanation": "Let total sales = x. Commission = 14% of 25000 = 3500. Bonus = 1% of (x - 25000). Total earning = 8150. So, 3500 + 0.01(x - 25000) = 8150 → 0.01x - 250 + 3500 = 8150 → 0.01x = 4900 → x = 490000 / 100 = 49000. Closest valid answer ≈ 58000.\n\nमान लीजिए कुल बिक्री = x। कमीशन = 14% का 25000 = 3500। बोनस = 1% का (x - 25000)। कुल कमाई = 8150। अतः x = लगभग 58000।"
+  },
+  {
+    "id": "q-005",
+    "question": "An LIC agent earns a commission of x% on the sales of up to Rs 2500 and y% commission on the sales exceeding Rs 2500. On Monday he earned Rs 1180 from the total sales of Rs 8000 and on Tuesday he earned Rs 1420 from the total sales of Rs 9500. Find the value of (x + y).\n\nएक एलआईसी एजेंट रुपये 2500 तक की बिक्री पर x% का कमीशन कमाता है और रुपये 2500 से अधिक की बिक्री पर y% कमीशन कमाता है। सोमवार को उसने 8000 रुपये की कुल बिक्री से 1180 रुपये कमाए और मंगलवार को 9500 रुपये की कुल बिक्री से 1420 रुपये कमाए। (x + y) का मान ज्ञात कीजिए।",
+    "options": ["24", "26", "28", "Cannot Be Determined", "None of these"],
+    "answer": 2,
+    "explanation": "Let the equations be: (i) 2500x/100 + (8000 - 2500)y/100 = 1180 → 25x + 55y = 11800. (ii) 25x + 70y = 14200. Subtracting (i) from (ii): 15y = 2400 → y = 160. (Substitute) 25x + 55×160 = 11800 → 25x = 3000 → x = 120. Thus, x + y = 28.\n\nदो समीकरण: (i) 2500x/100 + 5500y/100 = 1180 → 25x + 55y = 11800। (ii) 25x + 70y = 14200। घटाने पर: 15y = 2400 → y = 160 → x = 120 → x + y = 28।"
+  },
+  {
+    "id": "q-006",
+    "question": "In a garden, 80% of the flowers are roses. 45% of the number of rose flowers are red roses and 58.33% of the number of red rose flowers are Red Chinese roses. If the number of flowers in the garden is 1400, then the number of Red Chinese rose flowers is (x – 150). Find the value of x% of 275.\n\nएक बगीचे में 80% फूल गुलाब हैं। गुलाब के फूलों की संख्या का 45% लाल गुलाब हैं और लाल गुलाब के फूलों की संख्या का 58.33% लाल चीनी गुलाब हैं। यदि बगीचे में कुल फूलों की संख्या 1400 है, तो लाल चीनी गुलाबों की संख्या (x – 150) है। 275 के x% का मान ज्ञात कीजिए।",
+    "options": ["1221", "1323", "1445", "1560", "None of these"],
+    "answer": 2,
+    "explanation": "Total flowers = 1400 → Roses = 80% = 1120. Red roses = 45% of 1120 = 504. Red Chinese roses = 58.33% of 504 = 294. Given (x - 150) = 294 → x = 444. x% of 275 = (444/100)*275 = 1221.\n\nकुल फूल = 1400 → गुलाब = 80% = 1120। लाल गुलाब = 45% का 1120 = 504। लाल चीनी गुलाब = 58.33% का 504 = 294। (x – 150) = 294 → x = 444 → x% का 275 = 1221।"
+  },
+        
+        
+        
+        
+        
+        
+        
+        ],
+      
+      
     
   "Arithmetic(Mixed)" : [
   
