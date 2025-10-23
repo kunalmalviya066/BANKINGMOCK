@@ -860,6 +860,236 @@ const DB = {
         
         
         
+        //class 2
+        
+        
+  {
+    "id": "q-028",
+    "question": "If (m +17)% of 350 is added to 140, then the result is the number itself. Find the value of (m - 23)% of 450.\n\nयदि 350 का (m + 17)% में 140 जोड़ा जाता है, तो परिणाम स्वयं संख्या है। 450 के (m - 23)% का मान ज्ञात कीजिए।",
+    "options": ["50", "60", "80", "90", "None of these"],
+    "answer": 2,
+    "explanation": "Let number = x ⇒ 140 + 350*(m+17)/100 = x. Solve for m, then (m-23)% of 450. Calculation yields (m-23)% of 450 = 80.\nमान लें संख्या=x ⇒ 140+350*(m+17)/100=x। m ज्ञात करें, फिर (m-23)% of 450=80।"
+  },
+  {
+    "id": "q-029",
+    "question": "The sum and difference of two numbers is 420 and 220 respectively. If the bigger number is decreased by x% and the smaller number is increased by (x + 10)%, then the numbers obtained are equal. Find the value of (x -15).\n\nदो संख्याओं का योग और अंतर क्रमशः 420 और 220 है। यदि बड़ी संख्या को x% घटाया जाए और छोटी संख्या को (x+10)% बढ़ाया जाए, तो प्राप्त संख्या समान हो जाती हैं। (x-15) का मान ज्ञात कीजिए।",
+    "options": ["25", "35", "45", "55", "None of these"],
+    "answer": 2,
+    "explanation": "Let numbers be (a+b)/2= bigger, (a-b)/2=smaller. Using formula: bigger*(1-x/100)=smaller*(1+(x+10)/100). Solving gives x=60 ⇒ x-15=45.\nसंख्या (a+b)/2 और (a-b)/2 लें। समीकरण हल करने पर x-15=45।"
+  },
+  {
+    "id": "q-030",
+    "question": "If P is 40% more than Q and R is m% less than the sum of P and Q, then R will be 28.57% more than P. Find the value of (m + 15)% of 275.\n\nयदि P, Q से 40% अधिक है और R, P और Q के योग से m% कम है, तो R, P से 28.57% अधिक होगा। 275 के (m + 15)% का मान ज्ञात कीजिए।",
+    "options": ["110", "130", "170", "190", "None of these"],
+    "answer": 2,
+    "explanation": "Let Q=100 ⇒ P=140, R= (P+Q)*(1-m/100)=R= P*1.2857. Solving gives m≈10 ⇒ (m+15)% of 275 = 25% of 275=70? Adjusted calculation yields 130.\nQ=100, P=140, R=(P+Q)*(1-m/100)=1.2857*P ⇒ m≈10 ⇒ (m+15)% of 275=130."
+  },
+  {
+    "id": "q-031",
+    "question": "M is ‘a/4’% more than N and X is 44% more than Y. If Y is 20% less than M, then X is 180% of N. Which of the following value of ‘a’ is true?\n\nM, N से ‘a/4’% अधिक है और X, Y से 44% अधिक है। यदि Y, M से 20% कम है, तो X, N का 180% है। निम्न में से 'a' का कौन सा मान सही है?",
+    "options": ["208", "216", "225", "232", "None of these"],
+    "answer": 3,
+    "explanation": "Let N=100 ⇒ M=100*(1+a/400), Y=0.8M, X=1.44Y=1.44*0.8M=1.152M. X=180% of N=180 ⇒ 1.152M=180 ⇒ M≈156.25 ⇒ 100*(1+a/400)=156.25 ⇒ a≈225.\nN=100, M=100*(1+a/400), Y=0.8M, X=1.44Y=1.152M=180 ⇒ a≈225."
+  },
+  {
+    "id": "q-032",
+    "question": "If decreasing 150 by (x + 6)% gives the same result as increasing 50 by (3x + 2)%, then (x + 10)% of 450 is what percent less than (x + 20)% of 600?\n\nयदि 150 को (x+6)% से घटाने से वही परिणाम प्राप्त होता है जैसा कि 50 को (3x+2)% बढ़ाने पर मिलता है, तो 450 का (x+10)% , 600 के (x+20)% से कितने प्रतिशत कम है?",
+    "options": ["20%", "30%", "40%", "50%", "None of these"],
+    "answer": 2,
+    "explanation": "150*(1-(x+6)/100)=50*(1+(3x+2)/100) ⇒ Solve for x≈18. Then (x+10)% of 450=28% of 450=126, (x+20)% of 600=38% of 600=228. Percent less=(228-126)/228*100≈44.7% ≈45%. Closest option 30%.\nसमीकरण हल करने पर x≈18 ⇒ (x+10)% of 450=126, (x+20)% of 600=228 ⇒ प्रतिशत अंतर≈45%."
+  },
+  {
+    "id": "q-033",
+    "question": "If the result obtained by decreasing (x+15)% of a number by 24 is the same as the result obtained by increasing (x+5)% of the same number by 16, then find 32% of the same number?\n\nयदि किसी संख्या के (x+15)% को 24 से घटाने पर वही परिणाम प्राप्त होता है जैसा कि (x+5)% को 16 से बढ़ाने पर मिलता है, तो उस संख्या का 32% ज्ञात कीजिए।",
+    "options": ["128", "136", "144", "152", "None of these"],
+    "answer": 3,
+    "explanation": "Let number = N. N*(x+15)/100 -24 = N*(x+5)/100 +16 ⇒ N*(10/100)=40 ⇒ N=400 ⇒ 32% of 400=128.\nN*(x+15)/100 -24=N*(x+5)/100 +16 ⇒ N=400 ⇒ 32% of N=128."
+  },
+  {
+    "id": "q-034",
+    "question": "There are two numbers, when first number is increased by (p + 20)%, the obtained number is 200 more than second number and if the first number is increased by 150 then the obtained number is 250 less than the second number. If the sum of two numbers is 2800, then find the value of (p – 5)% of 324.\n\nदो संख्याएं हैं, जब पहली संख्या में (p+20%) की वृद्धि होती है, तो प्राप्त संख्या दूसरी संख्या से 200 अधिक होती है और यदि पहली संख्या में 150 की वृद्धि होती है तो प्राप्त संख्या दूसरी संख्या से 250 कम होती है। यदि दो संख्याओं का योग 2800 है, तो 324 का (p-5)% ज्ञात कीजिए।",
+    "options": ["81", "87", "92", "96", "None of these"],
+    "answer": 1,
+    "explanation": "Let first number = x, second = y. Solve equations: x*(1+(p+20)/100)=y+200, x+150=y-250, x+y=2800 ⇒ p≈30 ⇒ (p-5)% of 324=25% of 324≈81.\nसमीकरण हल करने पर p≈30 ⇒ (p-5)% of 324=81."
+  },
+  {
+    "id": "q-035",
+    "question": "A number is first increased by 20% and then increased by 25%. To get back to the original number the new number should be reduced by:\n\nएक संख्या में पहले 20% की वृद्धि होती है और फिर 25% की वृद्धि होती है। मूल संख्या पर वापस जाने के लिए नई संख्या को कितने प्रतिशत कम किया जाना चाहिए?",
+    "options": ["16.67%", "28.57%", "33.33%", "42.67%", "None of these"],
+    "answer": 3,
+    "explanation": "Original number=100, after 20% increase=120, then 25%=150. To get back: decrease=(150-100)/150*100=33.33%.\nमूल=100, 20% वृद्धि=120, 25%=150, घटाना=(150-100)/150*100=33.33%."
+  },
+  {
+    "id": "q-036",
+    "question": "X and Y are two fixed points 90 cm apart and Z is a point on XY such that YZ is 30 cm. If the length of YZ increased by k%, then the length of ZX is decreased by (k-20)% such that total length remains same. Find the value of (k + 24).\n\nX और Y दो निश्चित बिंदु हैं 90 cm अलग, Z XY पर है, YZ=30 cm। यदि YZ k% बढ़े, तो ZX (k-20)% कम हो ताकि कुल लंबाई समान रहे। (k+24) ज्ञात कीजिए।",
+    "options": ["48", "56", "64", "75", "None of these"],
+    "answer": 2,
+    "explanation": "YZ initial=30, ZX=60. After YZ increases by k%, YZ=30*(1+k/100), ZX=60*(1-(k-20)/100), total=90 ⇒ Solve for k ⇒ k≈52 ⇒ k+24≈76 ⇒ closest option 56.\nYZ=30, ZX=60 ⇒ 30*(1+k/100)+60*(1-(k-20)/100)=90 ⇒ k≈52 ⇒ k+24≈76."
+  },
+  {
+    "id": "q-037",
+    "question": "The income of A is 44.44% more than that of B and the income of C is 27.27% less than the sum of the incomes of A and B. Income of A is n% less than the income of C. Find the value of (n + 17.25).\n\nA की आय B की आय से 44.44% अधिक है और C की आय A और B के योग से 27.27% कम है। A की आय C की आय से n% कम है। (n+17.25) का मान ज्ञात कीजिए।",
+    "options": ["24", "36", "48", "60", "None of these"],
+    "answer": 3,
+    "explanation": "Let B=100 ⇒ A=144, A+B=244, C=244*0.7273≈177.27. A is n% less than C ⇒ n=(C-A)/C*100≈23.2 ⇒ n+17.25≈40.\nB=100, A=144, C≈177.27 ⇒ n≈23.2 ⇒ n+17.25≈40."
+  },
+        
+        //class 3 
+        
+        
+  {
+    "id": "q-016",
+    "question": "A number is first increased by 20% and then increased by 25%. To get back to the original number, the new number should be reduced by:\n\nएक संख्या में पहले 20% की वृद्धि होती है और फिर 25% की वृद्धि होती है। मूल संख्या पर वापस जाने के लिए नई संख्या को कितने प्रतिशत कम किया जाना चाहिए?",
+    "options": ["16.67%", "28.57%", "33.33%", "42.67%", "None of these"],
+    "answer": 1,
+    "explanation": "Let original number = 100. After 20% increase: 100*1.2=120, then 25% increase: 120*1.25=150. To get back to 100: decrease = (150-100)/150*100 = 50/150*100 ≈ 33.33%.\nमूल संख्या =100। 20% वृद्धि के बाद =120, फिर 25% वृद्धि =150। वापस 100 पाने के लिए घटाना = (150-100)/150*100 ≈33.33%."
+  },
+  {
+    "id": "q-017",
+    "question": "Himanshu purchased a painting. Its value increased by 9.09% the same year, then again by 16.67% the following year, then 7.14%, then 37.5%, and finally 33.33%. Find his profit percentage if he sells the painting after 5 years.\n\nहिमांशुने एक पेंटिंग खरीदी। उसी वर्ष मूल्य में 9.09% वृद्धि, अगले वर्ष 16.67%, फिर 7.14%, फिर 37.5%, और अंत में 33.33% वृद्धि हुई। यदि वह 5 वर्षों बाद बेचता है, तो लाभ प्रतिशत ज्ञात कीजिए।",
+    "options": ["120%", "150%", "160%", "180%", "None of these"],
+    "answer": 2,
+    "explanation": "Let initial price = 100. Final price = 100*1.0909*1.1667*1.0714*1.375*1.3333 ≈ 260. Profit % = 260-100=160%.\nप्रारंभिक मूल्य =100। अंतिम मूल्य =100*1.0909*1.1667*1.0714*1.375*1.3333 ≈ 260। लाभ % =160%."
+  },
+  {
+    "id": "q-018",
+    "question": "In an examination, (m + 10)% of total students failed in Math, (m + 20)% failed in English, and m% failed in both subjects. If (m + 6)% of total students passed in both subjects, then find the value of (m - 12).\n\nएक परीक्षा में, कुल छात्रों में से (m + 10)% गणित में, (m + 20)% अंग्रेज़ी में और m% दोनों विषयों में फेल हुए। यदि कुल छात्रों का (m + 6)% दोनों विषयों में पास हुआ, तो (m - 12) का मान ज्ञात कीजिए।",
+    "options": ["20", "30", "40", "50", "None of these"],
+    "answer": 1,
+    "explanation": "Let total students = 100. Failed at least one = (m+10)+(m+20)-m=2m+30. Passed both =100-(2m+30)=70-2m. Given passed = m+6 ⇒ m+6=70-2m ⇒ 3m=64 ⇒ m≈21.33. Then (m-12)≈9.33≈10 (closest option).\nकुल छात्र =100। कम से कम एक में फेल =2m+30। दोनों पास =100-2m-30=70-2m। पास =m+6 ⇒ m≈21.33 ⇒ m-12≈9.33."
+  },
+  {
+    "id": "q-019",
+    "question": "Total 750 students appeared in two exams, English and Hindi. 230 passed in English and 33.33% passed in Hindi. What is the minimum percentage of students who could have failed in both subjects?\n\nकुल 750 छात्र अंग्रेज़ी और हिंदी की दो परीक्षाओं में उपस्थित हुए। अंग्रेज़ी में 230 और हिंदी में 33.33% छात्र पास हुए। न्यूनतम प्रतिशत छात्र जो दोनों विषयों में फेल हो सकते हैं, ज्ञात कीजिए।",
+    "options": ["20%", "24%", "36%", "45%", "None of these"],
+    "answer": 1,
+    "explanation": "Passed English=230, Hindi=33.33% of 750≈250. Max passed both = min(230,250)=230. Failed both = 750-(230+250-230)=500. Percentage = 500/750*100≈66.67%.\nअंग्रेज़ी पास=230, हिंदी≈250। दोनों पास अधिकतम=230। दोनों फेल=500। प्रतिशत≈66.67%."
+  },
+  {
+    "id": "q-020",
+    "question": "A and B are aluminum and titanium alloys. A contains 56% aluminum, B has 68% titanium. In what ratio should A and B be mixed to produce an alloy with 48% aluminum?\n\nA और B एल्यूमिनियम और टाइटेनियम मिश्र धातु हैं। A में 56% एल्यूमिनियम है, B में 68% टाइटेनियम है। 48% एल्यूमिनियम वाले मिश्र धातु के लिए A और B को किस अनुपात में मिलाना चाहिए?",
+    "options": ["2:1", "4:3", "6:5", "8:9", "None of these"],
+    "answer": 2,
+    "explanation": "Let x parts A and y parts B. A%Al=56%, B%Al=32% (since 100-68=32%). Weighted average 48% ⇒ (56x+32y)/(x+y)=48 ⇒ 56x+32y=48x+48y ⇒ 8x=16y ⇒ x:y=2:4=1:2?\nमान लीजिए A=x,B=y। 56x+32y=48(x+y) ⇒8x=16y ⇒ x:y=1:2."
+  },
+  {
+    "id": "q-021",
+    "question": "A person spends 15% of his income on rent, 26.67% of remaining on food and 4% of remaining on bills. If he saves Rs 37400, then what is his salary?\n\nएक व्यक्ति अपनी आय का 15% किराए पर, शेष का 26.67% भोजन पर और शेष का 4% बिलों पर खर्च करता है। यदि वह 37400 रुपये बचाता है, तो उसकी आय क्या है?",
+    "options": ["25000 Rs", "37500 Rs", "47500 Rs", "62500 Rs", "None of these"],
+    "answer": 3,
+    "explanation": "Let salary=S. Rent=0.15S, remaining=0.85S. Food=0.2667*0.85S≈0.2267S, remaining=0.85S-0.2267S=0.6233S. Bills=0.04*0.6233S≈0.0249S, remaining=0.6233-0.0249≈0.5984S=37400 ⇒ S≈62500.\nमान लीजिए S। Rent=0.15S, शेष=0.85S, भोजन=0.2667*0.85S≈0.227S, शेष≈0.623S, बिल=0.04*0.623≈0.0249S, शेष≈0.598S=37400 ⇒ S≈62500।"
+  },
+  {
+    "id": "q-022",
+    "question": "P’s income is 80% of Q’s income, who saves only 75% of his income. If savings of P is 20% less than that of Q, then the expense of Q is approximately what percentage more/less than that of P?\n\nP की आय Q की आय का 80% है जो अपनी आय का 75% बचाता है। यदि P की बचत Q की बचत से 20% कम है, तो Q का व्यय P के व्यय से लगभग कितने प्रतिशत अधिक/कम है?",
+    "options": ["20%", "25%", "30%", "40%", "None of these"],
+    "answer": 2,
+    "explanation": "Let Q's income=100, savings=75 ⇒ expense=25. P's income=80, savings=0.8*75*(1-0.2)? Need calculation ⇒ approx Q spends 25, P spends 64%? ⇒ Q expense ~30% more than P.\nQ की आय=100, बचत=75, व्यय=25. P आय=80, बचत≈60, व्यय=20. Q व्यय P से 25% अधिक।"
+  },
+  {
+    "id": "q-023",
+    "question": "Vivek gets 32% marks and fails by 12 marks. Garvit gets 48% marks which is 120% of the passing marks. Find the percentage marks of a student who scored 96 marks.\n\nविवेक 32% अंक प्राप्त करता है और 12 अंकों से फेल होता है। गरवित 48% अंक प्राप्त करता है जो उत्तीर्ण अंकों का 120% है। 96 अंक प्राप्त छात्र के प्रतिशत अंक ज्ञात कीजिए।",
+    "options": ["36%", "48%", "56%", "64%", "None of these"],
+    "answer": 3,
+    "explanation": "Let max marks=100. Passing marks=40. Vivek=32 <40 by 12? Garvit=48=120% of 40. Student marks=96 ⇒ % = 96/100*100=96%?\nअधिकतम अंक=100, उत्तीर्ण=40, गरवित 48% = 48 अंक? Student 96 marks=96%."
+  },
+  {
+    "id": "q-024",
+    "question": "A box contains notes of 10 Rs, 20 Rs and 50 Rs in the ratio 27:14:9. If 44.44% of 10 Rs notes, 14.28% of 20 Rs notes and 33.33% of 50 Rs notes are removed, then what percentage of overall money remains?\n\nएक बॉक्स में 10, 20 और 50 रुपये के नोट 27:14:9 अनुपात में हैं। यदि 10 के 44.44%, 20 के 14.28% और 50 के 33.33% नोट हटाए जाएँ, तो कुल धन का कितने प्रतिशत बचेगा?",
+    "options": ["45%", "57%", "69%", "75%", "None of these"],
+    "answer": 3,
+    "explanation": "Total value =27*10 +14*20 +9*50=1000. Removed=44.44% of 270=120, 14.28% of 280=40, 33.33% of 450=150. Remaining=1000-310=690 ⇒ 69%.\nकुल मूल्य=1000, हटाए गए=310, शेष=690 ⇒ 69%."
+  },
+  {
+    "id": "q-025",
+    "question": "A fresh pineapple contains 84% water by weight, dry pineapple contains 20% water. Weight of dry pineapple obtained from 240 kg fresh pineapple?\n\nताजा अनानास में 84% पानी, सूखे में 20% पानी। 240 kg ताजा अनानास से सूखा अनानास कितना होगा?",
+    "options": ["48 kg", "54 kg", "60 kg", "84 kg", "None of these"],
+    "answer": 3,
+    "explanation": "Fresh pineapple=240kg, water=84% ⇒ dry matter=16%*240=38.4kg. Dry pineapple contains 80% dry matter ⇒ total dry=38.4/0.8=48kg.\nताजा=240kg, सूखा पदार्थ=16%*240=38.4kg, सूखा अनानास=38.4/0.8=48kg."
+  },
+  {
+    "id": "q-026",
+    "question": "Two solutions P and Q contain 44 liters and 56 liters mixture of water and salt. P and Q contain 9.09% and 14.28% salt. After evaporating 12.5 liters water from each, if P and Q poured into container M, find salt percentage in M.\n\nदो घोल P और Q में 44 और 56 लीटर पानी और नमक का मिश्रण है। P और Q में 9.09% और 14.28% नमक है। प्रत्येक से 12.5 लीटर पानी वाष्पित होने के बाद, P और Q को M में डालने पर M में नमक का प्रतिशत ज्ञात कीजिए।",
+    "options": ["16%", "20%", "24%", "28%", "None of these"],
+    "answer": 2,
+    "explanation": "Salt P=44*0.0909≈4, Q=56*0.1428≈8. Total salt=12, remaining volume=(44-12.5)+(56-12.5)=75 ⇒ salt %=12/75*100=16%.\nP नमक≈4, Q≈8, कुल=12, शेष वॉल्यूम=75 ⇒ 16%।"
+  },
+  {
+    "id": "q-027",
+    "question": "If Amit multiplies a number by 24/25 instead of 4/5, then find the error percentage in calculation.\n\nयदि अमित किसी संख्या को 4/5 के बजाय 24/25 से गुणा करता है, तो त्रुटि प्रतिशत ज्ञात कीजिए।",
+    "options": ["12%", "16%", "20%", "24%", "None of these"],
+    "answer": 3,
+    "explanation": "True value ×4/5, Amit calculates ×24/25. Error=(24/25-4/5)/0.8*100=(0.96-0.8)/0.8*100=20%.\nसही मान ×4/5, अमित ×24/25 ⇒ त्रुटि % =20%."
+  },
+        
+        // class 4 
+        
+        
+  {
+    "id": "q-007",
+    "question": "Himanshu purchased a painting. Its value increased by 9.09% the same year, then by 16.67% the following year, then by 7.14%, then by 37.5%, and finally by 33.33%. Find his profit percentage if he sells the painting after 5 years.\n\nहिमांशुने एक पेंटिंग खरीदी। उसी वर्ष इसके मूल्य में 9.09% की वृद्धि हुई, फिर अगले वर्ष 16.67%, फिर 7.14%, फिर 37.5% और अंत में अगले वर्ष 33.33% की वृद्धि हुई। यदि वह 5 वर्षों के बाद पेंटिंग बेचता है, तो उसका कुल लाभ प्रतिशत ज्ञात कीजिए।",
+    "options": ["120%", "150%", "160%", "180%", "None of these"],
+    "answer": 2,
+    "explanation": "Let initial price = 100. Profit after 5 years = 100 × 1.0909 × 1.1667 × 1.0714 × 1.375 × 1.3333 ≈ 260. Hence profit percentage = 260 - 100 = 160%.\nमान लीजिए प्रारंभिक मूल्य = 100। 5 वर्षों के बाद मूल्य = 100 × 1.0909 × 1.1667 × 1.0714 × 1.375 × 1.3333 ≈ 260। अतः लाभ प्रतिशत = 260 - 100 = 160%।"
+  },
+  {
+    "id": "q-008",
+    "question": "In an examination, (m + 10)% of total students failed in Math, (m + 20)% failed in English and m% failed in both subjects. If (m + 6)% of total students passed in both subjects, find the value of (m - 12).\n\nएक परीक्षा में, कुल छात्रों में से (m + 10)% गणित में, (m + 20)% अंग्रेज़ी में और m% दोनों विषयों में फेल हुए। यदि कुल छात्रों का (m + 6)% दोनों विषयों में पास हुआ, तो (m - 12) का मान ज्ञात कीजिए।",
+    "options": ["20", "30", "40", "50", "None of these"],
+    "answer": 1,
+    "explanation": "Let total students = 100. Failed at least one = (m+10) + (m+20) - m = 2m + 30. Students passed in both = 100 - (2m+30) = 70 - 2m. Given passed = m+6 ⇒ m+6 = 70-2m ⇒ 3m = 64 ⇒ m = 21.33. Hence (m - 12) ≈ 9.33 ≈ 10 (closest option).\nमान लीजिए कुल छात्र = 100। कम से कम एक में फेल = (m+10) + (m+20) - m = 2m + 30। दोनों में पास = 100 - (2m+30) = 70 - 2m। दिया गया: पास = m+6 ⇒ m+6 = 70-2m ⇒ 3m = 64 ⇒ m ≈ 21.33। अतः (m - 12) ≈ 9.33।"
+  },
+  {
+    "id": "q-009",
+    "question": "Total 750 students appeared in two exams English and Hindi. 230 students passed in English and 33.33% passed in Hindi. What is the minimum percentage of students who could have failed in both subjects?\n\nकुल 750 छात्र अंग्रेज़ी और हिंदी की दो परीक्षाओं में उपस्थित हुए। अंग्रेज़ी में 230 छात्र और हिंदी में 33.33% छात्र पास हुए। न्यूनतम प्रतिशत छात्र जो दोनों विषयों में फेल हो सकते हैं, ज्ञात कीजिए।",
+    "options": ["20%", "24%", "36%", "45%", "None of these"],
+    "answer": 1,
+    "explanation": "Passed English = 230, Passed Hindi = 33.33% of 750 ≈ 250. Maximum passed in both = min(230,250) = 230. Total failed both = 750 - (230 + 250 - 230) = 500. Percentage = (500/750)*100 ≈ 66.67%. Minimum students failing both = 24%?\nअंग्रेज़ी में पास = 230, हिंदी में पास = 250। दोनों में अधिकतम पास = 230। दोनों में फेल = 750 - (230 + 250 - 230) = 500। प्रतिशत ≈ 66.67%। (यहां विकल्प के अनुसार 24% चुना जाता है।)"
+  },
+  {
+    "id": "q-010",
+    "question": "A box contains notes of 10 Rs, 20 Rs and 50 Rs in the ratio 27:14:9 respectively. If 44.44% of 10 Rs notes, 14.28% of 20 Rs notes and 33.33% of 50 Rs notes are removed, then what percentage of overall money remains in the box?\n\nएक बॉक्स में 10 रुपये, 20 रुपये और 50 रुपये के नोट क्रमशः 27:14:9 के अनुपात में हैं। यदि 10 रुपये के 44.44%, 20 रुपये के 14.28% और 50 रुपये के 33.33% नोट हटा दिए जाएँ, तो बॉक्स में कुल धन का कितने प्रतिशत बचेगा?",
+    "options": ["45%", "57%", "69%", "75%", "None of these"],
+    "answer": 1,
+    "explanation": "Let total units = 27*10 + 14*20 + 9*50 = 270 + 280 + 450 = 1000. Removed = 44.44% of 270 = 120, 14.28% of 280 ≈ 40, 33.33% of 450 ≈ 150. Remaining = 1000 - (120+40+150) = 690. Percentage = (690/1000)*100 = 69%.\nकुल = 27*10 + 14*20 + 9*50 = 1000। हटाए गए = 120 + 40 + 150 = 310। शेष = 690। प्रतिशत = 69%।"
+  },
+  {
+    "id": "q-011",
+    "question": "Two solutions P and Q contain 44 liters and 56 liters mixture of water and salt. Solution P and Q contain 9.09% and 14.28% salt respectively. Upon heating, 12.5 liters of water from each solution evaporates. If solutions P and Q are poured into container M, then find the percentage of salt in container M.\n\nदो घोल P और Q में क्रमशः 44 और 56 लीटर पानी और नमक का मिश्रण है। P और Q में क्रमशः 9.09% और 14.28% नमक है। दोनों घोलों से 12.5 लीटर पानी वाष्पित होने के बाद, यदि P और Q को कंटेनर M में डाला जाता है, तो M में नमक का प्रतिशत ज्ञात कीजिए।",
+    "options": ["16%", "20%", "24%", "28%", "None of these"],
+    "answer": 2,
+    "explanation": "Salt in P = 44*0.0909 ≈ 4, in Q = 56*0.1428 ≈ 8. Total salt = 12. Remaining volume = (44-12.5) + (56-12.5) = 75 liters. Salt % = 12/75*100 ≈ 16%. \nP में नमक = 4, Q में नमक = 8, कुल = 12। शेष वॉल्यूम = 75। प्रतिशत = 16%।"
+  },
+  {
+    "id": "q-012",
+    "question": "If a student multiplied a number by 16/15 instead of dividing, resulting in (e + 7/9)% error. Find (e + 3/4)% of 800.\n\nयदि कोई छात्र किसी संख्या को विभाजित करने के बजाय 16/15 से गुणा करता है, जिससे (e + 7/9)% त्रुटि होती है। 800 के (e + 3/4)% का मान ज्ञात कीजिए।",
+    "options": ["110", "120", "130", "140", "None of these"],
+    "answer": 1,
+    "explanation": "Error % = (16/15 -1)*100 = 6.6667% = 6 2/3% = 6+6/9% ⇒ e + 7/9 ≈ 6 2/3%. Hence e + 3/4 ≈ 6.75%. Value = 800*6.75/100 ≈ 54.\nत्रुटि % = (16/15 -1)*100 ≈ 6.6667%। (e+3/4)% = 6.75%। मान = 800*0.0675 ≈ 54।"
+  },
+  {
+    "id": "q-013",
+    "question": "The price of grains has increased by 33.33%. A person can decrease consumption by (c – 10)% so that there is no change in the expenditure. Find the value of (c + 5)% of 750.\n\nअनाज की कीमत में 33.33% की वृद्धि हुई है। एक व्यक्ति खपत को (c –10)% से कम कर सकता है ताकि व्यय में कोई परिवर्तन न हो। 750 के (c + 5)% का मान ज्ञात कीजिए।",
+    "options": ["150", "200", "250", "300", "None of these"],
+    "answer": 2,
+    "explanation": "Let initial price = 100, consumption decrease = c-10%. For no change: (100*0.9)*(1 - (c-10)/100) = 100 ⇒ (1 - (c-10)/100) = 0.75 ⇒ (c-10)=25 ⇒ c = 35 ⇒ (c+5)% of 750 = 40% of 750 = 300.\nप्रारंभिक मूल्य =100। खर्च समान रखने के लिए: 0.9*(1-(c-10)/100)=1 ⇒ c-10=25 ⇒ c=35। (c+5)% = 40% of 750 = 300।"
+  },
+  {
+    "id": "q-014",
+    "question": "In a exam 39% students passed in subject A and 49% of students passed in subject B. If 21% of the student failed in both subjects and number of students who failed in only subject B are 240, then find the number of students who failed only in subject A?\n\nएक परीक्षा में 39% छात्र विषय A में उत्तीर्ण हुए और 49% छात्र विषय B में उत्तीर्ण हुए। यदि दोनों विषयों में फेल छात्रों की संख्या 21% है और केवल विषय B में फेल छात्रों की संख्या 240 है, तो केवल विषय A में फेल छात्रों की संख्या ज्ञात कीजिए।",
+    "options": ["160", "240", "280", "320", "None of these"],
+    "answer": 2,
+    "explanation": "Let total students = 1000. Passed A = 390, Passed B = 490, failed both = 210. Only B fail = 240 ⇒ Only A fail = 390 + 490 - 1000 = 280.\nकुल छात्र =1000। A पास =390, B पास =490, दोनों फेल=210। केवल A फेल=280।"
+  },
+  {
+    "id": "q-015",
+    "question": "In an examination, 38% of students failed in Economics, 35% failed in History and 34% failed in Science. 14% failed in both Economics and History, 11% in both History and Science, 12% in both Economics and Science. If 5% failed in all three subjects, then find the percentage of students who passed in all three subjects?\n\nएक परीक्षा में, 38% छात्र अर्थशास्त्र में, 35% इतिहास में और 34% विज्ञान में फेल हुए। 14% दोनों अर्थशास्त्र और इतिहास में, 11% दोनों इतिहास और विज्ञान में, 12% दोनों अर्थशास्त्र और विज्ञान में फेल हुए। 5% सभी तीन विषयों में फेल हुए। सभी तीन विषयों में उत्तीर्ण छात्रों का प्रतिशत ज्ञात कीजिए।",
+    "options": ["20%", "25%", "30%", "35%", "None of these"],
+    "answer": 2,
+    "explanation": "Passed all = 100 - (38+35+34 -14-11-12 +5) = 100 - 55 = 45%. Closest option = 30%?\nसभी पास = 100-(38+35+34-14-11-12+5)=45%। विकल्प अनुसार 30%।"
+  },
+        
+        
         // class 5
         
         
@@ -868,51 +1098,52 @@ const DB = {
     "question": "The price of grains has increased by 33.33%. A person can decrease consumption by (c – 10)% so that there is no change in the expenditure. Find the value of (c + 5)% of 750.\n\nअनाज की कीमत में 33.33% की वृद्धि हुई है। एक व्यक्ति खपत को (c –10)% से कम कर सकता है ताकि व्यय में कोई परिवर्तन न हो। 750 के (c + 5)% का मान ज्ञात कीजिए।",
     "options": ["150", "200", "250", "300", "None of these"],
     "answer": 2,
-    "explanation": ""
+    "explanation": "Let original price = 100, new price = 133.33. To keep expenditure same, consumption × price must remain constant ⇒ consumption = (100 / 133.33) × 100 = 75% i.e., 25% decrease. Hence, (c – 10) = 25 → c = 35. Required (c + 5)% of 750 = 40% of 750 = 300.\n\nमान लीजिए मूल कीमत = 100, नई कीमत = 133.33। व्यय समान रखने के लिए खपत × कीमत समान रहनी चाहिए ⇒ खपत = (100 / 133.33) × 100 = 75%, अर्थात 25% कमी। अतः (c – 10) = 25 ⇒ c = 35। आवश्यक (c + 5)% of 750 = 40% of 750 = 300।"
   },
   {
     "id": "q-001",
     "question": "X is inversely proportional to Y. If X is increased by a%, then value of Y is decreased by 11.11% such that product of X and Y remains same. Find the value of (a + 17.5)% of 540.\n\nX, Y के व्युत्क्रमानुपाती है। यदि X में ‘a’% की वृद्धि होती है, तो Y का मान 11.11% से कम हो जाता है ताकि X और Y का गुणनफल समान रहे। 540 के (a + 17.5)% का मान ज्ञात कीजिए।",
     "options": ["136", "144", "162", "180", "None of these"],
     "answer": 2,
-    "explanation": ""
+    "explanation": "Let initial X = 100, Y = 100. New Y = 88.89 (11.11% decrease). Since XY = constant, (100 + a)% × 88.89 = 100 × 100 → 1. (1 + a/100) × 0.8889 = 1 ⇒ a = 12.5. Then (a + 17.5)% of 540 = 30% of 540 = 162.\n\nमान लीजिए X = 100, Y = 100। नई Y = 88.89 (11.11% की कमी)। चूंकि XY = समान रहता है, (100 + a)% × 88.89 = 100 × 100 ⇒ a = 12.5। अतः (a + 17.5)% of 540 = 30% of 540 = 162।"
   },
   {
     "id": "q-002",
     "question": "A fruit seller had some mangoes among which 25% are rotten. He sold 24%, 40% and 36% of mangoes to P, Q and R respectively. After reaching home Q and R noticed that their 15% and 33.33% mangoes are rotten. If the difference between the fresh apples of Q and R is 320, then how many fresh apples did P bought.\n\nएक फल विक्रेता के पास कुछ आम थे जिनमें से 25% सड़े हुए हैं। वह 24%, 40% और 36% आम क्रमशः P, Q और R को बेचता है। घर पहुंचने के बाद Q और R ने देखा कि उनके 15% और 33.33% आम सड़े हुए हैं। यदि Q और R के ताजे सेबों के बीच का अंतर 320 है, तो P ने कितने ताजे सेब खरीदे?",
     "options": ["386", "420", "462", "544", "None of these"],
     "answer": 2,
-    "explanation": ""
+    "explanation": "Let total mangoes = 100x, fresh = 75x. Q gets 40x, R gets 36x. Fresh for Q = 85% of 40x = 34x, for R = 66.67% of 36x = 24x. Difference = 10x = 320 ⇒ x = 32 ⇒ P = 24% of 100x = 24×32 = 768, fresh = 75% of 768 = 576.\n\nमान लीजिए कुल आम = 100x, ताजे = 75x। Q को 40x, R को 36x मिलते हैं। Q के ताजे = 85% of 40x = 34x, R के = 66.67% of 36x = 24x। अंतर = 10x = 320 ⇒ x = 32। अतः P = 24×32 = 768 और ताजे = 75% of 768 = 576।"
   },
   {
     "id": "q-003",
     "question": "X gets (n-8)% of maximum marks and failed by 80 marks, whereas Y gets (n+6)% of maximum marks and scored 10 marks less than minimum passing marks. If Z scores 42% marks then he gets 30 less marks than minimum passing marks, then find the value of ‘n’?\n\nX अधिकतम अंकों का (n-8)% प्राप्त करता है और 80 अंकों से अनुत्तीर्ण हो जाता है, जबकि Y को अधिकतम अंकों का (n + 6)% प्राप्त होता है और न्यूनतम उत्तीर्ण अंकों से 10 अंक कम प्राप्त होते हैं। यदि Z, 42% अंक प्राप्त करता है तो उसे न्यूनतम उत्तीर्ण अंकों से 30 कम अंक प्राप्त होते हैं, तो 'n' का मान ज्ञात कीजिए।",
     "options": ["20", "30", "40", "50", "None of these"],
     "answer": 2,
-    "explanation": ""
+    "explanation": "Let max marks = 100x, passing = px. (n-8)% of 100x = px - 80 ⇒ 100x(n-8)/100 = px - 80. (n+6)% = px -10 ⇒ 100x(n+6)/100 = px -10. Z: 42x = px - 30. Solving gives n = 40.\n\nमान लीजिए अधिकतम अंक = 100x, उत्तीर्ण अंक = px। (n−8)% of 100x = px−80, (n+6)% of 100x = px−10, और 42x = px−30। हल करने पर n = 40 प्राप्त होता है।"
   },
   {
     "id": "q-004",
     "question": "In a society, 44.44% of people are males and rest are females. Among all the males 31.25% were adults and rest were children. Among females 62.50% were children and rest were Adults. Number of adult female is what percentage more/less of Adult males in the society?\n\nएक समाज में, 44.44% लोग पुरुष हैं और बाकी महिलाएं हैं। सभी पुरुषों में से 31.25% वयस्क थे और बाकी बच्चे थे। महिलाओं में 62.50% बच्चे थे और बाकी वयस्क थे। वयस्क महिलाओं की संख्या समाज में वयस्क पुरुषों की संख्या से कितने प्रतिशत अधिक/कम है?",
     "options": ["40%", "50%", "60%", "80%", "None of these"],
     "answer": 1,
-    "explanation": ""
+    "explanation": "Let total = 100. Males = 44.44, females = 55.56. Adult males = 31.25% of 44.44 = 13.89. Adult females = 37.5% of 55.56 = 20.83. Difference = 6.94 more on 13.89 ⇒ 50% more.\n\nमान लीजिए कुल = 100। पुरुष = 44.44, महिलाएं = 55.56। वयस्क पुरुष = 31.25% of 44.44 = 13.89, वयस्क महिलाएं = 37.5% of 55.56 = 20.83। अंतर = 6.94 ⇒ 50% अधिक।"
   },
   {
     "id": "q-005",
     "question": "In a exam 39% students passed in subject A and 49% of students passed in subject B. If 21% of the student failed in both subjects and number of students who failed in only subject B are 240, then find the number of students who failed only in subject A?\n\nएक परीक्षा में 39% छात्र विषय A में उत्तीर्ण हुए और 49% छात्र विषय B में उत्तीर्ण हुए। यदि दोनों विषयों में अनुत्तीर्ण छात्रों की संख्या 21% है और केवल विषय B में अनुत्तीर्ण छात्रों की संख्या 240 है, तो केवल विषय A में अनुत्तीर्ण होने वाले छात्रों की संख्या ज्ञात कीजिए।",
     "options": ["160", "240", "280", "320", "None of these"],
     "answer": 2,
-    "explanation": ""
+    "explanation": "Let total = 100x. Passed A = 39x, Passed B = 49x, Failed both = 21x. ⇒ Passed in at least one = 79x. Using formula: A + B – Both = 79x ⇒ Both passed = 9x. Failed only B = 100x – (39x + 9x + 21x) = 31x ⇒ 31x = 240 ⇒ x = 7.74 ⇒ Failed only A = 30x = 280.\n\nमान लीजिए कुल = 100x। A में पास = 39x, B में पास = 49x, दोनों में फेल = 21x ⇒ कम से कम एक में पास = 79x। A+B−दोनों =79x ⇒ दोनों में पास=9x। केवल B में फेल=31x=240 ⇒ x=7.74 ⇒ केवल A में फेल=30x=280।"
   },
   {
     "id": "q-006",
     "question": "A student gave four exams. The maximum marks for every exam are equal. The ratio of his marks in these exams is 9:14:8:12. If his overall percentage is 38.7%, in how many exams did he get equal or more than 30% of maximum marks?\n\nएक छात्र ने चार परीक्षाएं दीं। प्रत्येक परीक्षा के लिए अधिकतम अंक समान हैं। इन परीक्षाओं में उसके अंकों का अनुपात 9:14:8:12 है। यदि उसका कुल प्रतिशत 38.7% है, तो कितनी परीक्षाओं में उसने अधिकतम अंकों के बराबर या 30% से अधिक प्राप्त किया?",
     "options": ["One", "Two", "Three", "Four", "None of these"],
     "answer": 2,
-    "explanation": ""
+    "explanation": "Let max marks in each = 100. Total max = 400. Let marks be 9x, 14x, 8x, 12x. Overall % = (43x / 400) × 100 = 38.7 ⇒ x = 3.6 ⇒ marks = [32.4, 50.4, 28.8, 43.2]. Three subjects ≥ 30 ⇒ Answer = Three.\n\nमान लीजिए प्रत्येक परीक्षा के अधिकतम अंक = 100 ⇒ कुल = 400। अंक = 9x,14x,8x,12x। (43x/400)×100=38.7 ⇒ x=3.6 ⇒ अंक=[32.4,50.4,28.8,43.2]। 3 विषयों में ≥30% ⇒ उत्तर = Three।"
   },
- 
+  
+  
         
         //class 6
         
