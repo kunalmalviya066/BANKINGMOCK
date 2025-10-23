@@ -1479,13 +1479,7 @@ const DB = {
     "answer": 2,
     "explanation": "Use both statements: P fails by 60 → marks=2x%*600, Q 3x+15%=marks → solve x."
   },
-  {
-    "id": "q-065",
-    "question": "Final question placeholder Q65",
-    "options": ["D", "B", "A", "C", "None of these"],
-    "answer": 0,
-    "explanation": "Answer per prior reference list: D."
-  },
+  
         
         
         
