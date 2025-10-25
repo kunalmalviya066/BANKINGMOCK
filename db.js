@@ -5,6 +5,234 @@ const DB = {
        
       
       'Simplification': [
+    
+    
+  {
+    "id": "q-ar-021",
+    "question": "25% of 640 + 35% of 480 – 10% of 900 = ?",
+    "options": ["(a) 238","(b) 240","(c) 242","(d) 232","(e) None of these"],
+    "answer": 0,
+    "explanation": "25% of 640 = 160, 35% of 480 = 168, 10% of 900 = 90 ⇒ 160 + 168 – 90 = 238"
+  },
+  {
+    "id": "q-ar-022",
+    "question": "(7/8 × 96) + (2/5 × 250) – 15 = ?²",
+    "options": ["(a) 11","(b) 12","(c) 13","(d) 14","(e) None of these"],
+    "answer": 2,
+    "explanation": "(7/8 × 96) = 84, (2/5 × 250) = 100 ⇒ 84 + 100 – 15 = 169 ⇒ ? = 13"
+  },
+  {
+    "id": "q-ar-023",
+    "question": "48² + 26² – 34² = ?",
+    "options": ["(a) 1824","(b) 1724","(c) 1924","(d) 1814","(e) None of these"],
+    "answer": 0,
+    "explanation": "48² = 2304, 26² = 676 ⇒ 2304 + 676 = 2980, 2980 – 1156 = 1824"
+  },
+  {
+    "id": "q-ar-024",
+    "question": "√1600 × √225 – 450 = ?",
+    "options": ["(a) 150","(b) 140","(c) 160","(d) 180","(e) None of these"],
+    "answer": 0,
+    "explanation": "√1600 = 40, √225 = 15 ⇒ 40 × 15 = 600 ⇒ 600 – 450 = 150"
+  },
+  {
+    "id": "q-ar-025",
+    "question": "(1560 ÷ 12) + (625 ÷ 25) – 12² = ?",
+    "options": ["(a) 11","(b) 21","(c) 10","(d) 14","(e) None of these"],
+    "answer": 0,
+    "explanation": "1560/12 = 130, 625/25 = 25, 12² = 144 ⇒ 130 + 25 – 144 = 11"
+  },
+  {
+    "id": "q-ar-026",
+    "question": "60% of (250 + 150) + 39 = ?",
+    "options": ["(a) 279","(b) 289","(c) 269","(d) 281","(e) None of these"],
+    "answer": 0,
+    "explanation": "250 + 150 = 400 ⇒ 60% × 400 = 240 ⇒ 240 + 39 = 279"
+  },
+  {
+    "id": "q-ar-027",
+    "question": "18 × 14 – 35 × 7 + 8 × 19 = ?",
+    "options": ["(a) 159","(b) 149","(c) 169","(d) 179","(e) None of these"],
+    "answer": 0,
+    "explanation": "18×14 = 252, 35×7 = 245, 8×19 = 152 ⇒ 252 – 245 + 152 = 159"
+  },
+  {
+    "id": "q-ar-028",
+    "question": "(90 ÷ 6)³ ÷ 125 = ?",
+    "options": ["(a) 25","(b) 27","(c) 29","(d) 30","(e) None of these"],
+    "answer": 1,
+    "explanation": "90/6 = 15 ⇒ 15³ = 3375 ⇒ 3375/125 = 27"
+  },
+  {
+    "id": "q-ar-029",
+    "question": "(√2916 + 24) × 5 = ?",
+    "options": ["(a) 380","(b) 395","(c) 390","(d) 400","(e) None of these"],
+    "answer": 2,
+    "explanation": "√2916 = 54 ⇒ 54 + 24 = 78 ⇒ 78 × 5 = 390"
+  },
+  {
+    "id": "q-ar-030",
+    "question": "(3/4 of 320) + (4/5 of 200) – (1/2 of 180) = ?",
+    "options": ["(a) 310","(b) 300","(c) 315","(d) 305","(e) None of these"],
+    "answer": 0,
+    "explanation": "(3/4 × 320) = 240, (4/5 × 200) = 160, (1/2 × 180) = 90 ⇒ 240 + 160 – 90 = 310"
+  },
+  {
+    "id": "q-ar-001",
+    "question": "44% of 750 + 18% of 550 + 38.45% of 767 = ?",
+    "options": ["(a) 796","(b) 792","(c) 797","(d) 724","(e) None of these"],
+    "answer": 3,
+    "explanation": "44% of 750 = 330, 18% of 550 = 99, 38.45% of 767 ≈ 295. Sum = 330 + 99 + 295 = 724"
+  },
+  {
+    "id": "q-ar-002",
+    "question": "(7/9) of 405 + (7/18) of 1530 – (3/17) of 1615 = ?²",
+    "options": ["(a) 24","(b) 25","(c) 26","(d) 20","(e) None of these"],
+    "answer": 1,
+    "explanation": "7/9 of 405 = 315, 7/18 of 1530 = 595, 3/17 of 1615 = 285, 315 + 595 – 285 = 625, √625 = 25"
+  },
+  {
+    "id": "q-ar-003",
+    "question": "(108 × 24) + 48² + 72² = ? + 17²",
+    "options": ["(a) 9791","(b) 9998","(c) 9794","(d) 9996","(e) None of these"],
+    "answer": 0,
+    "explanation": "108 × 24 = 2592, 48² = 2304, 72² = 5184, Sum = 10080, ? + 289 = 10080, ? = 9791"
+  },
+  {
+    "id": "q-ar-004",
+    "question": "18 × 4.5 – 28 × 3.5 – 75 × 4 + 36 × 9.5 = ?",
+    "options": ["(a) 25","(b) 23","(c) 24","(d) 20","(e) None of these"],
+    "answer": 0,
+    "explanation": "81 – 98 – 300 + 342 = 25"
+  },
+  {
+    "id": "q-ar-005",
+    "question": "(√3136 × √1296) ÷ √12544 + 175 = ?",
+    "options": ["(a) 198","(b) 190","(c) 199","(d) 193","(e) None of these"],
+    "answer": 3,
+    "explanation": "√3136 = 56, √1296 = 36, √12544 = 112, (56×36)/112 = 18, 18 + 175 = 193"
+  },
+  {
+    "id": "q-ar-006",
+    "question": "(156 + 1728 – 356 – 752) / 8 = ?",
+    "options": ["(a) 98","(b) 99","(c) 97","(d) 96","(e) None of these"],
+    "answer": 2,
+    "explanation": "156 + 1728 – 356 – 752 = 776, 776/8 = 97"
+  },
+  {
+    "id": "q-ar-007",
+    "question": "18.75% of 768 + 46.14% of 1248 – 15.38% of 923 = ?",
+    "options": ["(a) 579","(b) 578","(c) 550","(d) 572","(e) None of these"],
+    "answer": 1,
+    "explanation": "18.75% = 144, 46.14% = 576, 15.38% = 142, 144 + 576 – 142 = 578"
+  },
+  {
+    "id": "q-ar-008",
+    "question": "[(18)² ÷ (2)⁴] × 40 – 752 = ?",
+    "options": ["(a) 56","(b) 55","(c) 58","(d) 68","(e) None of these"],
+    "answer": 2,
+    "explanation": "18²/16 = 20.25, 20.25×40 = 810, 810 – 752 = 58"
+  },
+  {
+    "id": "q-ar-009",
+    "question": "80% of 560 + 3600 ÷ 75 – 4320 ÷ 96 = ?",
+    "options": ["(a) 455","(b) 451","(c) 450","(d) 453","(e) None of these"],
+    "answer": 1,
+    "explanation": "448 + 48 – 45 = 451"
+  },
+  {
+    "id": "q-ar-010",
+    "question": "{(1184 ÷ 74) × 5 + 432 ÷ 9} = ?² × 8",
+    "options": ["(a) 4","(b) 8","(c) 5","(d) 3","(e) None of these"],
+    "answer": 0,
+    "explanation": "1184/74 = 16, 16×5 = 80, 432/9 = 48, 80+48 = 128, 128 = ?²×8 ⇒ ? = 4"
+  },
+  {
+    "id": "q-ar-011",
+    "question": "5(2/9) of 3(6/7) of 42.85% of 196 = ?",
+    "options": ["(a) 1699","(b) 1696","(c) 1692","(d) 1691","(e) None of these"],
+    "answer": 2,
+    "explanation": "(47/9)×(27/7)×(3/7)×196 = 1692"
+  },
+  {
+    "id": "q-ar-012",
+    "question": "(5/13 of √2704) + (1134 ÷ 9 ÷ 7) + (7.5 × 2.5 × 8) = ?",
+    "options": ["(a) 188","(b) 199","(c) 198","(d) 186","(e) None of these"],
+    "answer": 0,
+    "explanation": "20 + 18 + 150 = 188"
+  },
+  {
+    "id": "q-ar-013",
+    "question": "80% of (√5184 + 158) + ? = 156 × 4.5",
+    "options": ["(a) 516","(b) 518","(c) 519","(d) 520","(e) None of these"],
+    "answer": 1,
+    "explanation": "184 + ? = 702 ⇒ ? = 518"
+  },
+  {
+    "id": "q-ar-014",
+    "question": "(7/3 + 9/2 – 17/3 + 15/2) = ? × 13/24",
+    "options": ["(a) 14","(b) 16","(c) 18","(d) 20","(e) None of these"],
+    "answer": 1,
+    "explanation": "26/3 = ?×13/24 ⇒ ? = 16"
+  },
+  {
+    "id": "q-ar-015",
+    "question": "(28/36) ÷ (7/288) + 18³ = ? + 882 ÷ 7²",
+    "options": ["(a) 5548","(b) 5846","(c) 5640","(d) 5750","(e) None of these"],
+    "answer": 1,
+    "explanation": "32 + 5832 = ? + 18 ⇒ ? = 5846"
+  },
+  {
+    "id": "q-ar-016",
+    "question": "(5139.75 + 485.25)½ + (443.55 + 852.45)½ + 3⁵ = ?",
+    "options": ["(a) 354","(b) 356","(c) 343","(d) 344","(e) None of these"],
+    "answer": 0,
+    "explanation": "√5625 + √1296 + 243 = 75 + 36 + 243 = 354"
+  },
+  {
+    "id": "q-ar-017",
+    "question": "(√324 × 19) – (√625 × 12) + (√289 × 21) = ?",
+    "options": ["(a) 299","(b) 399","(c) 199","(d) 499","(e) None of these"],
+    "answer": 1,
+    "explanation": "342 – 300 + 357 = 399"
+  },
+  {
+    "id": "q-ar-018",
+    "question": "[(752 + 328) ÷ 8] + [(758 – 98) ÷ 11] – 148 = ?",
+    "options": ["(a) 47","(b) 57","(c) 37","(d) 67","(e) None of these"],
+    "answer": 0,
+    "explanation": "1080/8 = 135, 660/11 = 60, 135+60−148 = 47"
+  },
+  {
+    "id": "q-ar-019",
+    "question": "(17/3) of 225 – 37² + 56² = ? × 6",
+    "options": ["(a) 507","(b) 565","(c) 602","(d) 666","(e) None of these"],
+    "answer": 0,
+    "explanation": "1275 − 1369 + 3136 = 3042, 3042/6 = 507"
+  },
+  {
+    "id": "q-ar-020",
+    "question": "4⁴ ÷ (64)⅓ of (256)¾ of (64)⅔ = ?",
+    "options": ["(a) 8","(b) 15","(c) 6","(d) 18","(e) None of these"],
+    "answer": 0,
+    "explanation": "Final simplified correct value = 8"
+  },
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
      
   {
     id: 'q-ser-013',
@@ -466,6 +694,376 @@ const DB = {
     answer: 4,
     explanation: 'Roots of Eqn 1 = -12, 4 | Roots of Eqn 2 = 11, 4 | Answer: E'
   },
+  
+  
+  
+  
+  
+  
+  
+  {
+    id: 'q-ser-401',
+    question: 'I. x² - 9x + 18 = 0   II. y² - 7y + 12 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 4,
+    explanation: 'x = 3,6 | y = 3,4 | X ≤ Y always'
+  },
+  {
+    id: 'q-ser-402',
+    question: 'I. x² - 5x - 24 = 0   II. y² - 6y - 16 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 2,
+    explanation: 'x = -3,8 | y = -2,8 | Mixed => CND'
+  },
+  {
+    id: 'q-ser-403',
+    question: 'I. x² - 10x + 21 = 0   II. y² - 13y + 42 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 0,
+    explanation: 'x = 3,7 | y = 6,7 | X > Y mostly'
+  },
+  {
+    id: 'q-ser-404',
+    question: 'I. x² - 12x + 35 = 0   II. y² - 9y + 14 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 0,
+    explanation: 'x = 5,7 | y = 2,7 | X ≥ Y and > mostly'
+  },
+  {
+    id: 'q-ser-405',
+    question: 'I. x² - 14x + 48 = 2x - 12   II. y² - 6y + 5 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 2,
+    explanation: 'Eq1 → x² - 16x + 60=0 → roots: 6,10 | y = 1,5 | Mixed => CND'
+  },
+  {
+    id: 'q-ser-406',
+    question: 'I. x² + 2x - 15 = 0   II. y² - y - 20 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 2,
+    explanation: 'x = 3,-5 | y = 5,-4 | Mixed => CND'
+  },
+  {
+    id: 'q-ser-407',
+    question: 'I. x² - 11x + 30 = 0   II. y² - 15y + 54 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 4,
+    explanation: 'x = 5,6 | y = 6,9 | X ≤ Y always'
+  },
+  {
+    id: 'q-ser-408',
+    question: 'I. 2x² - 18x + 40 = 0   II. y² - 10y + 25 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 4,
+    explanation: 'x = 4,5 | y = 5,5 | X ≤ Y'
+  },
+  {
+    id: 'q-ser-409',
+    question: 'I. x² - 3x - 40 = 0   II. y² - 8y - 20 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 2,
+    explanation: 'x = -5,8 | y = -2,10 | Mixed => CND'
+  },
+  {
+    id: 'q-ser-410',
+    question: 'I. x² + 3x - 28 = 0   II. y² - y - 6 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 0,
+    explanation: 'x = 4,-7 | y = 3,-2 | X > Y mostly'
+  },
+  {
+    id: 'q-ser-411',
+    question: 'I. x² - 4x - 12 = 0   II. y² - 7y + 12 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 2,
+    explanation: 'x = -2,6 | y = 3,4 | Mixed => CND'
+  },
+  {
+    id: 'q-ser-412',
+    question: 'I. x² + 4x - 21 = 0   II. y² - 6y + 8 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 2,
+    explanation: 'x = 3,-7 | y = 2,4 | Mixed => CND'
+  },
+  {
+    id: 'q-ser-413',
+    question: 'I. x² - 13x + 36 = 0   II. y² + 4y - 21 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 0,
+    explanation: 'x = 4,9 | y = 3,-7 | X > Y always'
+  },
+  {
+    id: 'q-ser-414',
+    question: 'I. x² - 10x + 16 = 0   II. y² + 8y + 12 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 2,
+    explanation: 'x = 2,8 | y = -2,-6 | Mixed => CND'
+  },
+  {
+    id: 'q-ser-415',
+    question: 'I. x² - 9x + 20 = 4x - 8   II. y² - 5y + 4 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 0,
+    explanation: 'Eq1 → x² - 13x + 28=0 → x=4,9 | y=1,4 | X ≥ and > mostly'
+  },
+  {
+    id: 'q-ser-416',
+    question: 'I. x² + 7x + 10 = 0   II. y² + 10y + 24 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 4,
+    explanation: 'x = -2,-5 | y = -4,-6 | X ≤ Y always'
+  },
+  {
+    id: 'q-ser-417',
+    question: 'I. x² - 15x + 50 = 0   II. y² - 12y + 32 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 2,
+    explanation: 'x = 5,10 | y = 4,8 | Mixed => CND'
+  },
+  {
+    id: 'q-ser-418',
+    question: 'I. x² - 4x - 21 = 0   II. y² - 11y + 30 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 0,
+    explanation: 'x = -3,7 | y = 5,6 | X > Y mostly'
+  },
+  {
+    id: 'q-ser-419',
+    question: 'I. x² + x - 20 = 0   II. y² - 3y - 10 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 2,
+    explanation: 'x = 4,-5 | y = 5,-2 | Mixed => CND'
+  },
+  {
+    id: 'q-ser-420',
+    question: 'I. x² + 6x + 8 = 0   II. y² + y - 20 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 1,
+    explanation: 'x = -2,-4 | y = 4,-5 | X < Y mostly'
+  },
+  {
+    id: 'q-ser-421',
+    question: 'I. x² - 2x - 24 = 0   II. y² - 14y + 45 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 2,
+    explanation: 'x = -4,6 | y = 5,9 | Mixed => CND'
+  },
+  {
+    id: 'q-ser-422',
+    question: 'I. x² - 5x + 4 = 0   II. y² - 9y + 20 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 4,
+    explanation: 'x = 1,4 | y = 4,5 | X ≤ Y'
+  },
+  {
+    id: 'q-ser-423',
+    question: 'I. x² - 17x + 70 = 0   II. y² - 16y + 63 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 0,
+    explanation: 'x = 7,10 | y = 7,9 | X ≥ and > mostly'
+  },
+  {
+    id: 'q-ser-424',
+    question: 'I. x² + 9x + 20 = 0   II. y² - 4y - 32 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 1,
+    explanation: 'x = -4,-5 | y = 8,-4 | X < Y mostly'
+  },
+  {
+    id: 'q-ser-425',
+    question: 'I. x² - x - 56 = 0   II. y² - 10y + 24 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 2,
+    explanation: 'x = 8,-7 | y = 4,6 | Mixed => CND'
+  },
+  {
+    id: 'q-ser-426',
+    question: 'I. x² - 8x + 15 = 3x - 6   II. y² - 12y + 36 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 4,
+    explanation: 'Eq1 → x² - 11x + 21 = 0 → x = 3,7 | y = 6,6 | X ≤ Y'
+  },
+  {
+    id: 'q-ser-427',
+    question: 'I. x² - 20x + 96 = 4x - 16   II. y² + 10y + 25 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 0,
+    explanation: 'Eq1 → x² - 24x + 112=0 → x=8,14 | y=-5,-5 | X always >'
+  },
+  {
+    id: 'q-ser-428',
+    question: 'I. x² - 21x + 100 = 0   II. y² - 11y + 18 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 0,
+    explanation: 'x = 5,20 | y = 2,9 | X always ≥ and mostly >'
+  },
+  {
+    id: 'q-ser-429',
+    question: 'I. 2x² - 20x + 48 = 0   II. y² - 14y + 49 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 4,
+    explanation: 'x = 4,6 | y = 7,7 | X ≤ Y always'
+  },
+  {
+    id: 'q-ser-430',
+    question: 'I. x² - 6x - 27 = 0   II. y² - 2y - 24 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 2,
+    explanation: 'x = -3,9 | y = 6,-4 | Mixed => CND'
+  },
+  
+  
+  
+  
+  
+  
+  {
+    id: 'q-ser-301',
+    question: 'I. x² - 10x + 21 = 4x - 6   II. y² - 9y + 14 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 0,
+    explanation: 'Eq1 → x² - 14x + 27 = 0 → x = 2,12 | Eq2 → y = 2,7 | X ≥ Y always and strictly > in 3 cases => X > Y'
+  },
+  {
+    id: 'q-ser-302',
+    question: 'I. x² - 7x + 6 = 3x - 2   II. y² - 4y + 3 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 2,
+    explanation: 'Eq1 → x² - 10x + 8 = 0 → x = 1,8 | Eq2 → y = 1,3 | Mixed => CND'
+  },
+  {
+    id: 'q-ser-303',
+    question: 'I. x² + 6x - 7 = 2x + 5   II. y² + 3y - 18 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 4,
+    explanation: 'Eq1 → x² + 4x - 12 = 0 → x = 2,-6 | Eq2 → y = 3,-6 | X ≤ Y'
+  },
+  {
+    id: 'q-ser-304',
+    question: 'I. 2x² - 12x + 14 = 0   II. y² - 7y + 12 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 2,
+    explanation: 'x = 1,7 | y = 3,4 | Mixed => CND'
+  },
+  {
+    id: 'q-ser-305',
+    question: 'I. x² - 4x + 3 = 0   II. y² - 8y + 15 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 2,
+    explanation: 'x = 1,3 | y = 3,5 | Mixed => CND'
+  },
+  {
+    id: 'q-ser-306',
+    question: 'I. x² - 11x + 28 = 2x - 6   II. y² - 3y - 10 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 2,
+    explanation: 'Eq1 → x² - 13x + 34 = 0 → x = 2,11 | y = 5,-2 | Mixed => CND'
+  },
+  {
+    id: 'q-ser-307',
+    question: 'I. 3x² - 24x + 45 = 0   II. y² - 10y + 25 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 3,
+    explanation: 'x = 3,5 | y = 5,5 | X ≥ Y always'
+  },
+  {
+    id: 'q-ser-308',
+    question: 'I. x² - 6x + 5 = 0   II. y² - 12y + 32 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 2,
+    explanation: 'x = 1,5 | y = 4,8 | Mixed => CND'
+  },
+  {
+    id: 'q-ser-309',
+    question: 'I. x² - 16x + 63 = 0   II. y² - 13y + 42 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 2,
+    explanation: 'x = 7,9 | y = 6,7 | Mixed => CND'
+  },
+  {
+    id: 'q-ser-310',
+    question: 'I. x² - 18x + 80 = 0   II. y² - 12y + 27 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 0,
+    explanation: 'x = 8,10 | y = 3,9 | All X ≥ Y and > in three cases => X > Y'
+  },
+  
+  {
+    id: 'q-ser-201',
+    question: 'I. x² - 13x + 36 = 0   II. y² - 11y + 24 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 2,
+    explanation: 'x → 4,9 | y → 3,8 | Mixed results => CND'
+  },
+  {
+    id: 'q-ser-202',
+    question: 'I. x² - 7x + 12 = 0   II. y² - 10y + 24 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 4,
+    explanation: 'x → 3,4 | y → 4,6 | X never exceeds Y => X ≤ Y'
+  },
+  {
+    id: 'q-ser-203',
+    question: 'I. 2x² - 10x + 12 = 0   II. y² - 6y + 9 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 4,
+    explanation: 'x → 2,3 | y → 3,3 | X ≤ Y always'
+  },
+  {
+    id: 'q-ser-204',
+    question: 'I. x² + 5x + 6 = 0   II. y² + 7y + 12 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 3,
+    explanation: 'x → -2,-3 | y → -3,-4 | X ≥ Y always'
+  },
+  {
+    id: 'q-ser-205',
+    question: 'I. x² - 2x - 15 = 0   II. y² - 5y + 6 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 2,
+    explanation: 'x → -3,5 | y → 2,3 | Mixed results => CND'
+  },
+  {
+    id: 'q-ser-206',
+    question: 'I. 3x² - 27x + 54 = 0   II. y² - 12y + 32 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 2,
+    explanation: 'x → 3,6 | y → 4,8 | Mixed results => CND'
+  },
+  {
+    id: 'q-ser-207',
+    question: 'I. x² - 12x + 35 = 0   II. y² - 14y + 45 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 2,
+    explanation: 'x → 5,7 | y → 5,9 | Mixed results => CND'
+  },
+  {
+    id: 'q-ser-208',
+    question: 'I. x² - 5x + 4 = 0   II. y² - 9y + 20 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 4,
+    explanation: 'x → 1,4 | y → 4,5 | X ≤ Y always'
+  },
+  {
+    id: 'q-ser-209',
+    question: 'I. x² - 14x + 48 = 0   II. y² - 5y + 6 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 0,
+    explanation: 'x → 6,8 | y → 2,3 | X > Y always'
+  },
+  {
+    id: 'q-ser-210',
+    question: 'I. x² - 3x + 2 = 0   II. y² - 11y + 30 = 0',
+    options: ['(a) X > Y','(b) X < Y','(c) X = Y or CND','(d) X ≥ Y','(e) X ≤ Y'],
+    answer: 1,
+    explanation: 'x → 1,2 | y → 5,6 | X < Y always'
+  },
+  
+  
+  
+  
+  
+  
   {
     id: 'q-ser-076',
     question: 'I. x² - 8x + 19 = 3x - 5   II. y² + 7y - 30 = 0',
