@@ -8986,7 +8986,156 @@ const DB = {
     "explanation": "Use all given constraints systematically to assign each person a position in the row."
   },
  
-     
+    // class 2
+    
+    
+  {
+    "id": "q-101",
+    "question": "If all the vowels in the word 'CALLIPYGIAN' are changed to the next letter in the English alphabet and all consonants are changed to the previous letter, how many letters appear more than once?",
+    "options": ["2", "1", "4", "3", "None"],
+    "answer": 3,
+    "explanation": "After transformation: C→B, A→B, L→K, L→K, I→J, P→O, Y→X, G→F, I→J, A→B, N→M. Letters appearing more than once: B, K, J → total 3."
+  },
+  {
+    "id": "q-102",
+    "question": "How many pairs of letters in the word 'CREATIVE' have as many letters between them in the word as in the English alphabetical series?",
+    "options": ["4", "3", "5", "1", "2"],
+    "answer": 1,
+    "explanation": "Pairs matching the condition: C-P, E-R, A-N → 3 pairs."
+  },
+  {
+    "id": "q-103",
+    "question": "In a code language, SMILE is written as OQRGJ. How is FRESH written in that code?",
+    "options": ["TDJQV", "TDQJV", "TDVJQ", "TDQVJ", "None of these"],
+    "answer": 3,
+    "explanation": "Mapping letters according to the code: F→T, R→D, E→V, S→J, H→Q. So, FRESH → TDVJQ."
+  },
+  {
+    "id": "q-104",
+    "question": "Each consonant of 'EXAMINATION' is changed to the previous letter and each vowel to the next letter. If the resulting letters are arranged alphabetically from right to left, what is the 7th letter from the right end?",
+    "options": ["P", "E", "D", "J", "T"],
+    "answer": 4,
+    "explanation": "Transformed letters: E→F, X→W, A→B, M→L, I→J, N→M, A→B, T→S, I→J, O→P, N→M. Arranged right to left alphabetically, the 7th letter = J."
+  },
+  {
+    "id": "q-105",
+    "question": "In the number '7593267834', how many pairs of digits have as many digits between them as in the numerical series (forward and backward)?",
+    "options": ["3", "4", "5", "6", "More than 7"],
+    "answer": 5,
+    "explanation": "Analyzing all digit pairs, there are more than 7 pairs satisfying the condition."
+  },
+  {
+    "id": "q-106",
+    "question": "How many meaningful English words can be formed using the 2nd, 5th, 7th, and 9th letters of 'ACCESSIBLE'?",
+    "options": ["3", "4", "2", "5", "None of these"],
+    "answer": 5,
+    "explanation": "Letters: C, S, I, L. No meaningful English word can be formed using each letter once. Answer: None of these."
+  },
+  {
+    "id": "q-107",
+    "question": "If in 1847152637, 1 is subtracted from the first five digits and 1 is added to the last five digits, then digits less than 5 are removed and remaining digits arranged in descending order, which is the 3rd digit from the right?",
+    "options": ["8", "7", "5", "6", "9"],
+    "answer": 2,
+    "explanation": "Transformed digits: 0736043748 → remove <5 → 7,6,6,8,7,7 → descending: 8,7,7,7,6,6 → 3rd from right = 7."
+  },
+  {
+    "id": "q-108",
+    "question": "If the words 'Hacked', 'Hackie', 'Habile', 'Habits', 'Haboob' are arranged alphabetically, which comes 2nd from the right?",
+    "options": ["Hacked", "Hackie", "Habile", "Habits", "Haboob"],
+    "answer": 0,
+    "explanation": "Alphabetical order: Haboob, Habile, Habits, Hackie, Hacked → 2nd from right = Hacked."
+  },
+  {
+    "id": "q-109",
+    "question": "If in 'LITERATURE' each consonant is changed to the previous letter and each vowel to the next letter, and letters are arranged alphabetically from right to left, what is the 6th letter from the left?",
+    "options": ["P", "S", "M", "J", "U"],
+    "answer": 3,
+    "explanation": "Transformed letters: L→K, I→J, T→S, E→F, R→Q, A→B, T→S, U→V, R→Q, E→F → sorted right to left alphabetically → 6th letter from left = M."
+  },
+  {
+    "id": "q-110",
+    "question": "How many pairs of letters in 'GRATITUDE' have the same position difference as in the English alphabet (both directions)?",
+    "options": ["None", "One", "Two", "Three", "None of these"],
+    "answer": 5,
+    "explanation": "No such pairs exist. Answer: None of these."
+  },
+  {
+    "id": "q-111",
+    "question": "How many pairs of letters in 'PERSEVERANCE' have as many letters between them in the word as in the English alphabet (both directions)?",
+    "options": ["2", "3", "1", "4", "6"],
+    "answer": 1,
+    "explanation": "Valid pairs are calculated to be 2."
+  },
+  {
+    "id": "q-112",
+    "question": "Using 2nd, 4th, 8th, and 9th letters of 'CONFIDENT' to form a meaningful word, what is the 4th letter from the left? If multiple words possible, mark 'X'; if none, mark 'Y'.",
+    "options": ["T", "O", "N", "X", "Y"],
+    "answer": 3,
+    "explanation": "Letters: O, F, E, N → meaningful word: NONE → 4th letter from left = N."
+  },
+  {
+    "id": "q-113",
+    "question": "Using 1st, 4th, 6th, and 11th letters of 'NANOPARTICLE' to form a meaningful word, which is the 2nd letter from the right? If no word, mark 'X'; if multiple, 'Y'.",
+    "options": ["Y", "X", "N", "A", "None"],
+    "answer": 3,
+    "explanation": "Letters: N, O, P, A → meaningful word: PANO → 2nd from right = A."
+  },
+  {
+    "id": "q-114",
+    "question": "How many pairs of letters in 'ADVENTURE' have as many letters between them in the word as in the English alphabet (both directions)?",
+    "options": ["5", "2", "3", "4", "None"],
+    "answer": 1,
+    "explanation": "Pairs satisfying the condition: 2."
+  },
+  {
+    "id": "q-115",
+    "question": "If all letters in 'MANAGEMENT' are rearranged alphabetically, how many letters remain in the same position?",
+    "options": ["1", "2", "3", "None of these", "None"],
+    "answer": 4,
+    "explanation": "No letters remain in their original position → Answer: None of these."
+  },
+  {
+    "id": "q-116",
+    "question": "Using 3rd, 4th, 8th, and 9th letters of 'HOUSEWIFE' to form a meaningful word, what is the 2nd letter from the left? If multiple words possible, mark 'N'; if none, 'M'.",
+    "options": ["M", "N", "F", "E", "U"],
+    "answer": 4,
+    "explanation": "Letters: U, S, I, E → meaningful word: USEI → 2nd letter = U."
+  },
+  {
+    "id": "q-117",
+    "question": "In 'DRIVING', how many pairs of letters have the same number of letters between them in the word backward as in the alphabet?",
+    "options": ["1", "2", "3", "4", "None"],
+    "answer": 1,
+    "explanation": "Only 1 pair satisfies the backward condition."
+  },
+  {
+    "id": "q-118",
+    "question": "How many meaningful words can be formed using 2nd, 3rd, 6th, and 8th letters of 'CONSISTENTLY', each used only once?",
+    "options": ["2", "3", "1", "4", "5"],
+    "answer": 1,
+    "explanation": "Letters: O, N, S, E → one meaningful word can be formed: NOSE."
+  },
+  {
+    "id": "q-119",
+    "question": "In 'PLEASURE', if vowels are arranged alphabetically first, and consonants arranged alphabetically next, which letter is 4th to the right of the 4th letter from the left?",
+    "options": ["G", "E", "S", "R", "N"],
+    "answer": 3,
+    "explanation": "After rearrangement: A, E, E, U, L, P, R, S → 4th from left = U → 4th to right = S."
+  },
+  {
+    "id": "q-120",
+    "question": "In 'ADVENTUROUS', how many pairs of letters have the same number of letters between them in both directions as in the alphabet?",
+    "options": ["3", "2", "1", "4", "None"],
+    "answer": 2,
+    "explanation": "Only 2 such pairs exist."
+  },
+  {
+    "id": "q-121",
+    "question": "How many pairs of letters in 'INDUSTRIAL' have as many letters between them in the word as in the English alphabet backward but not forward?",
+    "options": ["1", "2", "5", "3", "4"],
+    "answer": 2,
+    "explanation": "Pairs satisfying backward but not forward condition: 2."
+  },
      
      
      ],
