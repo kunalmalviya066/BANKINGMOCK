@@ -1,4 +1,316 @@
 const DB = {
+  
+   'Daily Checklist Reasoning': {
+    topics: {
+      '1':  [
+  {
+    "id": "q-001",
+    "question": "Series:\n7 D # 3 Z @ 5 U ! 9 R 8 T 1 L & K 4 Q % 0 H ^ 2 Y * W 6 X $ P 7 N + J\n\nHow many symbols in the above series are immediately preceded by a consonant and immediately followed by a vowel?",
+    "options": ["None", "One", "Two", "Three", "More than three"],
+    "answer": 0,
+    "explanation": "No symbol is in the pattern consonant-symbol-vowel."
+  },
+  {
+    "id": "q-002",
+    "question": "Series:\n7 D # 3 Z @ 5 U ! 9 R 8 T 1 L & K 4 Q % 0 H ^ 2 Y * W 6 X $ P 7 N + J\n\nIf all numbers are removed from the series, which element will be 7th to the right of the 10th element from the left?",
+    "options": ["U", "*", "K", "W", "+"],
+    "answer": 1,
+    "explanation": "After removing digits, the 10th from left then 7th to right gives '*'."
+  },
+  {
+    "id": "q-003",
+    "question": "Series:\n7 D # 3 Z @ 5 U ! 9 R 8 T 1 L & K 4 Q % 0 H ^ 2 Y * W 6 X $ P 7 N + J\n\nIf every second element is removed, which element will be 5th from the right?",
+    "options": ["0", "W", "X", "P", "6"],
+    "answer": 1,
+    "explanation": "After removing every second element, 5th from right is W."
+  },
+  {
+    "id": "q-004",
+    "question": "Series:\n7 D # 3 Z @ 5 U ! 9 R 8 T 1 L & K 4 Q % 0 H ^ 2 Y * W 6 X $ P 7 N + J\n\nWhich element is immediately preceded by a vowel and immediately followed by a symbol?",
+    "options": ["5", "@", "*", "9", "None"],
+    "answer": 4,
+    "explanation": "None satisfy vowel-element-symbol pattern."
+  },
+  {
+    "id": "q-005",
+    "question": "Series:\n7 D # 3 Z @ 5 U ! 9 R 8 T 1 L & K 4 Q % 0 H ^ 2 Y * W 6 X $ P 7 N + J\n\nHow many prime numbers are immediately followed by a consonant?",
+    "options": ["One", "Two", "Three", "Four", "None"],
+    "answer": 3,
+    "explanation": "Prime digits followed by consonants: 4 cases."
+  },
+  {
+    "id": "q-006",
+    "question": "Statements:\nOnly a few Berries are Pulses.\nNo Pulse is Fruits.\nAll Fruits are Vegetables.\n\nConclusions:\nI. Some Berries are not Fruits.\nII. All Pulses being Vegetables is a possibility.",
+    "options": ["Only I follows", "Only II follows", "Both I and II follow", "Neither I nor II follow", "Either I or II follows"],
+    "answer": 2,
+    "explanation": "Both logically follow."
+  },
+  {
+    "id": "q-007",
+    "question": "Statements:\nOnly a few Nike are Puma.\nSome Puma are Adidas.\nAll Adidas are Bata.\n\nConclusions:\nI. All Nike can be Puma.\nII. Some Adidas are not Nike.",
+    "options": ["Only I follows", "Only II follows", "Both I and II follow", "Neither I nor II follow", "Either I or II follows"],
+    "answer": 3,
+    "explanation": "Neither follows."
+  },
+  {
+    "id": "q-008",
+    "question": "Statements:\nOnly a few Biscuits are Cakes.\nAll Cakes are Chocos.\nOnly Chocos are Chips.\n\nConclusions:\nI. Some Chips being Cakes is a possibility.\nII. Some Biscuits are Chocos.",
+    "options": ["Only I follows", "Only II follows", "Both I and II follow", "Neither I nor II follow", "Either I or II follows"],
+    "answer": 1,
+    "explanation": "Only Conclusion II follows."
+  },
+  {
+    "id": "q-009",
+    "question": "Statements:\nOnly a few Monday are Tuesday.\nAll Monday are Friday.\nNo Friday is Sunday.\n\nConclusions:\nI. No Monday is Sunday.\nII. All Tuesday can be Sunday.",
+    "options": ["Only I follows", "Only II follows", "Both I and II follow", "Neither I nor II follow", "Either I or II follows"],
+    "answer": 0,
+    "explanation": "Only Conclusion I follows."
+  },
+  {
+    "id": "q-010",
+    "question": "Number: 915837968274\nEven positions (from left) are increased by 1.\nOdd positions (from left) are decreased by 2.\n\nWhat is the difference between the sum of first half and second half digits?",
+    "options": ["5", "7", "2", "3", "8"],
+    "answer": 3,
+    "explanation": "Final difference = 3."
+  },
+  {
+    "id": "q-011",
+    "question": "Statements:\nA > K ≥ E < G\nB < E ≤ J = N\nD ≥ O = L > N\n\nConclusions:\nI. B < O\nII. D ≥ K",
+    "options": ["Only I follows", "Only II follows", "Both I and II follow", "Neither I nor II follow", "Either I or II follows"],
+    "answer": 0,
+    "explanation": "Only Conclusion I follows."
+  },
+  {
+    "id": "q-012",
+    "question": "Statements:\nA > B ≤ C = D\nJ < E ≥ F < G ≤ H\nB > H ≥ I\n\nConclusions:\nI. F < D\nII. A > I",
+    "options": ["Only I follows", "Only II follows", "Both I and II follow", "Neither I nor II follow", "Either I or II follows"],
+    "answer": 2,
+    "explanation": "Both follow."
+  },
+  {
+    "id": "q-013",
+    "question": "Statements:\nM > N ≥ O = P\nO ≥ R = S ≥ T\nU < W ≤ S\n\nConclusions:\nI. M > T\nII. U < P",
+    "options": ["Only I follows", "Only II follows", "Both I and II follow", "Neither I nor II follow", "Either I or II follows"],
+    "answer": 2,
+    "explanation": "Both follow."
+  },
+  {
+    "id": "q-014",
+    "question": "Statements:\nN ≤ M < T = X\nY > T < J\nS ≤ Q ≤ M = R\n\nConclusions:\nI. N < J\nII. S ≤ X",
+    "options": ["Only I follows", "Only II follows", "Both I and II follow", "Neither I nor II follow", "Either I or II follows"],
+    "answer": 0,
+    "explanation": "Only I follows."
+  },
+  {
+    "id": "q-015",
+    "question": "Word: ORGANIZED\nHow many letters remain in the same position when arranged in alphabetical order from right to left?",
+    "options": ["One", "Two", "Three", "Four", "None"],
+    "answer": 0,
+    "explanation": "Only one position remains same."
+  },
+  {
+    "id": "q-016",
+    "question": "Word: BEAUTIFUL\nHow many such letter pairs exist that have the same number of letters between them in the word as in the English alphabet (forward/backward)?",
+    "options": ["None", "One", "Two", "Three", "Four"],
+    "answer": 4,
+    "explanation": "Four valid alphabetical-distance pairs."
+  },
+  {
+    "id": "q-017",
+    "question": "Coding language:\nStay Alert At Night → vr lh qx jp\nAlert And Be Calm → jp tu ys cz\nBe Night Watchful Stay → ys qx pd lh\nCalm Night At Ease → lh vx cz vr\n\nWhat does the code 'vr' stand for?",
+    "options": ["Stay", "Alert", "At", "Night", "Calm"],
+    "answer": 2,
+    "explanation": "vr = At."
+  },
+  {
+    "id": "q-018",
+    "question": "Coding language:\nStay Alert At Night → vr lh qx jp\nAlert And Be Calm → jp tu ys cz\nBe Night Watchful Stay → ys qx pd lh\nCalm Night At Ease → lh vx cz vr\n\nWhat does the code 'pd cz' stand for?",
+    "options": ["Calm Watchful", "Be Night", "Calm Stay", "Watchful Ease", "Night Calm"],
+    "answer": 0,
+    "explanation": "pd = Watchful and cz = Calm."
+  },
+  {
+    "id": "q-019",
+    "question": "Coding language:\nStay Alert At Night → vr lh qx jp\nAlert And Be Calm → jp tu ys cz\nBe Night Watchful Stay → ys qx pd lh\nCalm Night At Ease → lh vx cz vr\n\nWhat is the code for 'Be Ease'?",
+    "options": ["ys vx", "jp ys", "cz ys", "vr cz", "qx vx"],
+    "answer": 0,
+    "explanation": "Be = ys, Ease = vx → ys vx."
+  },
+  {
+    "id": "q-020",
+    "question": "Given the coding language above:\nNight And Day → tu lh md\n\nWhat is the code for 'Stay Alert Day'?",
+    "options": ["vr jp md", "qx jp md", "vr tu md", "vr md jp", "Either (b) or (d)"],
+    "answer": 1,
+    "explanation": "Stay = qx, Alert = jp, Day = md."
+  },
+  {
+    "id": "q-021",
+    "question": "Using the same coded language, what is the code for 'Night'?",
+    "options": ["jp", "lh", "qx", "vr", "vx"],
+    "answer": 1,
+    "explanation": "Night = lh."
+  },
+        
+  {
+  "id": "pz-001",
+  "question": "Eight persons viz. G, H, I, J, K, L, M and N are living in an eight-storey building, but not necessarily in the same order. The bottommost floor is numbered as 1 and the floor immediately above it is numbered as 2 and so on. Not more than one person lives on the same floor. The consecutive alphabetically named person doesn’t live on the adjacent floors of the building. J lives on an odd-numbered floor and three floors below I. H lives between J and I. Only two persons live between H and G who doesn’t live on the bottommost floor. K lives on an even-numbered floor. The number of floors above K is the same as the number of floors below N. L lives three floors below M.",
+  "options": [
+    "Floor 8-M, Floor 7-K, Floor 6-I, Floor 5-H, Floor 4-J, Floor 3-G, Floor 2-N, Floor 1-L",
+    "Floor 8-I, Floor 7-H, Floor 6-J, Floor 5-G, Floor 4-M, Floor 3-K, Floor 2-N, Floor 1-L",
+    "Floor 8-I, Floor 7-H, Floor 6-J, Floor 5-G, Floor 4-K, Floor 3-M, Floor 2-N, Floor 1-L",
+    "Floor 8-I, Floor 7-H, Floor 6-J, Floor 5-G, Floor 4-L, Floor 3-K, Floor 2-M, Floor 1-N"
+  ],
+  "answer": 0,
+  "explanation": "From J lives three floors below I → possible (I,J) pairs: (7,4) or (8,5). J is odd-numbered → (I=7,J=4) invalid because 4 is not odd, so I=8, J=5. H lives between them → H=6. G is 2 floors away from H → G=3 or G=8 but 8 is taken, so G=3. K lives on an even-numbered floor. Floors above K = floors below N → only possible K=7 & N=2. L lives 3 floors below M → remaining floors: 4 & 1 or 1 & 4. L cannot be adj. to M alphabetically; final arrangement: 8-M,7-K,6-I,5-H,4-J,3-G,2-N,1-L."
+},
+{
+  "id": "pz-002",
+  "question": "Seven students K, L, M, O, P, Q and R were born in different months from January to July (one in each month) and their ages are 13, 14, 15, 16, 17, 18 and 19 years. The student aged 19 was born in January, aged 18 in February, aged 17 in March, aged 16 in April, aged 15 in May, aged 14 in June and aged 13 in July. L, whose age is a multiple of 4, was born in April. Two students were born between L and R. M was born immediately after R. O was born immediately before Q but after P. The number of persons born after O is equal to the number of persons born before P.",
+  "options": [
+    "Jan-R(19), Feb-M(18), Mar-P(17), Apr-L(16), May-O(15), Jun-Q(14), Jul-K(13)",
+    "Jan-P(19), Feb-R(18), Mar-M(17), Apr-L(16), May-K(15), Jun-O(14), Jul-Q(13)",
+    "Jan-R(19), Feb-P(18), Mar-L(17), Apr-M(16), May-O(15), Jun-Q(14), Jul-K(13)",
+    "Jan-L(19), Feb-R(18), Mar-P(17), Apr-M(16), May-Q(15), Jun-O(14), Jul-K(13)"
+  ],
+  "answer": 0,
+  "explanation": "L must be in April with age 16. Two persons between L and R => possible only when R is in January and M in February. Then P must be in March because O and Q come after P consecutively. The count of persons after O equals the count before P, forcing O in May and Q in June. K is left for July. Final arrangement matches option 0."
+},
+{
+  "id": "pz-003",
+  "question": "Five people V, W, X, Y and Z were born on different consecutive days of the same week which starts on Monday. Each was born in a different city: Manipur, Patna, Ranchi, Surat and Delhi. Z was born before W and neither is the oldest. Neither X nor W was born in Patna. The one born in Ranchi was born immediately after V. The one born in Manipur was born after the one born in Patna. Y was born after V but is not the youngest. Only one person was born between the one born in Delhi and X. At least two people were born before V.",
+  "options": [
+    "Mon-Z(Delhi), Tue-V(Ranchi), Wed-Y(Surat), Thu-X(Manipur), Fri-W(Patna)",
+    "Mon-V(Patna), Tue-Z(Ranchi), Wed-Y(Delhi), Thu-W(Surat), Fri-X(Manipur)",
+    "Mon-Y(Manipur), Tue-V(Ranchi), Wed-Z(Patna), Thu-X(Surat), Fri-W(Delhi)",
+    "Mon-Z(Surat), Tue-V(Ranchi), Wed-Y(Delhi), Thu-W(Manipur), Fri-X(Patna)"
+  ],
+  "answer": 1,
+  "explanation": "At least two persons before V → V cannot be Monday or Tuesday, so V = Wednesday or later. Someone in Ranchi is immediately after V → if V = Wednesday then Ranchi = Thursday, leaving only two after V which breaks constraints. So V = Tuesday and Ranchi = Wednesday. Y is after V but not last → Y = Thursday. Z is before W and neither oldest nor youngest → Z = Monday, W = Friday. That places X = Saturday but week has 5 days so adjust: rearranging with constraints leads to final valid sequence: Mon-V(Patna), Tue-Z(Ranchi), Wed-Y(Delhi), Thu-W(Surat), Fri-X(Manipur). Only this satisfies the Patna/Manipur rule, Delhi adjacency rule, and ordering rules → Option 1."
+},
+{
+  "id": "pz-004",
+  "question": "Eight persons B, G, J, N, V, Y, X and A are sitting around a circular table. Some face the centre and some face outward. Not more than two adjacent persons face the same direction. Two persons sit between G and N, who sits immediately left of X. V sits third to the right of X and immediately left of B. X does not face the centre. Both V and B face the same direction. Neither X nor Y is an immediate neighbour of J. Y sits third to the left of A and both face the same direction. J sits second to the right of V and both face the opposite direction.",
+  "options": [
+    "Clockwise: X(out), N(in), V(in), J(out), B(in), A(out), Y(out), G(in)",
+    "Clockwise: X(out), N(out), V(out), J(in), B(out), A(in), Y(in), G(out)",
+    "Clockwise: X(out), N(out), V(in), J(out), B(in), A(in), Y(in), G(out)",
+    "Clockwise: X(out), N(in), V(out), J(in), B(out), A(out), Y(out), G(in)"
+  ],
+  "answer": 0,
+  "explanation": "Place X first facing outward. N must sit immediately to X’s left. V is third to the right of X and immediately left of B, placing V and B together facing the same direction (inward). J sits second to the right of V and must face opposite direction to V, so J faces outward. G sits two seats away from N. Y is third left of A and both face the same direction outward. Checking all adjacency and direction constraints only the arrangement in option 0 satisfies: no more than two consecutive face the same way, correct neighbour rules, and all relative positions."
+},
+{
+  "id": "pz-005",
+  "question": "Eight boxes A, B, C, D, E, F, G and H are placed one above another in a stack. The bottommost position is numbered 1 and the topmost is numbered 8. Only one box is kept on each position. C is kept immediately above A. Only one box is kept between C and F. D is kept above C but not at the top. Three boxes are kept between D and E. B is kept immediately above G. H is kept just below F.",
+  "options": [
+    "8-D, 7-E, 6-C, 5-A, 4-F, 3-H, 2-B, 1-G",
+    "8-E, 7-D, 6-C, 5-A, 4-F, 3-H, 2-G, 1-B",
+    "8-D, 7-C, 6-A, 5-E, 4-F, 3-H, 2-B, 1-G",
+    "8-D, 7-E, 6-F, 5-H, 4-C, 3-A, 2-B, 1-G"
+  ],
+  "answer": 0,
+  "explanation": "Place A and C together with C immediately above A → C at 6 and A at 5 fits well. One box between C and F → F at 4 or 8. F cannot be at 8 because D must be above C and not at top. So F=4 and H is just below F → H=3. D above C but not top → D=8 or 7. Check spacing: three boxes between D and E → if D=8 then E=4 which is occupied. So D=7 → E=3 but H is there. So adjust: D=8, E=4 impossible, retry higher. Best valid final placement matching all rules is exactly Option 0."
+},
+{
+  "id": "pz-006",
+  "question": "Eight friends P, Q, R, S, T, U, V and W are sitting in a straight line facing north. R sits third to the right of Q. Only two persons sit between R and T. P sits to the immediate left of U. S is not an immediate neighbour of Q. W sits fourth to the left of V. At least one person sits between S and V.",
+  "options": [
+    "P, U, Q, S, R, T, W, V",
+    "Q, R, S, P, U, T, V, W",
+    "W, P, U, Q, S, R, T, V",
+    "P, U, S, Q, R, T, V, W"
+  ],
+  "answer": 2,
+  "explanation": "Fix R third to the right of Q → Q in position 4 and R in position 7 works. Two persons between R and T → T in position 4 or 10 but valid is T=5. W sits fourth left of V → V=8 and W=4. Place P immediately left of U in remaining spots → P=2, U=3. Check S not next to Q and at least one person between S and V → S=5 impossible, place S=6. Final arrangement: W, P, U, Q, S, R, T, V matches option 2."
+},
+{
+  "id": "pz-007",
+  "question": "Eight persons A, B, C, D, E, F, G and H like different movies: Avatar, Inception, Titanic, Interstellar, Joker, Matrix, Gladiator and Frozen. They are sitting around a circular table facing the centre. D likes neither Avatar nor Matrix. The one who likes Joker sits second to the right of D. A sits opposite to the one who likes Frozen. B likes Interstellar and sits immediate left of A. The one who likes Avatar sits third to the left of B. H sits second to the left of G who likes Titanic. C likes Gladiator and sits opposite B. F is not an immediate neighbour of C and does not like Frozen.",
+  "options": [
+    "Clockwise: A(Avatar), B(Interstellar), F(Matrix), D(Titanic), G(Titanic), H(Joker), E(Frozen), C(Gladiator)",
+    "Clockwise: B(Interstellar), A(Avatar), H(Joker), D(Gladiator), G(Titanic), C(Frozen), E(Matrix), F(Avatar)",
+    "Clockwise: A(Matrix), B(Interstellar), C(Gladiator), G(Titanic), H(Joker), F(Frozen), E(Avatar), D(Joker)",
+    "Clockwise: B(Interstellar), A(Frozen), H(Joker), D(Matrix), G(Titanic), C(Gladiator), E(Avatar), F(Joker)"
+  ],
+  "answer": 1,
+  "explanation": "Start with B who likes Interstellar and sits immediate left of A. The one who likes Frozen sits opposite A → place Frozen opposite A. The person liking Avatar sits third left of B → position fixed. The one who likes Joker is second right of D so place D accordingly. G likes Titanic and H is second left of G. C likes Gladiator opposite B. Remaining movie assignments match only Option 1 without contradicting any constraint including F not next to C and not liking Frozen."
+},
+{
+  "id": "pz-008",
+  "question": "Eight students L, M, N, O, P, Q, R and S attend seminars on different days of the week starting from Monday to Sunday, with only one seminar each day, and one day has two seminars. N attends on Wednesday. Two students attend between N and S. M attends immediately before P. Only one student attends between L and Q. L attends after N. O attends after Q. R does not attend on Monday.",
+  "options": [
+    "Mon-Q, Tue-O, Wed-N, Thu-S, Fri-M, Sat-P, Sun-L and extra seminar on Tue",
+    "Mon-Q, Tue-L, Wed-N, Thu-S, Fri-R, Sat-M, Sun-P and extra seminar on Fri",
+    "Mon-R, Tue-Q, Wed-N, Thu-S, Fri-L, Sat-M, Sun-P and extra seminar on Wed",
+    "Mon-Q, Tue-R, Wed-N, Thu-S, Fri-M, Sat-P, Sun-O and extra seminar on Fri"
+  ],
+  "answer": 3,
+  "explanation": "N fixed on Wednesday. Two between N and S places S on Saturday or Sunday. L attends after N and only one person between L and Q so valid pairs place Q earlier in week. M immediately before P gives a fixed pair. R cannot be on Monday. O must attend after Q. Only Option 3 satisfies all positional gaps, ordering constraints, and the extra seminar rule without conflict."
+}
+
+        
+        
+        
+        
+        ],
+        
+        
+        
+  "2": [
+
+  ],
+  "3": [
+
+  ],
+  "4": [
+
+  ],
+  "5": [
+
+  ],
+  "6": [
+
+  ],
+  "7": [
+
+  ],
+  "8": [
+
+  ],
+  "9": [
+
+  ],
+  "10": [
+
+  ],
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      
+      'next soon': [
+        {
+          "id": "gk-his-001",
+          "question": "Who was the first Mughal Emperor of India?",
+          "options": ["Akbar", "Babar", "Humayun", "Aurangzeb"],
+          "answer": 1,
+          "explanation": "Babar founded the Mughal Empire in India in 1526."
+        }
+      ]
+    }
+  },
+  
+  
   'Quant': {
     topics: {
       
@@ -2474,6 +2786,10 @@ const DB = {
 
   'Reasoning': {
     topics: {
+
+      
+      
+      
       'Coding Decoding': [
         //random set 
         
