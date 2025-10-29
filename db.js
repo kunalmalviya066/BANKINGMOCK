@@ -626,30 +626,7 @@ const DB = {
     "answer": 0,
     "explanation": "Place H and K first using the 5-box gap: H = K + 6. With eight positions the only feasible pair is K at 2 and H at 8 (K=1 would force H=7 but that later conflicts with the Tongs/I symmetry). H (8) contains Cup. J is immediately below H → J = 7. D is immediately below J → D = 6, and D contains Cooker. Two boxes are between D(6) and E → E must be at position 3 (6 − 3 = 3) because position 9 is invalid; hence E = 3. E is immediately below the box which contains Tongs, so Tongs are in position 4. The rule '# boxes below Tongs = # boxes above I (Knife)' gives t − 1 = 8 − i ⇒ i = 9 − t. With Tongs at t = 4, I must be at i = 5 and I contains Knife. Remaining box-labels are F and G for positions 1 and 4; G must be immediately above the Spoon-containing box. Setting G at 4 (the Tongs box) and Spoon at 3 (E) satisfies 'G immediately above Spoon' while allowing G to contain Tongs. The Pan–Bowl adjacency remains to be placed in the only adjacent free positions 2 and 1, with Pan directly above Bowl; thus K at 2 = Pan and F at 1 = Bowl. The only remaining product (Grater) occupies J at 7. Final stack bottom→top: 1-F(Bowl), 2-K(Pan), 3-E(Spoon), 4-G(Tongs), 5-I(Knife), 6-D(Cooker), 7-J(Grater), 8-H(Cup). Option 0 is the unique arrangement that satisfies every given constraint."
   },
-{
-  "id": "pz-001",
-  "question": "Eight persons J, K, L, M, N, O, P and Q are living in an eight-storey building (floor-1 = lowest, floor-8 = highest). Conditions:\n• Only three persons live between N and Q.\n• Q doesn’t live below the seventh floor.\n• Only one person lives between N and M, who lives three floors above P.\n• K lives on an even-numbered floor but not adjacent to Q.\n• The number of persons living above K is one more than the number of persons living between O and K.\n• L lives neither on the topmost nor on the bottommost floor.",
-  "options": [
-    "1-J, 2-P, 3-N, 4-K, 5-M, 6-L, 7-Q, 8-O",
-    "1-L, 2-P, 3-N, 4-K, 5-M, 6-J, 7-Q, 8-O",
-    "1-J, 2-M, 3-N, 4-K, 5-P, 6-L, 7-O, 8-Q",
-    "1-P, 2-J, 3-N, 4-K, 5-M, 6-L, 7-Q, 8-O"
-  ],
-  "answer": 0,
-  "explanation": "Since Q does not live below the 7th floor, Q can be on floor 7 or 8. If Q = 7, then N must be on floor 3 (three between: 4,5,6). Only one between N(3) and M → M must be on floor 5, and M lives three above P → P = 2. K is even-numbered but not adjacent to Q → K = 4 (2 is taken and 6 & 8 touch 7). Persons above K = 4 (floors 5-8), so persons between O and K = 3 → O must be 8. L not on top or bottom → L = 6. Remaining person J = floor 1. Final arrangement: 1-J, 2-P, 3-N, 4-K, 5-M, 6-L, 7-Q, 8-O which matches only Option 0."
-},
-{
-  "id": "pz-002",
-  "question": "Eight boxes numbered 1 to 8 from bottom to top contain different Fruits: Apple, Mango, Orange, Banana, Guava, Papaya, Cherry and Fig. Conditions:\n• Only three Fruits are kept between Banana and Guava.\n• Papaya is kept immediately below Cherry.\n• Only two Fruits are kept between Cherry and Fig.\n• Banana and Apple are adjacent.\n• Mango is kept somewhere above Orange.\n• Fig is in box numbered 5.\n• Four Fruits are kept between Apple and Papaya.",
-  "options": [
-    "1-Papaya, 2-Cherry, 3-Guava, 4-Orange, 5-Fig, 6-Apple, 7-Banana, 8-Mango",
-    "1-Orange, 2-Apple, 3-Papaya, 4-Cherry, 5-Fig, 6-Mango, 7-Guava, 8-Banana",
-    "1-Guava, 2-Papaya, 3-Orange, 4-Fig, 5-Cherry, 6-Banana, 7-Apple, 8-Mango",
-    "1-Apple, 2-Guava, 3-Cherry, 4-Papaya, 5-Fig, 6-Orange, 7-Mango, 8-Banana"
-  ],
-  "answer": 0,
-  "explanation": "Fig must be in box 5. Cherry and Papaya must have exactly two boxes between Cherry and Fig, so Cherry = box 2 and Papaya = box 1. Four boxes between Apple and Papaya → Apple = box 6. Apple and Banana must be adjacent → Banana must be box 7. With three boxes between Banana (7) and Guava, Guava must be box 3. Remaining two empty boxes are 4 and 8, and Mango must be above Orange → Orange = 4, Mango = 8. Final arrangement bottom→top: 1-Papaya, 2-Cherry, 3-Guava, 4-Orange, 5-Fig, 6-Apple, 7-Banana, 8-Mango which matches only Option 0."
-},
+
 
 
 
@@ -818,7 +795,30 @@ const DB = {
     "answer": 3,
     "explanation": "Key: gbn kmj."
   },
-  
+  {
+  "id": "pz-001",
+  "question": "Eight persons J, K, L, M, N, O, P and Q are living in an eight-storey building (floor-1 = lowest, floor-8 = highest). Conditions:\n• Only three persons live between N and Q.\n• Q doesn’t live below the seventh floor.\n• Only one person lives between N and M, who lives three floors above P.\n• K lives on an even-numbered floor but not adjacent to Q.\n• The number of persons living above K is one more than the number of persons living between O and K.\n• L lives neither on the topmost nor on the bottommost floor.",
+  "options": [
+    "1-J, 2-P, 3-N, 4-K, 5-M, 6-L, 7-Q, 8-O",
+    "1-L, 2-P, 3-N, 4-K, 5-M, 6-J, 7-Q, 8-O",
+    "1-J, 2-M, 3-N, 4-K, 5-P, 6-L, 7-O, 8-Q",
+    "1-P, 2-J, 3-N, 4-K, 5-M, 6-L, 7-Q, 8-O"
+  ],
+  "answer": 0,
+  "explanation": "Since Q does not live below the 7th floor, Q can be on floor 7 or 8. If Q = 7, then N must be on floor 3 (three between: 4,5,6). Only one between N(3) and M → M must be on floor 5, and M lives three above P → P = 2. K is even-numbered but not adjacent to Q → K = 4 (2 is taken and 6 & 8 touch 7). Persons above K = 4 (floors 5-8), so persons between O and K = 3 → O must be 8. L not on top or bottom → L = 6. Remaining person J = floor 1. Final arrangement: 1-J, 2-P, 3-N, 4-K, 5-M, 6-L, 7-Q, 8-O which matches only Option 0."
+},
+{
+  "id": "pz-002",
+  "question": "Eight boxes numbered 1 to 8 from bottom to top contain different Fruits: Apple, Mango, Orange, Banana, Guava, Papaya, Cherry and Fig. Conditions:\n• Only three Fruits are kept between Banana and Guava.\n• Papaya is kept immediately below Cherry.\n• Only two Fruits are kept between Cherry and Fig.\n• Banana and Apple are adjacent.\n• Mango is kept somewhere above Orange.\n• Fig is in box numbered 5.\n• Four Fruits are kept between Apple and Papaya.",
+  "options": [
+    "1-Papaya, 2-Cherry, 3-Guava, 4-Orange, 5-Fig, 6-Apple, 7-Banana, 8-Mango",
+    "1-Orange, 2-Apple, 3-Papaya, 4-Cherry, 5-Fig, 6-Mango, 7-Guava, 8-Banana",
+    "1-Guava, 2-Papaya, 3-Orange, 4-Fig, 5-Cherry, 6-Banana, 7-Apple, 8-Mango",
+    "1-Apple, 2-Guava, 3-Cherry, 4-Papaya, 5-Fig, 6-Orange, 7-Mango, 8-Banana"
+  ],
+  "answer": 0,
+  "explanation": "Fig must be in box 5. Cherry and Papaya must have exactly two boxes between Cherry and Fig, so Cherry = box 2 and Papaya = box 1. Four boxes between Apple and Papaya → Apple = box 6. Apple and Banana must be adjacent → Banana must be box 7. With three boxes between Banana (7) and Guava, Guava must be box 3. Remaining two empty boxes are 4 and 8, and Mango must be above Orange → Orange = 4, Mango = 8. Final arrangement bottom→top: 1-Papaya, 2-Cherry, 3-Guava, 4-Orange, 5-Fig, 6-Apple, 7-Banana, 8-Mango which matches only Option 0."
+},
   
   
   
