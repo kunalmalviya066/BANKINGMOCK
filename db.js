@@ -822,13 +822,87 @@ const DB = {
   
   
   
+  {
+    "id": "pz-003",
+    "question": "Eight persons J, K, L, M, N, O, P, Q are sitting in a row from left to right (positions 1 → 8). Some face north and some face south. Conditions:\n• Three persons sit to the left of J.\n• Exactly one person sits between J and L.\n• K sits immediately to the left of L and K is not an immediate neighbour of J.\n• V sits second to the right of K.\n• T sits second to the left of P, and T and P face opposite directions.\n• T is not an immediate neighbour of S.\n• Z sits at one of the positions to the left of S.\n• V sits at one of the positions to the left of Z and V and Z face opposite directions.\n• The immediate neighbours of P face the same direction as each other.\n• More than two persons face north.",
+    "options": [
+      "1-K(N), 2-L(S), 3-V(N), 4-J(N), 5-T(N), 6-Z(S), 7-P(S), 8-S(S)",
+      "1-K(N), 2-L(S), 3-V(N), 4-J(N), 5-Z(S), 6-T(N), 7-P(S), 8-S(S)",
+      "1-L(S), 2-K(N), 3-V(N), 4-J(N), 5-T(N), 6-Z(S), 7-P(S), 8-S(S)",
+      "1-K(S), 2-L(N), 3-V(S), 4-J(N), 5-T(N), 6-Z(N), 7-P(S), 8-S(S)"
+    ],
+    "answer": 0,
+    "explanation": "Place J first: 'three persons to the left of J' ⇒ J must be at position 4. 'One person between J and L' and 'K immediately left of L' with K not adjacent to J forces L = 2 and K = 1 (L cannot be 6 because then K at 5 would be adjacent to J at 4). 'V is second to the right of K' ⇒ V = 3. Remaining positions are 5–8 for T, P, Z, S. T must be two left of P; within positions 5–8 the only valid pairs are (T=5,P=7) or (T=6,P=8). If T=6 and P=8 then V (3) cannot be left of Z while leaving room for Z left of S without violating other constraints; the feasible placement is T=5 and P=7. Then Z must be left of S and to the right of V (since V is left of Z) so Z = 6 and S = 8. 'T not an immediate neighbour of S' holds (T=5, S=8). 'V and Z face opposite directions' and 'T and P face opposite directions' plus the rule that P's immediate neighbours (positions 6 and 8) face the same direction (Z and S) force Z and S to share a direction opposite to V. Assigning directions to satisfy 'more than two face north' and all parity constraints gives one consistent assignment: K(N), L(S), V(N), J(N), T(N), Z(S), P(S), S(S). This yields the final left→right arrangement: 1-K(N), 2-L(S), 3-V(N), 4-J(N), 5-T(N), 6-Z(S), 7-P(S), 8-S(S). Only Option 0 satisfies every given constraint."
+  },
   
   
+  {
+    "id": "pz-004",
+    "question": "Seven people T, U, V, W, X, Y & Z are going for a vacation on different dates of a month (dates are multiples of 4: 4, 8, 12, 16, 20, 24, 28). Each went to a different place: Pune, Nagpur, Bhopal, Chennai, Mumbai, Madurai and Surat. Conditions:\n• Y went to Nagpur on one of the dates after the 20th of the month.\n• Two people went for vacation between Y and the one who went to Pune.\n• The one who went to Mumbai went immediately before the one who went to Pune.\n• X, who went to Chennai, went immediately before the one who went to Mumbai.\n• W went immediately before the one who went to Bhopal.\n• T went to Madurai.\n• U went on the 20th of the month.\n• V went immediately before Z.\n• W didn't go to Pune.",
+    "options": [
+      "4-X(Chennai), 8-V(Mumbai), 12-Z(Pune), 16-W(Surat), 20-U(Bhopal), 24-Y(Nagpur), 28-T(Madurai)",
+      "4-X(Chennai), 8-V(Mumbai), 12-Z(Pune), 16-T(Madurai), 20-U(Bhopal), 24-Y(Nagpur), 28-W(Surat)",
+      "4-V(Mumbai), 8-X(Chennai), 12-Z(Pune), 16-W(Surat), 20-U(Bhopal), 24-Y(Nagpur), 28-T(Madurai)",
+      "4-X(Chennai), 8-V(Mumbai), 12-W(Surat), 16-Z(Pune), 20-U(Bhopal), 24-Y(Nagpur), 28-T(Madurai)"
+    ],
+    "answer": 0,
+    "explanation": "Place U at 20 (given). Y must be on a date after 20 → Y = 24 or 28. Two people between Y and Pune means Pune is 3 positions away from Y. If Y = 24 (pos6), then Pune = pos3 (12). That forces the triple X → Mumbai → Pune to occupy consecutive positions pos1→pos2→pos3. So X = pos1 (4) and is Chennai; pos2 (8) is Mumbai and pos3 (12) is Pune. V must be immediately before Z and U is at pos5 (20) so V–Z must fit pos2–3 or pos3–4 etc. V–Z at pos2–3 (V at 8, Z at 12) satisfies V before Z while keeping Pune at pos3 = Z. W must be immediately before Bhopal; the only place for an immediate-before pair that doesn't conflict with occupied slots is W at pos4 (16) and Bhopal at pos5 (20) → so U (pos5) = Bhopal. W is not Pune so this is fine. T must be Madurai and the only remaining date is pos7 (28) for T. Y then is pos6 (24) and goes to Nagpur (after 20). That leaves Surat for W (pos4). Final assignment bottom→top (date order): 4-X(Chennai), 8-V(Mumbai), 12-Z(Pune), 16-W(Surat), 20-U(Bhopal), 24-Y(Nagpur), 28-T(Madurai). This arrangement satisfies every constraint; Option 0 is the unique valid choice."
+  },
   
   
+  {
+    "id": "pz-005",
+    "question": "Eight persons G, H, I, J, K, L, M and N live on different floors of an eight-storey building (floor-1 = bottom, floor-8 = top). Conditions:\n• Not more than two persons of the same gender live on adjacent floors.\n• Number of males is more than number of females.\n• Three persons live between K and the one who lives two floors above M. M is male and does not live above the 4th floor.\n• N lives two floors below L; neither N nor L lives adjacent to K or M.\n• K lives above L.\n• The person on the 2nd floor from the top (floor-7) is female.\n• The number of persons above H is one more than the number of persons below J. At most two people live above H.\n• Neither N nor H is female (so both are male).\n• K does not live adjacent to J.\n• G lives above I, and I is male.",
+    "options": [
+      "1-M(M), 2-J(F), 3-N(M), 4-I(M), 5-L(F), 6-H(M), 7-K(F), 8-G(M)",
+      "1-N(M), 2-J(F), 3-M(M), 4-I(M), 5-L(F), 6-H(M), 7-K(F), 8-G(M)",
+      "1-M(M), 2-J(F), 3-N(M), 4-I(M), 5-L(M), 6-H(M), 7-K(F), 8-G(F)",
+      "1-M(M), 2-J(M), 3-N(M), 4-I(M), 5-L(F), 6-H(M), 7-K(F), 8-G(M)"
+    ],
+    "answer": 0,
+    "explanation": "Place H so that 'number above H is one more than number below J' and 'at most two above H'. The only feasible choice is H at floor-6 (then above H = 2) which forces J at floor-2 (so below J = 1). M does not live above 4th floor and is male; try M = 1 which places the person two floors above M at floor-3. The clause 'three persons between K and (M+2)' gives K at floor-7 (three floors between 7 and 3). K must be above L and N is two below L; choose N = 3 and L = 5 which satisfy 'N and L not adjacent to K (7) or M (1)'. K at floor-7 must be female because floor-7 is female. I must be male and G must be above I; remaining floors 4 and 8 suit I = 4 (male) and G = 8. To avoid three same-gender adjacencies and satisfy 'number of males > females', assign J = female (floor-2) and L = female (floor-5). That yields genders and positions: 1-M (M), 2-J (F), 3-N (M), 4-I (M), 5-L (F), 6-H (M), 7-K (F), 8-G (M). All conditions are satisfied: K above L; N two below L; N and L not adjacent to K or M; K not adjacent to J; G above I (I male); not more than two same-gender adjacent floors; males (M,N,I,H,G = 5) > females (J,L,K = 3). Therefore the arrangement in Option 0 is the unique valid configuration."
+  },
   
   
+  {
+    "id": "pz-006",
+    "question": "Seven people H, W, Z, G, Y, V and X were born in different years among 1984, 1987, 1995, 1996, 2000, 2005 and 2009 (ages calculated with respect to 2021). Conditions:\n• The sum of ages of Y and V is 46. Y is elder to V.\n• Three people are born between H and V.\n• Z is born immediately after H.\n• W is born immediately before G.\n• The age of G is not a perfect square.",
+    "options": [
+      "1-H(1984,37), 2-Z(1987,34), 3-X(1995,26), 4-Y(1996,25), 5-V(2000,21), 6-W(2005,16), 7-G(2009,12)",
+      "1-H(1984,37), 2-Z(1987,34), 3-X(1995,26), 4-V(1996,25), 5-Y(2000,21), 6-W(2005,16), 7-G(2009,12)",
+      "1-Z(1984,37), 2-H(1987,34), 3-X(1995,26), 4-Y(1996,25), 5-V(2000,21), 6-W(2005,16), 7-G(2009,12)",
+      "1-H(1984,37), 2-Z(1987,34), 3-Y(1995,26), 4-X(1996,25), 5-V(2000,21), 6-W(2005,16), 7-G(2009,12)"
+    ],
+    "answer": 0,
+    "explanation": "Compute ages (2021 − year): 1984→37, 1987→34, 1995→26, 1996→25, 2000→21, 2005→16, 2009→12. The pair of ages summing to 46 are (34,12) and (25,21). Since Y is elder to V, the (25,21) pair corresponds to Y=25 (1996) and V=21 (2000). Place V at a position so that three people lie between H and V; that forces H at the earliest year (1984) and V at 2000 (positions 1 and 5 respectively in chronology). Z must be immediately after H → Z = 1987 (position 2). W immediately before G must occupy an adjacent later pair; the only viable adjacent pair left without conflicting with Y/V positions is 2005→2009 (W=2005, G=2009). G's age = 12 (not a perfect square) so this placement is valid. Remaining year 1995 goes to X and 1996 to Y. Final chronological order (oldest→youngest): 1-H(1984,37), 2-Z(1987,34), 3-X(1995,26), 4-Y(1996,25), 5-V(2000,21), 6-W(2005,16), 7-G(2009,12). Option 0 is the unique arrangement satisfying all constraints."
+  },
+
+{
+"id": "pz-007",
+"question": "Five captains S, T, U, V and W stand around a circular table. Teams: Cricket, Basketball, Hockey, Tennis and Football. Some face inward, some face outward. Conditions (from solved diagram):\n• S is at the top position and is the Football captain.\n• V stands at the right side and is the Tennis captain.\n• T sits at the bottom-right and is the Hockey captain.\n• W sits at the bottom-left and is the Cricket captain.\n• U sits at the left side and is the Basketball captain.\n• Facing directions (from the diagram): S, T and U face outward; V and W face inward.",
+"options": [
+"S - Football - Outward\nV - Tennis - Inward\nT - Hockey - Outward\nW - Cricket - Inward\nU - Basketball - Outward",
+"S - Football - Inward\nV - Tennis - Outward\nT - Hockey - Outward\nW - Cricket - Inward\nU - Basketball - Outward",
+"S - Football - Outward\nV - Tennis - Inward\nT - Hockey - Inward\nW - Cricket - Outward\nU - Basketball - Outward",
+"S - Football - Outward\nV - Tennis - Outward\nT - Hockey - Outward\nW - Cricket - Inward\nU - Basketball - Inward"
+],
+"answer": 0,
+"explanation": "The provided diagram fixes the seating and facing directions. Reading the circle starting from the top and moving clockwise gives: S at top (Football) facing outward; to S's right sits V (Tennis) facing inward; bottom-right is T (Hockey) facing outward; bottom-left is W (Cricket) facing inward; left side is U (Basketball) facing outward. Option 0 exactly lists each captain with their team and facing direction as shown in the diagram."
+},
+
   
+  {
+    "id": "pz-008",
+    "question": "Ten people sit in two parallel rows of five seats each. Row-1 (left→right) has J, K, L, M, N (all facing south). Row-2 (left→right) has V, W, X, Y, Z (all facing north). Each person in a row faces a person in the other row (same column). Conditions:\n• The one who is an immediate neighbor of W faces M.\n• Only one person sits between M and N, and N faces the immediate neighbor of V.\n• X and Z are immediate neighbors.\n• Neither W nor X sits at an extreme end.\n• Y, who faces the immediate neighbor of L, sits to the left of X.\n• Only one person sits between L and J, and J faces W.\n• K faces the person sitting to the immediate right of X.",
+    "options": [
+      "Row1 (left→right): L, N, J, M, K \\nRow2 (left→right): V, Y, W, X, Z",
+      "Row1 (left→right): J, K, L, M, N \\nRow2 (left→right): V, W, X, Y, Z",
+      "Row1 (left→right): L, J, N, M, K \\nRow2 (left→right): Y, V, W, X, Z",
+      "Row1 (left→right): N, L, J, M, K \\nRow2 (left→right): V, Y, X, W, Z"
+    ],
+    "answer": 0,
+    "explanation": "We place X and Z adjacent and ensure X and W are not at ends. Try X at column 4 and Z at column 5 (so X not at an extreme and Z adjacent). Put W at column 3 (also not an extreme). Since Y must be to the left of X and face the neighbour of L, place Y at column 2 and V at column 1. Now J faces W → J must occupy row-1 column 3. Y faces the immediate neighbour of L — the person facing Y (row-1 column 2) must be adjacent to L, so place L at row-1 column 1 and thus row-1 column 2 is N. The clue 'only one person sits between L and J' is satisfied (L at col1, J at col3). N faces the immediate neighbour of V: V is at row-2 col1, its immediate neighbour is col2 (Y), so N (row-1 col2) faces Y — condition satisfied. 'Only one person sits between M and N' forces M to row-1 column 4. The person who is an immediate neighbour of W (columns 2 or 4) faces M — the column-4 neighbour (X) faces M (row-1 col4), so the clause holds. 'K faces the person to the immediate right of X' — immediate right of X is col5 (Z), so K must be row-1 col5. All seats now assigned: Row-1 (left→right) = L, N, J, M, K and Row-2 (left→right) = V, Y, W, X, Z. This satisfies every constraint uniquely, so Option 0 is correct."
+  },
   
   
   
