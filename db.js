@@ -261,6 +261,7 @@ const DB = {
 
 
 
+ 
   {
     "id": "q-000",
     "question": "Given these code-statements: \"Start new digital journey\" = \"98 63 20 74\", \"Journey with smart people\" = \"20 07 65 18\", \"Digital with good skill\" = \"63 18 82 50\", \"Required new skill knowledge\" = \"46 98 37 50\". (Note: all codes are two-digit numbers.) What is the code for the word \"Required\"?",
@@ -625,6 +626,33 @@ const DB = {
     "answer": 0,
     "explanation": "Place H and K first using the 5-box gap: H = K + 6. With eight positions the only feasible pair is K at 2 and H at 8 (K=1 would force H=7 but that later conflicts with the Tongs/I symmetry). H (8) contains Cup. J is immediately below H → J = 7. D is immediately below J → D = 6, and D contains Cooker. Two boxes are between D(6) and E → E must be at position 3 (6 − 3 = 3) because position 9 is invalid; hence E = 3. E is immediately below the box which contains Tongs, so Tongs are in position 4. The rule '# boxes below Tongs = # boxes above I (Knife)' gives t − 1 = 8 − i ⇒ i = 9 − t. With Tongs at t = 4, I must be at i = 5 and I contains Knife. Remaining box-labels are F and G for positions 1 and 4; G must be immediately above the Spoon-containing box. Setting G at 4 (the Tongs box) and Spoon at 3 (E) satisfies 'G immediately above Spoon' while allowing G to contain Tongs. The Pan–Bowl adjacency remains to be placed in the only adjacent free positions 2 and 1, with Pan directly above Bowl; thus K at 2 = Pan and F at 1 = Bowl. The only remaining product (Grater) occupies J at 7. Final stack bottom→top: 1-F(Bowl), 2-K(Pan), 3-E(Spoon), 4-G(Tongs), 5-I(Knife), 6-D(Cooker), 7-J(Grater), 8-H(Cup). Option 0 is the unique arrangement that satisfies every given constraint."
   },
+{
+  "id": "pz-001",
+  "question": "Eight persons J, K, L, M, N, O, P and Q are living in an eight-storey building (floor-1 = lowest, floor-8 = highest). Conditions:\n• Only three persons live between N and Q.\n• Q doesn’t live below the seventh floor.\n• Only one person lives between N and M, who lives three floors above P.\n• K lives on an even-numbered floor but not adjacent to Q.\n• The number of persons living above K is one more than the number of persons living between O and K.\n• L lives neither on the topmost nor on the bottommost floor.",
+  "options": [
+    "1-J, 2-P, 3-N, 4-K, 5-M, 6-L, 7-Q, 8-O",
+    "1-L, 2-P, 3-N, 4-K, 5-M, 6-J, 7-Q, 8-O",
+    "1-J, 2-M, 3-N, 4-K, 5-P, 6-L, 7-O, 8-Q",
+    "1-P, 2-J, 3-N, 4-K, 5-M, 6-L, 7-Q, 8-O"
+  ],
+  "answer": 0,
+  "explanation": "Since Q does not live below the 7th floor, Q can be on floor 7 or 8. If Q = 7, then N must be on floor 3 (three between: 4,5,6). Only one between N(3) and M → M must be on floor 5, and M lives three above P → P = 2. K is even-numbered but not adjacent to Q → K = 4 (2 is taken and 6 & 8 touch 7). Persons above K = 4 (floors 5-8), so persons between O and K = 3 → O must be 8. L not on top or bottom → L = 6. Remaining person J = floor 1. Final arrangement: 1-J, 2-P, 3-N, 4-K, 5-M, 6-L, 7-Q, 8-O which matches only Option 0."
+},
+{
+  "id": "pz-002",
+  "question": "Eight boxes numbered 1 to 8 from bottom to top contain different Fruits: Apple, Mango, Orange, Banana, Guava, Papaya, Cherry and Fig. Conditions:\n• Only three Fruits are kept between Banana and Guava.\n• Papaya is kept immediately below Cherry.\n• Only two Fruits are kept between Cherry and Fig.\n• Banana and Apple are adjacent.\n• Mango is kept somewhere above Orange.\n• Fig is in box numbered 5.\n• Four Fruits are kept between Apple and Papaya.",
+  "options": [
+    "1-Papaya, 2-Cherry, 3-Guava, 4-Orange, 5-Fig, 6-Apple, 7-Banana, 8-Mango",
+    "1-Orange, 2-Apple, 3-Papaya, 4-Cherry, 5-Fig, 6-Mango, 7-Guava, 8-Banana",
+    "1-Guava, 2-Papaya, 3-Orange, 4-Fig, 5-Cherry, 6-Banana, 7-Apple, 8-Mango",
+    "1-Apple, 2-Guava, 3-Cherry, 4-Papaya, 5-Fig, 6-Orange, 7-Mango, 8-Banana"
+  ],
+  "answer": 0,
+  "explanation": "Fig must be in box 5. Cherry and Papaya must have exactly two boxes between Cherry and Fig, so Cherry = box 2 and Papaya = box 1. Four boxes between Apple and Papaya → Apple = box 6. Apple and Banana must be adjacent → Banana must be box 7. With three boxes between Banana (7) and Guava, Guava must be box 3. Remaining two empty boxes are 4 and 8, and Mango must be above Orange → Orange = 4, Mango = 8. Final arrangement bottom→top: 1-Papaya, 2-Cherry, 3-Guava, 4-Orange, 5-Fig, 6-Apple, 7-Banana, 8-Mango which matches only Option 0."
+},
+
+
+
 
 
 
@@ -633,9 +661,182 @@ const DB = {
 
 
   ],
-  "3": [
-
-  ],
+  
+  
+  "3":[
+  {
+    "id": "q-000",
+    "question": "Sequence: W 5 * O # 6 < B U G ^ P / D 9 I 2 H R 8 + E C @ X J $ K 4 O A ~\n\nHow many digits are there which are perfect square numbers and are followed by a vowel?",
+    "options": ["4", "1", "5", "3", "2"],
+    "answer": 4,
+    "explanation": "Perfect-square digits: 9 and 4. Both are followed by vowels. Total = 2."
+  },
+  {
+    "id": "q-001",
+    "question": "Sequence: W 5 * O # 6 < B U G ^ P / D 9 I 2 H R 8 + E C @ X J $ K 4 O A ~\n\nWhich element is 14th to the right of the element which is 8th from the left end?",
+    "options": ["@", "+", "E", "G", "^"],
+    "answer": 4,
+    "explanation": "8th element → B, then count 14 right → '^'."
+  },
+  {
+    "id": "q-002",
+    "question": "Sequence: W 5 * O # 6 < B U G ^ P / D 9 I 2 H R 8 + E C @ X J $ K 4 O A ~\n\nHow many such symbols are there which are preceded by a number and followed by an alphabet?",
+    "options": ["3", "2", "4", "6", "1"],
+    "answer": 0,
+    "explanation": "Patterns satisfying: number-symbol-alphabet = 3."
+  },
+  {
+    "id": "q-003",
+    "question": "Sequence: W 5 * O # 6 < B U G ^ P / D 9 I 2 H R 8 + E C @ X J $ K 4 O A ~\n\nIf all the vowels and symbols are eliminated then which element is 13th from the right end?",
+    "options": ["P", "G", "6", "D", "H"],
+    "answer": 1,
+    "explanation": "After removing vowels/symbols, 13th from right = G."
+  },
+  {
+    "id": "q-004",
+    "question": "Statements: \nOnly paints are shirts. \nOnly shoes are ties. \nOnly a few shoes are paints.\nConclusions: \nI. No shirt is tie \nII. Some shoes are paints.\nWhich conclusion(s) follow?",
+    "options": ["Either I or II follows", "None follows", "Only II follows", "Only I follows", "Both I and II follows"],
+    "answer": 4,
+    "explanation": "As per provided answer key: Both I and II follow."
+  },
+  {
+    "id": "q-005",
+    "question": "Statements: \nAll pizza are corn. \nNo corn are cookies. \nOnly a few corns are cake.\nConclusions: \nI. No pizza are cookies \nII. Some cakes are cookies\nWhich conclusion(s) follow?",
+    "options": ["Both I and II follow", "Only II follows", "Either I or II follows", "Neither I nor II follows", "Only I follows"],
+    "answer": 4,
+    "explanation": "From answer key: Only I follows."
+  },
+  {
+    "id": "q-006",
+    "question": "Statements: \nOnly a few cup are glass. \nNo flower is pot. \nNo glass is pot.\nConclusions: \nI. No glass is flower \nII. Some cup are flower\nWhich conclusion(s) follow?",
+    "options": ["Either I or II follows", "Only II follows", "Both I and II follow", "Only I follows", "Neither I nor II follows"],
+    "answer": 4,
+    "explanation": "From provided key: Neither I nor II follows."
+  },
+  {
+    "id": "q-007",
+    "question": "Statements: \nSome pets are dogs. \nSome dogs are roofs. \nAll cats are pets.\nConclusions: \nI. Some cats are dogs. \nII. No dog is a cat\nWhich conclusion(s) follow?",
+    "options": ["If only Conclusion I follows.", "If only Conclusion II follows.", "If either Conclusion I or II follows.", "If neither Conclusion I nor II follows.", "If both Conclusions I and II follow."],
+    "answer": 2,
+    "explanation": "As per key: Either I or II follows."
+  },
+  {
+    "id": "q-008",
+    "question": "G ≤ N < Z; K < G ≥ M; B ≤ Z < C < D\nConclusions: \nI. K < C \nII. M < B",
+    "options": ["Only conclusion I is true", "Only conclusion II is true", "Both conclusions are true", "Neither conclusion is true", "Cannot be determined"],
+    "answer": 0,
+    "explanation": "Key says: Only conclusion I is true."
+  },
+  {
+    "id": "q-009",
+    "question": "Q ≤ L > S; P < O ≥ A ≤ N; L ≤ K < O\nConclusions: \nI. N > S \nII. Q < P",
+    "options": ["Only conclusion I is true", "Only conclusion II is true", "Both conclusions are true", "Neither conclusion I nor II is true", "Cannot be determined"],
+    "answer": 3,
+    "explanation": "Key says: Neither conclusion I nor II is true."
+  },
+  {
+    "id": "q-010",
+    "question": "Q ≥ P > R; V < T < U ≥ W; S < R ≥ T\nConclusions: \nI. Q > V \nII. S < P",
+    "options": ["Only conclusion I is true", "Only conclusion II is true", "Either conclusion follows", "Neither conclusion is true", "Both conclusions I and II are true"],
+    "answer": 4,
+    "explanation": "From key: Both conclusions I and II are true."
+  },
+  {
+    "id": "q-011",
+    "question": "M ≤ P < R; J > K > U ≥ I; B < R ≤ K\nConclusions: \nI. I > B \nII. M < J",
+    "options": ["Both conclusions I and II are true", "Only conclusion II is true", "Either conclusion follows", "Neither conclusion is true", "Only conclusion I is true"],
+    "answer": 1,
+    "explanation": "Key says: Only conclusion II is true."
+  },
+  {
+    "id": "q-012",
+    "question": "A person travels: North 9m to M, Left 6m to Q, Left 7m to S, East 3m to O, North 4m to R, East 6m to N.\n\nIn which direction is Point M with respect to Point S?",
+    "options": ["North east", "South west", "East", "West", "None of these"],
+    "answer": 0,
+    "explanation": "M is NE of S."
+  },
+  {
+    "id": "q-013",
+    "question": "If speed = 5 m/sec, what is the total time for the entire journey (distances: 9+6+7+3+4+6)?",
+    "options": ["6 sec", "5 sec", "6.5 sec", "8 sec", "7 sec"],
+    "answer": 4,
+    "explanation": "Total = 35m → 35/5 = 7 sec."
+  },
+  {
+    "id": "q-014",
+    "question": "From point N, if the person turns right, which direction will he face? (He was facing east at N)",
+    "options": ["North", "South", "East", "West", "None of these"],
+    "answer": 1,
+    "explanation": "Right turn from east → South."
+  },
+  {
+    "id": "q-015",
+    "question": "Family: L is brother of P. P is sister-in-law of B. L son of G. G has 2 children. W mother of V. R father of T. N brother-in-law of R. R son-in-law of Y. T granddaughter of Y. Y husband of G. V child of L.\n\nIf H is the brother of Y, how is G related to H?",
+    "options": ["Brother-in-law", "Sister-in-law", "Brother", "Sister", "None of these"],
+    "answer": 1,
+    "explanation": "Key: G is sister-in-law of H."
+  },
+  {
+    "id": "q-016",
+    "question": "How is V related to P?",
+    "options": ["Daughter", "Son", "Niece", "Nephew", "Cannot be determined"],
+    "answer": 3,
+    "explanation": "Answer key: V is nephew of P."
+  },
+  {
+    "id": "q-017",
+    "question": "Who is the wife of L?",
+    "options": ["R", "N", "W", "B", "None of these"],
+    "answer": 2,
+    "explanation": "Key: W is wife of L."
+  },
+  {
+    "id": "q-018",
+    "question": "Codes: \n'Read Paper review list' = xcv opk erh qdf; \n'Project review analysis session' = yun kjh opk kmj; \n'list of project explanation' = zsd erh yun iyt; \n'Paper analysis improves skill' = qdf abc kmj gbn.\n\nWhat is the code for 'Session Analysis'?",
+    "options": ["qdf xcv", "yun opk", "iyt gbn", "kjh kmj", "Cannot be determined"],
+    "answer": 3,
+    "explanation": "Key: Session Analysis = kjh kmj."
+  },
+  {
+    "id": "q-019",
+    "question": "Which phrase denotes code 'zsd gbn'?",
+    "options": ["Of Explanation", "Improve Explanation", "Improve skill", "Either b or c", "Cannot be determined"],
+    "answer": 4,
+    "explanation": "Key: Cannot be determined."
+  },
+  {
+    "id": "q-020",
+    "question": "If 'List Explanation Session review' = erh kjh iyt opk, what is the code for 'Project of paper'?",
+    "options": ["gbn xcv erh", "qdf zsd yun", "zsd kjh abc", "opk zsd qdf", "None of these"],
+    "answer": 1,
+    "explanation": "Key: qdf zsd yun."
+  },
+  {
+    "id": "q-021",
+    "question": "If 'Read skill session' = xcv kjh abc, what is code for 'Improve analysis'?",
+    "options": ["zsd gbn", "erh abc", "xcv gbn", "gbn kmj", "Cannot be determined"],
+    "answer": 3,
+    "explanation": "Key: gbn kmj."
+  },
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+],
   "4": [
 
   ],
