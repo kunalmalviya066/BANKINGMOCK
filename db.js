@@ -1211,6 +1211,237 @@ const DB = {
       
   "2": [
 
+
+
+  {
+    "id": "q-001",
+    "question": "(848 + 542) ÷ 2.5 + (1329 + 2697) ÷ 1.5 = 8x",
+    "options": ["385", "395", "405", "415", "425"],
+    "answer": 2,
+    "explanation": "(848 + 542) = 1390 → 1390 ÷ 2.5 = 556; (1329 + 2697) = 4026 → 4026 ÷ 1.5 = 2684; 556 + 2684 = 3240; 8x = 3240 → x = 405."
+  },
+  {
+    "id": "q-002",
+    "question": "(116.66% of 360) ÷ (12.5% of 224) + (4)^3 = x",
+    "options": ["84", "64", "69", "74", "79"],
+    "answer": 4,
+    "explanation": "116.66% of 360 = 420; 12.5% of 224 = 28; 420 ÷ 28 = 15; (4)^3 = 64; x = 15 + 64 = 79."
+  },
+  {
+    "id": "q-003",
+    "question": "√8.41 + √9.261 + √0.0361 = 0.13x + √0.0625",
+    "options": ["38", "42", "46", "50", "54"],
+    "answer": 0,
+    "explanation": "√8.41 = 2.9, √9.261 = 3.04, √0.0361 = 0.19, sum = 6.13; √0.0625 = 0.25; 6.13 − 0.25 = 5.88 = 0.13x → x = 38."
+  },
+  {
+    "id": "q-004",
+    "question": "79 13% of (282 + 422) + (11 × 32) = 4x",
+    "options": ["143", "137", "131", "125", "119"],
+    "answer": 1,
+    "explanation": "13% of (282 + 422) = 13% of 2048 = 266.24; (11 × 32) = 352; total = 618.24; 4x = 548 → x = 137."
+  },
+  {
+    "id": "q-005",
+    "question": "(720 ÷ 22 of 1584) ÷ (896 of 28 15) = 7x − (11 × 15)",
+    "options": ["43", "47", "29", "34", "39"],
+    "answer": 4,
+    "explanation": "After solving step by step, x = 39 from the given operations."
+  },
+  {
+    "id": "q-006",
+    "question": "(628 ÷ 1.5 ÷ 0.25 × 4.5) ÷ 12 = 8x + 44",
+    "options": ["71", "73", "75", "77", "79"],
+    "answer": 1,
+    "explanation": "(628 ÷ 1.5 ÷ 0.25 × 4.5) = 7536; 7536 ÷ 12 = 628; 628 − 44 = 584; 8x = 584 → x = 73."
+  },
+  {
+    "id": "q-007",
+    "question": "I. 2x² + 27x + 88 = 0, II. 2y² + 18y + 38.5 = 0",
+    "options": ["x > y", "x < y", "x ≥ y", "x ≤ y", "x = y or relation can't be established"],
+    "answer": 3,
+    "explanation": "x = (−8, −5.5); y = (−5.5, −3.5); therefore x ≤ y."
+  },
+  {
+    "id": "q-008",
+    "question": "I. 3x² − 49x + 200 = 0, II. y² − 2y − 29.25 = 0",
+    "options": ["x > y", "x < y", "x ≥ y", "x ≤ y", "x = y or relation can't be established"],
+    "answer": 0,
+    "explanation": "x = (8, 8.3); y = (6.5, −4.5); hence x > y."
+  },
+  {
+    "id": "q-009",
+    "question": "I. x² − 21.5x + 112.5 = 0, II. y² − 16.5y + 67.5 = 0",
+    "options": ["x > y", "x < y", "x ≥ y", "x ≤ y", "x = y or relation can't be established"],
+    "answer": 2,
+    "explanation": "x = (9, 12.5); y = (9, 7.5); thus x ≥ y."
+  },
+  {
+    "id": "q-010",
+    "question": "I. x² − 15√7x + 392 = 0, II. y² − 9√7y + 126 = 0",
+    "options": ["x > y", "x < y", "x ≥ y", "x ≤ y", "x = y or relation can't be established"],
+    "answer": 0,
+    "explanation": "x = (8√7, 7√7); y = (6√7, 3√7); so x > y."
+  },
+  {
+    "id": "q-011",
+    "question": "I. x² = 1024, II. 3y³ = 17496",
+    "options": ["x > y", "x < y", "x ≥ y", "x ≤ y", "x = y or relation can't be established"],
+    "answer": 4,
+    "explanation": "x = ±32, y = 18; comparison not possible as both positive and negative values exist."
+  },
+  {
+    "id": "q-012",
+    "question": "48, 24, 75, 18, 90, 15 — Find the wrong number in the series.",
+    "options": ["75", "48", "90", "15", "None of these"],
+    "answer": 0,
+    "explanation": "Pattern: ÷2, ×3, ÷4, ×5, ÷6; 75 is incorrect in the sequence."
+  },
+  {
+    "id": "q-013",
+    "question": "3335, 3210, 2994, 2651, 2139, 1420 — Find the wrong number in the series.",
+    "options": ["1420", "3335", "3210", "2139", "None of these"],
+    "answer": 0,
+    "explanation": "Difference pattern: −125, −216, −343, −512, −729; fits only if 1420 is incorrect."
+  },
+  {
+    "id": "q-014",
+    "question": "40, 1445, 2842, 4250, 5670, 7110 — Find the wrong number in the series.",
+    "options": ["1445", "40", "7110", "5670", "None of these"],
+    "answer": 0,
+    "explanation": "Pattern: +1400, +1402, +1408, +1420, +1440; 1445 breaks the pattern."
+  },
+  {
+    "id": "q-015",
+    "question": "10000, 1000, 200, 60, 24, 15 — Find the wrong number in the series.",
+    "options": ["24", "60", "15", "1000", "None of these"],
+    "answer": 2,
+    "explanation": "Pattern: ×1 ÷10, ×2 ÷10, ×3 ÷10, ×4 ÷10, ×5 ÷10; 15 is wrong."
+  },
+  {
+    "id": "q-016",
+    "question": "1820, 1244, 956, 812, 745, 704 — Find the wrong number in the series.",
+    "options": ["704", "1244", "745", "1820", "None of these"],
+    "answer": 2,
+    "explanation": "Pattern: −576, −288, −144, −72, −36; 745 does not fit."
+  },
+  {
+    "id": "q-017",
+    "question": "1348, 1407, 1530, ?, 2242, 3049 — Find the missing number.",
+    "options": ["1838", "1728", "1758", "1778", "1858"],
+    "answer": 3,
+    "explanation": "Pattern: Double difference of cubes +59, +123, +248, +464, +807; missing number = 1778."
+  },
+  {
+    "id": "q-018",
+    "question": "2197, 629, −155, −547, ?, −841 — Find the missing number.",
+    "options": ["−723", "−743", "−763", "−783", "−803"],
+    "answer": 1,
+    "explanation": "Pattern: −1568, −784, −392, −196, −98; missing number = −743."
+  },
+  {
+    "id": "q-019",
+    "question": "5548, ?, 2369, 2625, −2288, 1964 — Find the missing number.",
+    "options": ["5744", "5773", "5804", "5837", "5872"],
+    "answer": 0,
+    "explanation": "Pattern alternates +142, −153, +162, −173, +182; missing number = 5744."
+  },
+  {
+    "id": "q-020",
+    "question": "793, 914, 1057, 1244, ?, 1706 — Find the missing number.",
+    "options": ["1593", "1293", "1343", "1393", "1453"],
+    "answer": 4,
+    "explanation": "Pattern: +121, +143, +187, +209, +253; missing number = 1453."
+  },
+  
+  {
+    "id": "q-021",
+    "question": "Ratio of radius to height of a cylinder is 7:12 respectively. If the volume of the cylinder is 6237 cm³, find the curved surface area of the cylinder.",
+    "options": ["1546 cm²", "1245 cm²", "1003 cm²", "1188 cm²", "None of these"],
+    "answer": 3,
+    "explanation": "Let r = 7x, h = 12x. Volume = πr²h = (22/7)×(7x)²×(12x) = 1848 x³ = 6237 → x³ = 6237/1848 = 3.375 → x = 1.5. r = 7×1.5 = 10.5 cm, h = 18 cm. Curved surface area = 2πrh = 2×(22/7)×10.5×18 = 1188 cm²."
+  },
+  {
+    "id": "q-022",
+    "question": "Nitesh is 9 years older than Mayank, who is 25 years younger than Om. Six years hence, Om's age will be 50% more than Mayank's age (six years hence). If the average of the present ages of Mayank and Pawan is 36 years, find the ratio of ages of Mayank to Pawan six years from now.",
+    "options": ["30:40", "35:25", "20:52", "25:17", "None of these"],
+    "answer": 3,
+    "explanation": "Let Om = x. Mayank = x−25. Condition: x+6 = 1.5×(x−25+6) → x+6 = 1.5(x−19) → x = 69. So Mayank = 44 now. Average of Mayank and Pawan = 36 → (44 + P)/2 = 36 → P = 28. After 6 years: Mayank = 50, Pawan = 34 → ratio = 50:34 = 25:17."
+  },
+  {
+    "id": "q-023",
+    "question": "The ratio of the length of a rectangle, the breadth of the rectangle and the diameter of a circle is 13:11:7. If the area of the circle is 1386 cm², what is the difference between the perimeter of the rectangle and the circumference of the circle?",
+    "options": ["106 cm", "103 cm", "187 cm", "156 cm", "None of these"],
+    "answer": 3,
+    "explanation": "Area = πr² = 1386 with π = 22/7 → r² = 441 → r = 21, diameter = 42. One ratio part = 42/7 = 6. Length = 13×6 = 78, breadth = 11×6 = 66. Rectangle perimeter = 2(78+66) = 288. Circle circumference = 2πr = 2×(22/7)×21 = 132. Difference = 288 − 132 = 156 cm."
+  },
+  {
+    "id": "q-024",
+    "question": "In a business, Bhavesh's investment is 50% more than Anita's and the ratio of Bhavesh's investment to Chandni's is 3:4. The time periods of the investments of Anita, Bhavesh and Chandni are in the ratio 9:8:5 respectively. Find the ratio of profits received by Anita, Bhavesh and Chandni respectively.",
+    "options": ["9:12:10", "4:5:7", "5:11:13", "3:7:11", "None of these"],
+    "answer": 0,
+    "explanation": "Let Bhavesh = 3k and Chandni = 4k. Then Anita = Bhavesh/1.5 = 2k. Profit ∝ investment × time: Anita = 2k×9 =18k, Bhavesh = 3k×8 =24k, Chandni = 4k×5 =20k → ratio 18:24:20 = 9:12:10."
+  },
+  {
+    "id": "q-025",
+    "question": "The ratio of present ages of Minakshi and Ankit is 4:7. If the difference between Minakshi's age 6 years ago and Ankit's age 6 years hence is 30 years, find the present age of Minakshi.",
+    "options": ["17 years", "26 years", "24 years", "19 years", "None of these"],
+    "answer": 2,
+    "explanation": "Let ages be 4x and 7x. (7x + 6) − (4x − 6) = 30 → 3x + 12 = 30 → x = 6. Minakshi = 4×6 = 24 years."
+  },
+  {
+    "id": "q-026",
+    "question": "Rohit gives 35% of his monthly salary to his mother, spends 20% of the remaining on household bills, and donates 5% of the remaining to a hospital. He is left with Rs. 494. What is Rohit's annual salary?",
+    "options": ["Rs. 15000", "Rs. 14000", "Rs. 10000", "Rs. 12000", "None of these"],
+    "answer": 3,
+    "explanation": "Final remaining fraction = (1−0.35)×(1−0.20)×(1−0.05) = 0.65×0.8×0.95 = 0.494 of monthly salary. Monthly salary = 494/0.494 = 1000. Annual = 12×1000 = Rs. 12,000."
+  },
+  {
+    "id": "q-027",
+    "question": "A bookseller gives a 12.5% discount on every book and also gives 1 book free on purchase of 4 books. If he still makes a 16.66% profit on selling 5 books, find the percentage by which he had marked every book above its cost price.",
+    "options": ["62.5%", "66.66%", "41.66%", "53%", "None of these"],
+    "answer": 1,
+    "explanation": "Let marked price = M and cost price = C. Selling 5 books yields revenue = 4×(M×0.875) = 3.5M. Profit 16.66% → revenue = (7/6)×(5C) = (35/6)C. So 3.5M = (35/6)C → M = (5/3)C → markup = (5/3 − 1)×100% = 66.66%."
+  },
+  {
+    "id": "q-028",
+    "question": "The number of girls in a class is 28.56% more than the number of boys. If 9 boys and 9 girls join the class, the ratio of boys to girls becomes 5:6. Find the total number of students in the class initially.",
+    "options": ["36", "42", "48", "53", "None of these"],
+    "answer": 2,
+    "explanation": "Take boys = 7x and girls = 9x (9 is 28.57% more than 7). After adding 9 each: (7x+9)/(9x+9) = 5/6 → 42x+54 = 45x+45 → 3x = 9 → x = 3. Total initially = (7+9)×3 = 48."
+  },
+  {
+    "id": "q-029",
+    "question": "Ravindra Jadeja's monthly salary is Rs. 8400 and he spends 60% of it. If his salary increases by 15% and his savings remain the same, find his expenditure after the increment.",
+    "options": ["Rs. 6300", "Rs. 9500", "Rs. 7300", "Rs. 11500", "None of these"],
+    "answer": 0,
+    "explanation": "Initial savings = 40% of 8400 = 3360. New salary = 8400×1.15 = 9660. If savings remain 3360, expenditure = 9660 − 3360 = Rs. 6300."
+  },
+  {
+    "id": "q-030",
+    "question": "Mohan and Rohan tell the truth 50% and 70% of the time respectively. Find the probability that they will contradict each other while explaining the same incident.",
+    "options": ["0.40", "0.45", "0.70", "0.50", "None of these"],
+    "answer": 3,
+    "explanation": "They contradict when one tells the truth and the other lies: 0.5×0.3 + 0.5×0.7 = 0.15 + 0.35 = 0.50."
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   ],
   "3": [
 
