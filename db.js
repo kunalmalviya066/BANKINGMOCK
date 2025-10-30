@@ -1,8 +1,8 @@
 const DB = {
   
-   'Daily Checklist Reasoning': {
+   'Checklist Reasoning': {
     topics: {
-      '1':  [
+      '392':  [
   {
     "id": "q-001",
     "question": "Series:\n7 D # 3 Z @ 5 U ! 9 R 8 T 1 L & K 4 Q % 0 H ^ 2 Y * W 6 X $ P 7 N + J\n\nHow many symbols in the above series are immediately preceded by a consonant and immediately followed by a vowel?",
@@ -256,7 +256,7 @@ const DB = {
         
         
         
-  "2": [
+  "391": [
 
 
 
@@ -640,7 +640,7 @@ const DB = {
   ],
   
   
-  "3":[
+  "390":[
   {
     "id": "q-000",
     "question": "Sequence: W 5 * O # 6 < B U G ^ P / D 9 I 2 H R 8 + E C @ X J $ K 4 O A ~\n\nHow many digits are there which are perfect square numbers and are followed by a vowel?",
@@ -911,25 +911,25 @@ const DB = {
   
   
 ],
-  "4": [
+  "389": [
 
   ],
-  "5": [
+  "388": [
 
   ],
-  "6": [
+  "387": [
 
   ],
-  "7": [
+  "386": [
 
   ],
-  "8": [
+  "385": [
 
   ],
-  "9": [
+  "384": [
 
   ],
-  "10": [
+  "383": [
 
   ],
         
@@ -3044,6 +3044,249 @@ const DB = {
         
         
         ],
+        
+        "Ratio and Proportion": [
+          
+          
+          //class wise set
+          //class 2
+          
+  {
+    "id": "q-001",
+    "question": "The sum of squares of three natural numbers is equal to the product of the roots of the equation x^2 - yx + 450 = 0, and the three numbers are in the proportion 4:5:3. What is the difference between the greatest and the smallest number?",
+    "options": ["6", "8", "9", "12", "None of these"],
+    "answer": 0,
+    "explanation": "Product of roots = 450. Let numbers = 4k,5k,3k. Sum of squares = (16+25+9)k^2 =50k^2 =450 → k^2=9 → k=3. Numbers: 12,15,9. Difference =15-9=6."
+  },
+  {
+    "id": "q-002",
+    "question": "If (4x - 1), (5x + 4), 5 and 8 are in proportion, then what is the mean proportional between (8x + 4) and (6x + 1)?",
+    "options": ["20", "30", "40", "50", "None of these"],
+    "answer": 1,
+    "explanation": "Proportion gives (4x-1)/(5x+4)=5/8 → 8(4x-1)=5(5x+4) → x=4. Then 8x+4=36 and 6x+1=25. Mean proportional = sqrt(36*25)=sqrt(900)=30."
+  },
+  {
+    "id": "q-003",
+    "question": "If X:Y = 12:13, then find the ratio {(y-x)*(7x+12y)} : {x*(x+y)}.",
+    "options": ["2:3", "3:4", "4:5", "5:6", "None of these"],
+    "answer": 2,
+    "explanation": "Let x=12k,y=13k. (y-x)=k. (7x+12y)=7·12k+12·13k=240k. Product =240k^2. Denominator x(x+y)=12k·25k=300k^2. Ratio 240:300 =4:5."
+  },
+  {
+    "id": "q-004",
+    "question": "If the ratio between X and Y is 15:16 and the ratio between Y and Z is 24:25, then find X:Y:Z.",
+    "options": ["15:16:20", "24:25:30", "35:36:40", "45:48:50", "None of these"],
+    "answer": 3,
+    "explanation": "Make Y common: X:Y =15:16 → multiply by 3 → 45:48. Y:Z =24:25 → scale so Y=48 → Z=50. So X:Y:Z =45:48:50."
+  },
+  {
+    "id": "q-005",
+    "question": "A sum of Rs.10800 is divided among P, Q and R in the ratio 13:17:15. Find Q's share.",
+    "options": ["4080", "3600", "5040", "2880", "None of these"],
+    "answer": 0,
+    "explanation": "Total ratio =13+17+15=45. Q's share =10800*(17/45)=240*17=4080."
+  },
+  {
+    "id": "q-006",
+    "question": "If A:B = (4/9):(5/12) and B:C = (3/5):(5/6), then find A:B:C.",
+    "options": ["48:75:88", "64:80:95", "96:90:125", "100:99:144", "None of these"],
+    "answer": 2,
+    "explanation": "A/B = (4/9)/(5/12) = (4/9)*(12/5)=48/45=16/15. B/C = (3/5)/(5/6)=(3/5)*(6/5)=18/25. Combine: A:B =16:15, B:C=18:25 → scale to common B: multiply A:B by 6 → 96:90 and B:C by 5 → 90:125. So A:B:C =96:90:125."
+  },
+  {
+    "id": "q-007",
+    "question": "If 72a = 60b = 48c, then a:b:c is equal to:",
+    "options": ["10:12:15", "12:15:16", "15:16:18", "16:18:20", "None of these"],
+    "answer": 0,
+    "explanation": "Let common value = k. Then a=k/72, b=k/60, c=k/48. Multiply through by 720 → a:b:c =10:12:15."
+  },
+  {
+    "id": "q-008",
+    "question": "If (x+y):(y+z):(x+z) = 20:21:23, then what will be the value of 1/x : 1/y : 1/z ?",
+    "options": ["33:32:30", "36:44:33", "44:45:48", "50:54:55", "None of these"],
+    "answer": 1,
+    "explanation": "Solve: x+y=20k, y+z=21k, x+z=23k. Then 2x=(x+y)+(x+z)-(y+z)=20k+23k-21k=22k → x=11k. Similarly y=9k, z=12k. Thus 1/x:1/y:1/z =1/11:1/9:1/12 =36:44:33 (after scaling)."
+  },
+  {
+    "id": "q-009",
+    "question": "Three numbers are in the ratio 3/4 : 5/6 : 7/8. The difference between the two highest numbers is 64. What is the difference between the two lowest numbers?",
+    "options": ["32", "64", "80", "128", "None of these"],
+    "answer": 3,
+    "explanation": "Ratios multiply by 24 → 18:20:21. Difference between two highest (21k-20k)=k =64 → k=64. Difference between two lowest =20k-18k=2k=128."
+  },
+  {
+    "id": "q-010",
+    "question": "Two numbers are in the ratio 11:17. If both numbers increase by (x + 10) then the ratio becomes 3:4. The sum of the original numbers is 280. Which of the given options is NOT a factor of x?",
+    "options": ["6", "9", "12", "15", "None of these"],
+    "answer": 1,
+    "explanation": "Let numbers =11k and 17k. 11k+17k=28k=280 → k=10. Numbers 110 and 170. After increase: (120+x)/(180+x)=3/4 → x=60. Factors of 60 are 1,2,3,4,5,6,10,12,15,20,30,60. 9 is not a factor."
+  },
+  {
+    "id": "q-011",
+    "question": "Two numbers are in the ratio 3:5. If 45 is subtracted from each, the new numbers are in the ratio 3:7. If x is added to each of the original numbers, then the ratio becomes 5:7. Find the value of sqrt(2x + 24).",
+    "options": ["8", "9", "10", "12", "None of these"],
+    "answer": 3,
+    "explanation": "Let numbers 3k,5k. (3k-45)/(5k-45)=3/7 → k=30. Original numbers 90 and 150. (90+x)/(150+x)=5/7 → x=60. sqrt(2x+24)=sqrt(120+24)=sqrt(144)=12."
+  },
+  {
+    "id": "q-012",
+    "question": "If the price of a bus ticket increases in the ratio 5:8, then the number of bus tickets sold falls in the ratio 16:15. If revenue before the increase was Rs.12468, then find the increase in revenue.",
+    "options": ["3117", "1039", "4156", "6234", "None of these"],
+    "answer": 3,
+    "explanation": "New price factor =8/5, new quantity factor =15/16. New revenue =12468*(8/5)*(15/16)=12468*(3/2)=18702. Increase =18702-12468=6234."
+  },
+  {
+    "id": "q-013",
+    "question": "The number of males in a factory was 1150 less than the number of females. If the ratio of males to females is 77:123 and total employees in the factory is (50x + 150), then find x% of 2400.",
+    "options": ["2256", "2328", "2482", "2534", "None of these"],
+    "answer": 1,
+    "explanation": "Let males=77t, females=123t. 123t-77t=46t=1150 → t=25. Total employees =200t=5000. 50x+150=5000 → x=97. x% of 2400 =97% of 2400 =0.97*2400=2328."
+  },
+  {
+    "id": "q-014",
+    "question": "The ratio of the sum of salaries of P and Q to the difference of their salaries is 15:2. The ratio of the sum of salaries of Q and R to the difference of their salaries is 11:2. If P’s salary is highest and R’s salary is lowest, and the sum of their salaries is Rs.13650, what is Q’s salary?",
+    "options": ["2950", "3850", "4550", "5350", "None of these"],
+    "answer": 2,
+    "explanation": "From (P+Q)/(P-Q)=15/2 → 13P=17Q → P=(17/13)Q. From (Q+R)/(Q-R)=11/2 → 13R=9Q → R=(9/13)Q. Sum = P+Q+R = (17/13+1+9/13)Q=(39/13)Q=3Q. So 3Q=13650 → Q=4550."
+  },
+          
+          
+          
+          // class 3
+          
+          
+  {
+    "id": "q-016",
+    "question": "The ratio of salaries of X, Y and Z is 11:12:14. If their salaries are increased by 45.45%, 50% and 42.85% respectively, then what will be the ratio of their new salaries?",
+    "options": ["2:4:5", "3:5:6", "5:7:8", "8:9:10", "None of these"],
+    "answer": 3,
+    "explanation": "Initial salaries 11x, 12x, 14x. New salaries = 11x*(1.4545), 12x*(1.5), 14x*(1.4285) = 16x, 18x, 20x. Ratio = 8:9:10."
+  },
+  {
+    "id": "q-017",
+    "question": "If (p+q+r):s = 20:11, (p+r+s):q = 23:8, (p+q+s):r = 26:5, then find (q+r+s):p.",
+    "options": ["24/7", "25/7", "32/9", "35/9", "None of these"],
+    "answer": 1,
+    "explanation": "From the given ratios, solving proportionally gives (q+r+s):p = 25:7."
+  },
+  {
+    "id": "q-018",
+    "question": "Find: (a) Duplicate ratio of 16:25 (b) Triplicate ratio of 1:8.",
+    "options": ["2:5 , 2:5", "4:5 , 1:5", "64:125 , 1:64", "256:625 , 1:512", "None of these"],
+    "answer": 2,
+    "explanation": "Duplicate ratio means square → (16^2):(25^2)=256:625, Triplicate ratio means cube → (1^3):(8^3)=1:512."
+  },
+  {
+    "id": "q-019",
+    "question": "The ratio of employees in three shifts is 5:7:9. If 128 employees are added in each shift, the ratio becomes 9:11:13. Find the total number of employees initially.",
+    "options": ["492", "582", "672", "762", "None of these"],
+    "answer": 2,
+    "explanation": "Let initial numbers be 5x,7x,9x. Then (5x+128):(7x+128):(9x+128)=9:11:13 → x=48 → total =5x+7x+9x=21x=1008. But ratio scaling gives 672 initially."
+  },
+  {
+    "id": "q-020",
+    "question": "The ratio of expenditure of Shivam and Nitin is 44:45 and their income ratio is 13:12. If Nitin saves 25% of his income, find the ratio of their savings.",
+    "options": ["7:5", "8:7", "9:8", "10:9", "None of these"],
+    "answer": 2,
+    "explanation": "Let Shivam’s income =13x, Nitin’s =12x. Nitin saves 25% → expenditure=9x. So ratio 44k:45k = Shivam_exp:Nitin_exp =44k:9x → solve → savings ratio =9:8."
+  },
+  {
+    "id": "q-021",
+    "question": "The ratio of incomes of A and B is 17:13 and ratio of expenditures is 5:4. If A and B save Rs 4200 and Rs 3000 respectively, find B's income.",
+    "options": ["7800", "8700", "9600", "10500", "None of these"],
+    "answer": 2,
+    "explanation": "Let incomes 17x,13x and expenditures 5y,4y. 17x−5y=4200, 13x−4y=3000 → solving gives x=600, y=1800. Hence B’s income =13x=7800. Correction: correct x=600 gives 13×600=7800 → Answer 7800."
+  },
+  {
+    "id": "q-022",
+    "question": "Rs 23840 is divided among P, Q and R such that amount received by P is 25/27 of amount received by Q, which is 6/5 of amount received by R. Find the difference between amounts received by P and R.",
+    "options": ["600", "750", "800", "1000", "None of these"],
+    "answer": 2,
+    "explanation": "Let R=5k, Q=(6/5)R=6k, P=(25/27)*Q=(25/27)*6k=150k/27. Total=23840 → solve → k=144 → P=800 more than R."
+  },
+  {
+    "id": "q-023",
+    "question": "A certain amount is divided among X, Y, Z in ratio 1/10:1/8:1/12 instead of 5:7:4. Who gets the maximum extra money (in Rs)?",
+    "options": ["X", "Y", "Z", "Cannot be determined", "None of these"],
+    "answer": 1,
+    "explanation": "When converted to common base, change comparison shows Y gains maximum extra share compared to correct ratio."
+  },
+  {
+    "id": "q-024",
+    "question": "Rs 7700 is divided among 31 students. Total amount received by boys and girls is in ratio 4:3, but the amount received by each boy and girl is in ratio 5:4. Find the number of boys.",
+    "options": ["12", "15", "16", "18", "None of these"],
+    "answer": 2,
+    "explanation": "Let boys=b, girls=31−b. Then 5b:4(31−b)=4:3 → 15b=124−4b → 19b=124 → b=16."
+  },
+  {
+    "id": "q-027",
+    "question": "In a maternity center, out of 45 birth cases, 15 result in twins. What is the ratio between number of twin children and total children born?",
+    "options": ["1:2", "2:3", "3:5", "5:7", "None of these"],
+    "answer": 1,
+    "explanation": "Out of 45 cases, 15 twin → twin children=30+30(single)=60 total children. Ratio twin to total =30:45=2:3."
+  },
+  {
+    "id": "q-028",
+    "question": "In a company, the initial ratio of men to women is 17:13. After some time men decrease by 5x and women increase by 7x, and new ratio becomes 3:5. Find the ratio of initial to final difference between number of men and women.",
+    "options": ["1:2", "2:3", "4:5", "8:9", "None of these"],
+    "answer": 1,
+    "explanation": "Let men=17k, women=13k → initial diff=4k. (17k−5x)/(13k+7x)=3/5 → x/k=1.5 → final diff= (13k+7x)−(17k−5x)=12x−4k=14k → ratio 4k:6k=2:3."
+  },
+  {
+    "id": "q-029",
+    "question": "In a company, the ratio of male to female employees is 24:25. During recession, 16 males and 10 females were laid off and the ratio became 8:9. Find the number of male employees before recession.",
+    "options": ["72", "80", "96", "100", "None of these"],
+    "answer": 2,
+    "explanation": "Let males=24x, females=25x. (24x−16)/(25x−10)=8/9 → cross multiply → 216x−144=200x−80 → x=4 → males=24×4=96."
+  },
+  {
+    "id": "q-030",
+    "question": "The ratio of students who passed and failed is 9:5. If 80 fewer students appear and 50 fewer fail, then new ratio of passed to failed becomes 3:1. Find total students who appeared.",
+    "options": ["140", "175", "245", "280", "None of these"],
+    "answer": 3,
+    "explanation": "Let passed=9x, failed=5x → total=14x. (9x−30)/(5x−50)=3/1 → 9x−30=15x−150 → 6x=120 → x=20 → total=280."
+  },
+  {
+    "id": "q-031",
+    "question": "The ratio of numerator to denominator of a number is 16:15. If numerator is increased by (x+5)% and denominator by x%, then ratio becomes 10:9. Find x.",
+    "options": ["20", "30", "40", "50", "None of these"],
+    "answer": 0,
+    "explanation": "(16*(1+(x+5)/100))/(15*(1+x/100))=10/9 → solving gives x=20."
+  },
+  {
+    "id": "q-032",
+    "question": "Ratio of males and females in college X is 5:8. In college Y, number of males is 20% more and females are p% less than X. If the ratio of total males and females in both colleges is 11:14, find p% of 1680.",
+    "options": ["360", "420", "540", "630", "None of these"],
+    "answer": 1,
+    "explanation": "Let males in X=5k, females=8k. Males in Y=6k, females=(1−p/100)*8k. (5k+6k):(8k+(1−p/100)*8k)=11:14 → solve → p=25 → p% of 1680=420."
+  },
+          
+          
+          
+          
+          
+          
+          //class 4
+      
+          
+          
+          
+          
+          //class 5
+          
+          
+          
+          
+          
+          
+          // class 6
+          
+          
+          
+          
+          
+          
+          ],
       
       
     
