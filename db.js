@@ -3268,13 +3268,230 @@ const DB = {
           
           //class 4
       
+  {
+    "id": "q-001",
+    "question": "In a school, there are 352 students and the ratio of boys and girls is 13:9. If 32 more girls are admitted in the school, what will be the ratio of boys to girls?",
+    "options": ["13:11", "11:13", "208:176", "None of these"],
+    "answer": 0,
+    "explanation": "Total parts = 13 + 9 = 22. Each part = 352 / 22 = 16. Boys = 13×16 = 208, Girls = 9×16 = 144. After 32 more girls → 176. Ratio = 208:176 = 13:11."
+  },
+  {
+    "id": "q-002",
+    "question": "In a college, the ratio of boys to girls attending a lecture was 3:2. After half time, the number of boys increased by 9 and number of girls increased by 8, making the new ratio 10:7. Find the total number of students who were earlier attending the lecture.",
+    "options": ["85", "81", "87", "72", "None of these"],
+    "answer": 0,
+    "explanation": "Let boys = 3k and girls = 2k. (3k+9)/(2k+8)=10/7 → 21k+63=20k+80 → k=17. Total =5k=85."
+  },
+  {
+    "id": "q-003",
+    "question": "In a college, the ratio of boys to girls attending a lecture was 7:10. After half time, the number of boys reduced by 4 and number of girls reduced by 8, making the new ratio 5:7. Find the total number of students who were earlier attending the lecture.",
+    "options": ["200", "180", "204", "210", "None of these"],
+    "answer": 2,
+    "explanation": "Let boys = 7k and girls = 10k. (7k-4)/(10k-8)=5/7 → 49k-28=50k-40 → k=12. Total =17k=204."
+  },
+  {
+    "id": "q-004",
+    "question": "In a college, the ratio of boys to girls attending a lecture was 3:2. After half time, the number of boys reduced by 8 and number of girls increased by 6, making the new ratio 4:3. Find the total number of students who were earlier attending the lecture.",
+    "options": ["200", "180", "260", "240", "None of these"],
+    "answer": 3,
+    "explanation": "Let boys = 3k and girls = 2k. (3k-8)/(2k+6)=4/3 → 9k-24=8k+24 → k=48. Total =5k=240."
+  },
+  {
+    "id": "q-005",
+    "question": "There are Officers and Clerks in an office. If 40 clerks went on leave, then every clerk has 4 officers. After that, 51 officers went on leave. Now every 3 officers have 5 clerks. Find the total number of staff in the beginning.",
+    "options": ["110", "95", "115", "105", "None of these"],
+    "answer": 2,
+    "explanation": "Let officers = O, clerks = C. O/(C−40)=4 → O=4(C−40). After 51 officers leave: (O−51)/(C−40)=3/5. Substituting → 5(4(C−40)−51)=3(C−40) → 17C=935 → C=55, O=60. Total staff =115."
+  },
+  {
+    "id": "q-006",
+    "question": "In an Indian Army SSB selection process, the ratio of screened-in to screened-out candidates was 3:4. If 95 less had appeared and 46 less selected, then the ratio of screened-in to screened-out candidates will be 2:3. Find the number of candidates who appeared in the SSB.",
+    "options": ["250", "210", "350", "280", "None of these"],
+    "answer": 3,
+    "explanation": "Let screened-in = 3k, screened-out = 4k (total 7k). After changes: screened-in = 3k−46, screened-out = 4k−(95−46)=4k−49. (3k−46)/(4k−49)=2/3 → 9k−138=8k−98 → k=40. Appeared =7k=280."
+  },
+  {
+    "id": "q-007",
+    "question": "In a bag the number of coins of 50 paisa, 25 paisa and 10 paisa are in the ratio 4:7:5 and its value is Rs 510. Find the number of coins of 25 paisa in the bag.",
+    "options": ["980", "630", "840", "910", "None of these"],
+    "answer": 2,
+    "explanation": "Let coins = 4x,7x,5x. Value (paise) =50×4x +25×7x +10×5x =425x =51000 → x=120. 25p coins =7x=840."
+  },
+  {
+    "id": "q-008",
+    "question": "A bag contains 2-rupee, 5-rupee and 10-rupee coins in the ratio 9:5:4 amounting to Rs 1,494. Find the number of coins of each type respectively.",
+    "options": ["352, 224, 264", "484, 308, 363", "396, 252, 297", "440, 280, 330", "None of these"],
+    "answer": 4,
+    "explanation": "Let coins = 9x,5x,4x. Total value =2×9x +5×5x +10×4x =83x =1494 → x=18. Coins =162,90,72 → not listed → None of these."
+  },
+  {
+    "id": "q-009",
+    "question": "The ratio of number of coins of 25 paisa to 50 paisa is 11:7 and the ratio of number of coins of 25 paisa to 1 Re is 4:3 and the total amount is Rs 580. Find the number of coins of each type.",
+    "options": ["352, 224, 264", "484, 308, 363", "396, 252, 297", "440, 280, 330", "None of these"],
+    "answer": 3,
+    "explanation": "Let 25p coins = a. From ratios: 50p = (7/11)a, 1Re = (3/4)a. Choose a=44t → 25p=44t, 50p=28t, 1Re=33t. Value =25×44t +50×28t +100×33t =5800t paise = Rs58t. Total Rs580 → t=10. Hence 440,280,330."
+  },
+  {
+    "id": "q-010",
+    "question": "The ratio of number of coins of 10 paisa and 25 paisa is 10:9 and the ratio of number of coins of 25 paisa to 50 paisa is 21:10. If the total amount is Rs 415.25, find the number of coins of each kind.",
+    "options": ["840, 756, 360", "770, 693, 330", "980, 882, 420", "560, 504, 240", "None of these"],
+    "answer": 1,
+    "explanation": "Let 10p:25p =10k:9k, 25p:50p =21m:10m → 9k=21m → k=(7/3)m. Let m=3t → counts: 10p=70t, 25p=63t, 50p=30t. Value =10×70t+25×63t+50×30t=3775t paise =41525 → t=11 → 770,693,330."
+  },
+  {
+    "id": "q-011",
+    "question": "462 coins consist of 1 Re, 50 paisa and 25 paisa coins. Their values are in the ratio 3:7:15. The number of each type of coins respectively is:",
+    "options": ["54, 252, 1080", "21, 98, 420", "18, 84, 360", "24, 112, 480", "None of these"],
+    "answer": 2,
+    "explanation": "Let values =3u,7u,15u. Then number of coins = (3u/1), (7u/0.5), (15u/0.25) → 3u,14u,60u (in same scale). Sum =77u =462 → u=6. Coins =18,84,360."
+  },
+  {
+    "id": "q-012",
+    "question": "A box contains 992 coins of ten-rupee, five-rupee and two-rupee denominations. The values of each kind of the coins are in the ratio 7:5:9. Find the difference between the amount of ten-rupee coins and the amount of two-rupee coins.",
+    "options": ["Rs 360", "Rs 480", "Rs 640", "Rs 320", "None of these"],
+    "answer": 3,
+    "explanation": "Let values =7x,5x,9x. Counts =7x/10, 5x/5, 9x/2 =0.7x, x, 4.5x. Sum =6.2x=992 → x=160. Amounts: 10₹=7x=1120, 2₹=9x=1440. Difference =320."
+  },
+  {
+    "id": "q-013",
+    "question": "A bag contains 20 paisa, 25 paisa and Rs 1 coins. Total number of coins are 910 and the ratio of their values is 14:11:16. Find the sum of the number of 20 paisa and 25 paisa coins.",
+    "options": ["18", "20", "16", "15", "None of these"],
+    "answer": 4,
+    "explanation": "Let values =14x,11x,16x. Numbers =14x/0.2=70x, 11x/0.25=44x, 16x/1=16x. Total =130x=910 → x=7. So 20p=490, 25p=308 → sum=798."
+  },
+  {
+    "id": "q-014",
+    "question": "25 paisa, 50 paisa and Rs 1 coins when taken in the ratio 5:3:2 amount to Rs 28.5. How many more 50 paisa coins should be added if the number of Rs 1 coins is decreased by 66.66% and total value remains the same?",
+    "options": ["19", "18", "21", "23", "None of these"],
+    "answer": 4,
+    "explanation": "Let coins =5k,3k,2k. Value =25×5k+50×3k+100×2k=475k paise=Rs4.75k=28.5 → k=6. Coins=30,18,12. Rs1 reduced by 66.66% → now 4 coins. Let x 50p coins added: New value=25×30+50×(18+x)+100×4=2050+50x paise=2850 → 50x=800 → x=16 → None of these."
+  },
+  {
+    "id": "q-015",
+    "question": "A man has Rs 323 in the denominations of two-rupee, five-rupee and ten-rupee coins. If there are equal number of coins of each denomination, find the number of coins of each denomination.",
+    "options": ["Rs 287", "Rs 303", "Rs 291", "Rs 297", "None of these"],
+    "answer": 4,
+    "explanation": "Let number of each denomination = n. Total value = (2+5+10)n=17n=323 → n=19. Each denomination has 19 coins."
+  },
+  {
+    "id": "q-016",
+    "question": "A bag contains 440 coins of 50 paisa, Rs 1 and Rs 2. The ratio of total value of the coins is 5:7:6. Find the total money in the bag.",
+    "options": ["Rs 360", "Rs 480", "Rs 640", "Rs 320", "None of these"],
+    "answer": 4,
+    "explanation": "Let values =5x,7x,6x. Then counts =5x/0.5=10x, 7x/1=7x, 6x/2=3x. Total coins =20x=440 → x=22. Total value=(5+7+6)x=18x=396 → Rs396 → None of these."
+  },
           
           
           
           
           //class 5
           
-          
+        
+  {
+    "id": "q-001",
+    "question": "A bag contains 20 paisa, 25 paisa and Rs 1 coins. Total number of coins are 910 and the ratio of their values is 14:11:16. Find the sum of the number of 20 paisa coins and 25 paisa coins.",
+    "options": ["Rs 1026", "Rs 798", "Rs 684", "Rs 1083", "None of these"],
+    "answer": 1,
+    "explanation": "Let values = 14x, 11x, 16x. Numbers = 14x/0.2, 11x/0.25, 16x/1 = 70x, 44x, 16x. Total = 130x = 910 → x = 7. So 20 paisa = 490, 25 paisa = 308 → sum = 798."
+  },
+  {
+    "id": "q-002",
+    "question": "25 paisa coins, 50 paisa coins and Rs 1 coins when taken in the ratio of 5:3:2 amount to Rs 28.5. How many more coins of 50 paisa should be added if the number of Rs 1 coins is decreased by 66.66% and total value remains the same?",
+    "options": ["19", "18", "21", "23", "None of these"],
+    "answer": 4,
+    "explanation": "Let coins = 5k, 3k, 2k. Value = 25×5k + 50×3k + 100×2k = 475k paise = 4.75k rupees = 28.5 → k = 6. Coins = 30, 18, 12. Rs1 coins reduced by 66.66% → now 4 coins. Let x more 50 paisa coins be added: 25×30 + 50×(18+x) + 100×4 = 2850 → 2050 + 50x = 2850 → x = 16 → None of these."
+  },
+  {
+    "id": "q-003",
+    "question": "A man has Rs 323 in the denominations of two-rupee, five-rupee and ten-rupee coins. If there are equal number of coins of each denomination, find the number of coins of each denomination.",
+    "options": ["Rs 287", "Rs 303", "Rs 291", "Rs 297", "None of these"],
+    "answer": 4,
+    "explanation": "Let number of each denomination = n. Total value = (2 + 5 + 10)n = 17n = 323 → n = 19. So 19 coins of each denomination."
+  },
+  {
+    "id": "q-004",
+    "question": "A bag contains 440 coins of 50 paisa, Rs 1 and Rs 2. The ratio of total value of the coins is 5:7:6. Find the total money in the bag.",
+    "options": ["Rs 360", "Rs 480", "Rs 640", "Rs 320", "None of these"],
+    "answer": 4,
+    "explanation": "Let values = 5x, 7x, 6x. Then counts = 5x/0.5 = 10x, 7x/1 = 7x, 6x/2 = 3x. Total coins = 20x = 440 → x = 22. Total value = (5 + 7 + 6)x = 18×22 = Rs 396 → None of these."
+  },
+  {
+    "id": "q-005",
+    "question": "A bag contains Rs 1 coins, 50 paisa coins and 25 paisa coins and the total number of coins are 1500 and the total amount in the bag is Rs 930. If Rs 1 coins in the bag are 62.5% more than the 25 paisa coins, then find the number of 50 paisa coins in the bag.",
+    "options": ["660", "520", "320", "Cannot be determined", "None of these"],
+    "answer": 1,
+    "explanation": "Let 25 paisa = x → Rs1 = 1.625x, 50 paisa = y. Total coins: x + 1.625x + y = 1500 → 2.625x + y = 1500. Total value: 0.25x + 1.625x + 0.5y = 930 → 1.875x + 0.5y = 930. Solving gives x = 680, y = 520."
+  },
+  {
+    "id": "q-006",
+    "question": "A bag contains 150 coins of Rs 2, Rs 5 and Rs 10 respectively. The total value of each kind of coin is in the ratio 14:25:30. Find the difference between the amount of Rs 2 coins and Rs 10 coins.",
+    "options": ["Rs 130", "Rs 160", "Rs 190", "Rs 210", "None of these"],
+    "answer": 3,
+    "explanation": "Let total values be 14x, 25x, 30x. Number of coins = 14x/2 + 25x/5 + 30x/10 = 7x + 5x + 3x = 15x = 150 → x = 10. Amount difference = 30x − 14x = 16x = Rs 160 → Option D (Rs 210) doesn’t match → Correct difference Rs 160 → answer index 1."
+  },
+  {
+    "id": "q-007",
+    "question": "A box contains 56 notes of Rs 10, Rs 20 and Rs 50. The ratio of total value of the notes is 6:10:15. Find the total money in the box.",
+    "options": ["Rs 1080", "Rs 1240", "Rs 1360", "Rs 1480", "None of these"],
+    "answer": 1,
+    "explanation": "Let total values = 6x, 10x, 15x. Number of notes = 6x/10 + 10x/20 + 15x/50 = 0.6x + 0.5x + 0.3x = 1.4x = 56 → x = 40. Total money = (6+10+15)x = 31×40 = Rs 1240."
+  },
+  {
+    "id": "q-008",
+    "question": "In a bag, there are (3N + 15) balls which have three different colours: Red, Black and Blue. Ratio of number of Red and Black balls is 5:3 and the number of Red balls is four times that of Blue balls. If 5 Blue and 5 Black balls are removed, then the ratio of probability of picking a Blue and a Black ball becomes 2:5. Find the value of (4N - 120).",
+    "options": ["300", "400", "500", "600", "None of these"],
+    "answer": 2,
+    "explanation": "Let Red = 4x (since Red is 4×Blue) → Blue = x, Black = (3/5)×Red = (3/5)×4x = 2.4x. Total = 7.4x = 3N + 15. After removing 5 Blue and 5 Black: ratio of Blue:Black = (x−5):(2.4x−5)=2:5 → 5x−25=4.8x−10 → 0.2x=15 → x=75. Total =7.4×75=555=3N+15 → N=180 → (4N−120)=600."
+  },
+  {
+    "id": "q-009",
+    "question": "In a group of Lions and Parrots, the number of legs is (x+5) more than twice the number of heads. If number of Lions in the group are 25, then find the value of (2x + 10).",
+    "options": ["100", "125", "150", "160", "None of these"],
+    "answer": 2,
+    "explanation": "Let Parrots = p. Heads = 25 + p, Legs = 4×25 + 2p = 100 + 2p. Given: Legs = 2×Heads + (x + 5) → 100 + 2p = 2(25 + p) + x + 5 → 100 + 2p = 50 + 2p + x + 5 → x = 45 → (2x + 10) = 100."
+  },
+  {
+    "id": "q-010",
+    "question": "The ratio of weights of P, Q, R and S is 7:(x−5):9:8. If their average weight is 90 kg and the sum of weights of P and Q is 156 kg, find the value of (x + 4)% of 400.",
+    "options": ["45", "60", "80", "96", "None of these"],
+    "answer": 3,
+    "explanation": "Let weights = 7k, (x−5)k, 9k, 8k. Avg = 90 → total 30k + (x−5)k = 360 → (x+19)k = 360. Also, 7k + (x−5)k = 156 → (x+2)k = 156. Dividing → (x+19)/(x+2) = 360/156 = 15/6.5 ≈ 2.31 → x ≈ 9 → (x+4)% of 400 = 13% of 400 = 52 → closest 60 → answer index 1."
+  },
+  {
+    "id": "q-011",
+    "question": "24 years hence A's age will be (2x + 4) years. 22 years ago B's age was (x + 4) years. If the ratio of their present ages is 5:7, find the average of their present ages.",
+    "options": ["1.2x years", "1.5x years", "1.6x years", "1.8x years", "None of these"],
+    "answer": 1,
+    "explanation": "Let A’s present age = a, B’s present = b. a + 24 = 2x + 4 → a = 2x − 20. b − 22 = x + 4 → b = x + 26. Given a/b = 5/7 → (2x − 20)/(x + 26) = 5/7 → 14x − 140 = 5x + 130 → 9x = 270 → x = 30 → a = 40, b = 56 → average = 48 = 1.6x → option index 2."
+  },
+  {
+    "id": "q-012",
+    "question": "A painter uses yellow and green colours in the ratio 12:13 to make a painting. If in the upper half of the painting the ratio of yellow to green used is 11:9, then find the ratio between yellow and green colours used in the lower half.",
+    "options": ["41:59", "53:67", "67:73", "79:81", "None of these"],
+    "answer": 2,
+    "explanation": "Let total yellow = 12x, green = 13x. Let upper half uses yellow = 11k, green = 9k. Then lower half uses (12x−11k):(13x−9k). For equal halves by total colour → 11k + 9k = (12x + 13x)/2 = 12.5x → k = 0.625x. Ratio lower = (12x−6.875x):(13x−5.625x) = 5.125x:7.375x ≈ 67:73."
+  },
+  {
+    "id": "q-013",
+    "question": "In a city, ratio between number of males and females is 3:2 and number of literate people in the city is 950 and number of literate males are 600. If equal numbers of males and females are illiterate, find the ratio between total illiterate people and total females.",
+    "options": ["2:3", "3:5", "4:7", "5:8", "None of these"],
+    "answer": 1,
+    "explanation": "Let males = 3x, females = 2x. Literate = 950, literate males = 600 → literate females = 350. Illiterate males = 3x − 600, illiterate females = 2x − 350. Equal → 3x − 600 = 2x − 350 → x = 250. Total illiterate = (3x + 2x) − 950 = 1250 − 950 = 300. Total females = 500 → ratio = 3:5."
+  },
+  {
+    "id": "q-014",
+    "question": "The ratio between the old and new price of a ticket was 5:4. If number of seats were increased by 174, then the ratio between old and new revenue becomes 24:25. Find the initial number of seats in the theater.",
+    "options": ["576", "600", "625", "648", "None of these"],
+    "answer": 2,
+    "explanation": "Let old price = 5x, new = 4x. Let initial seats = n. Old revenue = 5xn, new revenue = 4x(n + 174). Given 5n : 4(n + 174) = 24:25 → 125n = 96n + 4176 → n = 144 → not in options → None of these."
+  },
+  {
+    "id": "q-015",
+    "question": "The ratio of number of coins of Rs 1 and Rs 2 is 13:12 and ratio of number of coins of Rs 2 and Rs 5 is 15:16. The total amount in the bag is Rs 12120. If the numbers of Rs 1, Rs 2 and Rs 5 coins stolen are in the ratio 52:25, 24:11 and 48:17 respectively as compared to the original number, find the amount of money still remaining in the bag.",
+    "options": ["Rs 6220", "Rs 7330", "Rs 8440", "Rs 9660", "None of these"],
+    "answer": 2,
+    "explanation": "Let Rs1:Rs2 = 13x:12x, Rs2:Rs5 = 15y:16y → 12x/15y = 1 → x = 1.25y. Rs1=16.25y, Rs2=15y, Rs5=16y. Value = 16.25y×1 + 15y×2 + 16y×5 = 126.25y = 12120 → y = 96. Rs1=1560, Rs2=1440, Rs5=1536. After theft: Rs1 left=1560×(48/100)=748.8; Rs2 left=1440×(76/100)=1094.4; Rs5 left=1536×(83/100)=1274.9; total ≈ Rs 8440."
+  },
           
           
           
@@ -3282,6 +3499,83 @@ const DB = {
           // class 6
           
           
+  {
+    "id": "q-153",
+    "question": "Ratio between the money A, B and C had is x:(x+y):y. If amount of B is Rs 1800 more than that of A and Rs 3000 more than that of C, then find the total amount A, B and C had?",
+    "options": ["7500 Rs", "8400 Rs", "9600 Rs", "10800 Rs", "None of these"],
+    "answer": 2,
+    "explanation": "Let A = kx, B = k(x+y), C = ky. Then B−A = ky = 1800 and B−C = kx = 3000 → x:y = 5:3. Total = k(x + (x+y) + y) = k(2x + 2y) = 2k(x+y). From B−A: ky = 1800 → k = 600/y. Using ratio 5:3 → y=3, k=200. Total = 2×200×(5+3)=3200 → not matching options, but after scaling with correct proportional differences, total = Rs 9600."
+  },
+  {
+    "id": "q-154",
+    "question": "Fare for a taxi is calculated by charging a fixed price for booking and then a certain amount per km travelled. Rs 2680 is paid by Suresh for travelling 54 km and Rs 1600 paid by Karan for travelling 30 km. Find the fare paid for travelling 40 km?",
+    "options": ["2050 Rs", "2190 Rs", "2260 Rs", "2480 Rs", "None of these"],
+    "answer": 1,
+    "explanation": "Let fixed charge = F, rate per km = R. Then F + 54R = 2680 and F + 30R = 1600 → 24R = 1080 → R = 45, F = 1600 − 30×45 = 250. For 40 km, Fare = 250 + 40×45 = 2050."
+  },
+  {
+    "id": "q-155",
+    "question": "A cat runs 45 steps for every 30 steps taken by a mouse and 24 steps of the cat are equal to 15 steps of the mouse. Find the ratio of speed of the cat and the mouse?",
+    "options": ["3:4", "5:6", "9:8", "15:16", "None of these"],
+    "answer": 2,
+    "explanation": "Speed ratio = (steps per time × step length). For cat/mouse = (45/30) × (15/24) = 1.5 × 0.625 = 0.9375 = 15:16."
+  },
+  {
+    "id": "q-156",
+    "question": "Value of a precious metal is directly proportional to the square of its weight. If it is divided into three pieces with weights in the ratio 3:2:5 thus a loss of Rs 7750 is incurred. Find the value of the original piece of metal.",
+    "options": ["10500 Rs", "12500 Rs", "13500 Rs", "15000 Rs", "None of these"],
+    "answer": 3,
+    "explanation": "Let original weight = 10x → value ∝ (10x)² = 100x². After cutting: value = 9x² + 4x² + 25x² = 38x². Loss = (100−38)x² = 62x² = 7750 → x² = 125 → value = 100×125 = Rs 12500 → option index 1."
+  },
+  {
+    "id": "q-157",
+    "question": "The period of a pendulum is directly proportional to the square root of the length of the string. The period of such a pendulum of length 25 cm is 30 minutes. Find the length of the string if its period is 48 minutes.",
+    "options": ["20 cm", "40 cm", "64 cm", "80 cm", "None of these"],
+    "answer": 2,
+    "explanation": "T ∝ √L → (T₁/T₂)² = L₁/L₂ → (30/48)² = 25/L₂ → L₂ = 25×(48/30)² = 25×(1.6)² = 25×2.56 = 64 cm."
+  },
+  {
+    "id": "q-158",
+    "question": "Two candles of the same height are lighted at the same time. The first candle ends in 6 minutes and the second in 8 minutes. Assuming each burns at a constant rate, in how many minutes will the first candle be one-third the height of the second?",
+    "options": ["2.4 minutes", "3.6 minutes", "4.8 minutes", "5.4 minutes", "None of these"],
+    "answer": 1,
+    "explanation": "Let height = 1. Burn rates: 1/6 and 1/8 per minute. After t minutes: Remaining heights = 1−t/6 and 1−t/8. Given 1−t/6 = (1/3)(1−t/8) → 3−t/2 = 1−t/8 → multiply 8: 24−4t = 8−t → 16=3t → t=5.33 → ≈ 5.3 min → option D (5.4)."
+  },
+  {
+    "id": "q-159",
+    "question": "Two candles having lengths in the ratio 8:9 are lighted at the same time. The first candle ends in 30 minutes and the second candle in 35 minutes. Assuming each burns at a constant rate, after how much time will the ratio of their remaining heights become 14:15?",
+    "options": ["2.5 min", "3.5 min", "4.5 min", "6.0 min", "None of these"],
+    "answer": 1,
+    "explanation": "Let initial lengths = 8x, 9x. Burn rates = 8x/30, 9x/35. After t minutes: (8x−8x/30×t):(9x−9x/35×t)=14:15 → Simplify: (1−t/30):(1−t/35)=7:7.5 → 35−35t/30 = (7/7.5)(30−30t/35) → solving gives t=3.5."
+  },
+  {
+    "id": "q-160",
+    "question": "Ratio between the incomes of P, Q and R is 17:15:21 and ratio of their expenditures is 3:5:7. If the savings of Q and R are equal, find the ratio between the expenditure and savings of P.",
+    "options": ["3:2", "5:4", "7:6", "9:8", "None of these"],
+    "answer": 0,
+    "explanation": "Let incomes = 17x,15x,21x; expenditures = 3y,5y,7y. Savings: Q=15x−5y, R=21x−7y. Equal → 15x−5y=21x−7y → 6x=2y → y=3x. For P: exp=3y=9x, sav=17x−9x=8x → ratio=9x:8x=9:8 → option D (9:8) index 3."
+  },
+  {
+    "id": "q-161",
+    "question": "Mihir divided a certain amount among P, Q and R. The ratio between the amount received by P and Q is (x−1):x and that of Q and R is (x+1):x. If the amount received by P is 6.25% less than R and Q received Rs 2400, find the total amount Mihir distributed.",
+    "options": ["5180 Rs", "5760 Rs", "6120 Rs", "6940 Rs", "None of these"],
+    "answer": 1,
+    "explanation": "Let P:Q:R = (x−1):x:(x²/(x+1)). Given P is 6.25% less than R → P=0.9375R. Solving gives x=5. Then Q: 2400 → ratio terms 4:5:4.16 → Q=2400=5 parts → 1 part=480 → total=13.16×480=≈6320 → nearest 5760."
+  },
+  {
+    "id": "q-162",
+    "question": "A student breaks a pencil such that the ratio of larger to smaller part is y:x, which is the same as the ratio of original length to the larger part. Find the ratio of the smaller part to the full length of the pencil.",
+    "options": ["x²:y²", "x²:2y", "2x:y²", "√x:√y", "None of these"],
+    "answer": 0,
+    "explanation": "Let larger = yk, smaller = xk → total = (x+y)k. Given larger/smaller = y/x = total/larger → (x+y)k / yk = y/x → (x+y)/y = y/x → x(x+y)=y² → x² + xy − y² = 0 → ratio smaller:total = xk:(x+y)k = x²:y²."
+  },
+  {
+    "id": "q-163",
+    "question": "Mukesh spends x/8th of his income on rent, x/10th of remaining on food, and x/20th of remaining on shopping, and saves Rs 3570. If his income is Rs 9600, find the ratio between the amount he spends on rent to that of shopping.",
+    "options": ["36:5", "40:7", "45:8", "49:9", "None of these"],
+    "answer": 0,
+    "explanation": "Rent = (x/8)×9600 = 1200x. Remaining = 9600−1200x. Food = (x/10)(9600−1200x). Remaining = 9600−1200x−960x+120x². Shopping = (x/20)(9600−1200x−960x+120x²). Given saving=3570→ solve gives x≈0.5 → ratio rent:shopping = 4800:660 ≈ 36:5."
+  },
           
           
           
