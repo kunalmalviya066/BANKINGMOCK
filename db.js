@@ -960,6 +960,321 @@ const DB = {
   },
   
   
+  
+  // quant checklist
+  
+  'Quant checklist': {
+    topics: {
+      
+      
+      '1': [
+        
+        
+        
+  {
+    "id": "q-001",
+    "question": "Monthly income of Radha is Rs. 64,000. If she spends 16% of her monthly income on rent, 34% on food and transport, 68% of the remaining on family expenses and saves the remaining amount, then find her monthly savings.",
+    "options": ["Rs. 10420", "Rs. 12400", "Rs. 10240", "Rs. 10220", "None of these"],
+    "answer": 2,
+    "explanation": "Step 1: Rent + food/transport = 16% + 34% = 50% → remaining = 100% - 50% = 50% of 64000 = 0.50 × 64000 = 32000. Step 2: Family expenses = 68% of remaining = 0.68 × 32000 = 21760. Step 3: Savings = remaining - family = 32000 - 21760 = 10240. Therefore monthly savings = Rs. 10,240."
+  },
+  {
+    "id": "q-002",
+    "question": "A number is first increased by 15% and 14% and then decreased by 32%. Find the overall change (percent) in the number.",
+    "options": ["12.72% decrease", "12.72% increase", "10.852% decrease", "10.852% increase", "None of these"],
+    "answer": 2,
+    "explanation": "Apply successive changes multiplicatively: After +15% and +14%: factor = 1.15 × 1.14 = 1.311. Then decrease by 32% → multiply by 0.68: final factor = 1.311 × 0.68 = 0.89148. Change = 0.89148 - 1 = -0.10852 = -10.852%, i.e. a 10.852% decrease."
+  },
+  {
+    "id": "q-003",
+    "question": "In an exam, Abhimanyu's marks are 36.36% more than Bhavi's, and Bhavi has scored 83(1/3)% more than Chirag. If the difference between Abhimanyu's and Chirag's marks is 369, find the percentage marks scored by Bhavi if full marks are 500.",
+    "options": ["90.2%", "90.4%", "90%", "90.5%", "None of these"],
+    "answer": 0,
+    "explanation": "Let Chirag = 6x. Bhavi is 83 1/3% more → Bhavi = 6x × (1 + 83 1/3%) = 6x × 11/6 = 11x. Abhimanyu is 36.36% more than Bhavi → Abhimanyu = 11x × (1 + 36.36%) = 11x × 1.3636... = 15x. Given 15x - 6x = 369 → 9x = 369 → x = 41. Bhavi's marks = 11x = 11 × 41 = 451. Percentage = (451/500) × 100 = 90.2%."
+  },
+  {
+    "id": "q-004",
+    "question": "Aditi gives 20% of her salary to her child, 40% of the remaining she spends on electricity bill and she donates 15% of the remaining to charity; then she is left with Rs. 1836. What is Aditi's salary?",
+    "options": ["Rs. 45000", "Rs. 54000", "Rs. 5400", "Rs. 4500", "None of these"],
+    "answer": 3,
+    "explanation": "Let salary = S. After giving 20% to child → left = 0.80S. She spends 40% of remaining on electricity → left = 0.60 × 0.80S = 0.48S. She donates 15% of that remaining → left = 0.85 × 0.48S = 0.408S. This equals 1836 → 0.408S = 1836 → S = 1836 / 0.408 = 4500. Therefore salary = Rs. 4,500."
+  },
+  {
+    "id": "q-005",
+    "question": "P initially had 75 oranges which is 6.25% less than the number of oranges Q had. If Q gives 31.25% of the oranges to P, then P has approximately what percent more oranges than Q?",
+    "options": ["72.72%", "81.81%", "63.63%", "94.94%", "None of these"],
+    "answer": 1,
+    "explanation": "If P = 75 and this is 6.25% less than Q, then Q = 75 / (1 - 0.0625) = 75 / 0.9375 = 80. Q gives 31.25% of 80 → 0.3125 × 80 = 25 oranges. After transfer: P = 75 + 25 = 100; Q = 80 - 25 = 55. Percent more = (100 - 55) / 55 × 100 = 45/55 ×100 = 81.818...% ≈ 81.81%."
+  },
+      
+       
+  {
+    "id": "q-011",
+    "question": "45% of { (28² + 36²) ÷ 8 } = (11 × 22) − (x³). Find x.",
+    "options": ["25", "5", "10", "15", "20"],
+    "answer": 1,
+    "explanation": "Compute inside: 28² = 784, 36² = 1296 ⇒ sum = 2080. ÷8 = 260. 45% of 260 = 0.45×260 = 117. RHS: 11×22 = 242. So 242 − x³ = 117 ⇒ x³ = 125 ⇒ x = 5."
+  },
+  {
+    "id": "q-012",
+    "question": "x × 15 + (15)² = { (18² + 24²) ÷ 18 } × 27. Find x.",
+    "options": ["60", "65", "70", "75", "80"],
+    "answer": 3,
+    "explanation": "Compute RHS: 18² = 324, 24² = 576 ⇒ sum = 900. ÷18 = 50. ×27 = 1350. Left: 15x + 15² = 15x + 225. So 15x + 225 = 1350 ⇒ 15x = 1125 ⇒ x = 75."
+  },
+  {
+    "id": "q-013",
+    "question": "(√3249 × 11) + (√2304 × 2.5) = 7x + (√1024 × 17). Find x.",
+    "options": ["29", "33", "37", "41", "45"],
+    "answer": 0,
+    "explanation": "√3249 = 57 → 57×11 = 627. √2304 = 48 → 48×2.5 = 120. LHS = 627 + 120 = 747. √1024 = 32 → 32×17 = 544. So 7x + 544 = 747 ⇒ 7x = 203 ⇒ x = 29."
+  },
+  {
+    "id": "q-014",
+    "question": "(√676 − 30% of 50)³ − (24 × 1.5) = 7x + (21)². Find x.",
+    "options": ["154", "136", "122", "118", "108"],
+    "answer": 2,
+    "explanation": "√676 = 26. 30% of 50 = 15. So (26 − 15) = 11 and 11³ = 1331. 24×1.5 = 36. LHS = 1331 − 36 = 1295. (21)² = 441. So 7x + 441 = 1295 ⇒ 7x = 854 ⇒ x = 122."
+  },
+  {
+    "id": "q-015",
+    "question": "(3√5 × 4√7) × (5√5 × 3√7) = 6x + (18)³. Find x.",
+    "options": ["62", "66", "70", "74", "78"],
+    "answer": 4,
+    "explanation": "Multiply coefficients: 3×4×5×3 = 180. Multiply radicals: (√5·√5)·(√7·√7) = 5×7 = 35. LHS = 180×35 = 6300. (18)³ = 5832. So 6x + 5832 = 6300 ⇒ 6x = 468 ⇒ x = 78."
+  },
+  {
+    "id": "q-016",
+    "question": "14.28% of 11⅟9% of 8⅓% of 11340 = ³√13824 − √x. Find x.",
+    "options": ["81", "100", "121", "144", "169"],
+    "answer": 0,
+    "explanation": "Interpret percentages: 14.28% = 1/7, 11 1/9% = 100/9% = 1/9, 8 1/3% = 25/3% = 1/12. So left = (1/7)×(1/9)×(1/12)×11340 = 11340/(7×9×12) = 11340/756 = 15. ³√13824 = 24 (since 24³ = 13824). So 24 − √x = 15 ⇒ √x = 9 ⇒ x = 81."
+  },
+        
+        
+        {
+"id": "q-017",
+"question": "I. 8x² − 78x + 169 = 0\nII. y² − 14.5y + 52 = 0\n\nCompare x and y.",
+"options": ["x > y", "x < y", "x ≥ y", "x ≤ y", "x = y or relation can't be established"],
+"answer": 3,
+"explanation": "Solve I: 8x² −78x +169 =0 → roots x = 6.5 and x = 3.25 (check). Solve II: y² −14.5y +52 =0 → roots y = 6.5 and y = 8. Sort ascending: x → (3.25, 6.5), y → (6.5, 8). Compare termwise: 3.25 ≤ 6.5 and 6.5 ≤ 8, so every x-root is ≤ the corresponding y-root. Hence x ≤ y."
+},
+{
+"id": "q-018",
+"question": "I. 3x² + 21x + 63 = 48x + 3\nII. 2y² + 36y − 50 = 38y + 10\n\nCompare x and y.",
+"options": ["x > y", "x < y", "x ≥ y", "x ≤ y", "x = y or relation can't be established"],
+"answer": 4,
+"explanation": "Rearrange I: 3x² +21x +63 −48x −3 =0 → 3x² −27x +60 =0 → x-roots = 5 and 4. (Sorted: 4,5.) Rearrange II: 2y² +36y −50 −38y −10 =0 → 2y² −2y −60 =0 → y² −y −30 =0 → y-roots = 6 and −5. (Sorted: −5,6.) Compare termwise: 4 > −5 but 5 < 6 → one greater, one smaller → no consistent relation can be established. Hence relation can't be established."
+},
+{
+"id": "q-019",
+"question": "I. x² − 26x + 168 = 0\nII. y² − 17.5y + 66 = 0\n\nCompare x and y.",
+"options": ["x > y", "x < y", "x ≥ y", "x ≤ y", "x = y or relation can't be established"],
+"answer": 2,
+"explanation": "Solve I: x² −26x +168 =0 → factors give x = 12 and x = 14. (Sorted: 12,14.) Solve II: y² −17.5y +66 =0 → roots y = 12 and y = 5.5. (Sorted: 5.5,12.) Compare termwise: 12 ≥ 5.5 and 14 ≥ 12, so every x-root ≥ corresponding y-root. Hence x ≥ y."
+},
+{
+"id": "q-020",
+"question": "I. 3x² − 14x − 69 = 0\nII. y² − 24√3 y + 429 = 0\n\nCompare x and y.",
+"options": ["x > y", "x < y", "x ≥ y", "x ≤ y", "x = y or relation can't be established"],
+"answer": 1,
+"explanation": "Solve I: 3x² −14x −69 =0 → roots approximately x = -3 and x = 7.6. (Sorted: -3,7.6.) Solve II: y² −24√3 y +429 =0. Note 24√3 ≈ 41.569, and roots given are y = 13√3 ≈ 22.516 and y = 11√3 ≈ 19.053 (sorted: 19.053,22.516). Compare termwise: -3 < 19.053 and 7.6 < 22.516 → both x-roots < corresponding y-roots. Hence x < y."
+},
+{
+"id": "q-021",
+"question": "I. x² + 11x + 29.25 = 0\nII. 5y² − 87y + 378 = 0\n\nCompare x and y.",
+"options": ["x > y", "x < y", "x ≥ y", "x ≤ y", "x = y or relation can't be established"],
+"answer": 1,
+"explanation": "Solve I: x² +11x +29.25 =0 → roots approximately x = -4.5 and x = -6.5. (Sorted: -6.5,-4.5.) Solve II: 5y² −87y +378 =0 → divide by 5 or solve: roots approximately y = 9 and y = 8.4. (Sorted: 8.4,9.) Compare termwise: -6.5 < 8.4 and -4.5 < 9 → both x-roots < corresponding y-roots. Hence x < y."
+},
+
+  {
+    "id": "q-022",
+    "question": "Find the wrong number in the series:\n3092, 2229, 1815, 1625, 1543, 1502, 1475",
+    "options": ["1475", "3092", "1815", "1543", "None of these"],
+    "answer": 2,
+    "explanation": "Pattern check:\nDifferences → -863, -414, -190, -82, -41, -27.\nSecond-level differences are not consistent, but expected pattern should reduce approximately as -446, -230, -105, -41, -14.\nThe inconsistency occurs at 1815 → breaking smooth reduction. Hence 1815 is the wrong number."
+  },
+  {
+    "id": "q-023",
+    "question": "Find the wrong number in the series:\n105, 126, 155, 177, 207, 240",
+    "options": ["155", "105", "240", "177", "None of these"],
+    "answer": 0,
+    "explanation": "Pattern: +21, +24, +27, +30, +33 → differences increase by +3 each time.\nCheck: 105→126 (+21), 126→155 (+29) (should be +24), hence 155 breaks the pattern. Correct term should be 150. So 155 is wrong."
+  },
+  {
+    "id": "q-024",
+    "question": "Find the wrong number in the series:\n3, 8, 18, 38, 78, 160",
+    "options": ["78", "160", "18", "8", "None of these"],
+    "answer": 1,
+    "explanation": "Pattern: ×2 + 2 repeatedly.\n3×2+2=8, 8×2+2=18, 18×2+2=38, 38×2+2=78, 78×2+2=158. Given term is 160 → wrong. Hence 160 is the incorrect number."
+  },
+  {
+    "id": "q-025",
+    "question": "Find the wrong number in the series:\n80, 222, 322, 443, 564, 685",
+    "options": ["564", "685", "222", "80", "None of these"],
+    "answer": 2,
+    "explanation": "Pattern: Each term increases by +121.\n80+121=201, +121=322, +121=443, etc. Given 222 should be 201. Thus 222 is wrong."
+  },
+  {
+    "id": "q-026",
+    "question": "Find the wrong number in the series:\n510, 507, 499, 472, 408, 283",
+    "options": ["507", "408", "283", "510", "None of these"],
+    "answer": 3,
+    "explanation": "Pattern: -1³, -2³, -3³, -4³, -5³.\n510−1=509, 509−8=501, 501−27=474, 474−64=410, 410−125=285.\nGiven first term 510 does not fit → should start at 509 for correct pattern. Hence 510 is wrong."
+  },
+
+
+  {
+    "id": "q-027",
+    "question": "?, 120, 40, 140, 35, 157.5 — Find the missing number in the series.",
+    "options": ["96", "36", "48", "64", "80"],
+    "answer": 2,
+    "explanation": "Pattern: ×2.5, ÷3, ×3.5, ÷4, ×4.5. Let the missing first term be a. a × 2.5 = 120 ⇒ a = 48. Hence, the missing number is 48."
+  },
+  {
+    "id": "q-028",
+    "question": "483, 492, 514, ?, 629, 738 — Find the missing number in the series.",
+    "options": ["577", "587", "597", "527", "557"],
+    "answer": 4,
+    "explanation": "Differences follow the pattern: (4²−7)=9, (6²−14)=22, (8²−21)=43, (10²−28)=72, (12²−35)=109. So missing difference = 43 → missing term = 514 + 43 = 557."
+  },
+  {
+    "id": "q-029",
+    "question": "513, 612, ?, 1110, 1509, 2008 — Find the missing number in the series.",
+    "options": ["861", "811", "951", "901", "881"],
+    "answer": 1,
+    "explanation": "Increments: +99, +199, +299, +399, +499. So 513+99=612, 612+199=811, 811+299=1110. Hence missing term = 811."
+  },
+  {
+    "id": "q-030",
+    "question": "697, ?, 775, 918, 1173, 1572 — Find the missing number in the series.",
+    "options": ["732", "740", "708", "712", "728"],
+    "answer": 3,
+    "explanation": "Pattern: Add successive products (3×5)=15, (7×9)=63, (11×13)=143, (15×17)=255, (19×21)=399. So 697+15=712. Hence missing term = 712."
+  },
+  {
+    "id": "q-031",
+    "question": "891, 1081, 853, 1119, 815, ? — Find the missing number in the series.",
+    "options": ["1157", "1137", "1117", "1217", "1187"],
+    "answer": 0,
+    "explanation": "Alternate difference pattern: +190, −228, +266, −304, +342. So 815 + 342 = 1157. Hence missing term = 1157."
+  },
+
+
+
+        
+        
+      ],
+      
+      
+  "2": [
+
+  ],
+  "3": [
+
+  ],
+  "4": [
+
+  ],
+  "5": [
+
+  ],
+  "6": [
+
+  ],
+  "7": [
+
+  ],
+  "8": [
+
+  ],
+  "9": [
+
+  ],
+  "10": [
+
+  ],
+  "11": [
+
+  ],
+  "12": [
+
+  ],
+  "13": [
+
+  ],
+  "14": [
+
+  ],
+  "15": [
+
+  ],
+  "16": [
+
+  ],
+  "17": [
+
+  ],
+  "18": [
+
+  ],
+  "19": [
+
+  ],
+  "20": [
+
+  ],
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      'Next Coming Soon': [
+        {
+          "id": "gk-his-001",
+          "question": "Who was the first Mughal Emperor of India?",
+          "options": ["Akbar", "Babar", "Humayun", "Aurangzeb"],
+          "answer": 1,
+          "explanation": "Babar founded the Mughal Empire in India in 1526."
+        }
+      ]
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    }
+  },
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   'Quant': {
     topics: {
       
