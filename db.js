@@ -2,6 +2,326 @@ const DB = {
   
    'Checklist Reasoning': {
     topics: {
+      
+      
+      "395": [
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        ],
+      
+      
+      "394": [
+        
+        
+        
+        
+  {
+    "id": "q-001",
+    "question": "465, 653, 783, 587, 869\nIf all the numbers are arranged in ascending order from left to right, then what will be the sum of the first number and the second number from the left end?",
+    "options": ["1120", "1059", "950", "1052", "None of these"],
+    "answer": 3,
+    "explanation": "Ascending order: 465, 587, 653, 783, 869. Sum of the first two = 465 + 587 = 1052."
+  },
+  {
+    "id": "q-002",
+    "question": "465, 653, 783, 587, 869\nIf the positions of the second and third digits of each of the numbers are interchanged, then what will be the difference between the number which is second from the left end and second from the right end?",
+    "options": ["57", "59", "51", "37", "None of these"],
+    "answer": 0,
+    "explanation": "After interchanging 2nd and 3rd digits: 456, 635, 738, 578, 896. Second from left = 578, second from right = 738. Difference = 738 − 681 = 57."
+  },
+  {
+    "id": "q-003",
+    "question": "465, 653, 783, 587, 869\nIf all the numbers are arranged in descending order from left to right, then what will be the sum of the square of the first and last digits of the number which is second from the right end?",
+    "options": ["81", "74", "83", "97", "71"],
+    "answer": 1,
+    "explanation": "Descending order: 869, 783, 653, 587, 465. Second from right = 587. Square of first digit = 5² = 25, last digit = 7² = 49. Sum = 25 + 49 = 74."
+  },
+  {
+    "id": "q-004",
+    "question": "465, 653, 783, 587, 869\nIf the positions of the first and third digits of each number are interchanged, what will be the difference between the highest and lowest numbers thus formed?",
+    "options": ["631", "626", "620", "618", "612"],
+    "answer": 4,
+    "explanation": "After interchanging 1st and 3rd digits: 564, 356, 387, 785, 968. Highest = 968, Lowest = 356. Difference = 968 − 356 = 612."
+  },
+  {
+    "id": "q-005",
+    "question": "Statements:\nN ≤ G < V > Q\nS ≥ P > Q > L\nZ < I = S\nConclusions:\nI. I > L\nII. G < P",
+    "options": ["Only conclusion I follows", "Only conclusion II follows", "Either I or II follows", "Neither I nor II follows", "Both I and II follow"],
+    "answer": 0,
+    "explanation": "From the statements, I > L is true; G < P cannot be concluded. Therefore, only conclusion I follows."
+  },
+  {
+    "id": "q-006",
+    "question": "Statements:\nM < V ≤ P < O\nY > X ≥ O\nX > R ≥ E > Q\nConclusions:\nI. V ≤ X\nII. E < Y",
+    "options": ["Only conclusion I follows", "Only conclusion II follows", "Either I or II follows", "Neither I nor II follows", "Both I and II follow"],
+    "answer": 1,
+    "explanation": "From X ≥ O > P ≥ V ⇒ X > V, so I does not follow. E < Y is true since Y > X > R ≥ E. Hence, only II follows."
+  },
+  {
+    "id": "q-007",
+    "question": "Statements:\nM > C ≥ D ≥ P\nI ≤ L ≤ O = P\nI ≥ Q = T\nConclusions:\nI. C > Q\nII. T = C",
+    "options": ["Only conclusion I follows", "Only conclusion II follows", "Either I or II follows", "Neither I nor II follows", "Both I and II follow"],
+    "answer": 2,
+    "explanation": "C ≥ D ≥ P = O ≥ L ≥ I ≥ Q = T. Either C > Q or T = C can be true. Hence, either I or II follows."
+  },
+  {
+    "id": "q-008",
+    "question": "Statements:\nB > K = A ≤ L < Y\nA ≥ P > O ≤ Z\nConclusions:\nI. A ≤ Y\nII. O > B\nIII. B < Y",
+    "options": ["Only conclusion I follows", "Only conclusion II follows", "Only conclusion III follows", "None follows", "All follow"],
+    "answer": 3,
+    "explanation": "From given relations, A ≤ Y is true but not definite; O > B is false; B < Y not certain. Hence, none follows."
+  },
+  {
+    "id": "q-009",
+    "question": "Statements:\nA < Y ≥ J\nV < Y ≥ C\nC < R\nConclusions:\nI. A < R\nII. R > Y\nIII. C < J",
+    "options": ["Only conclusion I follows", "Only conclusion II follows", "Only conclusion III follows", "None follows", "All are false"],
+    "answer": 4,
+    "explanation": "From relations, none of the conclusions follow. All are false."
+  },
+  {
+    "id": "q-010",
+    "question": "In a coded language:\n'Birds are flying' = 'zim tar plu'\n'They see birds' = 'lex kim zim'\n'We are running' = 'rog mos tar'\n'We all see hope' = 'mos lex lin jom'\nWhat is the code for 'we are flying'?",
+    "options": ["plu kim rog", "plu zim tar", "tar mos plu", "plu tar mos", "tar plu rog"],
+    "answer": 2,
+    "explanation": "'We' = mos, 'are' = tar, 'flying' = plu. Hence, 'we are flying' = tar mos plu."
+  },
+  {
+    "id": "q-011",
+    "question": "In a coded language:\n'Birds are flying' = 'zim tar plu'\n'They see birds' = 'lex kim zim'\n'We are running' = 'rog mos tar'\n'We all see hope' = 'mos lex lin jom'\nWhat does the possible code 'tar lin' stand for?",
+    "options": ["Are hope", "All hope", "See running", "Birds hope", "Either (a) or (b)"],
+    "answer": 0,
+    "explanation": "'tar' = are, 'lin' = hope. Hence, 'tar lin' = are hope."
+  },
+  {
+    "id": "q-012",
+    "question": "In a coded language:\n'Birds are flying' = 'zim tar plu'\n'They see birds' = 'lex kim zim'\n'We are running' = 'rog mos tar'\n'We all see hope' = 'mos lex lin jom'\nWhat is the possible code for 'flying high'?",
+    "options": ["plu zim", "zim rog", "plu lin", "tar plu", "plu tek"],
+    "answer": 4,
+    "explanation": "'Flying' = plu. 'High' is unknown, so assign a new code 'tek'. Hence, 'flying high' = plu tek."
+  },
+  {
+    "id": "q-013",
+    "question": "In a coded language:\n'Birds are flying' = 'zim tar plu'\n'They see birds' = 'lex kim zim'\n'We are running' = 'rog mos tar'\n'We all see hope' = 'mos lex lin jom'\nWhat does the code 'kim' stand for?",
+    "options": ["They", "Hope", "All", "See", "Either (a) or (d)"],
+    "answer": 0,
+    "explanation": "In 'They see birds' = 'lex kim zim', 'They' = kim, 'see' = lex, 'birds' = zim. Hence, 'kim' = they."
+  },
+  {
+    "id": "q-014",
+    "question": "In a coded language:\n'Birds are flying' = 'zim tar plu'\n'They see birds' = 'lex kim zim'\n'We are running' = 'rog mos tar'\n'We all see hope' = 'mos lex lin jom'\nWhat is the possible code for 'they see hope'?",
+    "options": ["kim lin plu", "kim lin lex", "lex lin rog", "kim zim lex", "Either (b) or (d)"],
+    "answer": 1,
+    "explanation": "'They' = kim, 'see' = lex, 'hope' = lin. Hence, 'they see hope' = kim lin lex."
+  },
+  {
+    "id": "q-015",
+    "question": "In a family of 7 members: A, B, C, D, E, F, and G.\nC is the grandfather of F.\nE is the brother-in-law of B, who is the husband of A.\nA has no children.\nG is the daughter of D.\nA is not the daughter of C.\nC has two children: one son and one daughter.\nG and F are siblings and E is the father of F.\nThere are 4 males and 3 females.\nHow is A related to D?",
+    "options": ["Sister", "Brother", "Sister-in-law", "Daughter", "Wife"],
+    "answer": 2,
+    "explanation": "B is A’s husband, E is B’s brother-in-law, D is E’s wife, so A is D’s sister-in-law."
+  },
+  {
+    "id": "q-016",
+    "question": "In a family of 7 members: A, B, C, D, E, F, and G.\nC is the grandfather of F.\nE is the brother-in-law of B, who is the husband of A.\nA has no children.\nG is the daughter of D.\nA is not the daughter of C.\nC has two children: one son and one daughter.\nG and F are siblings and E is the father of F.\nThere are 4 males and 3 females.\nHow is B related to F?",
+    "options": ["Uncle", "Father", "Aunt", "Sister", "None of these"],
+    "answer": 0,
+    "explanation": "E is F’s father, and E is B’s brother-in-law. Hence, B is F’s uncle."
+  },
+  {
+    "id": "q-017",
+    "question": "In a family of 7 members: A, B, C, D, E, F, and G.\nC is the grandfather of F.\nE is the brother-in-law of B, who is the husband of A.\nA has no children.\nG is the daughter of D.\nA is not the daughter of C.\nC has two children: one son and one daughter.\nG and F are siblings and E is the father of F.\nThere are 4 males and 3 females.\nWho is the daughter-in-law of C?",
+    "options": ["A", "B", "D", "F", "G"],
+    "answer": 0,
+    "explanation": "C’s son is B. B’s wife is A. Hence, A is the daughter-in-law of C."
+  },
+  {
+    "id": "q-018",
+    "question": "Mr. Shankar starts walking from point P towards north for 12m to reach point G, then turns right and walks 8m to reach point S. Then he turns left and walks 7m to reach point M, then turns left and walks 16m to reach point Q, then turns left again and walks 13m to reach point R, and finally turns left and walks 12m to reach point V and stops.\nWhat is the shortest distance between point G and point R?",
+    "options": ["14m", "12m", "10m", "15m", "Can’t be determined"],
+    "answer": 2,
+    "explanation": "By tracing the path, coordinates show G (0,12) and R (−5,2). Distance = √((5)² + (10)²) = 10m."
+  },
+  {
+    "id": "q-019",
+    "question": "Mr. Shankar starts walking from point P towards north for 12m to reach point G, then turns right and walks 8m to reach point S. Then he turns left and walks 7m to reach point M, then turns left and walks 16m to reach point Q, then turns left again and walks 13m to reach point R, and finally turns left and walks 12m to reach point V and stops.\nIf point T is exactly in the middle of point G and point P, then what is the direction of point T with respect to point S?",
+    "options": ["East", "North-West", "North-East", "South", "South-West"],
+    "answer": 4,
+    "explanation": "T is midpoint of G and P, hence lies south of G and west of S. Therefore, direction of T from S is South-West."
+  },
+  {
+    "id": "q-020",
+    "question": "Mr. Shankar starts walking from point P towards north for 12m to reach point G, then turns right and walks 8m to reach point S. Then he turns left and walks 7m to reach point M, then turns left and walks 16m to reach point Q, then turns left again and walks 13m to reach point R, and finally turns left and walks 12m to reach point V and stops.\nFour of the following five are alike in a certain way and hence form a group. Which one does not belong to the group?",
+    "options": ["MG", "SR", "VP", "MR", "QV"],
+    "answer": 4,
+    "explanation": "In all pairs except QV, both points are adjacent in the path; QV are not directly connected. Hence, QV does not belong to the group."
+  },
+        
+        
+        
+        
+        
+        
+        
+        // puzzle remaining
+        
+        
+        
+        ],
+      
+      
+      "393": [
+        
+        
+        
+        
+        
+        
+        
+  {
+    "id": "q-001",
+    "question": "Statements:\nF < G = D\nM ≤ J < D\nX > M ≥ Y\nConclusions:\n(I) J > Y\n(II) J = Y",
+    "options": ["Only conclusion I follows", "Only conclusion II follows", "Either conclusion I or II follows", "Neither conclusion I nor II follows", "Both conclusions I and II follow"],
+    "answer": 2,
+    "explanation": "From M ≤ J < D = G > F and X > M ≥ Y, J and Y cannot be compared directly. Hence either J > Y or J = Y follows."
+  },
+  {
+    "id": "q-002",
+    "question": "Statements:\nO ≥ L > K\nQ = N ≥ L\nR ≤ M < N\nConclusions:\n(I) Q > K\n(II) O > Q",
+    "options": ["Only conclusion I follows", "Only conclusion II follows", "Either I or II follows", "Neither I nor II follows", "Both I and II follow"],
+    "answer": 0,
+    "explanation": "From Q = N ≥ L > K, Q > K is true. Relation between O and Q cannot be established."
+  },
+  {
+    "id": "q-003",
+    "question": "Statements:\nN > B > S\nH = S < T\nG ≤ S ≤ D\nR = D > K\nConclusions:\n(I) N > G\n(II) R = G\n(III) R > G",
+    "options": ["Only conclusion I follows", "Only conclusion II follows", "Only conclusion III follows", "Either conclusion II or III follows", "Neither follows"],
+    "answer": 3,
+    "explanation": "From N > B > S ≥ G and R = D ≥ S ≥ G, either R = G or R > G can be true."
+  },
+  {
+    "id": "q-004",
+    "question": "Statements:\nK = P ≤ Q\nU > Q > Y\nZ ≤ Y = X\nT > Z > S\nConclusions:\n(I) U > T\n(II) K < Z\n(III) X > S",
+    "options": ["Only conclusion I follows", "Only conclusion II follows", "Only conclusion III follows", "Only I and II follow", "None follow"],
+    "answer": 2,
+    "explanation": "From X = Y > Z > S, X > S follows. Other relations cannot be established."
+  },
+  {
+    "id": "q-005",
+    "question": "Statements:\nC ≤ B < D\nN = P > B\nW ≥ P > J\nJ < L = W\nConclusions:\n(I) C < W\n(II) B = L\n(III) J > D",
+    "options": ["Only conclusion I follows", "Only conclusion II follows", "Only conclusion III follows", "Both I and II follow", "None follow"],
+    "answer": 0,
+    "explanation": "From C ≤ B < D < P ≤ W, we get C < W. Other conclusions do not hold."
+  },
+  {
+    "id": "q-006",
+    "question": "Statements:\nAll desks are tables.\nOnly a few desks are songs.\nNo song is a singer.\nConclusions:\n(I) All tables can never be singers.\n(II) Some singers are desks.",
+    "options": ["Only conclusion I follows", "Only conclusion II follows", "Either I or II follows", "Neither I nor II follows", "Both I and II follow"],
+    "answer": 0,
+    "explanation": "Desks are partly songs and no song is singer, so all tables can never be singers. II does not follow."
+  },
+  {
+    "id": "q-007",
+    "question": "Statements:\nAll pens are papers.\nOnly a few papers are books.\nNo book is a notebook.\nConclusions:\n(I) Some books are pens.\n(II) Some notebooks are papers.\n(III) Some pens are not books.",
+    "options": ["Only I follows", "Only II follows", "Only III follows", "Only I and III follow", "None follow"],
+    "answer": 2,
+    "explanation": "All pens are papers and only a few papers are books, so some pens are not books. I and II do not follow."
+  },
+  {
+    "id": "q-008",
+    "question": "Statements:\nOnly a few fruits are vegetables.\nAll vegetables are plants.\nNo plant is a tree.\nConclusions:\n(I) All fruits are plants.\n(II) Some vegetables are not trees.\n(III) Some plants are not fruits.",
+    "options": ["Only I follows", "Only II follows", "Only III follows", "Only II and III follow", "None follow"],
+    "answer": 3,
+    "explanation": "All vegetables are plants and only a few fruits are vegetables, so II and III follow."
+  },
+  {
+    "id": "q-009",
+    "question": "Statements:\nAll laptops are devices.\nOnly a few devices are phones.\nNo phone is a tablet.\nConclusions:\n(I) Some phones are devices.\n(II) No tablet is a device.\n(III) All laptops can never be tablets.",
+    "options": ["Only I follows", "Only II follows", "Only III follows", "Only I and III follow", "None follow"],
+    "answer": 3,
+    "explanation": "I follows as some devices are phones; III follows because laptops are devices and no phone is a tablet."
+  },
+  {
+    "id": "q-010",
+    "question": "Statements:\nOnly a few bottles are glass.\nAll plastics are bottles.\nAll glass are windows.\nConclusions:\n(I) All bottles can be glass.\n(II) Some bottles are windows.",
+    "options": ["Only I follows", "Only II follows", "Both I and II follow", "Either I or II follows", "None follow"],
+    "answer": 1,
+    "explanation": "Since some bottles are glass and all glass are windows, some bottles are windows. I does not necessarily follow."
+  },
+  {
+    "id": "q-011",
+    "question": "Numbers:\n2547, 6389, 9724, 3156, 7483\nIf in each number all composite digits are changed to their just previous prime number and all prime digits are changed to their just next composite number, which of the following will be the second digit from the right of the largest number?",
+    "options": ["5", "4", "7", "6", "3"],
+    "answer": 2,
+    "explanation": "After transformation, 9724 becomes the largest number, and its second digit from the right is 7."
+  },
+  {
+    "id": "q-012",
+    "question": "If the first and third digits of each number are interchanged, and the numbers are arranged in ascending order, which will be the second number from the right end?\nNumbers:\n2547, 6389, 9724, 3156, 7483",
+    "options": ["2547", "7483", "3156", "6389", "9724"],
+    "answer": 1,
+    "explanation": "After interchanging and arranging, 7483 becomes the second number from the right."
+  },
+  {
+    "id": "q-013",
+    "question": "If all the digits are arranged in ascending order within each of the numbers, how many numbers will have all digits changed from their original positions?\nNumbers:\n2547, 6389, 9724, 3156, 7483",
+    "options": ["Three", "One", "Two", "Four", "None"],
+    "answer": 1,
+    "explanation": "Only one number has all digits changed from their original positions after internal sorting."
+  },
+  {
+    "id": "q-014",
+    "question": "If all the digits within a number are added, which number will give the highest value?\nNumbers:\n2547, 6389, 9724, 3156, 7483",
+    "options": ["7483", "9724", "3156", "6389", "2547"],
+    "answer": 3,
+    "explanation": "The sum of digits is highest for 6389 (6+3+8+9 = 26)."
+  },
+  {
+    "id": "q-015",
+    "question": "If digits of all numbers are arranged in descending order within the number, and the numbers thus formed are arranged in descending order, what is the sum of the second digit (from left) of the third number from the left and the third digit (from left) of the fourth number from the right?\nNumbers:\n2547, 6389, 9724, 3156, 7483",
+    "options": ["12", "10", "11", "14", "9"],
+    "answer": 2,
+    "explanation": "After reordering and arranging, the required digits add up to 11."
+  },
+  {
+    "id": "q-016",
+    "question": "If in the word 'SIBILANT', the 3rd, 5th, and 8th letters are changed to their reverse letters, and the 2nd, 4th, and 7th letters are changed to their second next letters, how many pairs of letters have the same number of letters between them as in the English alphabet?",
+    "options": ["Three", "None", "Two", "One", "More than three"],
+    "answer": 0,
+    "explanation": "After applying the given transformations, three such letter pairs exist."
+  },
+  {
+    "id": "q-017",
+    "question": "How many digits in the number ‘53187631’ remain in the same position when arranged in descending order from right to left?",
+    "options": ["One", "Two", "Three", "Four", "None"],
+    "answer": 0,
+    "explanation": "Only the position of digit 6 remains unchanged after rearrangement."
+  },
+  {
+  "id": "q-018",
+  "question": "How is B related to D? B is the brother of A. D is the niece of E. C is A’s paternal uncle and F’s brother.",
+  "options": ["If statement I alone is sufficient", "If statement II alone is sufficient", "If either I or II alone is sufficient", "If both statements together are necessary", "If both statements together are not sufficient"],
+  "answer": 4,
+  "explanation": "Even after combining both pieces of information, the relation between B and D cannot be determined."
+},
+//puzzle remaining 
+
+        
+        
+        
+        
+        
+        
+        
+        ],
+      
       '392':  [
   {
     "id": "q-001",
