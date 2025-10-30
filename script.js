@@ -30,14 +30,7 @@ let currentQuiz = {
 // Fisher-Yates Shuffle with exception for certain topics
 function shuffleArray(array, subject = "", topics = []) {
   // Topics that should NOT be shuffled
-  const noShuffleTopics = ["Coding Decoding", "Blood Relation", "Direction and Distance", "Order and Ranking","420","419","418","417","416","415","414","413","412","411",
-"410","409","408","407","406","405","404","403","402","401",
-"400","399","398","397","396","395","394","393","392","391",
-"390","389","388","387","386","385","384","383","382","381",
-"380","379","378","377","376","375","374","373","372","371",
-"370","369","368","367","366","365","364","363","362","361",
-"360","359","358","357","356","355","354","353","352","351",
-"350"
+  const noShuffleTopics = ["Coding Decoding", "Blood Relation", "Direction and Distance", "Order and Ranking","392","391","390","389"
 ];
   if (topics.some(t => noShuffleTopics.includes(t))) {
     return [...array]; // return as-is without shuffling
@@ -626,6 +619,7 @@ document.addEventListener("visibilitychange", () => {
 // =======================================
 
 renderHome();
+
 
 
 
