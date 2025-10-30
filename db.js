@@ -9,7 +9,155 @@ const DB = {
         
         
         
-        
+        {
+"id": "q-001",
+"question": "BIRD LAMP GRIN TEAR JUMP\nIf the positions of the first and the third alphabets of each word are changed to the next letter, then how many words will be there with more than one vowel?",
+"options": ["Three", "None", "Two", "Four", "One"],
+"answer": 4,
+"explanation": "After replacing the 1st and 3rd letters with their next alphabet: CISD, MANP, HRJN, UEBR, KUNP. Only 'KUNP' has more than one vowel. Hence, one word."
+},
+{
+"id": "q-002",
+"question": "BIRD LAMP GRIN TEAR JUMP\nIf the first alphabet of each of the words is changed to the previous alphabet in the English alphabetical series, which of the following will form a meaningful English word?",
+"options": ["BIRD", "LAMP", "GRIN", "TEAR", "JUMP"],
+"answer": 3,
+"explanation": "After replacing the first letter of each word with the previous alphabet: AIRD, KAMP, FRIN, SEAR, IUMP. Only 'SEAR' is a meaningful English word."
+},
+{
+"id": "q-003",
+"question": "BIRD LAMP GRIN TEAR JUMP\nIf the given words are arranged in the order as they would appear in a dictionary from right to left, which of the following will be fourth from the left?",
+"options": ["GRIN", "TEAR", "BOX", "LAMP", "JUMP"],
+"answer": 0,
+"explanation": "In dictionary order from right to left: TEAR, LAMP, JUMP, GRIN, BIRD. The fourth from the left is 'GRIN'."
+},
+{
+"id": "q-004",
+"question": "BIRD LAMP GRIN TEAR JUMP\nHow many letters are there in the English alphabetical series between the second letter from the left of the word which is fourth from the right and the fourth letter from right of the word which is third from the left of the given words?",
+"options": ["Sixteen", "Five", "Twelve", "Ten", "Four"],
+"answer": 1,
+"explanation": "Fourth from right word = GRIN → second letter = R. Third from left word = GRIN → fourth letter = N. Between R and N there are 5 letters. Hence, answer is Five."
+},
+{
+"id": "q-005",
+"question": "BIRD LAMP GRIN TEAR JUMP\nIf in each of the given words each consonant is changed to the previous letter and each vowel is changed to the next letter in the English alphabetical series, in how many words thus formed will no vowels appear?",
+"options": ["Four", "One", "Three", "Two", "None"],
+"answer": 3,
+"explanation": "After changes: AJQC, KBLO, FQJM, SFBQ, IVLO. 'AJQC' and 'FQJM' have no vowels. Hence, two words."
+},
+{
+"id": "q-006",
+"question": "Statements:\nW ≤ E ≥ U > V\nS > C ≥ Y ≥ E\nConclusions:\nI) C ≥ U\nII) S > V",
+"options": ["Only I follows", "Only II follows", "Both I and II follow", "Neither follows", "None of these"],
+"answer": 2,
+"explanation": "From the statements, C ≥ Y ≥ E ≥ U > V and S > C. Both C ≥ U and S > V are true. Hence, both conclusions follow."
+},
+{
+"id": "q-007",
+"question": "Statements:\nR ≥ R\nL > Q\nConclusions:\nI) L > Q",
+"options": ["Only I follows", "Only II follows", "Both follow", "Neither follows", "None of these"],
+"answer": 0,
+"explanation": "Given statement L > Q directly satisfies conclusion I. Hence, only conclusion I follows."
+},
+{
+"id": "q-008",
+"question": "Statements:\nL > Y ≥ M > Q\nS, I ≤ O\nConclusions:\nI) Both I and II are true.",
+"options": ["Only I follows", "Only II follows", "Both I and II follow", "Neither follows", "None of these"],
+"answer": 2,
+"explanation": "From the given statements, both conclusions I and II hold true. Hence, both follow."
+},
+{
+"id": "q-009",
+"question": "A family of 10 members over three generations goes for a family get-together. Each child has both parents alive. I is the son-in-law of T and the father of G. K is the father of R and has only one son. Z is the daughter-in-law of K. V is not I’s brother-in-law. T is the mother of X who has two children. V is the uncle of E. X is the aunt of C, who is the daughter of Z.\nWhich of the following pairs denotes the relationship of the father-daughter?",
+"options": ["I - G", "K - R", "R - C", "X - E", "None of these"],
+"answer": 2,
+"explanation": "From the relationships, R is the father of C. Hence, the correct pair is R - C."
+},
+{
+"id": "q-010",
+"question": "If E is the sister of G, then how many female members are there in the family?",
+"options": ["3", "4", "5", "Can't be determined", "None of these"],
+"answer": 3,
+"explanation": "From the family relations, it cannot be determined exactly how many are female as some genders are not specified. Hence, answer is 'Can't be determined'."
+},
+{
+"id": "q-011",
+"question": "How is E related to V?",
+"options": ["Son", "Niece", "Daughter", "Nephew", "Cannot be determined"],
+"answer": 4,
+"explanation": "Based on the relationships, gender and generational connection of E and V cannot be clearly established. Hence, 'Cannot be determined'."
+},
+{
+"id": "q-012",
+"question": "How many such pairs of letters are there in the word 'RESONANCE' each of which has as many letters between them as in the English alphabetical series (only in backward direction)?",
+"options": ["Five", "Two", "Four", "Three", "One"],
+"answer": 2,
+"explanation": "Pairs are R-O, S-N, N-E, A-C. Total four such pairs. Hence, answer is Four."
+},
+{
+"id": "q-013",
+"question": "If all the letters in the given word 'CONSPIRACY' that come after 'N' in the English alphabet are replaced with their corresponding reverse letters, how many vowels are there in the newly formed word?",
+"options": ["None", "One", "Four", "Three", "Two"],
+"answer": 3,
+"explanation": "After replacement: C L N H K I I A C B. Vowels: I, I, A → total 3 vowels. Hence, answer is Three."
+},
+{
+"id": "q-014",
+"question": "Point V is 40m west of point U, which is 10m west of point T. The distance between Y and Z is 20m. Point R is 30m west of point S. Point R is east of point M. Point P is 20m south of point R and 10m east of point N. The distance between Z and A is 30m where Z is south-west of V and A is east of Z. Point S is 30m north of point T. The distance between M and N is 20m. The distance between X and V is 10m. Point Y is 10m west of X and in north-west of V.\nPoint X is in which direction of point N?",
+"options": ["South-West", "North-East", "North", "West", "None of these"],
+"answer": 3,
+"explanation": "Based on the directions, X lies to the west of N. Hence, answer is West."
+},
+{
+"id": "q-015",
+"question": "Point V is 40m west of point U, which is 10m west of point T. Point R is 30m west of point S. Point P is 20m south of point R and 10m east of point N. Z is south-west of V, and A is east of Z.\nWhat is the shortest distance between the points R and A?",
+"options": ["30m", "50m", "40m", "35m", "Cannot be determined"],
+"answer": 2,
+"explanation": "From the relative placement of R and A, the distance comes out as 40m."
+},
+{
+"id": "q-016",
+"question": "Point P is 20m south of point R and 10m east of point N. Point S is 30m north of point T. The distance between M and N is 20m.\nWhat is the shortest distance between points P and T?",
+"options": ["15m", "10√10m", "30m", "20√5m", "Cannot be determined"],
+"answer": 1,
+"explanation": "By applying the Pythagoras theorem to the coordinates, shortest distance = 10√10m."
+},
+{
+"id": "q-017",
+"question": "Point Z is in which direction of point U?",
+"options": ["North", "West", "South-East", "South-West", "Cannot be determined"],
+"answer": 3,
+"explanation": "Z lies to the south-west of U as per the given directional data."
+},
+{
+"id": "q-018",
+"question": "Find the odd one.\n(A) Y, Z\n(B) T, S\n(C) A, R\n(D) M, A\n(E) X, V",
+"options": ["Y, Z", "T, S", "A, R", "M, A", "X, V"],
+"answer": 3,
+"explanation": "All other pairs have logical directional or relative connections except M, A. Hence, odd one is M, A."
+},
+{
+"id": "q-019",
+"question": "How many such pairs of letters are there in the word 'BEAUTIFUL' which have as many letters between them in the word as in the alphabetical series in both forward and backward direction?",
+"options": ["One", "Two", "Three", "Four", "Five"],
+"answer": 3,
+"explanation": "Pairs found: B-E, A-U, T-I, F-U. Total four pairs. Hence, answer is Four."
+},
+{
+"id": "q-020",
+"question": "In a family of six with three couples, N is married to Z, who is K's father-in-law. N has two children. K is B's sister-in-law, and B is N's daughter. M, who is not married to K, is D's brother-in-law.\nM is Z's __________.",
+"options": ["Father", "Son", "Father-in-law", "Son-in-law", "None of these"],
+"answer": 3,
+"explanation": "From the relationships, M is the son-in-law of Z."
+},
+{
+"id": "q-021",
+"question": "In a family of six with three couples, N is married to Z, who is K's father-in-law. N has two children. K is B's sister-in-law, and B is N's daughter. M, who is not married to K, is D's brother-in-law.\nFind the odd one out of the given options.",
+"options": ["N, Z", "M, K", "B, M", "D, K", "Both (b) and (c)"],
+"answer": 1,
+"explanation": "Among all pairs, 'M, K' stands as the odd one based on relationship structure."
+}
+
+// puzzle remaining
         
         
         
