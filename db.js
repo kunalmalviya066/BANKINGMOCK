@@ -1050,6 +1050,47 @@ const DB = {
     "answer": 0,
     "explanation": "Interpret percentages: 14.28% = 1/7, 11 1/9% = 100/9% = 1/9, 8 1/3% = 25/3% = 1/12. So left = (1/7)×(1/9)×(1/12)×11340 = 11340/(7×9×12) = 11340/756 = 15. ³√13824 = 24 (since 24³ = 13824). So 24 − √x = 15 ⇒ √x = 9 ⇒ x = 81."
   },
+    
+    
+    
+    
+  {
+    "id": "q-006",
+    "question": "Mixture A contains milk and water in the ratio 7:3 while mixture B contains milk and water in the ratio 5:9. In what ratio should mixture A be mixed with mixture B so that the ratio of milk to water in the resultant mixture becomes 13:7?",
+    "options": ["7:41", "28:11", "41:7", "11:28", "None of these"],
+    "answer": 2,
+    "explanation": "Let quantities taken be 70x of A and 70y of B (LCM trick). Milk in resultant = 49x + 25y, Water = 21x + 45y. Want (49x + 25y)/(21x + 45y) = 13/7. Cross-multiply: 7(49x+25y)=13(21x+45y) → 343x+175y=273x+585y → 70x=410y → x/y=410/70=41/7. So Mixture A : Mixture B = 41:7."
+  },
+  {
+    "id": "q-007",
+    "question": "Average age of a class is 21 years. If the ratio between number of boys and girls is 11:8 and average age of girls is 15.5 years, find the average age of boys.",
+    "options": ["23", "21", "25", "24", "None of these"],
+    "answer": 2,
+    "explanation": "Let total students = 11+8 = 19. Total age = 19 × 21 = 399. Total age of girls = 8 × 15.5 = 124. Therefore total age of boys = 399 - 124 = 275. Number of boys = 11 → average age of boys = 275/11 = 25 years."
+  },
+  {
+    "id": "q-008",
+    "question": "The ratio of present ages of Seema and Hema is 7:5. If Seema's age 9 years hence will be 120% more than Hema's age 5 years ago, find Hema's age 4 years ago.",
+    "options": ["30 years", "16 years", "21 years", "19 years", "None of these"],
+    "answer": 2,
+    "explanation": "Let Seema = 7x and Hema = 5x now. Condition: 7x + 9 = (1 + 120/100) × (5x - 5) = 2.2(5x - 5). So 7x + 9 = 11x - 11 → 4x = 20 → x = 5. Hema's current age = 5x = 25. Age 4 years ago = 25 - 4 = 21 years."
+  },
+  {
+    "id": "q-009",
+    "question": "A mixture contains (x + 75) liters milk and 240 liters water. When 180 liters of milk and (x - 85) liters of water are added, the ratio of milk to water becomes 5:4. Find the ratio of milk to water in the mixture which contains (x + 35) liters milk and (x - 35) liters water.",
+    "options": ["4:3", "7:5", "2:7", "3:8", "None of these"],
+    "answer": 0,
+    "explanation": "After addition milk = x+75+180 = x+255, water = 240 + (x-85) = x+155. Given (x+255)/(x+155)=5/4 → 4(x+255)=5(x+155) → 4x+1020=5x+775 → x=245. Then (x+35):(x-35) = (245+35):(245-35) = 280:210 = 4:3."
+  },
+  {
+    "id": "q-010",
+    "question": "Komal and Bhavisha started a business by investing Rs. 3900 and Rs. 2700 respectively. After 6 months, Komal increased her investment by 15% while Bhavisha decreased her investment by 10%. Find the ratio of profit shares of Komal and Bhavisha respectively at the end of the year.",
+    "options": ["407:45", "251:191", "559:342", "620:247", "None of these"],
+    "answer": 2,
+    "explanation": "Time-weighted capital for a year: For first 6 months use original investments, next 6 months use changed investments. Komal's effective capital = 3900×6 + (1.15×3900)×6 = 3900×6×(1+1.15) = 2.15×3900×6. Bhavisha's effective capital = 2700×6 + (0.9×2700)×6 = 1.9×2700×6. Ratio = (2.15×3900) : (1.9×2700) = 559 : 342."
+  },
+    
+    
         
         
         {
