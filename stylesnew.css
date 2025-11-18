@@ -1,0 +1,625 @@
+/* ============================================================
+   BankingPrep – Full Pink Theme + Unique Quiz UI (Final Build)
+   ============================================================ */
+
+/* ---------- Global Variables ---------- */
+:root {
+  --primary: #ff4f93;
+  --primary-dark: #e63f82;
+  --accent: #ffc7de;
+  --accent-light: #ffe8f2;
+  --bg: #fff6fb;
+
+  --text-dark: #2b2b2b;
+  --text-light: #666;
+
+  --white: #ffffff;
+
+  --radius: 14px;
+
+  --shadow-soft: 0 4px 14px rgba(0,0,0,0.06);
+  --shadow-hover: 0 8px 24px rgba(0,0,0,0.1);
+}
+
+/* ---------- Reset ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+html, body {
+  height: 100%;
+  background: var(--bg);
+  color: var(--text-dark);
+  line-height: 1.55;
+  scroll-behavior: smooth;
+}
+
+/* ============================================================
+   HEADER
+   ============================================================ */
+.app-header {
+  background: var(--primary);
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: var(--shadow-soft);
+}
+
+.logo h1 {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.nav-links {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.nav-btn {
+  background: transparent;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-btn:hover,
+.nav-btn.active {
+  background: var(--white);
+  color: var(--primary);
+  box-shadow: var(--shadow-soft);
+}
+
+/* ============================================================
+   MAIN CONTAINER
+   ============================================================ */
+.main-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 1.5rem;
+  animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ============================================================
+   GENERIC BUTTONS
+   ============================================================ */
+.home-btn {
+  background: var(--primary);
+  color: #fff;
+  padding: 0.8rem 1.8rem;
+  border: none;
+  border-radius: var(--radius);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: var(--shadow-soft);
+}
+
+.home-btn:hover:not(:disabled) {
+  background: var(--primary-dark);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-hover);
+}
+
+.home-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* ============================================================
+   HOME SECTION
+   ============================================================ */
+.home-section {
+  text-align: center;
+  background: var(--white);
+  padding: 2rem;
+  border-radius: 18px;
+  box-shadow: var(--shadow-soft);
+}
+
+.home-section h2 {
+  font-size: 2rem;
+  color: var(--primary);
+  margin-bottom: 0.8rem;
+  font-weight: 700;
+}
+
+.home-section p {
+  color: var(--text-light);
+  margin-bottom: 1.8rem;
+  font-size: 1.1rem;
+}
+
+.home-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+/* ============================================================
+   SUBJECT SECTION
+   ============================================================ */
+.subject-section,
+.mock-section {
+  background: var(--white);
+  padding: 2rem;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: var(--shadow-soft);
+}
+
+.subject-buttons {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.subj-btn {
+  background: var(--primary);
+  color: #fff;
+  padding: 0.9rem 1.7rem;
+  border-radius: 20px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.subj-btn:hover,
+.subj-btn.active {
+  background: var(--primary-dark);
+  transform: translateY(-3px);
+}
+
+/* ============================================================
+   TOPIC CONTAINER
+   ============================================================ */
+#topicContainer {
+  margin-top: 1.5rem;
+  background: var(--white);
+  border-radius: 18px;
+  padding: 1.6rem;
+  box-shadow: var(--shadow-soft);
+  animation: fadeIn 0.4s ease;
+}
+
+#topicContainer h3 {
+  color: var(--primary);
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.topic-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 0.9rem;
+}
+
+.topic-label {
+  background: var(--accent-light);
+  padding: 0.9rem;
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.topic-label:hover {
+  background: var(--accent);
+}
+
+.topicChk {
+  margin-right: 10px;
+  transform: scale(1.15);
+}
+
+/* ============================================================
+   UNIQUE QUIZ UI (MAIN CHANGE)
+   ============================================================ */
+
+/* ---------- Quiz Container ---------- */
+#quiz-container {
+  background: var(--white);
+  padding: 2rem;
+  border-radius: 18px;
+  border: 1px solid #ffd4e4;
+  margin-top: 1.4rem;
+  box-shadow: var(--shadow-soft);
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+/* ---------- Quiz Header ---------- */
+.quiz-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1.2rem;
+  background: #fff1f8;
+  border: 1px solid #ffd8ea;
+  border-radius: var(--radius);
+  box-shadow: 0 6px 16px rgba(255, 70, 135, 0.08);
+}
+
+#quiz-subject {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+#quiz-timer {
+  background: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius);
+  border: 1px solid #ffbad2;
+  color: #d23b75;
+  font-weight: 700;
+}
+
+/* ---------- Question Box ---------- */
+.question {
+  background: #fff8fc;
+  padding: 1.4rem 1rem;
+  border-radius: var(--radius);
+  font-size: 1.15rem;
+  font-weight: 600;
+  border: 1px solid #ffd6e7;
+  box-shadow: var(--shadow-soft);
+}
+
+/* ---------- Options (Card Layout) ---------- */
+.options {
+  list-style: none;
+  display: grid;
+  gap: 1rem;
+}
+
+.options li {
+  background: #fff;
+  padding: 1rem;
+  border-radius: var(--radius);
+  border: 1px solid #ffd1e3;
+  cursor: pointer;
+  transition: 0.25s;
+  box-shadow: 0 4px 16px rgba(255, 90, 146, 0.05);
+}
+
+.options li:hover {
+  background: #ffe8f2;
+  border-color: #ff8bb7;
+  transform: translateX(5px);
+}
+
+.options li.selected {
+  background: var(--primary);
+  color: #fff;
+  border-color: var(--primary-dark);
+  font-weight: 700;
+  transform: scale(1.02);
+  box-shadow: 0 6px 18px rgba(255, 79, 147, 0.2);
+}
+
+/* ---------- Quiz Controls ---------- */
+.quiz-controls {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.quiz-controls .home-btn {
+  flex: 1;
+  border-radius: var(--radius);
+}
+
+/* ---------- Question Palette ---------- */
+#palette {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #fff4fa;
+  border-radius: 18px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(38px, 1fr));
+  gap: 0.6rem;
+  border: 1px solid #ffe0ee;
+  box-shadow: var(--shadow-soft);
+}
+
+.q-num {
+  width: 42px;
+  height: 42px;
+  background: #ffe3ef;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.25s;
+  border: 1px solid transparent;
+}
+
+.q-num:hover {
+  transform: scale(1.13);
+  border-color: #ff92b8;
+}
+
+.q-num.current {
+  background: var(--primary);
+  color: #fff;
+  transform: scale(1.15);
+  box-shadow: 0 4px 14px rgba(255, 79, 147, 0.25);
+}
+
+.q-num.answered {
+  background: #41c66a;
+  color: #fff;
+}
+
+/* ============================================================
+   RESULTS + HISTORY (Pink Clean UI)
+   ============================================================ */
+.results,
+.history-card {
+  background: var(--white);
+  padding: 2rem;
+  border-radius: 18px;
+  margin: 1rem auto;
+  box-shadow: var(--shadow-soft);
+}
+
+.results h2 {
+  text-align: center;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.solution-item {
+  padding: 1.2rem;
+  border-radius: var(--radius);
+  margin-bottom: 1rem;
+  box-shadow: var(--shadow-soft);
+}
+
+.solution-item.correct {
+  background: #e8ffe9;
+  border-left: 6px solid #26c957;
+}
+
+.solution-item.wrong {
+  background: #ffe7ec;
+  border-left: 6px solid #ff3d6a;
+}
+
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+.app-footer {
+  background: var(--primary);
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+
+
+
+  .app-header {
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+
+  .quiz-header {
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+
+  .quiz-controls {
+    flex-direction: column;
+  }
+
+  .home-btn,
+  .subj-btn {
+    width: 100%;
+  }
+
+  #quiz-container,
+  .results,
+  .history-card {
+    padding: 1.2rem;
+  }
+  @media (max-width: 768px) {
+  .main-container {
+    grid-template-columns: 1fr;
+  }
+
+  #palette {
+    position: relative;
+    top: 0;
+  }
+}
+
+}
+/* ============================================================
+   FORCE 2-COLUMN QUIZ LAYOUT WITHOUT CHANGING HTML
+   ============================================================ */
+
+/* Wrap #quiz-container + #palette visually into 2 columns */
+.main-container {
+  display: grid;
+  grid-template-columns: 1fr 320px; /* left = quiz, right = palette */
+  gap: 1.4rem;
+  align-items: start;
+}
+
+/* Full width of quiz (left side) */
+#quiz-container {
+  width: 100%;
+}
+
+/* Make palette float on right side */
+#palette {
+  width: 100%;
+  height: fit-content;
+  position: sticky;
+  top: 100px;
+}
+input[type="number"],
+input[type="text"] {
+  padding: 0.55rem 0.9rem;
+  border-radius: 12px;
+  border: 2px solid #ffb3cf;
+  outline: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: 0.3s;
+  background: #fff;
+  color: var(--text-dark);
+}
+
+input[type="number"]:focus,
+input[type="text"]:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 8px rgba(255, 79, 147, 0.25);
+}
+#topicContainer {
+  border: 1px solid #ffd4e6;
+  background: #fff;
+  box-shadow: var(--shadow-soft);
+}
+
+.topic-label {
+  background: #ffe7f3;
+  border: 1px solid #ffc8dd;
+}
+
+.topic-label:hover {
+  background: #ffd6e9;
+}
+
+.topicChk {
+  accent-color: var(--primary);
+}
+#topicContainer .home-btn,
+.mock-section .home-btn {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  font-size: 1.05rem;
+  border-radius: 14px !important;
+}
+.history-card {
+  border: 1px solid #ffd0e3;
+  border-radius: 20px;
+  padding: 1.6rem;
+  box-shadow: 0 4px 12px rgba(255, 120, 160, 0.08);
+}
+.history-card p {
+  margin-bottom: 0.6rem;
+  color: var(--text-light);
+  font-size: 0.95rem;
+}
+.history-card button {
+  width: 100%;
+  margin-top: 0.7rem;
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  padding: 0.85rem;
+  border-radius: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.history-card button:hover {
+  background: var(--primary-dark);
+  transform: translateY(-3px);
+}
+.solution-item {
+  border-radius: 14px;
+  padding: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.solution-item.correct {
+  background: #e3ffe9;
+  border-left: 6px solid #28c75c;
+}
+
+.solution-item.wrong {
+  background: #ffe1ea;
+  border-left: 6px solid #ff4f7a;
+}
+/* ============================================================
+   IMPROVED RESULT SUMMARY (GREEN / RED PERFORMANCE COLORS)
+   ============================================================ */
+
+.result-summary {
+  padding: 1.8rem;
+  border-radius: 18px;
+  background: #ffffff;
+  border: 1px solid #ffd0e3;
+  box-shadow: 0 4px 14px rgba(255, 120, 160, 0.08);
+  margin-bottom: 1.5rem;
+}
+
+.result-summary h2 {
+  text-align: center;
+  color: var(--primary);
+  margin-bottom: 1.2rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.result-summary p {
+  font-size: 1rem;
+  margin: 0.35rem 0;
+  color: #444;
+}
+
+.result-summary p b {
+  color: #222;
+}
+
+/* PERFORMANCE COLOR BOX */
+.performance-box {
+  margin-top: 1.2rem;
+  padding: 1rem 1.2rem;
+  border-radius: 16px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  text-align: center;
+  border-left: 6px solid;
+  box-shadow: var(--shadow-soft);
+}
+
+/* GOOD RESULT – Green */
+.performance-box.good-result {
+  background: #eafff0;
+  color: #1a8b39;
+  border-color: #25c85a;
+}
+
+/* BAD RESULT – Red */
+.performance-box.bad-result {
+  background: #ffe8ed;
+  color: #d9274d;
+  border-color: #ff4e78;
+}
